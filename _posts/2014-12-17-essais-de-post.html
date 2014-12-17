@@ -1,0 +1,16 @@
+---
+layout: post
+title: Test de post
+tags: [Tag1, Tag avec des espaces]
+---
+
+{% include header.html %}
+<body>
+<h1>{{ page.title }} -</h1>
+<p>Je suis le test.</p>
+<ul>
+ {% for tag in page.tags %}
+ <li>{{ tag }}</li>
+ {% endfor %}
+</ul>
+{% include footer.html %}
