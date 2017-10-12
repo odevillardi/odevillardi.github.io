@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-13T00:37:38+02:00</updated><id>http://localhost:4000/</id><entry><title type="html">Le Web fait pousser mes tomates</title><link href="http://localhost:4000/2017/09/20/le-web-fait-pousser-mes-tomates.html" rel="alternate" type="text/html" title="Le Web fait pousser mes tomates" /><published>2017-09-20T15:54:32+02:00</published><updated>2017-09-20T15:54:32+02:00</updated><id>http://localhost:4000/2017/09/20/le-web-fait-pousser-mes-tomates</id><content type="html" xml:base="http://localhost:4000/2017/09/20/le-web-fait-pousser-mes-tomates.html">&lt;h3&gt;Quels points communs entre la permaculture et la qualité Web ?&lt;/h3&gt;
+&lt;p&gt;
+	Cet article est la transcription de &lt;a href=&quot;http://www.paris-web.fr/2014/conferences/le-web-fait-pousser-mes-tomates.php&quot;&gt;la conférence que j’ai eu l’occasion de présenter à Paris Web 2014&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+	J’ai pu parler des liens entre les bonnes pratiques de la permaculture et du Web devant un par-terre d’experts du Web, au Beffroi de Montrouge.
+&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;h3&gt;Qu’est-ce que la permaculture ?&lt;/h3&gt;
+&lt;p&gt;
+	La permaculture est “un ensemble de pratiques et de principes visant à créer une production agricole durable” selon &lt;a href=&quot;http://fr.wikipedia.org/wiki/Permaculture&quot;&gt;Wikipedia&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+	Ce mot-valise, contraction de l’expression “permanent agriculture”, est né en Australie dans les années 70. Il a été inventé par &lt;a href=&quot;http://fr.wikipedia.org/wiki/Bill_Mollison&quot; title=&quot;Bill Mollison&quot;&gt;Bill Mollison&lt;/a&gt; et &lt;a href=&quot;http://fr.wikipedia.org/wiki/David_Holmgren&quot; title=&quot;David Holmgren&quot;&gt;David Holmgren&lt;/a&gt; dans le cadre de leur travail destiné à créer un système agricole stable.
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*zLCCxjzUFEuOLEkduMInQQ.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;
+		&lt;a href=&quot;https://www.flickr.com/photos/fran_and_bobby/2607388658/in/faves-noiseprofessor/&quot;&gt;Picking vegetables at the Eden Project&lt;/a&gt;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	La permaculture utilise notamment des notions d’&lt;a href=&quot;http://fr.wikipedia.org/wiki/Agriculture_biologique&quot; title=&quot;Agriculture biologique&quot;&gt;agriculture biologique&lt;/a&gt;, d’&lt;a href=&quot;http://fr.wikipedia.org/wiki/%C3%89cologie&quot; title=&quot;Écologie&quot;&gt;écologie&lt;/a&gt; et de &lt;a href=&quot;http://fr.wikipedia.org/wiki/Paysagisme&quot; title=&quot;Paysagisme&quot;&gt;paysagisme&lt;/a&gt;. Profondément éthique, elle a pour but de replacer le vivant au centre des productions agricoles…
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*PVjfngB-kDEtWvIusCDlDQ.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;
+		L’agriculture intensive par &lt;a href=&quot;http://www.planete-dechet.com/lagriculture-intensive.php&quot;&gt;Planète Déchet&lt;/a&gt;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	… à l’inverse des &lt;a href=&quot;http://fr.wikipedia.org/wiki/Agriculture_intensive&quot;&gt;méthodes intensives&lt;/a&gt; qui déshumanisent l’agriculture et dévitalisent l’environnement.
+&lt;/p&gt;
+&lt;h3&gt;Pourquoi parler de permaculture à Paris Web, une conférence dédiée au Web ?&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Question légitime, je vous l’accorde.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;
+	J’ai passé une petite année en amérique du Nord, dont 6 mois à travailler dans des fermes biologiques au Canada.
+&lt;/p&gt;
+&lt;p&gt;
+	Durant ce séjour, j’ai pu échanger avec mes hôtes sur des sujets qui tournaient souvent, évidemment, autour de l’agriculture. Au cours de ces échanges, j’ai pu rapidement me rendre compte que l’agriculture intensive (ou industrielle) ressemblait à un projet Web qui aurait complètement merdé.
+&lt;/p&gt;
+&lt;h3&gt;L’agriculture intensive, le règne du quick fix&lt;/h3&gt;
+&lt;p&gt;
+	L’agriculture intensive est née dans les années 50, après la seconde guerre mondiale, en partie du besoin des industries de guerre de se reconvertir : notamment, les industries chimiques ont recyclé leur usines d’explosif en usine à engrais (les 2 étant &lt;a href=&quot;http://fr.wikipedia.org/wiki/Histoire_du_proc%C3%A9d%C3%A9_Haber-Bosch&quot;&gt;des dérivés d’ammoniac&lt;/a&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+	Les engrais azotés (nitrates), solution apparemment miraculeuse, ont été utilisés en masse et ont entraîné un début de réaction en chaîne :
+&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;
+		Sur les céréales, le blé par exemple, &lt;strong&gt;les nitrates&lt;/strong&gt; étaient tellement efficaces que la plante poussait très vite et pliait sous son propre poids, devenant alors impossible à récolter…
+	&lt;/li&gt;
+	&lt;li&gt;
+		Les ingénieurs agricoles sont donc arrivés avec de &lt;strong&gt;nouvelles semences &lt;/strong&gt;&lt;a href=&quot;http://fr.wikipedia.org/wiki/Hybride_F1&quot;&gt;&lt;strong&gt;hybrides&lt;/strong&gt;&lt;/a&gt; ayant pour résultat un blé nanifié qui ne plie donc pas.&lt;br&gt;
+		&lt;em&gt;Formidable non ?&lt;/em&gt; Eh bien non, car les mauvaises herbes comme le vulpin – qui profite également des nitrates – ont dépassé, en taille, le blé qui ne pouvait plus être récolté…
+	&lt;/li&gt;
+	&lt;li&gt;
+		Les ingénieurs sortent alors un nouveau produit miracle : un &lt;strong&gt;herbicide&lt;/strong&gt; qui s’attaque aux mauvaises herbes mais pas au blé !&lt;br&gt;
+		&lt;em&gt;Formidable non ?&lt;/em&gt;
+		Eh bien non, car les herbicides appauvrissent la terre et les rendements baissent…&lt;br&gt;
+		Normalement, à ce stade là d’un projet Web, un des acteurs intervient pour mettre un peu d’ordre dans ce qui s’annonce devenir une usine à patch… Mais ça n’a pas été le cas pour l’agriculture intensive.
+	&lt;/li&gt;
+	&lt;li&gt;
+		Les ingénieurs proposent alors de &lt;strong&gt;nouveaux engrais&lt;/strong&gt; en complément des nitrates : les engrais potassium et phosphate, la terre est à nouveau enrichie !&lt;br&gt;&lt;em&gt;Formidable non ?&lt;/em&gt; Eh bien non, ces engrais favorisent en effet le développement du blé, mais celui-ci étant court, il maintient un fort taux d’humidité au sol qui favorise l’apparition des champignons…
+	&lt;/li&gt;
+	&lt;li&gt;
+		Pas de soucis pour les ingénieurs, la solution est simple : il suffit de mettre des &lt;strong&gt;fongicides&lt;/strong&gt; !&lt;br&gt;&lt;em&gt;Formidable non ?&lt;/em&gt; Eh bien non, l’équilibre végétal, minéral et animal étant rompu, les pucerons débarquent !
+	&lt;/li&gt;
+	&lt;li&gt;
+		Des pucerons ? Pas de problème, on a les &lt;strong&gt;insecticides&lt;/strong&gt; qu’il vous faut !&lt;br&gt;&lt;em&gt;Formidable non ? &lt;/em&gt;Eh bien non, les insecticides ne font pas détail et déciment également les pollinisateurs qui, pour rappel, sont quand même incontournables pour plus de 50% des variétés cultivables et de 30% de la production agricole mondiale…
+	&lt;/li&gt;
+	&lt;li&gt;
+		Ultime étape (à l’heure actuelle…) de ce projet patché : &lt;a href=&quot;http://www.lemonde.fr/planete/article/2014/04/23/dans-les-vergers-du-sichuan-les-hommes-font-le-travail-des-abeilles_4405686_3244.html&quot;&gt;&lt;strong&gt;la pollinisation manuelle par des hommes&lt;/strong&gt;&lt;/a&gt;…&lt;br&gt;&lt;em&gt;Formidable non ?&lt;/em&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+	&lt;blockquote&gt;Ça ne marche pas&lt;/blockquote&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	Après seulement quelques décénies de pratique, on sait que ce n’est pas viable à long terme, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Jour_du_d%C3%A9passement&quot;&gt;on épuise les ressources naturelles&lt;/a&gt; alors que l’agriculture devrait être, de fait, naturelle et durable.
+&lt;/p&gt;
+&lt;p&gt;
+	Ça ne marche pas car &lt;a href=&quot;http://www.mutinerie.org/travail-numerique-travail-paysan-meme-combat/&quot;&gt;on ne peut pas appliquer les méthodes industrielles aux systèmes complexes&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;blockquote&gt;Or le Web est un système complexe&lt;/blockquote&gt;
+&lt;/p&gt;
+&lt;p&gt;Car on travaille le “vivant”.&lt;/p&gt;
+&lt;p&gt;Tâchons donc de suivre l’exemple de la permaculture plutôt que celui de l’agriculture intensive.&lt;/p&gt;
+
+&lt;h3&gt;Paris Web abonde en ce sens&lt;/h3&gt;
+&lt;p&gt;
+	Les principaux thèmes abordés à &lt;a href=&quot;http://www.paris-web.fr&quot;&gt;Paris Web&lt;/a&gt; sont les suivants :
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/600/1*-m5HgWSAyDw5k341RWWTwg.png&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;&lt;a href=&quot;http://www.paris-web.fr&quot;&gt;Paris Web&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;ol&gt;
+	&lt;li&gt;Accessibilité&lt;/li&gt;
+	&lt;li&gt;Design&lt;/li&gt;
+	&lt;li&gt;Standards ouverts&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/600/1*YktF5m2-ceZhFsjGq9Le5w.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;MF Beta 7360 sur &lt;a href=&quot;http://www.pleinchamp.com/machinisme/actualites-machinisme/les-moissonneuses-batteuses-beta-de-massey-ferguson-adoptent-la-cabine-skyline&quot;&gt;pleinchamp.com&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3&gt;Accessibilité&lt;/h3&gt;
+&lt;p&gt;
+	Comme vous pouvez le voir ci-contre, l’agriculture industrielle n’est pas accessible.
+&lt;/p&gt;
+&lt;p&gt;
+Les outils nécessaires pour la quasi totalité des opérations en agriculture intensive ne sont aujourd’hui pas accessibles à tous. Ils demandent même parfois la participation de plusieurs personnes comme dans cet exemple.
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/600/1*7ODyg5SV186AsQAzJ-gCZQ.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;Elevated cedar raised garden sur &lt;a href=&quot;http://www.thegreenhead.com/2012/03/elevated-cedar-raised-garden-beds.php&quot;&gt;thegreenhead.com&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	En permaculture, l’approche est différente. Le besoin de “l’utilisateur” (jardinier, maraîcher, paysan…) est pris en compte en amont du projet afin de s’adapter à sa situation.
+&lt;/p&gt;
+&lt;p&gt;
+	Ici, par exemple, on surélève les bacs pour permettre une récolte sans effort et sans douleur.
+&lt;/p&gt;
+&lt;p&gt;
+	Cette exploitation a été créée pour satisfaire les besoins du client et non pour s’adapter à des outils obsolètes…
+&lt;/p&gt;
+&lt;p&gt;
+	Peut-être, en tant que travailleur du Web, avez-vous déjà été contraint de sacrifier l’accessibilité pour que le projet soit utilisable avec les outils dépassés de votre client ?
+&lt;/p&gt;
+&lt;p&gt;
+	Mais les agriculteurs ou maraîchers ne sont pas les seuls “utilisateurs” dans une exploitation agricole. Il en existe une multitude d’autres, anonymes, minuscules et incontrôlables.
+&lt;/p&gt;
+&lt;h3&gt;Les pollinisateurs&lt;/h3&gt;
+&lt;p&gt;
+	On sait aujourd’hui que les abeilles pollinisent en &lt;em&gt;spirale&lt;/em&gt; : lorsqu’elles vont, de fleur en fleur, participer à la reproduction des plantes, leur vol décrit une spirale.
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*8fjZZVE7HcDUpWDzbXwifA.png&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;Spirale d’or sur &lt;a href=&quot;http://www.les-suites.fr/rectangle-d-or.htm&quot;&gt;les-suites.fr&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	Mais on s’entête à créer des exploitations agricoles intensives &lt;em&gt;linéaires&lt;/em&gt;…
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*JelAXeplincDvaLkbP7taA.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;Persil sur &lt;a href=&quot;http://www.omafra.gov.on.ca/CropOp/fr/herbs/culinary/pars.html&quot;&gt;Promo-Cultures&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	Encore une fois, l’agriculture industrielle sacrifie l’accessibilité des utilisateurs pour satisfaire uniquement les outils de l’exploitant…
+&lt;/p&gt;
+&lt;p&gt;
+	Alors qu’en permaculture :
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*h661O8VN2FoS7wrs-Pcg3Q.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;Spirale aromatique sur &lt;a href=&quot;http://ecolo-bio-nature.blogspot.fr/2013/05/la-spirale-daromatiques-est-terminee.html&quot;&gt;Écolo-bio-nature&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Inutile de vous faire un dessin.&lt;/p&gt;
+
+&lt;h3&gt;Design&lt;/h3&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*VyoDvYbHhx6Pkci2e4v93A.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;Permaculture sur &lt;a href=&quot;http://www.soluna.ca/&quot;&gt;Soluna&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	Le design est au cœur de la permaculture. Il s’inscrit au sein de la méthode OBRÉDIM, ainsi qu’elle est décrite dans &lt;a href=&quot;http://boutique.terrevivante.org/librairie/livres/231/jardin-bio/conseils-d-expert/458-le-guide-de-la-permaculture-au-jardin.htm&quot;&gt;&lt;em&gt;LE GUIDE de la permaculture AU JARDIN&lt;/em&gt;&lt;/a&gt; :
+&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;&lt;strong&gt;Observation&lt;/strong&gt; : faire un état des lieux du site et de son fonctionnement (interactions entre les différents éléments).&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Bordures&lt;/strong&gt; : prendre en compte les limites du projet tant physiques que générales et multiplier les zones d’échange entre les différents écosystèmes sur le site.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Ressources&lt;/strong&gt; : identifier les ressources naturelles, les personnes qui sont prêtes à s’impliquer, les outils, les finances et le temps à disposition.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Évaluation&lt;/strong&gt; : faire la synthèse des 3 étapes précédentes, par exemple à l’aide de dessins, et évaluer les besoins.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Design&lt;/strong&gt; : dessiner le jardin.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Implémentation&lt;/strong&gt; : Ce terme, issu de l’anglais, signifie le passage à l’acte.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Maintenance&lt;/strong&gt; : faire le point sur ce qui marche et ce qui marche moins bien. Même si le jardin est bien pensé, il y aura toujours des ajustements à faire.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+	Moi ça me fait quand même vaguement penser aux différentes étapes d’un projet Web bien mené…
+&lt;/p&gt;
+&lt;p&gt;
+	Le design, de par son importance en permaculture, ne peut pas être improvisé. C’est la raison pour laquelle le zoning est une des méthodes utilisée :
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*eyDvhvhKcSXxbabdope6Og.png&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;Zoning sur &lt;a href=&quot;http://deepgreenpermaculture.com/permaculture/permaculture-design-principles/4-zones-and-sectors-efficient-energy-planning/&quot;&gt;deepgreenpermaculture&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	Encore une méthodo piquée au Web.
+&lt;/p&gt;
+&lt;blockquote&gt;Oh Wait…&lt;/blockquote&gt;
+&lt;p&gt;
+	Deuxième étape, on dessine le plan de culture afin de placer l’ensemble des différents légumes, aromates et légumineuses que l’on souhaite produire.
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/1000/1*pB5wE4Du24rNZi-22WKJyQ.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;Drawing of Saskatoon Serviceberry sur &lt;a href=&quot;http://vinodpermacultureblog.wordpress.com/sustainable-living/plant-species-assignment/&quot;&gt;permaculture on the move&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	Et on finit par implémenter le tout IRL.
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*iM8wzxC8Nyy3ZJXr4JT21Q.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;&lt;a href=&quot;http://real.dctc.edu/fall2013/2013/03/08/shrewd-food/&quot;&gt;Hale Akua&lt;/a&gt; Permaculture Garden Farm in Maui, Hawaii&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	Bien sûr, le projet nécessitera certainement de la maintenance afin de faire quelques ajustements en s’appuyant sur ce qui fonctionne et en corrigeant ce qui fonctionne moins bien…
+&lt;/p&gt;
+&lt;h3&gt;Standards ouverts&lt;/h3&gt;
+&lt;blockquote&gt;“Le bio, c’est l’émergence de nouvelles connaissances partagées, un monde comparable à celui des logiciels libres” – Rachel Mulot&lt;/blockquote&gt;
+&lt;p&gt;
+	Voici encore un thème abordé à Paris Web et qui a toute sa place en permaculture.
+&lt;/p&gt;
+&lt;p&gt;
+	Car aujourd’hui le vivant est standardisé et limité aux seules variétés inscrites au Catalogue.
+&lt;/p&gt;
+&lt;p&gt;
+	Le Catalogue ?
+&lt;/p&gt;
+&lt;blockquote&gt;
+	Le &lt;strong&gt;catalogue officiel des espèces et variétés végétales &lt;/strong&gt;répertorie les espèces et leurs variétés cultivées issues de sélection (&lt;a href=&quot;http://fr.wikipedia.org/wiki/Cultivar&quot; title=&quot;Cultivar&quot;&gt;cultivars&lt;/a&gt;), dont les semences sont autorisées à la vente et à la culture (y compris les variétés potagères, fruitières et certaines plantes à vocations environnementales ou ornementales telles que les &lt;a href=&quot;http://fr.wikipedia.org/wiki/Gazon&quot; title=&quot;Gazon&quot;&gt;gazons&lt;/a&gt;). – &lt;a href=&quot;http://fr.wikipedia.org/wiki/Catalogue_officiel_des_esp%C3%A8ces_et_vari%C3%A9t%C3%A9s&quot;&gt;Wikipedia&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;WTF ??&lt;/blockquote&gt;
+&lt;p&gt;
+	En clair, si vous souhaitez produire une variété de blé, celle-ci doit être inscrite au Catalogue. Sinon, il vous faut débourser &lt;strong&gt;entre 6000 et 15000€&lt;/strong&gt; pour l’inscrire et respecter un certain nombre de critères “industriels” non applicables au vivant…
+&lt;/p&gt;
+&lt;p&gt;
+	C’est comme si je vous disais : “&lt;em&gt;voilà le catalogue des fonctions JS que vous pouvez légalement utiliser, si vous voulez en inscrire une nouvelle, faites péter le chéquier&lt;/em&gt;”.
+&lt;/p&gt;
+&lt;p&gt;
+	True story.
+&lt;/p&gt;
+&lt;p&gt;
+	Ce n’est pas acceptable, les semenciers vendent aujourd’hui des packages de semences brevetées qui ne fonctionnent qu’avec leur triptyque engrais, pesticides, herbicides.
+&lt;/p&gt;
+&lt;p&gt;
+	Il faut combattre ces écosystèmes fermés. C’est un des combats de &lt;a href=&quot;https://kokopelli-semences.fr&quot;&gt;Kokopelli&lt;/a&gt; : l’association pour la libération des semences et de l’humus.
+&lt;/p&gt;
+&lt;p&gt;
+	Voilà donc pour les 3 principaux thèmes du rendez-vous annuel des amoureux du Web qu’est Paris Web !
+&lt;/p&gt;
+&lt;p&gt;
+	Mais je vais aussi vous parler de 2 autres qui me semblent importants, aussi bien en permaculture que pour le Web.
+&lt;/p&gt;
+&lt;h3&gt;Énergie&lt;/h3&gt;
+&lt;p&gt;
+	L’agriculture est autant responsable du réchauffement climatique que les transports.
+&lt;/p&gt;
+&lt;p&gt;
+	Comment est-ce possible ?
+&lt;/p&gt;
+&lt;h4&gt;Le rendement agricole&lt;/h4&gt;
+&lt;p&gt;
+	Déjà, il faut savoir que l’agriculture intensive ne communique que sur un seul indicateur : &lt;a href=&quot;http://fr.wikipedia.org/wiki/Rendement_agricole&quot;&gt;le rendement agricole&lt;/a&gt;. Il est calculé en divisant la quantité de produit récolté par la surface de récolte.
+&lt;/p&gt;
+&lt;p&gt;
+	Mais le rendement agricole ne prend absolument pas en compte l’énergie nécessaire :
+&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;à la &lt;strong&gt;fabrication des outils&lt;/strong&gt; : qui demande beaucoup d’énergie et de matières premières (métaux notamment) ;&lt;/li&gt;
+	&lt;li&gt;au &lt;strong&gt;fonctionnement des outils&lt;/strong&gt; : devinez quoi, les tracteurs fonctionnent au pétrole ;&lt;/li&gt;
+	&lt;li&gt;à la création des &lt;strong&gt;semences&lt;/strong&gt; : la manipulation du génome demande aussi beaucoup d’énergie ;&lt;/li&gt;
+	&lt;li&gt;à la création des &lt;strong&gt;engrais&lt;/strong&gt; : l’azote qui compose les nitrates est extrait majoritairement du gaz naturel et l’énergie nécessaire à cette extraction est colossale ;&lt;/li&gt;
+	&lt;li&gt;à la création des &lt;strong&gt;herbicides&lt;/strong&gt;, des &lt;strong&gt;pesticides&lt;/strong&gt;, des &lt;strong&gt;fongicides&lt;/strong&gt;, des &lt;strong&gt;insecticides&lt;/strong&gt; : tous 4 étant des dérivés du pétrole ;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+	Cet indicateur, le rendement agricole, ne prend donc en compte AUCUN coût entrant. Or l’ensemble de ces coûts est basé sur des énergies et des matières premières non renouvelables.
+&lt;/p&gt;
+&lt;p&gt;
+	Un nouvel indicateur doit être créé et utilisé. Il doit prendre en compte l’énergie pour avoir une valeur réelle et honnête.
+&lt;/p&gt;
+&lt;p&gt;
+	Pour le Web, il faudrait faire de même car de nombreux indicateurs – aujourd’hui clés dans les circuits de décisions – sont totalement décorellés de toute notion énergétique : VU, taux de clic, taux de conversion… Alors que &lt;a href=&quot;http://www.paris-web.fr/2014/conferences/internet-et-les-tic-pas-tres-ecologique.php&quot;&gt;les TIC reposent essentiellement sur l’énergie&lt;/a&gt;.
+&lt;/p&gt;
+&lt;h3&gt;Hacktivisme&lt;/h3&gt;
+&lt;p&gt;
+	Et puis je voulais terminer sur une note un peu plus marrante, un autre point commun entre le monde du web et la permaculture, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Hacktivisme&quot;&gt;l’hacktivisme&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+	Ce mouvement global militant de réappropriation des espaces politiques et publiques a pour but de faire bouger les choses dans des domaines sclérosés ou oubliés par les lobbys industriels. Sur le Web, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Anonymous_%28collectif%29&quot;&gt;les anonymous&lt;/a&gt;, par exemple, agissent pour défendre la liberté d’expression.
+&lt;/p&gt;
+&lt;p&gt;
+	Voici deux exemples concrets d’actions menées dans le domaine de l’agriculture :
+&lt;/p&gt;
+&lt;h4&gt;Les incroyables comestibles&lt;/h4&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/1000/1*95-OH8HM2REAo5GzhMlydQ.jpeg&quot; alt=&quot;image&quot;/&gt;&lt;figcaption&gt;Incredible edibles sur &lt;a href=&quot;http://www.get-growing.org.uk/?p=1637&quot;&gt;Get growing&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	&lt;a href=&quot;http://fr.wikipedia.org/wiki/Incredible_Edible&quot;&gt;Incredible edibles&lt;/a&gt; est une expérience communautaire qui consiste à mettre à disposition gratuite, de petits potagers en ville ou en zone rurale, cultivés par des volontaires.
+&lt;/p&gt;
+&lt;h4&gt;Le seed bombing&lt;/h4&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/1000/1*L4x_bz95Kjgbx6S86T04qQ.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;Seed bombing sur &lt;a href=&quot;http://www.mooredesigns.co.uk/blog/post/2013/04/26/Seed-Bombs.aspx&quot;&gt;Moore Designs&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	Et puis le &lt;a href=&quot;http://fr.wikipedia.org/wiki/Oeuf_s%C3%A9minal&quot;&gt;Seed Bombing&lt;/a&gt; ou boule de graine en français est un peu dans le même style que les incroyables comestibles mais en plus anarchique !
+&lt;/p&gt;
+&lt;p&gt;
+	Vous faites une boule de terre qui contient des graines et vous la balancez à un endroit où vous voulez voir pousser quelque chose !
+&lt;/p&gt;
+&lt;p&gt;
+	Voilà ce que j’avais à vous dire sur la permaculture.
+&lt;/p&gt;
+&lt;p&gt;
+	J’espère vous avoir appris des choses, ouvert l’esprit sur un autre moyen de production agricole et que ça a pu vous inspirer pour vos projets Web et pour votre bout de jardin / fenêtre / balcon ou autre !
+&lt;/p&gt;
+&lt;p&gt;
+	Je pense qu’il est nécessaire de prendre les bonnes idées partout où elles existent. Les similitudes entre la permaculture et le Web m’ont tellement marquées qu’il m’était impossible de passer à côté !
+&lt;/p&gt;
+&lt;p&gt;
+	Et pour ceux qui restent sur leur faim à cause du titre de l’article, sachez que le Web fait réellement pousser… des bananes !
+&lt;/p&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;https://cdn-images-1.medium.com/max/600/1*ce09S-pVUdEL2yBNxMmUSA.jpeg&quot; alt=&quot;image&quot;/&gt;
+	&lt;figcaption&gt;Serre tropicale chauffée par un data center sur &lt;a href=&quot;http://www.actu-environnement.com/ae/dossiers/datacenters/valorisation-chaleur.php&quot;&gt;Actu-environnement&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	À Aubervillier par exemple où la chaleur émise par les serveurs d’un datacenter sert à chauffer une serre tropicale !
+&lt;/p&gt;
+&lt;p&gt;
+	N’hésitez pas à y héberger vos projets Web !
+&lt;/p&gt;
+&lt;h2&gt;Pour aller plus loin sur le sujet&lt;/h2&gt;
+&lt;p&gt;
+	Quelques livres, articles, vidéos :
+&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amazon.fr/Manifeste-pour-Terre-lhumanisme-insurrection/dp/2742778527&quot;&gt;Manifeste pour la terre et l’humanisme&lt;/a&gt;, Pierre Rabhi&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://boutique.terrevivante.org/librairie/livres/231/jardin-bio/conseils-d-expert/458-le-guide-de-la-permaculture-au-jardin.htm&quot;&gt;Le guide de la permaculture au Jardin&lt;/a&gt;, Carine Mayo, éditions terre vivante&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://fr.wikipedia.org/wiki/Permaculture&quot;&gt;Permaculture&lt;/a&gt;, Wikipedia France&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://fr.wikiquote.org/wiki/Agriculture_biologique&quot;&gt;La vérité sur le bio&lt;/a&gt;, Rachel Mulot, Sciences &amp;amp; Avenir n°775, sept. 2011&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.laruchequiditoui.fr/la-guerre-des-semences-aura-bien-lieu/&quot;&gt;La guerre des semences aura bien lieu&lt;/a&gt;, Le blog de la ruche qui dit oui !&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.lemonde.fr/planete/article/2014/04/23/dans-les-vergers-du-sichuan-les-hommes-font-le-travail-des-abeilles_4405686_3244.html&quot;&gt;Dans le Sichuan, des “hommes abeilles” pollinisent à la main les vergers&lt;/a&gt;, Le Monde&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://fr.wikipedia.org/wiki/Histoire_du_proc%C3%A9d%C3%A9_Haber-Bosch&quot;&gt;Histoire du procédé &lt;em&gt;Haber-Bosch&lt;/em&gt;&lt;/a&gt;, Wikipedia&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.mutinerie.org/travail-numerique-travail-paysan-meme-combat/&quot;&gt;Travail numérique, travail paysan, même combat ?&lt;/a&gt; Mutinerie&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.actu-environnement.com/ae/dossiers/datacenters/valorisation-chaleur.php&quot;&gt;Des gains énergétiques en valorisant la chaleur émise&lt;/a&gt;, actu-environnement&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.paris-web.fr/2014/conferences/internet-et-les-tic-pas-tres-ecologique.php&quot;&gt;Internet et les TIC, pas très écologiques ?&lt;/a&gt; Luc Poupard&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://youtu.be/-_zSkVrkuIM?list=UURy5TG3g-OJzRXRbOnC2wpw&quot;&gt;Bernard Ronot, le Noé des semences anciennes&lt;/a&gt;, On passe à l’acte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;
+	&lt;iframe src=&quot;https://www.youtube.com/embed/-_zSkVrkuIM?feature=oembed&quot; width=&quot;700&quot; height=&quot;393&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+	&lt;figcaption&gt;&lt;a href=&quot;http://youtu.be/-_zSkVrkuIM&quot;&gt;http://youtu.be/-_zSkVrkuIM&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;
+	Et n’oubliez pas :
+&lt;/p&gt;
+&lt;blockquote&gt;DON’T PANIC, eat organic&lt;/blockquote&gt;
+&lt;figure class=&quot;tmblr-embed tmblr-full&quot; data-provider=&quot;vimeo&quot; data-orig-width=&quot;540&quot; data-orig-height=&quot;304&quot; data-url=&quot;https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F113843836&quot;&gt;
+	&lt;iframe src=&quot;https://player.vimeo.com/video/113843836?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;540&quot; height=&quot;304&quot; frameborder=&quot;0&quot; title=&quot;Le web fait pousser mes tomates par Olivier de Villardi&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="agriculture" /><category term="permaculture" /><category term="parisweb" /><summary type="html">Quels points communs entre la permaculture et la qualité Web ? Cet article est la transcription de la conférence que j’ai eu l’occasion de présenter à Paris Web 2014. J’ai pu parler des liens entre les bonnes pratiques de la permaculture et du Web devant un par-terre d’experts du Web, au Beffroi de Montrouge.</summary></entry><entry><title type="html">no title</title><link href="http://localhost:4000/2017/09/15/165375924614.html" rel="alternate" type="text/html" title="no title" /><published>2017-09-15T22:41:33+02:00</published><updated>2017-09-15T22:41:33+02:00</updated><id>http://localhost:4000/2017/09/15/165375924614</id><content type="html" xml:base="http://localhost:4000/2017/09/15/165375924614.html">&lt;img src=&quot;/tumblr_files/tumblr_owc9h9h6d31qbvuz6o1_1280.jpg&quot;/&gt;&lt;br/&gt;</content><author><name></name></author><category term="vegan" /><summary type="html"></summary></entry><entry><title type="html">Humour noir et bandérilles - La chanson de Frédéric Fromet</title><link href="http://localhost:4000/2017/06/24/humour-noir-et-band%C3%A9rilles-la-chanson-de.html" rel="alternate" type="text/html" title="Humour noir et bandérilles - La chanson de Frédéric Fromet" /><published>2017-06-24T17:14:12+02:00</published><updated>2017-06-24T17:14:12+02:00</updated><id>http://localhost:4000/2017/06/24/humour-noir-et-band%C3%A9rilles-la-chanson-de</id><content type="html" xml:base="http://localhost:4000/2017/06/24/humour-noir-et-band%C3%A9rilles-la-chanson-de.html">&lt;p&gt;Humour noir et bandérilles - La chanson de Frédéric Fromet&lt;/p&gt;</content><author><name></name></author><category term="vegan" /><summary type="html">Humour noir et bandérilles - La chanson de Frédéric Fromet</summary></entry><entry><title type="html">laughingsquid a map visualizing the entire</title><link href="http://localhost:4000/2017/05/10/laughingsquid-a-map-visualizing-the-entire.html" rel="alternate" type="text/html" title="laughingsquid a map visualizing the entire" /><published>2017-05-10T07:28:40+02:00</published><updated>2017-05-10T07:28:40+02:00</updated><id>http://localhost:4000/2017/05/10/laughingsquid-a-map-visualizing-the-entire</id><content type="html" xml:base="http://localhost:4000/2017/05/10/laughingsquid-a-map-visualizing-the-entire.html">&lt;img src=&quot;/tumblr_files/tumblr_opotq1ZcHA1qz4cuyo1_1280.jpg&quot;/&gt;&lt;br/&gt;&lt;p&gt;&lt;a href=&quot;http://links.laughingsquid.com/post/160499448892/a-map-visualizing-the-entire-field-of-mathematics&quot; class=&quot;tumblr_blog&quot;&gt;laughingsquid&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;https://laughingsquid.com/mathematics-map/&quot;&gt;A Map Visualizing the Entire Field of Mathematics&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="maths" /><summary type="html">laughingsquid:</summary></entry><entry><title type="html">Talented Guitarist Effortlessly Performs Eight Different Songs With Varyingly Odd Time Signatures</title><link href="http://localhost:4000/2017/03/24/laughingsquid-talented-guitarist-effortlessly.html" rel="alternate" type="text/html" title="Talented Guitarist Effortlessly Performs Eight Different Songs With Varyingly Odd Time Signatures" /><published>2017-03-24T08:24:42+01:00</published><updated>2017-03-24T08:24:42+01:00</updated><id>http://localhost:4000/2017/03/24/laughingsquid-talented-guitarist-effortlessly</id><content type="html" xml:base="http://localhost:4000/2017/03/24/laughingsquid-talented-guitarist-effortlessly.html">&lt;p&gt;&lt;a href=&quot;http://links.laughingsquid.com/post/158751735639/talented-guitarist-effortlessly-performs-eight&quot; class=&quot;tumblr_blog&quot;&gt;laughingsquid&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;https://laughingsquid.com/talented-guitarist-effortlessly-performs-eight-different-songs-with-varyingly-odd-time-signatures/&quot;&gt;Talented Guitarist Effortlessly Performs Eight Different Songs With Varyingly Odd Time Signatures&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="music" /><category term="maths" /><summary type="html">laughingsquid: Talented Guitarist Effortlessly Performs Eight Different Songs With Varyingly Odd Time Signatures</summary></entry><entry><title type="html">tokyotaboo ionlywearblack fender</title><link href="http://localhost:4000/2017/02/27/tokyotaboo-ionlywearblack-fender.html" rel="alternate" type="text/html" title="tokyotaboo ionlywearblack fender" /><published>2017-02-27T17:49:40+01:00</published><updated>2017-02-27T17:49:40+01:00</updated><id>http://localhost:4000/2017/02/27/tokyotaboo-ionlywearblack-fender</id><content type="html" xml:base="http://localhost:4000/2017/02/27/tokyotaboo-ionlywearblack-fender.html">&lt;img src=&quot;/tumblr_files/tumblr_olrwkc4OvX1rm0na2o1_1280.jpg&quot;/&gt;&lt;br/&gt;&lt;p&gt;&lt;a href=&quot;http://tokyotaboo.tumblr.com/post/157565951610/ionlywearblack-fender-fendertelecaster&quot; class=&quot;tumblr_blog&quot;&gt;tokyotaboo&lt;/a&gt;:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;#IOnlyWearBlack 🔥🔥🔥&lt;br/&gt;
+#fender #fendertelecaster #fendertele #fenderuk #fenderusa #fenderjapan #drstrings @fender @fendercustomshop @fender_guitars @fenderartists @fender_telecaster @drstrings 📸 by @radical_snaps Outfit by @philipnormal  (at Mojave, California)&lt;/p&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="music" /><summary type="html">tokyotaboo:#IOnlyWearBlack 🔥🔥🔥 #fender #fendertelecaster #fendertele #fenderuk #fenderusa #fenderjapan #drstrings @fender @fendercustomshop @fender_guitars @fenderartists @fender_telecaster @drstrings 📸 by @radical_snaps Outfit by @philipnormal (at Mojave, California)</summary></entry><entry><title type="html">no title</title><link href="http://localhost:4000/2017/02/07/want-kids-to-learn-well-feed-them-well-sam-kass.html" rel="alternate" type="text/html" title="no title" /><published>2017-02-07T09:58:15+01:00</published><updated>2017-02-07T09:58:15+01:00</updated><id>http://localhost:4000/2017/02/07/want-kids-to-learn-well-feed-them-well-sam-kass</id><content type="html" xml:base="http://localhost:4000/2017/02/07/want-kids-to-learn-well-feed-them-well-sam-kass.html">&lt;iframe width=&quot;400&quot; height=&quot;225&quot;  id=&quot;youtube_iframe&quot; src=&quot;https://www.youtube.com/embed/hfDkDzZ9GsU?feature=oembed&amp;amp;enablejsapi=1&amp;amp;origin=http://safe.txmblr.com&amp;amp;wmode=opaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;br/&gt;&lt;h2&gt;
+ Want kids to learn well? Feed them well | Sam Kass&lt;/h2&gt;&lt;p&gt;What can we expect our kids to learn if they&amp;rsquo;re hungry or eating diets 
+full of sugar and empty of nutrients? Former White House Chef and food 
+policymaker Sam Kass discusses the role schools can play in nourishing 
+students&amp;rsquo; bodies in addition to their minds.&lt;br/&gt;&lt;/p&gt;</content><author><name></name></author><category term="education" /><category term="food" /><summary type="html">Want kids to learn well? Feed them well | Sam KassWhat can we expect our kids to learn if they&amp;rsquo;re hungry or eating diets full of sugar and empty of nutrients? Former White House Chef and food policymaker Sam Kass discusses the role schools can play in nourishing students&amp;rsquo; bodies in addition to their minds.</summary></entry><entry><title type="html">no title</title><link href="http://localhost:4000/2017/02/02/laughingsquid-a-remarkable-teacher-greets-each.html" rel="alternate" type="text/html" title="no title" /><published>2017-02-02T19:41:29+01:00</published><updated>2017-02-02T19:41:29+01:00</updated><id>http://localhost:4000/2017/02/02/laughingsquid-a-remarkable-teacher-greets-each</id><content type="html" xml:base="http://localhost:4000/2017/02/02/laughingsquid-a-remarkable-teacher-greets-each.html">&lt;iframe width=&quot;400&quot; height=&quot;225&quot;  id=&quot;youtube_iframe&quot; src=&quot;https://www.youtube.com/embed/I0jgcyfC2r8?feature=oembed&amp;amp;enablejsapi=1&amp;amp;origin=http://safe.txmblr.com&amp;amp;wmode=opaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;br/&gt;&lt;p&gt;&lt;a href=&quot;http://links.laughingsquid.com/post/156720942151/a-remarkable-teacher-greets-each-of-his-students&quot; class=&quot;tumblr_blog&quot;&gt;laughingsquid&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://laughingsquid.com/a-remarkable-teacher-greets-each-of-his-students-everyday-with-a-unique-handshake-of-their-own/&quot;&gt;A Remarkable Teacher Greets Each of His Students Everyday With a Unique Handshake of Their Own&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="education" /><summary type="html">laughingsquid:</summary></entry><entry><title type="html">no title</title><link href="http://localhost:4000/2017/01/24/laughingsquid-four-year-old-claire-ryann-sings.html" rel="alternate" type="text/html" title="no title" /><published>2017-01-24T21:53:31+01:00</published><updated>2017-01-24T21:53:31+01:00</updated><id>http://localhost:4000/2017/01/24/laughingsquid-four-year-old-claire-ryann-sings</id><content type="html" xml:base="http://localhost:4000/2017/01/24/laughingsquid-four-year-old-claire-ryann-sings.html">&lt;iframe width=&quot;400&quot; height=&quot;225&quot;  id=&quot;youtube_iframe&quot; src=&quot;https://www.youtube.com/embed/ukD8zj6ngVY?feature=oembed&amp;amp;enablejsapi=1&amp;amp;origin=http://safe.txmblr.com&amp;amp;wmode=opaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;br/&gt;&lt;p&gt;&lt;a href=&quot;http://links.laughingsquid.com/post/156322238559/four-year-old-claire-ryann-sings-a-beautiful-duet&quot; class=&quot;tumblr_blog&quot;&gt;laughingsquid&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;http://laughingsquid.com/four-year-old-claire-ryann-sings-a-beautiful-duet-of-youve-got-a-friend-in-me-with-her-dad/&quot;&gt;Four-Year-Old Claire Ryann Sings a Beautiful Duet of ‘You’ve Got a Friend in Me’ With Her Dad&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="music" /><summary type="html">laughingsquid:</summary></entry><entry><title type="html">guitarbage traveler guitar at namm 2017</title><link href="http://localhost:4000/2017/01/21/guitarbage-traveler-guitar-at-namm-2017.html" rel="alternate" type="text/html" title="guitarbage traveler guitar at namm 2017" /><published>2017-01-21T09:56:43+01:00</published><updated>2017-01-21T09:56:43+01:00</updated><id>http://localhost:4000/2017/01/21/guitarbage-traveler-guitar-at-namm-2017</id><content type="html" xml:base="http://localhost:4000/2017/01/21/guitarbage-traveler-guitar-at-namm-2017.html">&lt;img src=&quot;/tumblr_files/tumblr_ok4f5eUWhi1r80ikgo1_1280.jpg&quot;/&gt;&lt;br/&gt;&lt;img src=&quot;/tumblr_files/tumblr_ok4f5eUWhi1r80ikgo2_1280.jpg&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;&lt;a href=&quot;http://guitarbage.com/post/156160330017/traveler-guitar-at-namm-2017&quot; class=&quot;tumblr_blog&quot;&gt;guitarbage&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Traveler Guitar at NAMM 2017&lt;br/&gt;&lt;/p&gt;&lt;/blockquote&gt;</content><author><name></name></author><category term="music" /><category term="guitar" /><summary type="html">guitarbage:</summary></entry></feed>
