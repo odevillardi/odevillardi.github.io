@@ -32,7 +32,7 @@
 				</p>
 				<p class="text-overflow">
 					{% for tag in page.tags %}
-						<a class="button button-xs button-primary text-capitalize {{ tag }}" href="{{ tag.url }}" role="button">
+						<a class="button button-xs button-primary text-capitalize {{ tag }}" href="/tag/{{ tag }}.html" role="button">
 							{{ tag }}
 						</a>
 					{% endfor %}
