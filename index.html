@@ -1,5 +1,6 @@
 ---
-title: Olivier de Villardi — ≈ un blog
+title: Olivier de Villardi
+subtitle: Blog à part
 ---
 {% include head.html %}
 
@@ -14,7 +15,7 @@ title: Olivier de Villardi — ≈ un blog
            					{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg 1x"
            sizes="96px"
            src="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg">
-		<h1>≈ un blog</h1>
+		<h1>{{ page.subtitle }}</h1>
 		<p class="lead text-overflow">Éducation, web, vegan, design, sport, low-tech, musique, environnement…</p>
 	</div>
 
@@ -32,7 +33,7 @@ title: Olivier de Villardi — ≈ un blog
 					<div class="eight columns lead caption">
 						<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 						{{ post.excerpt }}
-						<a href="{{ post.url }}">[Lire la suite]</a>
+						<a href="{{ post.url }}#more">[Lire la suite]</a>
 					</div>
 				{% else %}
 					{% if post.layout == "text" %}
