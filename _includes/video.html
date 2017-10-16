@@ -1,0 +1,9 @@
+{% if !post %}
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe width="700" height="394" src="{{ post.video_url }}" frameborder="0" allowfullscreen></iframe>
+</div>
+{% else %}
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe width="700" height="394" src="{{ page.video_url }}" frameborder="0" allowfullscreen></iframe>
+</div>
+{% endif %}

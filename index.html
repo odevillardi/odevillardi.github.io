@@ -19,9 +19,11 @@ subtitle: Blog à part
 		<p class="lead text-overflow">Éducation, web, vegan, design, sport, low-tech, musique, environnement…</p>
 	</div>
 
+	<div class="posts">
 	{% for post in paginator.posts %}
 		{% include posts.html %}
 	{% endfor %}
+	</div>
 </div>
 
 {% include foot.html %}

@@ -35,6 +35,8 @@ h4 { font-size: 100%; }
 h2, h3, h4, h5, h6 { margin-top: 3.2rem; }
 h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child { margin-top: 0; }
 
+.big-title { padding: 3.2rem 0 0 0; }
+
 figcaption { font-style: italic; text-align: center; font-size: 1.5rem; margin-bottom: 1rem; }
 
 /* IMG UTILITIES */
@@ -73,7 +75,7 @@ h1.tag.energy::after, .button-primary:first-child.energy::after { content: " ↯
 
 h1.tag.web::after, .button-primary:first-child.web::after { content: " @"; }
 
-h1.tag::after { font-weight: normal; opacity: 0.5; font-style: normal; }
+h1.tag::after { font-weight: normal; opacity: 0.2; font-style: normal; }
 
 /* Lists styling */
 .list-inline li { display: inline; }
@@ -102,11 +104,10 @@ ul.chat li, ol.notes li { list-style-type: none; }
 .header a { text-decoration: none; margin: 1rem 0; }
 
 /* Parts styling */
-.big-title { padding: 3.2rem 0 0 0; }
-
 .part:not(.video) { padding: 3.2rem 0; }
 
-.part:not(:first-child):not(.navigation) { margin-top: 3.2rem; border-top: 1px solid #eee; }
+.part:not(:first-child):not(.navigation) { margin-top: 3.2rem; }
+.part:not(:first-child):not(.navigation):not(.video) { border-top: 1px solid #eee; }
 
 .caption { overflow: hidden; margin-top: 1.6rem; }
 
@@ -145,4 +146,4 @@ blockquote.quote { font-family: serif; font-size: 200%; font-style: italic; }
 
 #contact:target { margin-top: 0; transition: all 0.2s ease-in-out; }
 
-#twitter:hover ~ #mail-hello, #twitter:hover ~ #mail-pointfr, #web:hover ~ #mail-hello, #web:hover ~ #mail-arobase { opacity: 0.3; transition: opacity 0.25s ease-in-out; }
+#github:hover ~ #mail-hello, #github:hover ~ #mail-pointfr, #github:hover ~ #mail-arobase, #web:hover ~ #mail-hello, #web:hover ~ #mail-arobase { opacity: 0.3; transition: opacity 0.25s ease-in-out; }

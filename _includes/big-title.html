@@ -1,0 +1,7 @@
+<div class="big-title text-center">
+	{% if page.title == "no title" %}
+		<h1>{{ page.date | date: "%d/%m/%Y" }}</h1>
+	{% else %}
+		<h1 {% if page.tag %}class="tag {{ page.tag }}"{% endif%}>{{ page.title }}</h1>
+	{% endif %}
+</div>

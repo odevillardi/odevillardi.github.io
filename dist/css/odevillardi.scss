@@ -64,6 +64,8 @@ h2, h3, h4, h5, h6 {
   &:first-child { margin-top: 0; };
 }
 
+.big-title { padding: 3.2rem 0 0 0; }
+
 figcaption {
   font-style: italic;
   text-align: center;
@@ -176,7 +178,7 @@ h1.tag.web::after,
 
 h1.tag::after {
     font-weight: normal;
-    opacity: 0.5;
+    opacity: 0.2;
     font-style: normal;
 }
 
@@ -239,12 +241,11 @@ ol.notes li {
 }
 
 /* Parts styling */
-.big-title { padding: 3.2rem 0 0 0; }
 .part:not(.video) { padding: 3.2rem 0; }
 
 .part:not(:first-child):not(.navigation) {
     margin-top: 3.2rem;
-    border-top: 1px solid $alternate-color;
+    &:not(.video) { border-top: 1px solid $alternate-color; }
 }
 
 .caption { 
@@ -382,8 +383,9 @@ blockquote.quote {
   transition: all 0.2s ease-in-out;
 }
 
-#twitter:hover ~ #mail-hello,
-#twitter:hover ~ #mail-pointfr,
+#github:hover ~ #mail-hello,
+#github:hover ~ #mail-pointfr,
+#github:hover ~ #mail-arobase,
 #web:hover ~ #mail-hello,
 #web:hover ~ #mail-arobase {
   opacity: 0.3;
