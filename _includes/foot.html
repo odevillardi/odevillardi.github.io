@@ -1,30 +1,26 @@
-	<div class="navigation part text-center">
-
-		<p>
-			{% if paginator.previous_page_path %}
-			<a class="button button-default" href="{{ paginator.previous_page_path }}" role="button">&laquo; Plus r&eacute;cent</a>
-			{% endif %}
-			{% if paginator.next_page_path %}
-			<a class="button button-default" href="{{ paginator.next_page_path }}" role="button">Plus ancien &raquo;</a>
-			{% endif %}
-
-			{% if page.next %}
-			<a class="button button-default" href="{{ page.next.url }}" role="button">&laquo; Billet suivant</a>
-			{% endif %}
-			{% if page.previous %}
-			<a class="button button-default" href="{{ page.previous.url }}" role="button">Billet pr&eacute;c&eacute;dent &raquo;</a>
-			{% endif %}
-		</p>
-
-
-		<footer>
-	    	<ul class="list-inline">
-	        	<li>Hébergé par GitHub Pages</li>
-	        	<li><a href="http://creativecommons.org/licenses/by-sa/4.0/">cc by-sa 4.0</a></li>
-	    	</ul>
-		</footer>
-	</div> <!-- .part -->
-
-	</div> <!-- .container -->
-  </body>
+			</div> <!-- .content-->
+			<div class="navigation part text-center">
+				<p>
+					{% if paginator.previous_page_path %}
+					<a class="button button-default" href="{{ paginator.previous_page_path }}" role="button">&laquo; Plus r&eacute;cent</a>
+					{% endif %}
+					{% if paginator.next_page_path %}
+					<a class="button button-default" href="{{ paginator.next_page_path }}" role="button">Plus ancien &raquo;</a>
+					{% endif %}
+					{% if page.next %}
+					<a class="button button-default" href="{{ page.next.url }}" role="button">&laquo; Billet suivant</a>
+					{% endif %}
+					{% if page.previous %}
+					<a class="button button-default" href="{{ page.previous.url }}" role="button">Billet pr&eacute;c&eacute;dent &raquo;</a>
+					{% endif %}
+				</p>
+				<footer>
+					<ul class="list-inline">
+						<li>Hébergé par GitHub Pages</li>
+						<li><a href="http://creativecommons.org/licenses/by-sa/4.0/">cc by-sa 4.0</a></li>
+					</ul>
+				</footer>
+			</div> <!-- .part -->
+		</div> <!-- .container -->
+  	</body>
 </html>

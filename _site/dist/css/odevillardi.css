@@ -16,6 +16,8 @@ p, ul { margin: 0 0 1rem; }
 
 .text-center { text-align: center; }
 
+.text-overflow { overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
+
 .lead { font-size: 2rem; }
 
 .hidden { display: none; }
@@ -37,10 +39,10 @@ h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
 
 .big-title { padding: 3.2rem 0 0 0; }
 
-figcaption { font-style: italic; text-align: center; font-size: 1.5rem; margin-bottom: 1rem; }
-
 /* IMG UTILITIES */
-figure, img, .img { margin: 0; max-width: 100%; }
+figure, img, .img, iframe { margin: 0; max-width: 100%; }
+
+figcaption { font-style: italic; text-align: center; font-size: 1.5rem; margin-bottom: 1rem; }
 
 a.thumbnail img, img.thumbnail { padding: 1px; border: 1px solid #eee; margin: 0; }
 
@@ -51,8 +53,6 @@ a.thumbnail:hover img { border-color: #5289db; }
 .img-circle { border-radius: 50%; }
 
 .avatar { margin-top: 1.6rem; }
-
-.text-overflow { overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
 /* Boutons */
 .button:hover { text-decoration: none; }
@@ -67,15 +67,27 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .button-primary:first-child.vegan:hover, .button-primary:first-child.vegan:focus, .button-primary:first-child.environment:hover, .button-primary:first-child.environment:focus, .button-primary:first-child.energy:hover, .button-primary:first-child.energy:focus, .button-primary:first-child.cop21:hover, .button-primary:first-child.cop21:focus, .button-primary:first-child.agriculture:hover, .button-primary:first-child.agriculture:focus, .button-primary:first-child.recycle:hover, .button-primary:first-child.recycle:focus, .button-primary:first-child.water:hover, .button-primary:first-child.water:focus { color: #fff; border-color: #45993c; background-color: #45993c; }
 
-h1.tag.music::after, .button-primary:first-child.music::after { content: " ♫"; }
+.tag.food h1::before, .button-primary:first-child.food::after { content: " ☺"; }
 
-h1.tag.recycle::after, .button-primary:first-child.recycle::after { content: " ↺"; }
+.tag.music h1::before, .button-primary:first-child.music::after { content: " ♫"; }
 
-h1.tag.energy::after, .button-primary:first-child.energy::after { content: " ↯"; }
+.tag.vegan h1::before, .button-primary:first-child.vegan::after { content: " ♘"; }
 
-h1.tag.web::after, .button-primary:first-child.web::after { content: " @"; }
+.tag.sport h1::before, .button-primary:first-child.sport::after { content: " ♕"; }
 
-h1.tag::after { font-weight: normal; opacity: 0.2; font-style: normal; }
+.tag.design h1::before, .button-primary:first-child.design::after { content: " ✎"; }
+
+.tag.maths h1::before, .button-primary:first-child.maths::after { content: " ∅"; }
+
+.tag.environment h1::before, .button-primary:first-child.environment::after { content: " ☷"; }
+
+.tag.recycle h1::before, .button-primary:first-child.recycle::after { content: " ↺"; }
+
+.tag.energy h1::before, .button-primary:first-child.energy::after { content: " ↯"; }
+
+.tag.web h1::before, .button-primary:first-child.web::after { content: " @"; }
+
+.tag h1::before { color: #5289db; display: block; font-size: 96px; font-style: normal; opacity: 0.75; }
 
 /* Lists styling */
 .list-inline li { display: inline; }
@@ -93,7 +105,6 @@ ul.chat li, ol.notes li { list-style-type: none; }
 
 /* VIDEO RESPONSIVE */
 .embed-responsive { position: relative; display: block; height: 0; padding: 0; overflow: hidden; }
-
 .embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
 .embed-responsive-16by9 { padding-bottom: 56.25%; }

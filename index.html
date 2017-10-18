@@ -3,27 +3,29 @@ title: Olivier de Villardi
 subtitle: Blog à part
 ---
 {% include head.html %}
-
-<div class="u-cf"></div>
-
-<div class="content">
-	<div class="text-center">
-		<img class="img-circle avatar"
-           alt="Photo de profil"
-           srcset=" {{ site.baseurl }}/dist/img/Olivier-de-Villardi-288.jpg 3x,
-           					{{ site.baseurl }}/dist/img/Olivier-de-Villardi-192.jpg 2x,
-           					{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg 1x"
-           sizes="96px"
-           src="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg">
-		<h1>{{ page.subtitle }}</h1>
-		<p class="lead text-overflow">Éducation, web, vegan, design, sport, low-tech, musique, environnement…</p>
-	</div>
-
-	<div class="posts">
-	{% for post in paginator.posts %}
-		{% include posts.html %}
-	{% endfor %}
-	</div>
+<div class="text-center">
+	<img class="img-circle avatar"
+		alt="Photo de profil"
+		srcset="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-288.jpg 3x,
+       			{{ site.baseurl }}/dist/img/Olivier-de-Villardi-192.jpg 2x,
+       			{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg 1x"
+		sizes="96px"
+		src="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg">
+	<h1>{{ page.subtitle }}</h1>
+	<p class="text-overflow">
+		<a href="{{ site.baseurl }}/tag/web.html">Web</a>,
+		<a href="{{ site.baseurl }}/tag/music.html">musique</a>,
+		<a href="{{ site.baseurl }}/tag/vegan.html">vegan</a>,
+		<a href="{{ site.baseurl }}/tag/permaculture.html">permaculture</a>,
+		<a href="{{ site.baseurl }}/tag/design.html">design</a>,
+		<a href="{{ site.baseurl }}/tag/sport.html">sport</a>,
+		<a href="{{ site.baseurl }}/tag/low tech.html">low tech</a>,
+		<a href="{{ site.baseurl }}/tag/environment.html">environnement</a>…
+	</p>
 </div>
-
+<div class="posts">
+{% for post in paginator.posts %}
+	{% include posts.html %}
+{% endfor %}
+</div>
 {% include foot.html %}

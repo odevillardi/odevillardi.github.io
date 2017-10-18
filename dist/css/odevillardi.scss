@@ -36,6 +36,14 @@ p, ul { margin: 0 0 1rem; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 
+.text-overflow {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    hyphens: auto;
+}
+
 .lead { font-size: 2rem; }
 
 .hidden { display: none; }
@@ -66,19 +74,20 @@ h2, h3, h4, h5, h6 {
 
 .big-title { padding: 3.2rem 0 0 0; }
 
+/* IMG UTILITIES */
+figure,
+img,
+.img,
+iframe {
+    margin: 0;
+    max-width: 100%;
+}
+
 figcaption {
   font-style: italic;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-}
-
-/* IMG UTILITIES */
-figure,
-img,
-.img {
-    margin: 0;
-    max-width: 100%;
 }
 
 a.thumbnail img, 
@@ -92,14 +101,6 @@ a.thumbnail:hover img { border-color: $main-color; }
 
 .img-circle { border-radius: 50%; }
 .avatar { margin-top: 1.6rem; }
-
-.text-overflow {
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    hyphens: auto;
-}
 
 /* Boutons */
 .button:hover { text-decoration: none; }
@@ -156,30 +157,62 @@ a.thumbnail:hover img { border-color: $main-color; }
     background-color: $green-color;
 }
 
-h1.tag.music::after,
+.tag.food h1::before,
+.button-primary:first-child.food::after { 
+    content: " ☺";
+}
+
+.tag.music h1::before,
 .button-primary:first-child.music::after { 
     content: " ♫";
 }
 
-h1.tag.recycle::after,
+.tag.vegan h1::before,
+.button-primary:first-child.vegan::after { 
+    content: " ♘";
+}
+
+.tag.sport h1::before,
+.button-primary:first-child.sport::after { 
+    content: " ♕";
+}
+
+.tag.design h1::before,
+.button-primary:first-child.design::after { 
+    content: " ✎";
+}
+
+.tag.maths h1::before,
+.button-primary:first-child.maths::after { 
+    content: " ∅";
+}
+
+.tag.environment h1::before,
+.button-primary:first-child.environment::after { 
+    content: " ☷";
+}
+
+.tag.recycle h1::before,
 .button-primary:first-child.recycle::after { 
     content: " ↺";
 }
 
-h1.tag.energy::after,
+.tag.energy h1::before,
 .button-primary:first-child.energy::after { 
     content: " ↯";
 }
 
-h1.tag.web::after,
+.tag.web h1::before,
 .button-primary:first-child.web::after { 
     content: " @";
 }
 
-h1.tag::after {
-    font-weight: normal;
-    opacity: 0.2;
-    font-style: normal;
+.tag h1::before {
+  color: $main-color;
+  display: block;
+  font-size: 96px;
+  font-style: normal;
+  opacity: 0.75;
 }
 
 /* Lists styling */
@@ -214,20 +247,16 @@ ol.notes li {
   height: 0;
   padding: 0;
   overflow: hidden;
-}
 
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+  .embed-responsive-item, iframe, embed, object, video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 }
 
 .embed-responsive-16by9 { padding-bottom: 56.25%; }
