@@ -69,27 +69,59 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .button-primary:first-child.vegan:hover, .button-primary:first-child.vegan:focus, .button-primary:first-child.environment:hover, .button-primary:first-child.environment:focus, .button-primary:first-child.energy:hover, .button-primary:first-child.energy:focus, .button-primary:first-child.cop21:hover, .button-primary:first-child.cop21:focus, .button-primary:first-child.agriculture:hover, .button-primary:first-child.agriculture:focus, .button-primary:first-child.recycle:hover, .button-primary:first-child.recycle:focus, .button-primary:first-child.water:hover, .button-primary:first-child.water:focus { color: #fff; border-color: #45993c; background-color: #45993c; }
 
-.tag.food h1::before, .button-primary:first-child.food::after { content: " ☺"; }
+.tag.agriculture h1::before, .button-primary:first-child.agriculture::after { content: " ☼"; }
 
-.tag.music h1::before, .button-primary:first-child.music::after { content: " ♫"; }
-
-.tag.vegan h1::before, .button-primary:first-child.vegan::after { content: " ♘"; }
-
-.tag.sport h1::before, .button-primary:first-child.sport::after { content: " ♕"; }
+.tag.antispecism h1::before, .button-primary:first-child.antispecism::after { content: " ☮"; }
 
 .tag.design h1::before, .button-primary:first-child.design::after { content: " ✎"; }
 
-.tag.maths h1::before, .button-primary:first-child.maths::after { content: " ∅"; }
+.tag.diy h1::before, .button-primary:first-child.diy::after { content: " ⚠"; }
 
-.tag.environment h1::before, .button-primary:first-child.environment::after { content: " ☷"; }
+.tag.economy h1::before, .button-primary:first-child.economy::after { content: " $"; }
 
-.tag.recycle h1::before, .button-primary:first-child.recycle::after { content: " ↺"; }
+.tag.education h1::before, .button-primary:first-child.education::after { content: " ℇ"; }
 
 .tag.energy h1::before, .button-primary:first-child.energy::after { content: " ↯"; }
 
+.tag.environment h1::before, .button-primary:first-child.environment::after { content: " ☷"; }
+
+.tag.food h1::before, .button-primary:first-child.food::after { content: " ☺"; }
+
+.tag.guitar h1::before, .button-primary:first-child.guitar::after { content: " ♬"; }
+
+.tag.lettering h1::before, .button-primary:first-child.lettering::after { content: " ℒ"; }
+
+.tag.low.tech h1::before, .button-primary:first-child.low.tech::after { content: " ␥"; }
+
+.tag.maths h1::before, .button-primary:first-child.maths::after { content: " ÷"; }
+
+.tag.moon h1::before, .button-primary:first-child.moon::after { content: " ☾"; }
+
+.tag.music h1::before, .button-primary:first-child.music::after { content: " ♫"; }
+
+.tag.parisweb h1::before, .button-primary:first-child.parisweb::after { content: " #"; }
+
+.tag.permaculture h1::before, .button-primary:first-child.permaculture::after { content: " ☀"; }
+
+.tag.pixel.art h1::before { content: " ▓"; }
+
+.tag.politics h1::before, .button-primary:first-child.politics::after { content: " ♗"; }
+
+.tag.recycle h1::before, .button-primary:first-child.recycle::after { content: " ↺"; }
+
+.tag.sport h1::before, .button-primary:first-child.sport::after { content: " ♕"; }
+
+.tag.typography h1::before, .button-primary:first-child.typography::after { content: " ﬃ"; }
+
+.tag.vegan h1::before, .button-primary:first-child.vegan::after { content: " ♘"; }
+
+.tag.water h1::before, .button-primary:first-child.water::after { content: " ☂"; }
+
 .tag.web h1::before, .button-primary:first-child.web::after { content: " @"; }
 
-.tag h1::before { color: #5289db; display: block; font-size: 96px; font-style: normal; opacity: 0.75; }
+.button-primary::after { font-family: Georgia, serif; }
+
+.tag h1::before { font-family: Georgia, serif; color: #5289db; display: block; font-size: 96px; font-style: normal; opacity: 0.75; }
 
 /* Lists styling */
 .list-inline li { display: inline; }
