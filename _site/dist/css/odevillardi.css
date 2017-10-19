@@ -16,6 +16,8 @@ p, ul { margin: 0 0 1rem; }
 
 .text-center { text-align: center; }
 
+.text-capitalize { text-transform: capitalize; }
+
 .text-overflow { overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
 .lead { font-size: 2rem; }

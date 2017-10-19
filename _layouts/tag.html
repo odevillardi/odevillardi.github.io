@@ -3,7 +3,17 @@
 ---
 {% include head.html %}
 
-{% include big-title.html %}
+<div class="text-center">
+	{% include big-title.html %}
+
+	<p class="text-overflow">
+		<ul class="list-inline text-capitalize">
+			{% for subtag in page.subtags %}
+				<li><a href="{{ site.baseurl }}/tag/{{ subtag }}.html">{{ subtag }}</a></li>
+			{% endfor %}
+		</ul>
+	</p>
+</div>
 
 <div class="posts">
 	{% for post in site.tags[page.tag] %}
