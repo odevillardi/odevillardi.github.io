@@ -350,7 +350,7 @@ ol.notes li {
 }
 
 /* Parts styling */
-.part:not(.video) { padding: 3.2rem 0; }
+.part:not(.video:not(:first-child)) { padding: 3.2rem 0; }
 
 .part:not(:first-child):not(.navigation) {
     margin-top: 3.2rem;
@@ -486,6 +486,7 @@ blockquote.quote {
 }
 
 .contact a:hover { text-decoration: none; }
+.contact * { transition: opacity 0.25s ease-in-out; }
 
 #contact:target {
   margin-top: 0;
