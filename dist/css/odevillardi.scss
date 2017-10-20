@@ -6,7 +6,7 @@
 
 $background-color: #fff;
 $alternate-color: #eee;
-$text-color: #000;
+$text-color: #1A1A1A;
 $main-color: #5289db;
 $link-color: #5289db;
 $link-color-hover: #426eaf;
@@ -32,10 +32,10 @@ a {
 }
 
 p, ul { margin: 0 0 1rem; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-center { text-align: center; }
-.text-capitalize { text-transform: capitalize; }
+.text-left        { text-align: left; }
+.text-right       { text-align: right; }
+.text-center      { text-align: center; }
+.text-capitalize  { text-transform: capitalize; }
 
 .text-overflow {
     overflow: hidden;
@@ -56,14 +56,10 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 1.6rem;
 
     small { opacity: 0.5; }
-}
-
-h1 { 
-    font-size: 300%;
-
     &.tag { text-transform: capitalize; }
 }
 
+h1 { font-size: 300%; }
 h2 { font-size: 175%; }
 h3 { font-size: 125%; }
 h4 { font-size: 100%; }
@@ -101,7 +97,6 @@ a.thumbnail img { border-color: #aaa; }
 a.thumbnail:hover img { border-color: $main-color; }
 
 .img-circle { border-radius: 50%; }
-.avatar { margin-top: 1.6rem; }
 
 /* Boutons */
 .button:hover { text-decoration: none; }
@@ -133,6 +128,7 @@ a.thumbnail:hover img { border-color: $main-color; }
 .button-primary:first-child.energy,
 .button-primary:first-child.cop21,
 .button-primary:first-child.agriculture,
+.button-primary:first-child.permaculture,
 .button-primary:first-child.recycle,
 .button-primary:first-child.water {
     color: $green-color;
@@ -149,6 +145,8 @@ a.thumbnail:hover img { border-color: $main-color; }
 .button-primary:first-child.cop21:focus,
 .button-primary:first-child.agriculture:hover,
 .button-primary:first-child.agriculture:focus,
+.button-primary:first-child.permaculture:hover,
+.button-primary:first-child.permaculture:focus,
 .button-primary:first-child.recycle:hover,
 .button-primary:first-child.recycle:focus,
 .button-primary:first-child.water:hover,
@@ -314,11 +312,6 @@ ul.chat,
 ul.chat li,
 ol.notes li {
     list-style-type: none;
-}
-
-/* For avatar in notes */
-#tumblr-notes img { margin: 0 10px 0 0; }
-
 
 /* VIDEO RESPONSIVE */
 .embed-responsive {
@@ -370,68 +363,38 @@ ol.notes li {
     font-size: 1.4rem;
 }
  
-.video .stickers,
-.panorama .stickers {
+.video .stickers {
     margin-top: 1.6rem;
 }
 
 @media (max-width: 399px) {
-    .part.video .row,
-    .part.photo .row,
-    .part.panorama .row {
+    .part.video .row{
         margin: 0 -20px;
     }
     
     .part.video .caption,
-    .part.video .stickers,
-    .part.panorama .caption,
-    .part.panorama .stickers,
-    .part.photo .caption,
-    .part.photo .stickers {
+    .part.video .stickers {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
-    .part.video .row,
-    .part.photo .row,
-    .part.panorama .row {
+    .part.video .row {
         margin: 0 -5.55556%;
     }
     
     .part.video .caption,
-    .part.video .stickers,
-    .part.panorama .caption,
-    .part.panorama .stickers,
-    .part.photo .caption,
-    .part.photo .stickers {
-        padding-left: 5.55556%;
+    .part.video .stickers {
+        padding-left:  5.55556%;
         padding-right: 5.55556%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .part.video .row,
-    .part.panorama .row {
-        margin: 0 -8.82353%;
-    }
-    .part.photo .row {
-        margin-left: -8.82353%;
-    }
-    
-    .part.video .caption,
-    .part.panorama .caption {
-        padding-left: 8.82353%;
-    }
-    .part.photo .caption {
-        padding-left: 8.82353%;
-    }
-    
-    .part.video .stickers,
-    .part.panorama .stickers {
-        padding-right: 8.82353%;
-    }
+    .part.video .row         {  margin: 0 -8.82353%; }
+    .part.video .caption   { padding-left: 8.82353%; }
+    .part.video .stickers { padding-right: 8.82353%; }
 }
 
 @media (max-width: 767px) {
@@ -445,9 +408,7 @@ ol.notes li {
 
 @media (min-width: 768px) {
      .video .stickers,
-     .panorama .stickers,
-     .video .caption,
-     .panorama .caption {
+     .video .caption {
         margin-top: 3.2rem;
      }
 }

@@ -3,7 +3,7 @@
 @import url(normalize.css);
 @import url(skeleton.css);
 /* TEXT UTILITIES */
-body { background-color: #fff; color: #000; font-family: 'Lato', Helvetica, Arial, sans-serif; -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; }
+body { background-color: #fff; color: #1A1A1A; font-family: 'Lato', Helvetica, Arial, sans-serif; -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; }
 
 a { color: #5289db; text-decoration: none; }
 a:hover { color: #426eaf; text-decoration: underline; }
@@ -26,9 +26,9 @@ p, ul { margin: 0 0 1rem; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Volkhov', Georgia, serif; font-weight: 700; font-style: italic; margin-top: 1.6rem; }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { opacity: 0.5; }
+h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
 
 h1 { font-size: 300%; }
-h1.tag { text-transform: capitalize; }
 
 h2 { font-size: 175%; }
 
@@ -54,8 +54,6 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .img-circle { border-radius: 50%; }
 
-.avatar { margin-top: 1.6rem; }
-
 /* Boutons */
 .button:hover { text-decoration: none; }
 
@@ -65,9 +63,9 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .button.button-xs { font-size: 1.4rem; height: 2rem; line-height: 1.4rem; padding: 0.2rem 0.5rem; font-variant: normal; text-transform: capitalize; font-weight: normal; letter-spacing: 0rem; }
 
-.button-primary:first-child.vegan, .button-primary:first-child.environment, .button-primary:first-child.energy, .button-primary:first-child.cop21, .button-primary:first-child.agriculture, .button-primary:first-child.recycle, .button-primary:first-child.water { color: #45993c; border-color: #45993c; }
+.button-primary:first-child.vegan, .button-primary:first-child.environment, .button-primary:first-child.energy, .button-primary:first-child.cop21, .button-primary:first-child.agriculture, .button-primary:first-child.permaculture, .button-primary:first-child.recycle, .button-primary:first-child.water { color: #45993c; border-color: #45993c; }
 
-.button-primary:first-child.vegan:hover, .button-primary:first-child.vegan:focus, .button-primary:first-child.environment:hover, .button-primary:first-child.environment:focus, .button-primary:first-child.energy:hover, .button-primary:first-child.energy:focus, .button-primary:first-child.cop21:hover, .button-primary:first-child.cop21:focus, .button-primary:first-child.agriculture:hover, .button-primary:first-child.agriculture:focus, .button-primary:first-child.recycle:hover, .button-primary:first-child.recycle:focus, .button-primary:first-child.water:hover, .button-primary:first-child.water:focus { color: #fff; border-color: #45993c; background-color: #45993c; }
+.button-primary:first-child.vegan:hover, .button-primary:first-child.vegan:focus, .button-primary:first-child.environment:hover, .button-primary:first-child.environment:focus, .button-primary:first-child.energy:hover, .button-primary:first-child.energy:focus, .button-primary:first-child.cop21:hover, .button-primary:first-child.cop21:focus, .button-primary:first-child.agriculture:hover, .button-primary:first-child.agriculture:focus, .button-primary:first-child.permaculture:hover, .button-primary:first-child.permaculture:focus, .button-primary:first-child.recycle:hover, .button-primary:first-child.recycle:focus, .button-primary:first-child.water:hover, .button-primary:first-child.water:focus { color: #fff; border-color: #45993c; background-color: #45993c; }
 
 .tag.agriculture h1::before, .button-primary:first-child.agriculture::after { content: " ☼"; }
 
@@ -158,20 +156,18 @@ ul.chat li, ol.notes li { list-style-type: none; }
 
 .stickers { position: -webkit-sticky; position: sticky; top: 3.2rem; padding: -3.2rem 0 0 0; font-size: 1.4rem; }
 
-.video .stickers, .panorama .stickers { margin-top: 1.6rem; }
+.video .stickers { margin-top: 1.6rem; }
 
-@media (max-width: 399px) { .part.video .row, .part.photo .row, .part.panorama .row { margin: 0 -20px; }
-  .part.video .caption, .part.video .stickers, .part.panorama .caption, .part.panorama .stickers, .part.photo .caption, .part.photo .stickers { padding-left: 20px; padding-right: 20px; } }
-@media (min-width: 400px) and (max-width: 767px) { .part.video .row, .part.photo .row, .part.panorama .row { margin: 0 -5.55556%; }
-  .part.video .caption, .part.video .stickers, .part.panorama .caption, .part.panorama .stickers, .part.photo .caption, .part.photo .stickers { padding-left: 5.55556%; padding-right: 5.55556%; } }
-@media (min-width: 768px) and (max-width: 1023px) { .part.video .row, .part.panorama .row { margin: 0 -8.82353%; }
-  .part.photo .row { margin-left: -8.82353%; }
-  .part.video .caption, .part.panorama .caption { padding-left: 8.82353%; }
-  .part.photo .caption { padding-left: 8.82353%; }
-  .part.video .stickers, .part.panorama .stickers { padding-right: 8.82353%; } }
+@media (max-width: 399px) { .part.video .row { margin: 0 -20px; }
+  .part.video .caption, .part.video .stickers { padding-left: 20px; padding-right: 20px; } }
+@media (min-width: 400px) and (max-width: 767px) { .part.video .row { margin: 0 -5.55556%; }
+  .part.video .caption, .part.video .stickers { padding-left: 5.55556%; padding-right: 5.55556%; } }
+@media (min-width: 768px) and (max-width: 1023px) { .part.video .row { margin: 0 -8.82353%; }
+  .part.video .caption { padding-left: 8.82353%; }
+  .part.video .stickers { padding-right: 8.82353%; } }
 @media (max-width: 767px) { .row { overflow: hidden; }
   .stickers { text-align: center; margin-top: 1.6rem; } }
-@media (min-width: 768px) { .video .stickers, .panorama .stickers, .video .caption, .panorama .caption { margin-top: 3.2rem; } }
+@media (min-width: 768px) { .video .stickers, .video .caption { margin-top: 3.2rem; } }
 /* Quotes */
 blockquote { margin: 0; padding-left: 3rem; font-size: inherit; border-left: 5px solid #eee; }
 
