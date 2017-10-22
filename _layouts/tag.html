@@ -2,22 +2,17 @@
 
 ---
 {% include head.html %}
-
-<div class="text-center">
-	{% include big-title.html %}
-	<p class="text-overflow">
-		<ul class="list-inline text-capitalize">
-			{% for subtag in page.subtags %}
-				<li><a href="{{ site.baseurl }}/tag/{{ subtag }}.html">{{ subtag }}</a></li>
-			{% endfor %}
-		</ul>
-	</p>
+{% include big-title.html title=page.title %}
+<div class="text-overflow text-center">
+	<ul class="list-inline text-capitalize">
+		{% for subtag in page.subtags %}
+			<li><a href="{{ site.baseurl }}/tag/{{ subtag }}.html">{{ subtag }}</a></li>
+		{% endfor %}
+	</ul>
 </div>
-
 <div class="posts">
 	{% for post in site.tags[page.tag] %}
 		{% include posts.html %}
 	{% endfor %}
 </div>
-
 {% include foot.html %}

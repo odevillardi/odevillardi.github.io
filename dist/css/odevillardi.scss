@@ -21,11 +21,11 @@ body {
     font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual ;
 }
 
-a { 
+a {
   color: $main-color;
   text-decoration: none;
 
-  &:hover { 
+  &:hover {
     color: $link-color-hover;
     text-decoration: underline;
   }
@@ -87,9 +87,9 @@ figcaption {
   margin-bottom: 1rem;
 }
 
-a.thumbnail img, 
+a.thumbnail img,
 img.thumbnail {
-    padding: 1px; 
+    padding: 1px;
     border: 1px solid $alternate-color;
     margin: 0;
 }
@@ -101,14 +101,14 @@ a.thumbnail:hover img { border-color: $main-color; }
 /* Boutons */
 .button:hover { text-decoration: none; }
 
-.button.button-primary { 
+.button.button-primary {
     background-color: $background-color;
     color: $main-color;
     border: 1px solid $main-color;
 }
 
-.button.button-primary:hover { 
-    border-color: $main-color; 
+.button.button-primary:hover {
+    border-color: $main-color;
     background-color: $main-color;
 }
 
@@ -157,131 +157,131 @@ a.thumbnail:hover img { border-color: $main-color; }
 }
 
 .tag.agriculture h1::before,
-.button-primary:first-child.agriculture::after { 
+.button-primary:first-child.agriculture::after {
     content: " ☼";
 }
 
 .tag.antispecism h1::before,
-.button-primary:first-child.antispecism::after { 
+.button-primary:first-child.antispecism::after {
     content: " ☮";
 }
 
 .tag.design h1::before,
-.button-primary:first-child.design::after { 
+.button-primary:first-child.design::after {
     content: " ✎";
 }
 
 .tag.diy h1::before,
-.button-primary:first-child.diy::after { 
+.button-primary:first-child.diy::after {
     content: " ⚠";
 }
 
 .tag.economy h1::before,
-.button-primary:first-child.economy::after { 
+.button-primary:first-child.economy::after {
     content: " $";
 }
 
 .tag.education h1::before,
-.button-primary:first-child.education::after { 
+.button-primary:first-child.education::after {
     content: " ℇ";
 }
 
 .tag.energy h1::before,
-.button-primary:first-child.energy::after { 
+.button-primary:first-child.energy::after {
     content: " ↯";
 }
 
 .tag.environment h1::before,
-.button-primary:first-child.environment::after { 
+.button-primary:first-child.environment::after {
     content: " ☷";
 }
 
 .tag.food h1::before,
-.button-primary:first-child.food::after { 
+.button-primary:first-child.food::after {
     content: " ☰";
 }
 
 .tag.funny h1::before,
-.button-primary:first-child.funny::after { 
+.button-primary:first-child.funny::after {
     content: " ☺";
 }
 
 .tag.guitar h1::before,
-.button-primary:first-child.guitar::after { 
+.button-primary:first-child.guitar::after {
     content: " ♬";
 }
 
 .tag.lettering h1::before,
-.button-primary:first-child.lettering::after { 
+.button-primary:first-child.lettering::after {
     content: " ℒ";
 }
 
 .tag.low.tech h1::before,
-.button-primary:first-child.low.tech::after { 
+.button-primary:first-child.low.tech::after {
     content: " ␥";
 }
 
 .tag.maths h1::before,
-.button-primary:first-child.maths::after { 
+.button-primary:first-child.maths::after {
     content: " ÷";
 }
 
 .tag.moon h1::before,
-.button-primary:first-child.moon::after { 
+.button-primary:first-child.moon::after {
     content: " ☾";
 }
 
 .tag.music h1::before,
-.button-primary:first-child.music::after { 
+.button-primary:first-child.music::after {
     content: " ♫";
 }
 
 .tag.parisweb h1::before,
-.button-primary:first-child.parisweb::after { 
+.button-primary:first-child.parisweb::after {
     content: " #";
 }
 
 .tag.permaculture h1::before,
-.button-primary:first-child.permaculture::after { 
+.button-primary:first-child.permaculture::after {
     content: " ☀";
 }
 
-.tag.pixel.art h1::before { 
+.tag.pixel.art h1::before {
     content: " ▓";
 }
 
 .tag.politics h1::before,
-.button-primary:first-child.politics::after { 
+.button-primary:first-child.politics::after {
     content: " ♗";
 }
 
 .tag.recycle h1::before,
-.button-primary:first-child.recycle::after { 
+.button-primary:first-child.recycle::after {
     content: " ↺";
 }
 
 .tag.sport h1::before,
-.button-primary:first-child.sport::after { 
+.button-primary:first-child.sport::after {
     content: " ♕";
 }
 
 .tag.typography h1::before,
-.button-primary:first-child.typography::after  { 
+.button-primary:first-child.typography::after  {
     content: " ﬃ";
 }
 
 .tag.vegan h1::before,
-.button-primary:first-child.vegan::after { 
+.button-primary:first-child.vegan::after {
     content: " ♘";
 }
 
 .tag.water h1::before,
-.button-primary:first-child.water::after { 
+.button-primary:first-child.water::after {
     content: " ☂";
 }
 
 .tag.web h1::before,
-.button-primary:first-child.web::after { 
+.button-primary:first-child.web::after {
     content: " @";
 }
 
@@ -296,6 +296,7 @@ a.thumbnail:hover img { border-color: $main-color; }
   font-size: 96px;
   font-style: normal;
   opacity: 0.75;
+  margin-top: -1.3rem;
 }
 
 /* Lists styling */
@@ -308,7 +309,7 @@ ul.chat,
     margin: 0;
 }
 
-#tumblr-notes { 
+#tumblr-notes {
  padding: 20px;
  margin-top: 20px;
  background-color: $alternate-color;
@@ -356,7 +357,7 @@ ol.notes li {
     &:not(.video) { border-top: 1px solid $alternate-color; }
 }
 
-.caption { 
+.caption {
     overflow: hidden;
     margin-top: 1.6rem;
 }
@@ -368,7 +369,7 @@ ol.notes li {
     padding: -3.2rem 0 0 0;
     font-size: 1.4rem;
 }
- 
+
 .video .stickers {
     margin-top: 1.6rem;
 }
@@ -377,7 +378,7 @@ ol.notes li {
     .part.video .row{
         margin: 0 -20px;
     }
-    
+
     .part.video .caption,
     .part.video .stickers {
         padding-left: 20px;
@@ -389,7 +390,7 @@ ol.notes li {
     .part.video .row {
         margin: 0 -5.55556%;
     }
-    
+
     .part.video .caption,
     .part.video .stickers {
         padding-left:  5.55556%;
@@ -405,10 +406,10 @@ ol.notes li {
 
 @media (max-width: 767px) {
     .row { overflow: hidden; }
-    
-    .stickers { 
+
+    .stickers {
         text-align: center;
-        margin-top: 1.6rem; 
+        margin-top: 1.6rem;
     }
 }
 
@@ -420,7 +421,7 @@ ol.notes li {
 }
 
 /* Quotes */
-blockquote { 
+blockquote {
     margin: 0;
     padding-left: 3rem;
     font-size: inherit;

@@ -1,33 +1,18 @@
-{% if !post %}
 <div class="four columns stickers">
 	<p>
 		Par <a href="{{ site.baseurl }}/">Olivier</a>
 	</p>
 	<p>
-		le <time datetime="{{ post.date }}">{{ post.date | date: "%d/%m/%Y" }}</time> — <a href="{{ post.url }}">Permalien</a>
+		le <time datetime="{{ include.post.date }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
+		{% if !post %}
+			— <a href="{{ include.post.url }}">Permalien</a>
+		{% endif %}
 	</p>
 	<p>
-		{% for tag in post.tags %}
+		{% for tag in include.post.tags %}
 			<a class="button button-xs button-primary text-capitalize {{ tag }}" href="{{ site.baseurl }}/tag/{{ tag }}.html" role="button">
 				{{ tag }}
 			</a>
 		{% endfor %}
 	</p>
 </div>
-{% else %}
-<div class="four columns stickers">
-	<p>
-		Par <a href="{{ site.baseurl }}/">Olivier</a>
-	</p>
-	<p>
-		le <time datetime="{{ page.date }}">{{ page.date | date: "%d/%m/%Y" }}</time>
-	</p>
-	<p>
-		{% for tag in page.tags %}
-			<a class="button button-xs button-primary text-capitalize {{ tag }}" href="{{ site.baseurl }}/tag/{{ tag }}.html" role="button">
-				{{ tag }}
-			</a>
-		{% endfor %}
-	</p>
-</div>
-{% endif %}

@@ -5,20 +5,20 @@
 
 <div class="u-cf"></div>
 
-{% include big-title.html %}
+{% include big-title.html title=page.title %}
 
 <div class="posts">
 	<div class="part video">
 		<div class="row">
 			<div class="twelve columns lead">
-				{% include video.html %}
+				{% include video.html video_url=page.video_url %}
 			</div>
 		</div>
 		<div class="row">
 			<div class="eight columns lead caption">
 				{{ page.content }}
 			</div>
-			{% include sticker.html %}
+			{% include sticker.html post=page %}
 		</div>
 	</div>
 </div>

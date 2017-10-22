@@ -3,7 +3,7 @@
 ---
 {% include head.html %}
 
-{% include big-title.html %}
+{% include big-title.html title=page.title %}
 
 <div class="posts">
 	<div class="part text">
@@ -12,7 +12,7 @@
 				{{ page.content }}
 			</div>
 
-			{% include sticker.html %}
+			{% include sticker.html post=page %}
 
 		</div>
 	</div>

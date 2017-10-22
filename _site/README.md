@@ -1,3 +1,3 @@
-odevillardi.github.io
+odevillardi.fr
 =====================
-Test des github pages
+Blog à part

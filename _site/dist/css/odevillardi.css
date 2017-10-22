@@ -121,7 +121,7 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .button-primary::after { font-family: Georgia, serif; }
 
-.tag h1::before { font-family: Georgia, serif; color: #5289db; display: block; font-size: 96px; font-style: normal; opacity: 0.75; }
+.tag h1::before { font-family: Georgia, serif; color: #5289db; display: block; font-size: 96px; font-style: normal; opacity: 0.75; margin-top: -1.3rem; }
 
 /* Lists styling */
 .list-inline li { display: inline; }

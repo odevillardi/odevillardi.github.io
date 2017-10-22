@@ -2,7 +2,7 @@
   <div class="row">
     {% if post.layout == "video" %}
       <div class="twelve columns lead">
-        {% include video.html %}
+        {% include video.html video_url=post.video_url %}
       </div>
     </div>
     <div class="row">
@@ -18,7 +18,7 @@
       </div>
     {% endif %}
 
-    {% include sticker.html %}
+    {% include sticker.html post=post %}
 
     </div>
 </div>
