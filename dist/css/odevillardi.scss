@@ -293,10 +293,10 @@ a.thumbnail:hover img { border-color: $main-color; }
   font-family: Georgia, serif;
   color: $main-color;
   display: block;
-  font-size: 96px;
+  font-size: 99px;
   font-style: normal;
   opacity: 0.75;
-  margin-top: -1.3rem;
+  margin-top: -1.6rem;
 }
 
 /* Lists styling */
@@ -375,44 +375,40 @@ ol.notes li {
 }
 
 @media (max-width: 399px) {
-    .part.video .row{
-        margin: 0 -20px;
-    }
-
-    .part.video .caption,
-    .part.video .stickers {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .part.video .row { margin: 0 -20px; }
+  .part.video .caption,
+  .part.video .stickers {
+                  padding-left: 20px;
+                  padding-right:20px;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
-    .part.video .row {
-        margin: 0 -5.55556%;
-    }
-
-    .part.video .caption,
-    .part.video .stickers {
-        padding-left:  5.55556%;
-        padding-right: 5.55556%;
-    }
+  .part.video .row  { margin: 0 -5.55556%; }
+  .part.video .caption,
+  .part.video .stickers {
+                  padding-left:  5.55556%;
+                  padding-right: 5.55556%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .part.video .row         {  margin: 0 -8.82353%; }
-    .part.video .caption   { padding-left: 8.82353%; }
-    .part.video .stickers { padding-right: 8.82353%; }
+  .part.video .row         {  margin: 0 -8.82353%; }
+  .part.video .caption   { padding-left: 8.82353%; }
+  .part.video .stickers { padding-right: 8.82353%; }
 }
 
 @media (max-width: 767px) {
-    .row { overflow: hidden; }
+  .content { margin-top: 1.6rem; }
 
-    .stickers {
-        text-align: center;
-        margin-top: 1.6rem;
-    }
+  .row { overflow: hidden; }
 
-    .content { margin-top: 1.6rem; }
+  .big-title { padding: 0; }
+
+  .stickers {
+      text-align: center;
+      margin-top: 1.6rem;
+  }
 }
 
 @media (min-width: 768px) {
