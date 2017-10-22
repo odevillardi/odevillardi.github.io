@@ -198,6 +198,11 @@ a.thumbnail:hover img { border-color: $main-color; }
 
 .tag.food h1::before,
 .button-primary:first-child.food::after { 
+    content: " ☰";
+}
+
+.tag.funny h1::before,
+.button-primary:first-child.funny::after { 
     content: " ☺";
 }
 

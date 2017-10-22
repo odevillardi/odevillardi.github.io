@@ -83,7 +83,9 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .tag.environment h1::before, .button-primary:first-child.environment::after { content: " ☷"; }
 
-.tag.food h1::before, .button-primary:first-child.food::after { content: " ☺"; }
+.tag.food h1::before, .button-primary:first-child.food::after { content: " ☰"; }
+
+.tag.funny h1::before, .button-primary:first-child.funny::after { content: " ☺"; }
 
 .tag.guitar h1::before, .button-primary:first-child.guitar::after { content: " ♬"; }
 
