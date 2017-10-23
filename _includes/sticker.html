@@ -1,13 +1,12 @@
 <div class="four columns stickers">
 	<p>
-		Par <a href="{{ site.baseurl }}/">Olivier</a>
-	</p>
-	<p>
 		le <time datetime="{{ include.post.date }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
-		{% if !post %}
-			— <a href="{{ include.post.url }}">Permalien</a>
-		{% endif %}
 	</p>
+	{% if !post %}
+		<p>
+			<a href="{{ include.post.url }}">Permalien</a>
+		</p>
+	{% endif %}
 	<p>
 		{% for tag in include.post.tags %}
 			<a class="button button-xs button-primary text-capitalize {{ tag }}" href="{{ site.baseurl }}/tag/{{ tag }}.html" role="button">

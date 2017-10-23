@@ -166,7 +166,7 @@ ul.chat li, ol.notes li { list-style-type: none; }
   .part.video .stickers { padding-right: 8.82353%; } }
 @media (max-width: 767px) { .content { margin-top: 1.6rem; }
   .row { overflow: hidden; }
-  .big-title { padding: 0; }
+  .big-title { padding: 1.6rem; }
   .stickers { text-align: center; margin-top: 1.6rem; } }
 @media (min-width: 768px) { .video .stickers, .video .caption { margin-top: 3.2rem; } }
 /* Quotes */
