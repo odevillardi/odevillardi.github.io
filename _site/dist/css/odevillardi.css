@@ -180,7 +180,7 @@ blockquote.quote { font-family: serif; font-size: 200%; font-style: italic; }
 .quote-footer::before { content: "— "; }
 
 /* Contact */
-.contact { height: 6rem; margin: -7rem auto 0 auto; padding: 0 10px 1rem 10px; transition: all 0.2s ease-in-out; background-color: #ccc; }
+.contact { height: 6rem; margin: -7rem auto 0 auto; padding: 0 10px 1rem 10px; transition: all 0.2s ease-in-out; background-color: #eee; }
 
 @media (min-width: 767px) { .contact { max-width: 33%; } }
 .contact a:hover { text-decoration: none; }
