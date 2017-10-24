@@ -5,7 +5,7 @@
 @import "skeleton.css";
 
 $background-color: #fff;
-$alternate-color: #eee;
+$alternate-color: #ccc;
 $text-color: #1A1A1A;
 $main-color: #5289db;
 $link-color: #5289db;
@@ -315,11 +315,6 @@ ul.chat,
  background-color: $alternate-color;
 }
 
-ul.chat li,
-ol.notes li {
-    list-style-type: none;
-}
-
 /* VIDEO RESPONSIVE */
 .embed-responsive {
   position: relative;
@@ -350,11 +345,11 @@ ol.notes li {
 }
 
 /* Parts styling */
-.part:not(.video:not(:first-child)) { padding: 3.2rem 0; }
+.part { padding: 3.2rem 0; }
 
 .part:not(:first-child):not(.navigation) {
     margin-top: 3.2rem;
-    &:not(.video) { border-top: 1px solid $alternate-color; }
+    border-top: 1px solid $alternate-color;
 }
 
 .caption {

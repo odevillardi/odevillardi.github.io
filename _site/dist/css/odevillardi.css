@@ -46,7 +46,7 @@ figure, img, .img, iframe { margin: 0; max-width: 100%; }
 
 figcaption { font-style: italic; text-align: center; font-size: 1.5rem; margin-bottom: 1rem; }
 
-a.thumbnail img, img.thumbnail { padding: 1px; border: 1px solid #eee; margin: 0; }
+a.thumbnail img, img.thumbnail { padding: 1px; border: 1px solid #ccc; margin: 0; }
 
 a.thumbnail img { border-color: #aaa; }
 
@@ -130,9 +130,7 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 ul.chat, #tumblr-notes ol { padding: 0; margin: 0; }
 
-#tumblr-notes { padding: 20px; margin-top: 20px; background-color: #eee; }
-
-ul.chat li, ol.notes li { list-style-type: none; }
+#tumblr-notes { padding: 20px; margin-top: 20px; background-color: #ccc; }
 
 /* VIDEO RESPONSIVE */
 .embed-responsive { position: relative; display: block; height: 0; padding: 0; overflow: hidden; }
@@ -146,10 +144,9 @@ ul.chat li, ol.notes li { list-style-type: none; }
 .header a { text-decoration: none; margin: 1rem 0; }
 
 /* Parts styling */
-.part:not(.video:not(:first-child)) { padding: 3.2rem 0; }
+.part { padding: 3.2rem 0; }
 
-.part:not(:first-child):not(.navigation) { margin-top: 3.2rem; }
-.part:not(:first-child):not(.navigation):not(.video) { border-top: 1px solid #eee; }
+.part:not(:first-child):not(.navigation) { margin-top: 3.2rem; border-top: 1px solid #ccc; }
 
 .caption { overflow: hidden; margin-top: 1.6rem; }
 
@@ -170,7 +167,7 @@ ul.chat li, ol.notes li { list-style-type: none; }
   .stickers { text-align: center; margin-top: 1.6rem; } }
 @media (min-width: 768px) { .video .stickers, .video .caption { margin-top: 3.2rem; } }
 /* Quotes */
-blockquote { margin: 0; padding-left: 3rem; font-size: inherit; border-left: 5px solid #eee; }
+blockquote { margin: 0; padding-left: 3rem; font-size: inherit; border-left: 5px solid #ccc; }
 
 blockquote.quote { font-family: serif; font-size: 200%; font-style: italic; }
 
@@ -181,7 +178,7 @@ blockquote.quote { font-family: serif; font-size: 200%; font-style: italic; }
 .quote-footer::before { content: "— "; }
 
 /* Contact */
-.contact { height: 6rem; margin: -7rem auto 0 auto; padding: 0 10px 1rem 10px; transition: all 0.2s ease-in-out; background-color: #eee; }
+.contact { height: 6rem; margin: -7rem auto 0 auto; padding: 0 10px 1rem 10px; transition: all 0.2s ease-in-out; background-color: #ccc; }
 
 @media (min-width: 767px) { .contact { max-width: 33%; } }
 .contact a:hover { text-decoration: none; }
