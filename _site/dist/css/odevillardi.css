@@ -119,6 +119,8 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .tag.web h1::before, .button-primary:first-child.web::after { content: " @"; }
 
+.tag.quatrecentquatre h1::before { content: " ⁉"; }
+
 .button-primary::after { font-family: Georgia, serif; }
 
 .tag h1::before { font-family: Georgia, serif; color: #5289db; display: block; font-size: 99px; font-style: normal; opacity: 0.75; margin-top: -1.6rem; }

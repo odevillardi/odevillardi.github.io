@@ -285,6 +285,10 @@ a.thumbnail:hover img { border-color: $main-color; }
     content: " @";
 }
 
+.tag.quatrecentquatre h1::before {
+    content: " ⁉";
+}
+
 .button-primary::after{
   font-family: Georgia, serif;
 }
