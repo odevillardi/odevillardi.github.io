@@ -1,6 +1,5 @@
 ---
-title: Olivier de Villardi
-subtitle: Blog à part
+title: Blog à part
 ---
 {% include head.html %}
 {% if paginator.page == 1 %}
@@ -12,7 +11,7 @@ subtitle: Blog à part
 	       			{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg 1x"
 			sizes="96px"
 			src="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg">
-		<h1>{{ page.subtitle }}</h1>
+		<h1>{{ site.title }}</h1>
 		<ul class="list-inline text-capitalize">
 			<li><a href="{{ site.baseurl }}/tag/design.html">design</a></li>
 			<li><a href="{{ site.baseurl }}/tag/environment.html">environnement</a></li>
@@ -24,7 +23,7 @@ subtitle: Blog à part
 	</div>
 {% else %}
 	<div class="text-center big-title">
-		<h1>{{ page.subtitle }}</h1>
+		<h1>{{ page.title }}</h1>
 		<p>Page {{ paginator.page }} / {{ paginator.total_pages }}</p>
 	</div>
 	{% endif %}

@@ -50,6 +50,8 @@ timezone:      null
 
 quiet:    false
 defaults: []
+title: "Blog à part"
+author: "Olivier de Villardi"
 
 # Markdown Processors
 maruku:
