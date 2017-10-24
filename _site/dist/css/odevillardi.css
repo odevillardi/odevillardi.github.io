@@ -44,6 +44,8 @@ h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
 /* IMG UTILITIES */
 figure, img, .img, iframe { margin: 0; max-width: 100%; }
 
+img:not(.avatar):not(.thumbnail) { width: 100%; }
+
 figcaption { font-style: italic; text-align: center; font-size: 1.5rem; margin-bottom: 1rem; }
 
 a.thumbnail img, img.thumbnail { padding: 1px; border: 1px solid #ccc; margin: 0; }

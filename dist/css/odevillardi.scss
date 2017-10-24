@@ -80,6 +80,8 @@ iframe {
     max-width: 100%;
 }
 
+img:not(.avatar):not(.thumbnail) { width: 100%; }
+
 figcaption {
   font-style: italic;
   text-align: center;
