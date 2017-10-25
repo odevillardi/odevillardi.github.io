@@ -169,6 +169,7 @@ ul.chat, #tumblr-notes ol { padding: 0; margin: 0; }
   .row { overflow: hidden; }
   .big-title { padding: 1.6rem; }
   .stickers { text-align: center; margin-top: 1.6rem; }
+  .stickers::before { content: "—"; }
   footer .list-inline li { display: block; }
   footer .list-inline li:not(:first-child)::before { content: none; } }
 @media (min-width: 768px) { .video .stickers, .video .caption { margin-top: 3.2rem; } }

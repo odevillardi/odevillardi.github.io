@@ -409,6 +409,8 @@ ul.chat,
   .stickers {
       text-align: center;
       margin-top: 1.6rem;
+
+      &::before { content: "—"; }
   }
 
   footer .list-inline li {
