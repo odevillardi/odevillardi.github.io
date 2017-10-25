@@ -52,6 +52,7 @@ quiet:    false
 defaults: []
 title: "Blog à part"
 author: "Olivier de Villardi"
+url: http://odevillardi.fr
 
 # Markdown Processors
 maruku:
