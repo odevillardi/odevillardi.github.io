@@ -1,6 +1,7 @@
 <div class="four columns stickers">
+	<p class="title">{{ include.post.title }}</p>
 	<p>
-		<time datetime="{{ include.post.date }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
+		Publié le <time datetime="{{ include.post.date }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
 	</p>
 	{% if !post %}
 		<p>

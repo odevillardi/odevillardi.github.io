@@ -10,12 +10,14 @@ $text-color: #1A1A1A;
 $link-color: #5289db;
 $link-color-hover: #426eaf;
 $green-color: #45993c;
+$sans-serif-family: 'Lato', Helvetica, Arial, sans-serif;
+$serif-family: 'Volkhov', Georgia, serif;
 
 /* TEXT UTILITIES */
 body {
     background-color: $background-color;
     color: $text-color;
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: $sans-serif-family;
     -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual ;
     font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual ;
 }
@@ -49,7 +51,7 @@ p, ul { margin: 0 0 1rem; }
 .hidden { display: none; }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Volkhov', Georgia, serif;
+    font-family: $serif-family;
     font-weight: 700;
     font-style: italic;
     margin-top: 1.6rem;
@@ -364,8 +366,14 @@ ul.chat,
     position: sticky;
     top: 3.2rem;
     padding: -3.2rem 0 0 0;
-    font-size: 1.4rem;
 }
+
+.stickers .title {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.stickers p:last-child { margin-bottom: 0; }
 
 .video .stickers {
     margin-top: 1.6rem;
@@ -405,7 +413,7 @@ ul.chat,
   .stickers {
       text-align: center;
       margin-top: 1.6rem;
-
+      .title { display: none; }
       &::before { content: "—"; }
   }
 
@@ -431,7 +439,7 @@ blockquote {
 }
 
 blockquote.quote {
-    font-family: serif;
+    font-family: $serif-family;
     font-size: 200%;
     font-style: italic;
 }

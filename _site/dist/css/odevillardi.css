@@ -3,7 +3,7 @@
 @import url(normalize.css);
 @import url(skeleton.css);
 /* TEXT UTILITIES */
-body { background-color: #fff; color: #1A1A1A; font-family: 'Lato', Helvetica, Arial, sans-serif; -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; }
+body { background-color: #fff; color: #1A1A1A; font-family: "Lato", Helvetica, Arial, sans-serif; -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; }
 
 a { color: #5289db; text-decoration: none; }
 a:hover { color: #426eaf; text-decoration: underline; }
@@ -24,7 +24,7 @@ p, ul { margin: 0 0 1rem; }
 
 .hidden { display: none; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Volkhov', Georgia, serif; font-weight: 700; font-style: italic; margin-top: 1.6rem; }
+h1, h2, h3, h4, h5, h6 { font-family: "Volkhov", Georgia, serif; font-weight: 700; font-style: italic; margin-top: 1.6rem; }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { opacity: 0.5; }
 h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
 
@@ -154,7 +154,11 @@ ul.chat, #tumblr-notes ol { padding: 0; margin: 0; }
 
 .caption { overflow: hidden; margin-top: 1.6rem; }
 
-.stickers { position: -webkit-sticky; position: sticky; top: 3.2rem; padding: -3.2rem 0 0 0; font-size: 1.4rem; }
+.stickers { position: -webkit-sticky; position: sticky; top: 3.2rem; padding: -3.2rem 0 0 0; }
+
+.stickers .title { font-weight: bolder; font-style: italic; }
+
+.stickers p:last-child { margin-bottom: 0; }
 
 .video .stickers { margin-top: 1.6rem; }
 
@@ -169,6 +173,7 @@ ul.chat, #tumblr-notes ol { padding: 0; margin: 0; }
   .row { overflow: hidden; }
   .big-title { padding: 1.6rem; }
   .stickers { text-align: center; margin-top: 1.6rem; }
+  .stickers .title { display: none; }
   .stickers::before { content: "—"; }
   footer .list-inline li { display: block; }
   footer .list-inline li:not(:first-child)::before { content: none; } }
@@ -176,7 +181,7 @@ ul.chat, #tumblr-notes ol { padding: 0; margin: 0; }
 /* Quotes */
 blockquote { margin: 0; padding-left: 3rem; font-size: inherit; border-left: 5px solid #ccc; }
 
-blockquote.quote { font-family: serif; font-size: 200%; font-style: italic; }
+blockquote.quote { font-family: "Volkhov", Georgia, serif; font-size: 200%; font-style: italic; }
 
 .quote:not(.part)::before { content: "« "; }
 
