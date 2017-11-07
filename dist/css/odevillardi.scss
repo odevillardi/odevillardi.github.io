@@ -102,6 +102,18 @@ a.thumbnail:hover img { border-color: $link-color; }
 .img-circle { border-radius: 50%; }
 
 /* Boutons */
+.button {
+  max-width: 100%;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+}
+
+.button.next::before { content: "Suivant : "}
+.button.previous::before { content: "Précédent : "}
+.button::before { font-weight: bold; }
+
 .button:hover { text-decoration: none; }
 
 .button.button-primary {
@@ -413,7 +425,6 @@ ul.chat,
   .stickers {
       text-align: center;
       margin-top: 1.6rem;
-      .title { display: none; }
       &::before { content: "—"; }
   }
 

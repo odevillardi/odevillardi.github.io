@@ -8,10 +8,10 @@
 					<a class="button button-default" href="{{ paginator.next_page_path }}" role="button">Plus ancien &raquo;</a>
 					{% endif %}
 					{% if page.next %}
-					<a class="button button-default" href="{{ page.next.url }}" role="button">&laquo; Billet suivant</a>
+					<a class="button button-default text-overflow next" href="{{ page.next.url }}" role="button">{{ page.next.title }}</a>
 					{% endif %}
 					{% if page.previous %}
-					<a class="button button-default" href="{{ page.previous.url }}" role="button">Billet pr&eacute;c&eacute;dent &raquo;</a>
+					<a class="button button-default text-overflow previous" href="{{ page.previous.url }}" role="button">{{ page.previous.title }}</a>
 					{% endif %}
 				</p>
 				<footer>

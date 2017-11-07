@@ -57,6 +57,14 @@ a.thumbnail:hover img { border-color: #5289db; }
 .img-circle { border-radius: 50%; }
 
 /* Boutons */
+.button { max-width: 100%; text-transform: none; font-weight: normal; font-size: 1.6rem; line-height: 3.4rem; }
+
+.button.next::before { content: "Suivant : "; }
+
+.button.previous::before { content: "Précédent : "; }
+
+.button::before { font-weight: bold; }
+
 .button:hover { text-decoration: none; }
 
 .button.button-primary { background-color: #fff; color: #5289db; border: 1px solid #5289db; }
@@ -173,7 +181,6 @@ ul.chat, #tumblr-notes ol { padding: 0; margin: 0; }
   .row { overflow: hidden; }
   .big-title { padding: 1.6rem; }
   .stickers { text-align: center; margin-top: 1.6rem; }
-  .stickers .title { display: none; }
   .stickers::before { content: "—"; }
   footer .list-inline li { display: block; }
   footer .list-inline li:not(:first-child)::before { content: none; } }
