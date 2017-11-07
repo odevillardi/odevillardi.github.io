@@ -64,11 +64,15 @@ h1 { font-size: 300%; }
 h2 { font-size: 175%; }
 h3 { font-size: 125%; }
 h4 { font-size: 100%; }
+h5 { font-size: 90%; }
+h6 { font-size: inherit; }
 
 h2, h3, h4, h5, h6 {
   margin-top: 3.2rem;
   &:first-child { margin-top: 0; };
 }
+
+h6 { margin: 0 0 1rem; }
 
 .big-title { padding: 3.2rem 0 0 0; }
 
@@ -108,13 +112,22 @@ a.thumbnail:hover img { border-color: $link-color; }
   font-weight: normal;
   font-size: 1.6rem;
   line-height: 3.4rem;
+  padding: 0 1rem;
+
+  &:hover {
+    text-decoration: none;
+
+    .button {
+        color: #333;
+        border-color: #888;
+        outline: 0;
+     }
+  }
+
+  &.next::before { content: "Suiv. : "}
+  &.previous::before { content: "Préc. : "}
+  &::before { font-weight: bold; }
 }
-
-.button.next::before { content: "Suivant : "}
-.button.previous::before { content: "Précédent : "}
-.button::before { font-weight: bold; }
-
-.button:hover { text-decoration: none; }
 
 .button.button-primary {
     background-color: $background-color;
@@ -363,9 +376,12 @@ ul.chat,
 /* Parts styling */
 .part { padding: 3.2rem 0; }
 
+.part:not(:last-child):not(footer) {
+    border-bottom: 1px solid $green-color;
+}
+
 .part:not(:first-child):not(.navigation) {
-    margin-top: 3.2rem;
-    border-top: 1px solid $alternate-color;
+    border-top: 1px solid $link-color;
 }
 
 .caption {
@@ -378,11 +394,6 @@ ul.chat,
     position: sticky;
     top: 3.2rem;
     padding: -3.2rem 0 0 0;
-}
-
-.stickers .title {
-  font-weight: bolder;
-  font-style: italic;
 }
 
 .stickers p:last-child { margin-bottom: 0; }
@@ -439,6 +450,9 @@ ul.chat,
      .video .caption {
         margin-top: 3.2rem;
      }
+
+     .button.next::before { content: "Suivant : "}
+     .button.previous::before { content: "Précédent : "}
 }
 
 /* Quotes */
