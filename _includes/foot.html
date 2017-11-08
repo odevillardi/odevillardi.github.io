@@ -2,39 +2,38 @@
 			<div class="navigation part text-center">
 				<p>
 					{% if paginator.previous_page_path %}
-					<a class="button button-default" href="{{ paginator.previous_page_path }}" role="button">&laquo; Billets plus r&eacute;cent</a>
+						<a class="button button-default" href="{{ paginator.previous_page_path }}" role="button">&laquo; Billets plus r&eacute;cent</a>
 					{% endif %}
+
 					{% if paginator.next_page_path %}
-					<a class="button button-default" href="{{ paginator.next_page_path }}" role="button">Billets plus ancien &raquo;</a>
+						<a class="button button-default" href="{{ paginator.next_page_path }}" role="button">Billets plus ancien &raquo;</a>
 					{% endif %}
+
 					{% if page.next %}
-					<a class="button button-default text-overflow next" href="{{ page.next.url }}" role="button">
-						<span class="button button-xs">{{ page.next.tags[0] }}</span>
-						{{ page.next.title }}
-					</a>
+						<a class="button button-default text-overflow next" href="{{ page.next.url }}" role="button">
+							<span class="button button-xs">{{ page.next.tags[0] }}</span>
+							{{ page.next.title }}
+						</a>
 					{% endif %}
+
 					{% if page.previous %}
-					<a class="button button-default text-overflow previous" href="{{ page.previous.url }}" role="button">
-						<span class="button button-xs">{{ page.previous.tags[0] }}</span>
-						{{ page.previous.title }}
-					</a>
+						<a class="button button-default text-overflow previous" href="{{ page.previous.url }}" role="button">
+							<span class="button button-xs">{{ page.previous.tags[0] }}</span>
+							{{ page.previous.title }}
+						</a>
 					{% endif %}
 				</p>
 			</div> <!-- .part -->
 			<div class="part text-center">
 				<h2>Selection de billets</h2>
 				<ul class="list-inline lead">
-					<li><a href="/2014/10/16/le-web-fait-pousser-mes-tomates.html">Le Web fait pousser mes tomates</a></li>
-					<li><a href="/2015/09/14/ma-pédale-cest-html5-sud-web-2015-tu-débutes-à">Ma pédale c'est HTML5</a></li>
-					<li><a href="/2017/10/16/design-shcf.html">Redesign du SHCF</a></li>
-					<li><a href="/2015/09/19/cowspiracy-may-be-the-most-important-film-made-to">Cowspiracy</a></li>
-					<li><a href="/2016/07/14/change-the-record-by-paul-cocksedge-in-this.html">Change the Record by Paul&nbsp;Cocksedge</a></li>
-					<li><a href="/2015/02/05/laughingsquid-ocean-gravity-an-otherworldly.html">Ocean Gravity</a></li>
-					<li><a href="/2015/10/15/cinecharlie-via.html">Questions pour un champion</a></li>
-					<li><a href="/2017/02/07/want-kids-to-learn-well-feed-them-well-sam-kass.html">Want kids to learn well? Feed them well</a></li>
-					<li><a href="/2017/01/24/laughingsquid-four-year-old-claire-ryann-sings.html">You’ve Got a Friend in Me</a></li>
-					<li><a href="/2015/10/12/agritecture-a-global-shift-towards-a-vegan-diet.html">A global shift towards a vegan diet</a></li>
-					<li><a href="/2014/09/01/the-internets-own-boy-ce-film-raconte-lhistoire.html">The Internet’s own boy</a></li>
+				{% for post in site.posts %}
+					{% if post.selection %}
+						<li>
+							<a href="{{ post.url }}">{{ post.title }}</a>
+						</li>
+					{% endif %}
+				{% endfor %}
 				</ul>
 			</div>
 			<footer class="part text-center">
