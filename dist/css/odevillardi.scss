@@ -1,9 +1,5 @@
 ---
 ---
-/* Imports */
-@import "normalize.css";
-@import "skeleton.css";
-
 $background-color: #fff;
 $alternate-color: #ccc;
 $text-color: #1A1A1A;
@@ -50,13 +46,15 @@ p, ul { margin: 0 0 1rem; }
 
 .hidden { display: none; }
 
+/* TITLE UTILITIES */
+
 h1,h2,h3,h4,h5,h6 {
     font-family: $serif-family;
     font-weight: 700;
     font-style: italic;
     margin-top: 1.6rem;
 
-    small { opacity: 0.5; }
+    small { opacity: .5; }
     &.tag { text-transform: capitalize; }
 }
 
@@ -72,9 +70,9 @@ h2, h3, h4, h5, h6 {
   &:first-child { margin-top: 0; };
 }
 
-h6 { margin: 0 0 1rem; }
+h6 { margin-bottom: 1rem; }
 
-.big-title { padding: 3.2rem 0 0 0; }
+.big-title { padding-top: 3.2rem; }
 
 /* IMG UTILITIES */
 figure,
@@ -144,7 +142,7 @@ a.thumbnail:hover img { border-color: $link-color; }
     font-size: 1.4rem;
     height: 2rem;
     line-height: 1.4rem;
-    padding: 0.2rem 0.5rem;
+    padding: .2rem .5rem;
     font-variant: normal;
     text-transform: capitalize;
     font-weight: normal;
@@ -319,30 +317,18 @@ a.thumbnail:hover img { border-color: $link-color; }
 }
 
 .tag h1::before {
-  font-family: Georgia, serif;
-  color: $link-color;
   display: block;
+  margin-top: -1.6rem;
+  color: $link-color;
+  font-family: Georgia, serif;
   font-size: 99px;
   font-style: normal;
-  opacity: 0.75;
-  margin-top: -1.6rem;
+  opacity: .75;
 }
 
 /* Lists styling */
 .list-inline li { display: inline; }
 .list-inline li:not(:first-child)::before { content: " — " ; }
-
-ul.chat,
-#tumblr-notes ol {
-    padding: 0;
-    margin: 0;
-}
-
-#tumblr-notes {
- padding: 20px;
- margin-top: 20px;
- background-color: $alternate-color;
-}
 
 /* VIDEO RESPONSIVE */
 .embed-responsive {
@@ -368,21 +354,14 @@ ul.chat,
 
 
 /* HEADER */
-.header a {
-  text-decoration: none;
-  margin: 1rem 0;
-}
+.header a { margin: 1rem 0; }
 
 /* Parts styling */
 .part { padding: 3.2rem 0; }
 
-.part:not(:last-child):not(footer) {
-    border-bottom: 1px solid $green-color;
-}
+.part:not(:last-child):not(footer) { border-bottom: 1px solid $green-color; }
 
-.part:not(:first-child):not(.navigation) {
-    border-top: 1px solid $link-color;
-}
+.part:not(:first-child):not(.navigation) { border-top: 1px solid $link-color; }
 
 .caption {
     overflow: hidden;
@@ -401,6 +380,54 @@ ul.chat,
 .video .stickers {
     margin-top: 1.6rem;
 }
+
+/* Quotes */
+blockquote {
+    margin: 0;
+    padding-left: 3rem;
+    font-size: inherit;
+    border-left: 5px solid $alternate-color;
+}
+
+blockquote.quote {
+    font-family: $serif-family;
+    font-size: 200%;
+    font-style: italic;
+}
+
+.quote:not(.part)::before { content: "« "; }
+
+.quote:not(.part)::after { content: " »"; }
+
+.quote-footer::before  { content: "— "; }
+
+/* Contact */
+.contact {
+  height: 6rem;
+  margin: -7rem auto 0 auto;
+  padding: 0 1rem 1rem 1rem;
+  transition: all .2s ease-in-out;
+  background-color: #eee;
+}
+
+.contact a:hover { text-decoration: none; }
+.contact * { transition: opacity .25s ease-in-out; }
+
+#contact:target {
+  margin-top: 0;
+  transition: all .2s ease-in-out;
+}
+
+#github:hover ~ #mail-hello,
+#github:hover ~ #mail-pointfr,
+#github:hover ~ #mail-arobase,
+#web:hover ~ #mail-hello,
+#web:hover ~ #mail-arobase {
+  opacity: .3;
+  transition: opacity .25s ease-in-out;
+}
+
+/* Media queries */
 
 @media (max-width: 399px) {
   .part.video .row { margin: 0 -20px; }
@@ -446,61 +473,13 @@ ul.chat,
 }
 
 @media (min-width: 768px) {
-     .video .stickers,
-     .video .caption {
-        margin-top: 3.2rem;
-     }
+  .contact { max-width: 33%; }
 
-     .button.next::before { content: "Suivant : "}
-     .button.previous::before { content: "Précédent : "}
-}
+  .video .stickers,
+  .video .caption {
+    margin-top: 3.2rem;
+  }
 
-/* Quotes */
-blockquote {
-    margin: 0;
-    padding-left: 3rem;
-    font-size: inherit;
-    border-left: 5px solid $alternate-color;
-}
-
-blockquote.quote {
-    font-family: $serif-family;
-    font-size: 200%;
-    font-style: italic;
-}
-
-.quote:not(.part)::before { content: "« "; }
-
-.quote:not(.part)::after { content: " »"; }
-
-.quote-footer::before  { content: "— "; }
-
-/* Contact */
-.contact {
-  height: 6rem;
-  margin: -7rem auto 0 auto;
-  padding: 0 10px 1rem 10px;
-  transition: all 0.2s ease-in-out;
-  background-color: #eee;
-}
-
-@media (min-width: 767px) {
-    .contact { max-width: 33%; }
-}
-
-.contact a:hover { text-decoration: none; }
-.contact * { transition: opacity 0.25s ease-in-out; }
-
-#contact:target {
-  margin-top: 0;
-  transition: all 0.2s ease-in-out;
-}
-
-#github:hover ~ #mail-hello,
-#github:hover ~ #mail-pointfr,
-#github:hover ~ #mail-arobase,
-#web:hover ~ #mail-hello,
-#web:hover ~ #mail-arobase {
-  opacity: 0.3;
-  transition: opacity 0.25s ease-in-out;
+  .button.next::before { content: "Suivant : "}
+  .button.previous::before { content: "Précédent : "}
 }
