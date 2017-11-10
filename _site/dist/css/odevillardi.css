@@ -23,6 +23,13 @@ ul, ol { margin-left: 3.2rem; }
 
 .hidden { display: none; }
 
+/* Lists styling */
+.list-inline { margin-left: 0; }
+
+.list-inline li { display: inline; }
+
+.list-inline li:not(:first-child)::before { content: " — "; }
+
 /* TITLE UTILITIES */
 h1, h2, h3, h4, h5, h6 { font-family: "Volkhov", Georgia, serif; font-weight: 700; font-style: italic; margin-top: 1.6rem; }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { opacity: .5; }
@@ -140,11 +147,6 @@ a.thumbnail:hover img { border-color: #5289db; }
 .button-primary::after { font-family: Georgia, serif; }
 
 .tag h1::before { display: block; margin-top: -1.6rem; color: #5289db; font-family: Georgia, serif; font-size: 99px; font-style: normal; opacity: .75; }
-
-/* Lists styling */
-.list-inline li { display: inline; }
-
-.list-inline li:not(:first-child)::before { content: " — "; }
 
 /* VIDEO RESPONSIVE */
 .embed-responsive { position: relative; display: block; height: 0; padding: 0; overflow: hidden; }

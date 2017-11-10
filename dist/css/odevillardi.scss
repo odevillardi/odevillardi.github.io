@@ -49,6 +49,11 @@ ul, ol { margin-left: 3.2rem; }
 
 .hidden { display: none; }
 
+/* Lists styling */
+.list-inline { margin-left: 0; }
+.list-inline li { display: inline; }
+.list-inline li:not(:first-child)::before { content: " — " ; }
+
 /* TITLE UTILITIES */
 
 h1,h2,h3,h4,h5,h6 {
@@ -337,10 +342,6 @@ a.thumbnail:hover img { border-color: $link-color; }
   font-style: normal;
   opacity: .75;
 }
-
-/* Lists styling */
-.list-inline li { display: inline; }
-.list-inline li:not(:first-child)::before { content: " — " ; }
 
 /* VIDEO RESPONSIVE */
 .embed-responsive {
