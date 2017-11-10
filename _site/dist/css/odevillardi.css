@@ -174,7 +174,7 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .part.video .stickers { margin-top: 1.6rem; }
 
-@media (max-width: 399px) { .part.video .row { margin-left: -20px; margin-rigth: -20px; }
+@media (max-width: 399px) { .part.video .row { margin-left: -20px; margin-right: -20px; }
   .part.video .caption, .part.video .stickers { padding-left: 20px; padding-right: 20px; } }
 @media (min-width: 400px) and (max-width: 767px) { .part.video .row { margin-left: -5.55556%; margin-right: -5.55556%; }
   .part.video .caption, .part.video .stickers { padding-left: 5.55556%; padding-right: 5.55556%; } }
