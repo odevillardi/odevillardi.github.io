@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* TEXT UTILITIES */
-body { background-color: #fff; color: #1A1A1A; font-family: "Lato", Helvetica, Arial, sans-serif; -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; }
+body { background-color: #fff; color: #1A1A1A; font-family: "Raleway", Helvetica, Arial, sans-serif; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; }
 
 a { color: #5289db; text-decoration: none; }
 a:hover { color: #426eaf; text-decoration: underline; }
@@ -9,6 +9,7 @@ p, ul, ol { margin-bottom: 1.6rem; }
 
 ul, ol { margin-left: 3.2rem; }
 
+@media (max-width: 767px) { ul, ol { margin-left: 1.6rem; } }
 .text-left { text-align: left; }
 
 .text-right { text-align: right; }
@@ -31,26 +32,12 @@ ul, ol { margin-left: 3.2rem; }
 .list-inline li:not(:first-child)::before { content: " — "; }
 
 /* TITLE UTILITIES */
-h1, h2, h3, h4, h5, h6 { font-family: "Volkhov", Georgia, serif; font-weight: 700; font-style: italic; margin-top: 1.6rem; }
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { opacity: .5; }
+h1, h2, h3, h4, h5, h6 { font-family: "Playfair Display", Georgia, serif; font-weight: 900; margin-top: 1.6rem; letter-spacing: normal; }
 h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
 
-h1 { font-size: 300%; }
+h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; }
 
-h2 { font-size: 175%; }
-
-h3 { font-size: 125%; }
-
-h4 { font-size: 100%; }
-
-h5 { font-size: 90%; }
-
-h6 { font-size: inherit; }
-
-h2, h3, h4, h5, h6 { margin-top: 3.2rem; }
-h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child { margin-top: 0; }
-
-h6 { margin-bottom: 1rem; }
+h2:first-child, h4:first-child, h6:first-child { margin-top: 0; }
 
 .big-title { padding-top: 3.2rem; }
 
@@ -71,7 +58,7 @@ a.thumbnail:hover img { border-color: #5289db; }
 .img-circle { border-radius: 50%; }
 
 /* Boutons */
-.button { max-width: 100%; text-transform: none; font-weight: normal; font-size: 1.6rem; line-height: 3.4rem; padding: 0 1rem; }
+.button { max-width: 100%; text-transform: none; font-weight: normal; font-size: 1.6rem; line-height: 3.4rem; padding: 0 1rem; margin-bottom: 0; }
 .button:hover { text-decoration: none; }
 .button:hover .button { color: #333; border-color: #888; outline: 0; }
 .button.next::before { content: "Suiv. : "; }
@@ -170,12 +157,10 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .stickers { position: -webkit-sticky; position: sticky; top: 3.2rem; padding: -3.2rem 0 0 0; }
 
-@media (max-width: 767px) { .stickers { text-align: center; margin-top: 1.6rem; }
-  .stickers::before { content: "—"; } }
-.stickers p:last-child { margin-bottom: 0; }
-
 .part.video .stickers { margin-top: 1.6rem; }
 
+@media (max-width: 767px) { .stickers { text-align: center; margin-top: 1.6rem; }
+  .stickers::before { content: "—"; } }
 @media (max-width: 399px) { .part.video .row { margin-left: -20px; margin-right: -20px; }
   .part.video .caption, .part.video .stickers { padding-left: 20px; padding-right: 20px; } }
 @media (min-width: 400px) and (max-width: 767px) { .part.video .row { margin-left: -5.55556%; margin-right: -5.55556%; }
@@ -187,7 +172,8 @@ a.thumbnail:hover img { border-color: #5289db; }
 /* Quotes */
 blockquote { margin-left: 3.2rem; padding-left: 3.2rem; font-size: inherit; border-left: 5px solid #ccc; }
 
-blockquote.quote { font-family: "Volkhov", Georgia, serif; font-size: 200%; font-style: italic; }
+@media (max-width: 767px) { blockquote { margin-left: 1.6rem; padding-left: 1.6rem; } }
+blockquote.quote { font-family: "Playfair Display", Georgia, serif; font-size: 200%; font-style: italic; }
 
 .quote:not(.part)::before { content: "« "; }
 

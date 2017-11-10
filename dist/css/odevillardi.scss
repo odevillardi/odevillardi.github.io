@@ -6,15 +6,18 @@ $text-color: #1A1A1A;
 $link-color: #5289db;
 $link-color-hover: #426eaf;
 $green-color: #45993c;
-$sans-serif-family: 'Lato', Helvetica, Arial, sans-serif;
-$serif-family: 'Volkhov', Georgia, serif;
+$sans-serif-family: 'Raleway', Helvetica, Arial, sans-serif;
+$serif-family: 'Playfair Display', Georgia, serif;
 
 /* TEXT UTILITIES */
 body {
     background-color: $background-color;
     color: $text-color;
     font-family: $sans-serif-family;
+    text-rendering : optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
     -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual ;
+       -moz-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual ;
             font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual ;
 }
 
@@ -31,6 +34,10 @@ a {
 p, ul, ol { margin-bottom: 1.6rem; }
 
 ul, ol { margin-left: 3.2rem; }
+
+@media (max-width: 767px) {
+  ul, ol { margin-left: 1.6rem; }
+}
 
 .text-left        { text-align: left; }
 .text-right       { text-align: right; }
@@ -56,29 +63,23 @@ ul, ol { margin-left: 3.2rem; }
 
 /* TITLE UTILITIES */
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: $serif-family;
-    font-weight: 700;
-    font-style: italic;
-    margin-top: 1.6rem;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif-family;
+  font-weight: 900;
+  margin-top: 1.6rem;
+  letter-spacing: normal;
 
-    small { opacity: .5; }
-    &.tag { text-transform: capitalize; }
+  &.tag { text-transform: capitalize; }
 }
-
-h1 { font-size: 300%; }
-h2 { font-size: 175%; }
-h3 { font-size: 125%; }
-h4 { font-size: 100%; }
-h5 { font-size: 90%; }
-h6 { font-size: inherit; }
 
 h2, h3, h4, h5, h6 {
   margin-top: 3.2rem;
-  &:first-child { margin-top: 0; };
+  margin-bottom: 1.6rem;
 }
 
-h6 { margin-bottom: 1rem; }
+h2, h4, h6 {
+  &:first-child { margin-top: 0; }
+}
 
 .big-title { padding-top: 3.2rem; }
 
@@ -123,6 +124,7 @@ a.thumbnail:hover img { border-color: $link-color; }
   font-size: 1.6rem;
   line-height: 3.4rem;
   padding: 0 1rem;
+  margin-bottom: 0;
 
   &:hover {
     text-decoration: none;
@@ -391,18 +393,16 @@ a.thumbnail:hover img { border-color: $link-color; }
     padding: -3.2rem 0 0 0;
 }
 
+.part.video .stickers {
+    margin-top: 1.6rem;
+}
+
 @media (max-width: 767px) {
   .stickers {
       text-align: center;
       margin-top: 1.6rem;
       &::before { content: "—"; }
   }
-}
-
-.stickers p:last-child { margin-bottom: 0; }
-
-.part.video .stickers {
-    margin-top: 1.6rem;
 }
 
 @media (max-width: 399px) {
@@ -451,6 +451,13 @@ blockquote {
     padding-left: 3.2rem;
     font-size: inherit;
     border-left: 5px solid $alternate-color;
+}
+
+@media (max-width: 767px) {
+  blockquote {
+    margin-left: 1.6rem;
+    padding-left: 1.6rem;
+  }
 }
 
 blockquote.quote {
