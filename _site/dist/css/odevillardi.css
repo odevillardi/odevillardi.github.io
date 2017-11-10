@@ -5,7 +5,9 @@ body { background-color: #fff; color: #1A1A1A; font-family: "Lato", Helvetica, A
 a { color: #5289db; text-decoration: none; }
 a:hover { color: #426eaf; text-decoration: underline; }
 
-p, ul { margin: 0 0 1rem; }
+p, ul, ol { margin-bottom: 1.6rem; }
+
+ul, ol { margin-left: 3.2rem; }
 
 .text-left { text-align: left; }
 
@@ -45,12 +47,13 @@ h6 { margin-bottom: 1rem; }
 
 .big-title { padding-top: 3.2rem; }
 
+@media (max-width: 767px) { .big-title { padding: 1.6rem; } }
 /* IMG UTILITIES */
 figure, img, .img, iframe { margin: 0; max-width: 100%; }
 
 img:not(.avatar):not(.thumbnail) { width: 100%; }
 
-figcaption { font-style: italic; text-align: center; font-size: 1.5rem; margin-bottom: 1rem; }
+figcaption { font-style: italic; text-align: center; font-size: 1.6rem; margin-bottom: 1.6rem; }
 
 a.thumbnail img, img.thumbnail { padding: 1px; border: 1px solid #ccc; margin: 0; }
 
@@ -68,11 +71,13 @@ a.thumbnail:hover img { border-color: #5289db; }
 .button.previous::before { content: "Préc. : "; }
 .button::before { font-weight: bold; }
 
-.button.button-primary { background-color: #fff; color: #5289db; border: 1px solid #5289db; }
+@media (min-width: 768px) { .button.next::before { content: "Suivant : "; }
+  .button.previous::before { content: "Précédent : "; } }
+.button.button-primary { background-color: #fff; border: 1px solid #5289db; color: #5289db; }
 
-.button.button-primary:hover { border-color: #5289db; background-color: #5289db; }
+.button.button-primary:hover { background-color: #5289db; border-color: #5289db; }
 
-.button.button-xs { font-size: 1.4rem; height: 2rem; line-height: 1.4rem; padding: .2rem .5rem; font-variant: normal; text-transform: capitalize; font-weight: normal; letter-spacing: 0rem; }
+.button.button-xs { height: 2rem; padding: .2rem .5rem; font-size: 1.4rem; line-height: 1.4rem; font-weight: normal; font-variant: normal; text-transform: capitalize; letter-spacing: 0rem; }
 
 .button-primary:first-child.agriculture, .button-primary:first-child.energy, .button-primary:first-child.environment, .button-primary:first-child.permaculture, .button-primary:first-child.recycle, .button-primary:first-child.vegan, .button-primary:first-child.water { color: #45993c; border-color: #45993c; }
 
@@ -150,7 +155,7 @@ a.thumbnail:hover img { border-color: #5289db; }
 .embed-responsive-4by3 { padding-bottom: 75%; }
 
 /* HEADER */
-.header a { margin: 1rem 0; }
+.header a { margin-top: 1rem; margin-bottom: 1rem; }
 
 /* Parts styling */
 .part { padding: 3.2rem 0; }
@@ -163,12 +168,22 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .stickers { position: -webkit-sticky; position: sticky; top: 3.2rem; padding: -3.2rem 0 0 0; }
 
+@media (max-width: 767px) { .stickers { text-align: center; margin-top: 1.6rem; }
+  .stickers::before { content: "—"; } }
 .stickers p:last-child { margin-bottom: 0; }
 
-.video .stickers { margin-top: 1.6rem; }
+.part.video .stickers { margin-top: 1.6rem; }
 
+@media (max-width: 399px) { .part.video .row { margin-left: -20px; margin-rigth: -20px; }
+  .part.video .caption, .part.video .stickers { padding-left: 20px; padding-right: 20px; } }
+@media (min-width: 400px) and (max-width: 767px) { .part.video .row { margin-left: -5.55556%; margin-right: -5.55556%; }
+  .part.video .caption, .part.video .stickers { padding-left: 5.55556%; padding-right: 5.55556%; } }
+@media (min-width: 768px) and (max-width: 1023px) { .part.video .row { margin-left: -8.82353%; margin-right: -8.82353%; }
+  .part.video .caption { padding-left: 8.82353%; }
+  .part.video .stickers { padding-right: 8.82353%; } }
+@media (min-width: 768px) { .part.video .stickers, .part.video .caption { margin-top: 3.2rem; } }
 /* Quotes */
-blockquote { margin: 0; padding-left: 3rem; font-size: inherit; border-left: 5px solid #ccc; }
+blockquote { margin-left: 3.2rem; padding-left: 3.2rem; font-size: inherit; border-left: 5px solid #ccc; }
 
 blockquote.quote { font-family: "Volkhov", Georgia, serif; font-size: 200%; font-style: italic; }
 
@@ -181,6 +196,7 @@ blockquote.quote { font-family: "Volkhov", Georgia, serif; font-size: 200%; font
 /* Contact */
 .contact { height: 6rem; margin: -7rem auto 0 auto; padding: 0 1rem 1rem 1rem; transition: all .2s ease-in-out; background-color: #eee; }
 
+@media (min-width: 768px) { .contact { max-width: 33%; } }
 .contact a:hover { text-decoration: none; }
 
 .contact * { transition: opacity .25s ease-in-out; }
@@ -189,22 +205,7 @@ blockquote.quote { font-family: "Volkhov", Georgia, serif; font-size: 200%; font
 
 #github:hover ~ #mail-hello, #github:hover ~ #mail-pointfr, #github:hover ~ #mail-arobase, #web:hover ~ #mail-hello, #web:hover ~ #mail-arobase { opacity: .3; transition: opacity .25s ease-in-out; }
 
-/* Media queries */
-@media (max-width: 399px) { .part.video .row { margin: 0 -20px; }
-  .part.video .caption, .part.video .stickers { padding-left: 20px; padding-right: 20px; } }
-@media (min-width: 400px) and (max-width: 767px) { .part.video .row { margin: 0 -5.55556%; }
-  .part.video .caption, .part.video .stickers { padding-left: 5.55556%; padding-right: 5.55556%; } }
-@media (min-width: 768px) and (max-width: 1023px) { .part.video .row { margin: 0 -8.82353%; }
-  .part.video .caption { padding-left: 8.82353%; }
-  .part.video .stickers { padding-right: 8.82353%; } }
 @media (max-width: 767px) { .content { margin-top: 1.6rem; }
   .row { overflow: hidden; }
-  .big-title { padding: 1.6rem; }
-  .stickers { text-align: center; margin-top: 1.6rem; }
-  .stickers::before { content: "—"; }
   footer .list-inline li { display: block; }
   footer .list-inline li:not(:first-child)::before { content: none; } }
-@media (min-width: 768px) { .contact { max-width: 33%; }
-  .video .stickers, .video .caption { margin-top: 3.2rem; }
-  .button.next::before { content: "Suivant : "; }
-  .button.previous::before { content: "Précédent : "; } }
