@@ -123,7 +123,7 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 .tag.typography h1::before, .button-primary:first-child.typography::after { content: " ﬃ"; }
 
-.tag.vegan h1::before, .button-primary:first-child.vegan::after { content: " ♘"; }
+.tag.vegan h1::before, .button-primary:first-child.vegan::after { content: " Ⓥ"; }
 
 .tag.water h1::before, .button-primary:first-child.water::after { content: " ☂"; }
 
