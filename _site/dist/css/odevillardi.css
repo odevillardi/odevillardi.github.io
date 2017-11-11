@@ -67,6 +67,8 @@ a.thumbnail:hover img { border-color: #5289db; }
 
 @media (min-width: 768px) { .button.next::before { content: "Suivant : "; }
   .button.previous::before { content: "Précédent : "; } }
+.navigation .button { margin-bottom: 1.6rem; }
+
 .button.button-primary { background-color: #fff; border: 1px solid #5289db; color: #5289db; }
 
 .button.button-primary:hover { background-color: #5289db; border-color: #5289db; }
