@@ -9,6 +9,16 @@
       <div class="eight columns lead caption">
         {{ post.content }}
       </div>
+    {% elsif post.layout == "link" %}
+      <div class="eight columns lead">
+        <h2>{{ post.title }} (Source&nbsp;: <a href="{{ post.link_url }}">{{ post.source }}</a>)</h2>
+        <figure>
+          <a class="thumbnail" href="{{ post.link_url }}"><img src="{{ post.img_url }}" alt="{{ post.title }}"></a>
+          <figcaption>
+            {{ post.img_caption }}
+          </figcaption>
+        </figure>
+      </div>
     {% else %}
       <div class="eight columns lead">
         {% if post.title != "no title" %}

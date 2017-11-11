@@ -3,7 +3,7 @@
 body { background-color: #fff; color: #1A1A1A; font-family: "Lato", Helvetica, Arial, sans-serif; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; }
 
 a { color: #5289db; text-decoration: none; }
-a:hover { color: #426eaf; text-decoration: underline; }
+a:hover { color: #5289db; text-decoration: underline; }
 
 p, ul, ol { margin-bottom: 1.6rem; }
 
