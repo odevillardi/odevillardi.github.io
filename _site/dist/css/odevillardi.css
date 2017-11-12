@@ -43,7 +43,7 @@
 html { font-size: 62.5%; }
 
 /* TEXT UTILITIES */
-body { background-color: #fff; color: #1A1A1A; font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Lato", Helvetica, Arial, sans-serif; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, common-ligatures, discretionary-ligatures, historical-ligatures, contextual; }
+body { background-color: #fff; color: #1A1A1A; font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Lato", Helvetica, Arial, sans-serif; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; }
 
 a { color: #5289db; text-decoration: none; }
 a:hover { color: #5289db; text-decoration: underline; }
@@ -115,9 +115,9 @@ img:not(.avatar):not(.thumbnail) { width: 100%; }
 
 figcaption { font-style: italic; text-align: center; font-size: 1.6rem; margin-bottom: 1.6rem; }
 
-a.thumbnail img, img.thumbnail { padding: 1px; border: 1px solid #5289db; margin: 0; border-radius: 2px; opacity: 1; }
+a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; border: 1px solid #5289db; margin: 0; border-radius: 2px; transition: filter .2s ease-in-out; }
 
-a.thumbnail:hover img { border-color: #ccc; opacity: .95; }
+a.thumbnail:hover img { border-color: #ccc; -webkit-filter: brightness(0.9); filter: brightness(0.9); transition: filter .2s ease-in-out; }
 
 .img-circle { border-radius: 50%; }
 
