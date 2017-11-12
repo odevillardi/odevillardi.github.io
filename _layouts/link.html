@@ -9,15 +9,15 @@
 	<div class="part text">
 		<div class="row">
 			<div class="eight columns lead">
-				<p>
-					Via&nbsp;: <a href="{{ page.link_url }}">{{ page.source }}</a>
-				</p>
 				<figure>
 					<a class="thumbnail" href="{{ page.link_url }}"><img src="{{ page.img_url }}" alt="{{ page.title }}"></a>
 					<figcaption>
 						{{ page.img_caption }}
 					</figcaption>
 				</figure>
+				<p>
+					Via&nbsp;: <a href="{{ page.link_url }}">{{ page.source }}</a>
+				</p>
 			</div>
 
 			{% include sticker.html post=page %}

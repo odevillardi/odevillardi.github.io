@@ -11,13 +11,16 @@
       </div>
     {% elsif post.layout == "link" %}
       <div class="eight columns lead">
-        <h2>{{ post.title }} (via <a href="{{ post.link_url }}">{{ post.source }}</a>)</h2>
+        <h2>{{ post.title }}</h2>
         <figure>
           <a class="thumbnail" href="{{ post.link_url }}"><img src="{{ post.img_url }}" alt="{{ post.title }}"></a>
           <figcaption>
             {{ post.img_caption }}
           </figcaption>
         </figure>
+        <p>
+           via <a href="{{ post.link_url }}">{{ post.source }}</a>
+        </p>
       </div>
     {% else %}
       <div class="eight columns lead">
