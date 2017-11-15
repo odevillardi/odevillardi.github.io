@@ -168,10 +168,8 @@ ol { list-style: decimal inside; }
 ol, ul {
   padding-left: 0;
   margin-left: $double-spacing;
-}
 
-@media (max-width: 767px) {
-  ul, ol { margin-left: $spacing; }
+  @media (max-width: 767px) { margin-left: $spacing; }
 }
 
 ul ul,
@@ -247,28 +245,6 @@ iframe {
   margin: 0;
   max-width: 100%;
 }
-
-// @media (max-width: 399px) {
-//   .part img:not(.avatar):not(.thumbnail) {
-//     margin-left: -$spacing;
-//     margin-right:-$spacing;
-//   }
-//   .part img:not(.avatar):not(.thumbnail) {
-//     padding-left: $spacing;
-//     padding-right:$spacing;
-//   }
-// }
-//
-// @media (min-width: 400px) and (max-width: 767px) {
-//   .part img:not(.avatar):not(.thumbnail)  {
-//     margin-left: -5.55556%;
-//     margin-right:-5.55556%;
-//   }
-//   .part img:not(.avatar):not(.thumbnail) {
-//     padding-left: 5.55556%;
-//     padding-right:5.55556%;
-//   }
-// }
 
 img:not(.avatar):not(.thumbnail) { width: 100%; }
 
@@ -547,10 +523,8 @@ input[type="button"].button-primary {
   font-size: 99px;
   font-style: normal;
   opacity: .75;
-}
 
-@media (max-width: 767px) {
-  .tag h1::before { margin-top: 0; }
+  @media (max-width: 767px) { margin-top: 0; }
 }
 
 /* VIDEO RESPONSIVE */
@@ -599,18 +573,16 @@ input[type="button"].button-primary {
   position:         sticky;
           top:  $double-spacing;
   padding-top: -$double-spacing;
-}
 
-.part.video .stickers {
-  margin-top: $spacing;
-}
-
-@media (max-width: 767px) {
-  .stickers {
+  @media (max-width: 767px) {
     text-align: center;
     margin-top: $spacing;
     &::before { content: "—"; }
   }
+}
+
+.part.video .stickers {
+  margin-top: $spacing;
 }
 
 @media (max-width: 399px) {
@@ -659,10 +631,8 @@ blockquote {
   padding-left: $double-spacing;
   font-size: inherit;
   border-left: .5rem solid $alternate-color;
-}
 
-@media (max-width: 550px) {
-  blockquote {
+  @media (max-width: 550px) {
     margin-left: $spacing;
     padding-left: $spacing;
   }
@@ -685,10 +655,8 @@ blockquote.quote {
   padding: 0 1rem 1rem 1rem;
   transition: all .2s ease-in-out;
   background-color: #eee;
-}
 
-@media (min-width: 768px) {
-  .contact { max-width: 33%; }
+  @media (min-width: 768px) { max-width: 33%; }
 }
 
 .contact a:hover { text-decoration: none; }
