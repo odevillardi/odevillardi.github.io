@@ -115,9 +115,9 @@ img:not(.avatar):not(.thumbnail) { width: 100%; }
 
 figcaption { font-style: italic; text-align: center; font-size: 1.6rem; margin-bottom: 1.6rem; }
 
-a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; border: 1px solid #5289db; margin: 0; border-radius: 2px; transition: filter .2s ease-in-out; }
+a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; border: 1px solid #ccc; margin: 0; border-radius: 2px; -webkit-filter: saturate(0.5); filter: saturate(0.5); }
 
-a.thumbnail:hover img { border-color: #ccc; -webkit-filter: brightness(0.9); filter: brightness(0.9); transition: filter .2s ease-in-out; }
+a.thumbnail:hover img { border-color: #5289db; -webkit-filter: saturate(1); filter: saturate(1); }
 
 .img-circle { border-radius: 50%; }
 
@@ -221,7 +221,7 @@ a.thumbnail:hover img { border-color: #ccc; -webkit-filter: brightness(0.9); fil
 
 .caption { overflow: hidden; margin-top: 1.6rem; }
 
-.stickers { position: -webkit-sticky; position: sticky; top: 3.2rem; padding: -3.2rem 0 0 0; }
+.stickers { position: -webkit-sticky; position: sticky; top: 3.2rem; padding-top: -3.2rem; }
 
 .part.video .stickers { margin-top: 1.6rem; }
 

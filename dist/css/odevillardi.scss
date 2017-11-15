@@ -8,8 +8,8 @@ $green-color: #45993c;
 $button-color: #555;
 $spacing: 1.6rem;
 $double-spacing: 3.2rem;
-$sans-serif-family: 'Lato', Helvetica, Arial, sans-serif;
 $serif-family: 'Vollkorn', Georgia, serif;
+$sans-serif-family: 'Lato', Helvetica, Arial, sans-serif;
 
 /* Skeleton V2.0.4 Grid */
 .container {
@@ -248,6 +248,28 @@ iframe {
   max-width: 100%;
 }
 
+// @media (max-width: 399px) {
+//   .part img:not(.avatar):not(.thumbnail) {
+//     margin-left: -$spacing;
+//     margin-right:-$spacing;
+//   }
+//   .part img:not(.avatar):not(.thumbnail) {
+//     padding-left: $spacing;
+//     padding-right:$spacing;
+//   }
+// }
+//
+// @media (min-width: 400px) and (max-width: 767px) {
+//   .part img:not(.avatar):not(.thumbnail)  {
+//     margin-left: -5.55556%;
+//     margin-right:-5.55556%;
+//   }
+//   .part img:not(.avatar):not(.thumbnail) {
+//     padding-left: 5.55556%;
+//     padding-right:5.55556%;
+//   }
+// }
+
 img:not(.avatar):not(.thumbnail) { width: 100%; }
 
 figcaption {
@@ -261,17 +283,17 @@ a.thumbnail img,
 img.thumbnail {
   max-width: calc(100% - 4px);
   padding: 1px;
-  border: 1px solid $link-color;
+  border: 1px solid $alternate-color;
   margin: 0;
   border-radius: 2px;
-  transition: filter .2s ease-in-out;
+  -webkit-filter: saturate(.5);
+          filter: saturate(.5);
 }
 
 a.thumbnail:hover img {
-  border-color: $alternate-color;
-  -webkit-filter: brightness(.9);
-          filter: brightness(.9);
-  transition: filter .2s ease-in-out;
+  border-color: $link-color;
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
 }
 
 .img-circle { border-radius: 50%; }
@@ -575,8 +597,8 @@ input[type="button"].button-primary {
 .stickers {
   position: -webkit-sticky;
   position:         sticky;
-  top: $double-spacing;
-  padding: -$double-spacing 0 0 0;
+          top:  $double-spacing;
+  padding-top: -$double-spacing;
 }
 
 .part.video .stickers {
