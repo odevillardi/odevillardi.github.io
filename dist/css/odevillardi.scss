@@ -8,7 +8,7 @@ $green-color: #45993c;
 $button-color: #555;
 $spacing: 1.6rem;
 $double-spacing: 3.2rem;
-$serif-family: 'Vollkorn', Georgia, serif;
+$serif-family: 'Spectral', Georgia, serif;
 $sans-serif-family: 'Lato', Helvetica, Arial, sans-serif;
 
 /* Skeleton V2.0.4 Grid */
@@ -141,6 +141,10 @@ p, ul, ol {
 .text-right       { text-align: right; }
 .text-center      { text-align: center; }
 .text-capitalize  { text-transform: capitalize; }
+.green-text {
+  color: $green-color;
+  &:hover { color: $green-color; }
+}
 
 .text-overflow {
   overflow: hidden;
@@ -193,7 +197,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: $spacing;
   font-family: $serif-family;
   font-style: italic;
-  font-weight: 900;
 
   &.tag { text-transform: capitalize; }
 }

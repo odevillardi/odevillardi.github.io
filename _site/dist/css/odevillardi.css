@@ -58,6 +58,9 @@ p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 
 .text-capitalize { text-transform: capitalize; }
 
+.green-text { color: #45993c; }
+.green-text:hover { color: #45993c; }
+
 .text-overflow { overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
 .lead { font-size: 2rem; }
@@ -85,7 +88,7 @@ li { margin-bottom: 0.8rem; }
 .list-inline li:not(:first-child)::before { content: " — "; }
 
 /* TITLE UTILITIES */
-h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: "Vollkorn", Georgia, serif; font-style: italic; font-weight: 900; }
+h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: "Spectral", Georgia, serif; font-style: italic; }
 h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
 
 h1 { font-size: 4.0rem; line-height: 1.2; margin-top: 1.6rem; }
@@ -239,7 +242,7 @@ a.thumbnail:hover img { border-color: #5289db; -webkit-filter: saturate(1); filt
 blockquote { margin-left: 3.2rem; padding-left: 3.2rem; font-size: inherit; border-left: 0.5rem solid #ccc; }
 @media (max-width: 550px) { blockquote { margin-left: 1.6rem; padding-left: 1.6rem; } }
 
-blockquote.quote { font-family: "Vollkorn", Georgia, serif; font-size: 200%; font-style: italic; }
+blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; font-style: italic; }
 
 .quote:not(.part)::before { content: "« "; }
 
