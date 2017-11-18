@@ -6,8 +6,10 @@ $text-color: #1A1A1A;
 $link-color: #5289db;
 $green-color: #45993c;
 $button-color: #555;
+
 $spacing: 1.6rem;
 $double-spacing: 3.2rem;
+
 $serif-family: 'Spectral', Georgia, serif;
 $sans-serif-family: 'Lato', Helvetica, Arial, sans-serif;
 
@@ -154,7 +156,11 @@ p, ul, ol {
   hyphens: auto;
 }
 
-.lead { font-size: 2rem; }
+.lead {
+  font-size: 1.8rem;
+
+  @media (min-width: 550px) { font-size: 2rem; }
+}
 
 .hidden { display: none; }
 
@@ -276,6 +282,12 @@ a.thumbnail:hover img {
 }
 
 .img-circle { border-radius: 50%; }
+
+.avatar {
+  background-color: $green-color;
+  border: 1px solid $link-color;
+  padding: 1px;
+}
 
 /* Boutons */
 .button,
@@ -514,16 +526,13 @@ input[type="button"].button-primary {
   content: " ⁉";
 }
 
-.button-primary::after{
-  font-family: Georgia, serif;
-}
+.button-primary::after { font-family: $serif-family; }
 
 .tag h1::before {
   display: block;
   margin-top: -$spacing;
   color: $link-color;
-  font-family: Georgia, serif;
-  font-size: 99px;
+  font-size: 96px;
   font-style: normal;
   opacity: .75;
 

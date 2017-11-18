@@ -63,7 +63,8 @@ p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 
 .text-overflow { overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
-.lead { font-size: 2rem; }
+.lead { font-size: 1.8rem; }
+@media (min-width: 550px) { .lead { font-size: 2rem; } }
 
 .hidden { display: none; }
 
@@ -123,6 +124,8 @@ a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; bord
 a.thumbnail:hover img { border-color: #5289db; -webkit-filter: saturate(1); filter: saturate(1); }
 
 .img-circle { border-radius: 50%; }
+
+.avatar { background-color: #45993c; border: 1px solid #5289db; padding: 1px; }
 
 /* Boutons */
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] { display: inline-block; height: 38px; padding: 0 1rem; margin-bottom: 0; max-width: 100%; color: #555; text-align: center; line-height: 3.4rem; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 2px; border: 1px solid #ccc; cursor: pointer; box-sizing: border-box; }
@@ -199,9 +202,9 @@ a.thumbnail:hover img { border-color: #5289db; -webkit-filter: saturate(1); filt
 
 .tag.quatrecentquatre h1::before { content: " ⁉"; }
 
-.button-primary::after { font-family: Georgia, serif; }
+.button-primary::after { font-family: "Spectral", Georgia, serif; }
 
-.tag h1::before { display: block; margin-top: -1.6rem; color: #5289db; font-family: Georgia, serif; font-size: 99px; font-style: normal; opacity: .75; }
+.tag h1::before { display: block; margin-top: -1.6rem; color: #5289db; font-size: 96px; font-style: normal; opacity: .75; }
 @media (max-width: 767px) { .tag h1::before { margin-top: 0; } }
 
 /* VIDEO RESPONSIVE */
