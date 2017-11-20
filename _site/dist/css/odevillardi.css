@@ -204,7 +204,7 @@ a.thumbnail:hover img { border-color: #5289db; opacity: 1; }
 
 .button-primary::after { font-family: "Spectral", Georgia, serif; }
 
-.tag h1::before { display: block; margin-top: -1.6rem; color: #5289db; font-size: 96px; font-style: normal; opacity: .75; }
+.tag h1::before { display: block; margin-top: -1.6rem; color: #5289db; font-family: "Spectral", Georgia, serif; font-size: 96px; font-style: normal; opacity: .75; }
 @media (max-width: 767px) { .tag h1::before { margin-top: 0; } }
 
 /* VIDEO RESPONSIVE */
