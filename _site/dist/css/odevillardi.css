@@ -80,7 +80,7 @@ ol, ul { padding-left: 0; margin-left: 3.2rem; }
 
 ul ul, ul ol, ol ol, ol ul { margin: 1.6rem 0 1.6rem 3.2rem; font-size: 90%; }
 
-li { margin-bottom: 0.8rem; }
+li { margin-bottom: .8rem; }
 
 .list-inline { margin-left: 0; }
 
@@ -119,9 +119,9 @@ img:not(.avatar):not(.thumbnail) { width: 100%; }
 
 figcaption { font-style: italic; text-align: center; font-size: 1.6rem; margin-bottom: 1.6rem; }
 
-a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; border: 1px solid #ccc; margin: 0; border-radius: 2px; -webkit-filter: saturate(0.5); filter: saturate(0.5); }
+a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; border: 1px solid #ccc; margin: 0; border-radius: 2px; opacity: .7; }
 
-a.thumbnail:hover img { border-color: #5289db; -webkit-filter: saturate(1); filter: saturate(1); }
+a.thumbnail:hover img { border-color: #5289db; opacity: 1; }
 
 .img-circle { border-radius: 50%; }
 

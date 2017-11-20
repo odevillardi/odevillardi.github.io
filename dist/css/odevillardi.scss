@@ -190,7 +190,7 @@ ol ul {
   font-size: 90%;
 }
 
-li { margin-bottom: 0.8rem; }
+li { margin-bottom: .8rem; }
 
 .list-inline { margin-left: 0; }
 .list-inline li { display: inline; }
@@ -271,14 +271,12 @@ img.thumbnail {
   border: 1px solid $alternate-color;
   margin: 0;
   border-radius: 2px;
-  -webkit-filter: saturate(.5);
-          filter: saturate(.5);
+  opacity: .7;
 }
 
 a.thumbnail:hover img {
   border-color: $link-color;
-  -webkit-filter: saturate(1);
-          filter: saturate(1);
+  opacity: 1;
 }
 
 .img-circle { border-radius: 50%; }
