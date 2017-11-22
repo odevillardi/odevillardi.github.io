@@ -196,6 +196,18 @@ li { margin-bottom: .8rem; }
 .list-inline li { display: inline; }
 .list-inline li:not(:first-child)::before { content: " — " ; }
 
+.simple-list {
+  margin-left: 0;
+  list-style: none;
+
+  a {
+    font-family: $serif-family;
+    font-style: italic;
+  }
+
+  li:nth-child(odd) a { color: $green-color; }
+}
+
 /* TITLE UTILITIES */
 
 h1, h2, h3, h4, h5, h6 {
@@ -271,7 +283,7 @@ img.thumbnail {
   border: 1px solid $alternate-color;
   margin: 0;
   border-radius: 2px;
-  opacity: .7;
+  opacity: .85;
 }
 
 a.thumbnail:hover img {
@@ -565,6 +577,8 @@ input[type="button"].button-primary {
 .header a {
   margin-top: $spacing;
   margin-bottom: $double-spacing;
+
+  &:hover { text-decoration: none; }
 }
 
 /* Parts styling */
