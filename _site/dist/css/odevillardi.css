@@ -123,9 +123,9 @@ img:not(.avatar):not(.thumbnail) { width: 100%; }
 
 figcaption { font-style: italic; text-align: center; font-size: 1.6rem; margin-bottom: 1.6rem; }
 
-a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; border: 1px solid #ccc; margin: 0; border-radius: 2px; opacity: .85; }
+a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; border: 1px solid #5289db; margin: 0; border-radius: 2px; opacity: .85; }
 
-a.thumbnail:hover img { border-color: #5289db; opacity: 1; }
+a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
 .img-circle { border-radius: 50%; }
 
@@ -247,8 +247,8 @@ a.thumbnail:hover img { border-color: #5289db; opacity: 1; }
   .part.video .stickers { padding-right: 8.82353%; } }
 @media (min-width: 768px) { .part.video .stickers, .part.video .caption { margin-top: 3.2rem; } }
 /* Quotes */
-blockquote { margin-left: 3.2rem; padding-left: 3.2rem; font-size: inherit; border-left: 0.5rem solid #ccc; }
-@media (max-width: 550px) { blockquote { margin-left: 1.6rem; padding-left: 1.6rem; } }
+blockquote { margin-left: 1.6rem; padding-left: 1.6rem; font-size: inherit; border-left: 4px solid #ccc; }
+@media (max-width: 550px) { blockquote { margin-left: 0; } }
 
 blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; font-style: italic; }
 
