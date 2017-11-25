@@ -533,7 +533,7 @@ input[type="button"].button-primary {
   content: " ⁉";
 }
 
-.button-primary::after { font-family: $serif-family; }
+.button-primary:first-child::after { font-family: $serif-family; }
 
 .tag h1::before {
   display: block;
@@ -654,7 +654,7 @@ blockquote {
   font-size: inherit;
   border-left: 4px solid $alternate-color;
 
-  @media (max-width: 550px) {
+  @media (max-width: 549px) {
     margin-left: 0;
   }
 }
@@ -672,10 +672,14 @@ blockquote.quote {
 /* Contact */
 .contact {
   height: 6rem;
-  margin: -7rem auto 0 auto;
-  padding: 0 1rem 1rem 1rem;
+  margin: -8.4rem auto 0 auto;
+  padding: 0.8rem $spacing $spacing $spacing;
   transition: all .2s ease-in-out;
   background-color: #eee;
+  border-bottom-left-radius:  2px;
+  border-bottom-right-radius: 2px;
+
+  @media (max-width: 549px) { padding-bottom: 1.2rem; margin-top: -8rem; }
 
   @media (min-width: 768px) { max-width: 33%; }
 }

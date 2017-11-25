@@ -206,7 +206,7 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
 .tag.quatrecentquatre h1::before { content: " ⁉"; }
 
-.button-primary::after { font-family: "Spectral", Georgia, serif; }
+.button-primary:first-child::after { font-family: "Spectral", Georgia, serif; }
 
 .tag h1::before { display: block; margin-top: -1.6rem; color: #5289db; font-family: "Spectral", Georgia, serif; font-size: 96px; font-style: normal; opacity: .75; }
 @media (max-width: 767px) { .tag h1::before { margin-top: 0; } }
@@ -248,7 +248,7 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 @media (min-width: 768px) { .part.video .stickers, .part.video .caption { margin-top: 3.2rem; } }
 /* Quotes */
 blockquote { margin-left: 1.6rem; padding-left: 1.6rem; font-size: inherit; border-left: 4px solid #ccc; }
-@media (max-width: 550px) { blockquote { margin-left: 0; } }
+@media (max-width: 549px) { blockquote { margin-left: 0; } }
 
 blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; font-style: italic; }
 
@@ -259,7 +259,8 @@ blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; fon
 .quote-footer::before { content: "— "; }
 
 /* Contact */
-.contact { height: 6rem; margin: -7rem auto 0 auto; padding: 0 1rem 1rem 1rem; transition: all .2s ease-in-out; background-color: #eee; }
+.contact { height: 6rem; margin: -8.4rem auto 0 auto; padding: 0.8rem 1.6rem 1.6rem 1.6rem; transition: all .2s ease-in-out; background-color: #eee; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; }
+@media (max-width: 549px) { .contact { padding-bottom: 1.2rem; margin-top: -8rem; } }
 @media (min-width: 768px) { .contact { max-width: 33%; } }
 
 .contact a:hover { text-decoration: none; }
