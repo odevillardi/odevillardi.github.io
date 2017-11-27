@@ -150,7 +150,7 @@ p, ul, ol {
 }
 
 .text-overflow {
-  overflow: hidden;
+  overflow: scroll;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   white-space: nowrap;
@@ -195,7 +195,11 @@ li { margin-bottom: .8rem; }
 
 .list-inline { margin-left: 0; }
 .list-inline li { display: inline; }
-.list-inline li:not(:first-child)::before { content: " — " ; }
+.list-inline li:not(:last-child)::after {
+  content: " • " ;
+  color: $alternate-color;
+}
+
 .alternate li:nth-child(odd) a { color: $green-color; }
 
 .no-style {

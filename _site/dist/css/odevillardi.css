@@ -61,7 +61,7 @@ p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 .green-text { color: #45993c; }
 .green-text:hover { color: #45993c; }
 
-.text-overflow { overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
+.text-overflow { overflow: scroll; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
 .lead { font-size: 1.8rem; }
 @media (min-width: 550px) { .lead { font-size: 2rem; } }
@@ -86,7 +86,7 @@ li { margin-bottom: .8rem; }
 
 .list-inline li { display: inline; }
 
-.list-inline li:not(:first-child)::before { content: " — "; }
+.list-inline li:not(:last-child)::after { content: " • "; color: #ccc; }
 
 .alternate li:nth-child(odd) a { color: #45993c; }
 
