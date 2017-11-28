@@ -12,7 +12,7 @@ title: Blog à part
 			sizes="96px"
 			src="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg">
 		<h1>{{ site.title }}</h1>
-		<ul class="list-inline text-capitalize">
+		<ul class="list-inline text-capitalize" id="navigation">
 			<li><a href="{{ site.baseurl }}/tag/design.html">design</a></li>
 			<li><a href="{{ site.baseurl }}/tag/environment.html">environment</a></li>
 			<li><a href="{{ site.baseurl }}/tag/music.html">music</a></li>
@@ -28,7 +28,7 @@ title: Blog à part
 		<p>Page {{ paginator.page }} / {{ paginator.total_pages }}</p>
 	</div>
 	{% endif %}
-<div class="posts">
+<div class="posts" id="posts">
 {% for post in paginator.posts %}
 	{% include posts.html %}
 {% endfor %}

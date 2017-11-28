@@ -200,6 +200,14 @@ li { margin-bottom: .8rem; }
   color: $alternate-color;
 }
 .list-inline.buttons li::before { content: none; }
+.list-inline.related li:nth-child(2)::before { content: none; }
+
+.list-inline li.list-title {
+  display: block;
+  margin-bottom: 0;
+
+  &::before { content: "› "; }
+}
 
 .alternate li:nth-child(odd) a { color: $green-color; }
 
@@ -373,36 +381,6 @@ input[type="button"].button-primary {
   font-variant: normal;
   text-transform: capitalize;
   letter-spacing: 0rem;
-}
-
-.button-primary:first-child.agriculture,
-.button-primary:first-child.energy,
-.button-primary:first-child.environment,
-.button-primary:first-child.permaculture,
-.button-primary:first-child.recycle,
-.button-primary:first-child.vegan,
-.button-primary:first-child.water {
-         color: $green-color;
-  border-color: $green-color;
-}
-
-.button-primary:first-child.agriculture:hover,
-.button-primary:first-child.agriculture:focus,
-.button-primary:first-child.energy:hover,
-.button-primary:first-child.energy:focus,
-.button-primary:first-child.environment:hover,
-.button-primary:first-child.environment:focus,
-.button-primary:first-child.permaculture:hover,
-.button-primary:first-child.permaculture:focus,
-.button-primary:first-child.recycle:hover,
-.button-primary:first-child.recycle:focus,
-.button-primary:first-child.vegan:hover,
-.button-primary:first-child.vegan:focus,
-.button-primary:first-child.water:hover,
-.button-primary:first-child.water:focus {
-  color: $background-color;
-      border-color: $green-color;
-  background-color: $green-color;
 }
 
 .tag.agriculture h1::before,
@@ -650,6 +628,29 @@ input[type="button"].button-primary {
   .part.video .caption {
     margin-top: $double-spacing;
   }
+}
+
+li:first-child .button-primary.agriculture,
+li:first-child .button-primary.energy,
+li:first-child .button-primary.environment,
+li:first-child .button-primary.permaculture,
+li:first-child .button-primary.recycle,
+li:first-child .button-primary.vegan,
+li:first-child .button-primary.water {
+         color: $green-color;
+  border-color: $green-color;
+}
+
+li:first-child .button-primary.agriculture:hover, li:first-child .button-primary.agriculture:focus,
+li:first-child .button-primary.energy:hover, li:first-child .button-primary.energy:focus,
+li:first-child .button-primary.environment:hover, li:first-child .button-primary.environment:focus,
+li:first-child .button-primary.permaculture:hover, li:first-child .button-primary.permaculture:focus,
+li:first-child .button-primary.recycle:hover, li:first-child .button-primary.recycle:focus,
+li:first-child .button-primary.vegan:hover, li:first-child .button-primary.vegan:focus,
+li:first-child .button-primary.water:hover, li:first-child .button-primary.water:focus {
+  color: $background-color;
+      border-color: $green-color;
+  background-color: $green-color;
 }
 
 /* Quotes */

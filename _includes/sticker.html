@@ -20,8 +20,8 @@
 		{% endif %}
 	</ul>
 	{% if include.post.related %}
-		<ul class="list-inline alternate">
-			<li class="no-content">Dans le même genre</li>
+		<ul class="list-inline alternate related">
+			<li class="list-title">Dans le même genre&nbsp;:</li>
 			{% for related in include.post.related %}
 				<li>
 					<a href="{{ site.baseurl }}{{ related.url }}.html">
