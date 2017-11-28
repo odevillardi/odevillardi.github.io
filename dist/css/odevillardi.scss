@@ -5,6 +5,7 @@ $alternate-color: #ccc;
 $text-color: #1A1A1A;
 $link-color: #5289db;
 $green-color: #45993c;
+$mix-color: #4c918c;
 $button-color: #555;
 
 $spacing: 1.6rem;
@@ -249,6 +250,7 @@ h5 {
   line-height: 1.5;
 }
 h6 {
+  color: $button-color;
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -384,92 +386,92 @@ input[type="button"].button-primary {
 }
 
 .tag.agriculture h1::before,
-.button-primary:first-child.agriculture::after {
+.button:first-child.agriculture::after {
   content: " ☼";
 }
 
 .tag.antispecism h1::before,
-.button-primary:first-child.antispecism::after {
+.button:first-child.antispecism::after {
   content: " ☮";
 }
 
 .tag.design h1::before,
-.button-primary:first-child.design::after {
+.button:first-child.design::after {
   content: " ✎";
 }
 
 .tag.diy h1::before,
-.button-primary:first-child.diy::after {
+.button:first-child.diy::after {
   content: " ⚠";
 }
 
 .tag.economy h1::before,
-.button-primary:first-child.economy::after {
+.button:first-child.economy::after {
   content: " $";
 }
 
 .tag.education h1::before,
-.button-primary:first-child.education::after {
+.button:first-child.education::after {
   content: " ℇ";
 }
 
 .tag.energy h1::before,
-.button-primary:first-child.energy::after {
+.button:first-child.energy::after {
   content: " ↯";
 }
 
 .tag.environment h1::before,
-.button-primary:first-child.environment::after {
+.button:first-child.environment::after {
   content: " ☷";
 }
 
 .tag.food h1::before,
-.button-primary:first-child.food::after {
+.button:first-child.food::after {
   content: " ☰";
 }
 
 .tag.funny h1::before,
-.button-primary:first-child.funny::after {
+.button:first-child.funny::after {
   content: " ☺";
 }
 
 .tag.guitar h1::before,
-.button-primary:first-child.guitar::after {
+.button:first-child.guitar::after {
   content: " ♬";
 }
 
 .tag.lettering h1::before,
-.button-primary:first-child.lettering::after {
+.button:first-child.lettering::after {
   content: " ℒ";
 }
 
 .tag.low.tech h1::before,
-.button-primary:first-child.low.tech::after {
+.button:first-child.low.tech::after {
   content: " ␥";
 }
 
 .tag.maths h1::before,
-.button-primary:first-child.maths::after {
+.button:first-child.maths::after {
   content: " ÷";
 }
 
 .tag.moon h1::before,
-.button-primary:first-child.moon::after {
+.button:first-child.moon::after {
   content: " ☾";
 }
 
 .tag.music h1::before,
-.button-primary:first-child.music::after {
+.button:first-child.music::after {
   content: " ♫";
 }
 
 .tag.parisweb h1::before,
-.button-primary:first-child.parisweb::after {
+.button:first-child.parisweb::after {
   content: " #";
 }
 
 .tag.permaculture h1::before,
-.button-primary:first-child.permaculture::after {
+.button:first-child.permaculture::after {
   content: " ☀";
 }
 
@@ -478,37 +480,37 @@ input[type="button"].button-primary {
 }
 
 .tag.politics h1::before,
-.button-primary:first-child.politics::after {
+.button:first-child.politics::after {
   content: " ♗";
 }
 
 .tag.recycle h1::before,
-.button-primary:first-child.recycle::after {
+.button:first-child.recycle::after {
   content: " ↺";
 }
 
 .tag.sport h1::before,
-.button-primary:first-child.sport::after {
+.button:first-child.sport::after {
   content: " ♕";
 }
 
 .tag.typography h1::before,
-.button-primary:first-child.typography::after  {
+.button:first-child.typography::after  {
   content: " ﬃ";
 }
 
 .tag.vegan h1::before,
-.button-primary:first-child.vegan::after {
+.button:first-child.vegan::after {
   content: " Ⓥ";
 }
 
 .tag.water h1::before,
-.button-primary:first-child.water::after {
+.button:first-child.water::after {
   content: " ☂";
 }
 
 .tag.web h1::before,
-.button-primary:first-child.web::after {
+.button:first-child.web::after {
   content: " @";
 }
 
@@ -516,7 +518,7 @@ input[type="button"].button-primary {
   content: " ⁉";
 }
 
-.button-primary:first-child::after { font-family: $serif-family; }
+.button:first-child::after { font-family: $serif-family; }
 
 .tag h1::before {
   display: block;
@@ -628,29 +630,6 @@ input[type="button"].button-primary {
   .part.video .caption {
     margin-top: $double-spacing;
   }
-}
-
-li:first-child .button-primary.agriculture,
-li:first-child .button-primary.energy,
-li:first-child .button-primary.environment,
-li:first-child .button-primary.permaculture,
-li:first-child .button-primary.recycle,
-li:first-child .button-primary.vegan,
-li:first-child .button-primary.water {
-         color: $green-color;
-  border-color: $green-color;
-}
-
-li:first-child .button-primary.agriculture:hover, li:first-child .button-primary.agriculture:focus,
-li:first-child .button-primary.energy:hover, li:first-child .button-primary.energy:focus,
-li:first-child .button-primary.environment:hover, li:first-child .button-primary.environment:focus,
-li:first-child .button-primary.permaculture:hover, li:first-child .button-primary.permaculture:focus,
-li:first-child .button-primary.recycle:hover, li:first-child .button-primary.recycle:focus,
-li:first-child .button-primary.vegan:hover, li:first-child .button-primary.vegan:focus,
-li:first-child .button-primary.water:hover, li:first-child .button-primary.water:focus {
-  color: $background-color;
-      border-color: $green-color;
-  background-color: $green-color;
 }
 
 /* Quotes */
