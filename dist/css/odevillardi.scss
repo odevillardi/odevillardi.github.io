@@ -199,6 +199,7 @@ li { margin-bottom: .8rem; }
   content: " • " ;
   color: $alternate-color;
 }
+.list-inline.buttons li::before { content: none; }
 
 .alternate li:nth-child(odd) a { color: $green-color; }
 

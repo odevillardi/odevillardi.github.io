@@ -88,6 +88,8 @@ li { margin-bottom: .8rem; }
 
 .list-inline li:not(:first-child)::before { content: " • "; color: #ccc; }
 
+.list-inline.buttons li::before { content: none; }
+
 .alternate li:nth-child(odd) a { color: #45993c; }
 
 .no-style { margin-left: 0; list-style: none; }

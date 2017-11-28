@@ -1,18 +1,24 @@
 <div class="four columns stickers">
 	<h6>{{ include.post.title }}</h6>
-	<p>
+	<ul class="list-inline buttons">
 		{% for tag in include.post.tags %}
-			<a class="button button-xs button-primary text-capitalize {{ tag }}" href="{{ site.baseurl }}/tag/{{ tag }}.html" role="button">
-				{{ tag }}
-			</a>
+			<li>
+				<a class="button button-xs button-primary text-capitalize {{ tag }}" href="{{ site.baseurl }}/tag/{{ tag }}.html" role="button">
+					{{ tag }}
+				</a>
+			</li>
 		{% endfor %}
-	</p>
-	<p>
-		Publié le <time datetime="{{ include.post.date }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
+	</ul>
+	<ul class="list-inline">
+		<li>
+			Le <time datetime="{{ include.post.date }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
+		</li>
 		{% if !post %}
-		— <a href="{{ include.post.url }}">Permalien</a>
+			<li>
+				<a href="{{ include.post.url }}">Permalien</a>
+			</li>
 		{% endif %}
-	</p>	
+	</ul>
 	{% if include.post.related %}
 		<ul class="list-inline alternate">
 			<li class="no-content">Dans le même genre</li>

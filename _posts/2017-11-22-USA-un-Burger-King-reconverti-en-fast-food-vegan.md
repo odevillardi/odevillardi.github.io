@@ -1,6 +1,6 @@
 ---
 layout: link
-title: "USA : un Burger King reconverti en fast-food vegan"
+title: "Un Burger King reconverti en fast-food vegan"
 source: Vegactu
 date: '2017-11-22T19:25:00+02:00'
 tags:
