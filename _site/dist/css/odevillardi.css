@@ -86,7 +86,7 @@ li { margin-bottom: .8rem; }
 
 .list-inline li { display: inline; }
 
-.list-inline li:not(:last-child)::after { content: " • "; color: #ccc; }
+.list-inline li:not(:first-child)::before { content: " • "; color: #ccc; }
 
 .alternate li:nth-child(odd) a { color: #45993c; }
 
@@ -269,7 +269,7 @@ blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; fon
 
 #contact:target { margin-top: 0; transition: all .2s ease-in-out; }
 
-#github:hover ~ #mail-hello, #github:hover ~ #mail-pointfr, #github:hover ~ #mail-arobase, #web:hover ~ #mail-hello, #web:hover ~ #mail-arobase { opacity: .3; transition: opacity .25s ease-in-out; }
+#github:hover ~ #mail-contact, #github:hover ~ #mail-pointfr, #github:hover ~ #mail-arobase, #web:hover ~ #mail-contact, #web:hover ~ #mail-arobase { opacity: .3; transition: opacity .25s ease-in-out; }
 
 @media (max-width: 767px) { .content { margin-top: 1.6rem; }
   .row { overflow: hidden; }
