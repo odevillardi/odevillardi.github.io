@@ -585,6 +585,7 @@ li:first-child .button::after { font-family: $serif-family; }
       margin: 0;
       padding: $spacing;
       color: $background-color;
+      text-shadow: 0 1px 1px $text-color;
     }
   }
 
