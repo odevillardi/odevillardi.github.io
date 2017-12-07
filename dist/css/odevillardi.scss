@@ -659,7 +659,8 @@ li:first-child .button::after { font-family: $serif-family; }
 }
 
 @media (max-width: 399px) {
-  .part.video .row {
+  .part.video .row,
+  .part.card {
     margin-left: -$spacing;
     margin-right:-$spacing;
   }
@@ -671,7 +672,8 @@ li:first-child .button::after { font-family: $serif-family; }
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
-  .part.video .row  {
+  .part.video .row,
+  .part.card  {
     margin-left: -5.55556%;
     margin-right:-5.55556%;
   }

@@ -257,9 +257,9 @@ li:first-child .button::after { font-family: "Spectral", Georgia, serif; }
 
 .part.video .stickers { margin-top: 1.6rem; }
 
-@media (max-width: 399px) { .part.video .row { margin-left: -1.6rem; margin-right: -1.6rem; }
+@media (max-width: 399px) { .part.video .row, .part.card { margin-left: -1.6rem; margin-right: -1.6rem; }
   .part.video .caption, .part.video .stickers { padding-left: 1.6rem; padding-right: 1.6rem; } }
-@media (min-width: 400px) and (max-width: 767px) { .part.video .row { margin-left: -5.55556%; margin-right: -5.55556%; }
+@media (min-width: 400px) and (max-width: 767px) { .part.video .row, .part.card { margin-left: -5.55556%; margin-right: -5.55556%; }
   .part.video .caption, .part.video .stickers { padding-left: 5.55556%; padding-right: 5.55556%; } }
 @media (min-width: 768px) and (max-width: 1023px) { .part.video .row { margin-left: -8.82353%; margin-right: -8.82353%; }
   .part.video .caption { padding-left: 8.82353%; }
