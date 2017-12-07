@@ -28,9 +28,11 @@ title: Blog à part
 		<p>Page {{ paginator.page }} / {{ paginator.total_pages }}</p>
 	</div>
 	{% endif %}
-<div class="posts" id="posts">
-{% for post in paginator.posts %}
-	{% include posts.html %}
-{% endfor %}
+<div class="cards" id="posts">
+	{% for post in paginator.posts %}
+		<div class="part card {{ post.layout }}">
+			{% include card.html%}
+		</div>
+	{% endfor %}
 </div>
 {% include foot.html %}

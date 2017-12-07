@@ -155,68 +155,69 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
 .button.button-xs { height: 2rem; padding: .2rem .5rem; font-size: 1.4rem; line-height: 1.4rem; font-weight: normal; font-variant: normal; text-transform: capitalize; letter-spacing: 0rem; }
 
-.tag.agriculture h1::before, .button:first-child.agriculture::after { content: " ☼"; }
+.tag.agriculture h1::before, li:first-child .button.agriculture::after { content: " ☼"; }
 
-.tag.antispecism h1::before, .button:first-child.antispecism::after { content: " ☮"; }
+.tag.antispecism h1::before, li:first-child .button.antispecism::after { content: " ☮"; }
 
-.tag.design h1::before, .button:first-child.design::after { content: " ✎"; }
+.tag.design h1::before, li:first-child .button.design::after { content: " ✎"; }
 
-.tag.diy h1::before, .button:first-child.diy::after { content: " ⚠"; }
+.tag.diy h1::before, li:first-child .button.diy::after { content: " ⚠"; }
 
-.tag.economy h1::before, .button:first-child.economy::after { content: " $"; }
+.tag.economy h1::before, li:first-child .button.economy::after { content: " $"; }
 
-.tag.education h1::before, .button:first-child.education::after { content: " ℇ"; }
+.tag.education h1::before, li:first-child .button.education::after { content: " ℇ"; }
 
-.tag.energy h1::before, .button:first-child.energy::after { content: " ↯"; }
+.tag.energy h1::before, li:first-child .button.energy::after { content: " ↯"; }
 
-.tag.environment h1::before, .button:first-child.environment::after { content: " ☷"; }
+.tag.environment h1::before, li:first-child .button.environment::after { content: " ☷"; }
 
-.tag.food h1::before, .button:first-child.food::after { content: " ☰"; }
+.tag.food h1::before, li:first-child .button.food::after { content: " ☰"; }
 
-.tag.funny h1::before, .button:first-child.funny::after { content: " ☺"; }
+.tag.funny h1::before, li:first-child .button.funny::after { content: " ☺"; }
 
-.tag.guitar h1::before, .button:first-child.guitar::after { content: " ♬"; }
+.tag.guitar h1::before, li:first-child .button.guitar::after { content: " ♬"; }
 
-.tag.lettering h1::before, .button:first-child.lettering::after { content: " ℒ"; }
+.tag.lettering h1::before, li:first-child .button.lettering::after { content: " ℒ"; }
 
-.tag.low.tech h1::before, .button:first-child.low.tech::after { content: " ␥"; }
+.tag.low.tech h1::before, li:first-child .button.low.tech::after { content: " ␥"; }
 
-.tag.maths h1::before, .button:first-child.maths::after { content: " ÷"; }
+.tag.maths h1::before, li:first-child .button.maths::after { content: " ÷"; }
 
-.tag.moon h1::before, .button:first-child.moon::after { content: " ☾"; }
+.tag.moon h1::before, li:first-child .button.moon::after { content: " ☾"; }
 
-.tag.music h1::before, .button:first-child.music::after { content: " ♫"; }
+.tag.music h1::before, li:first-child .button.music::after { content: " ♫"; }
 
-.tag.parisweb h1::before, .button:first-child.parisweb::after { content: " #"; }
+.tag.parisweb h1::before, li:first-child .button.parisweb::after { content: " #"; }
 
-.tag.permaculture h1::before, .button:first-child.permaculture::after { content: " ☀"; }
+.tag.permaculture h1::before, li:first-child .button.permaculture::after { content: " ☀"; }
 
 .tag.pixel.art h1::before { content: " ▓"; }
 
-.tag.politics h1::before, .button:first-child.politics::after { content: " ♗"; }
+.tag.politics h1::before, li:first-child .button.politics::after { content: " ♗"; }
 
-.tag.recycle h1::before, .button:first-child.recycle::after { content: " ↺"; }
+.tag.recycle h1::before, li:first-child .button.recycle::after { content: " ↺"; }
 
-.tag.sport h1::before, .button:first-child.sport::after { content: " ♕"; }
+.tag.sport h1::before, li:first-child .button.sport::after { content: " ♕"; }
 
-.tag.typography h1::before, .button:first-child.typography::after { content: " ﬃ"; }
+.tag.typography h1::before, li:first-child .button.typography::after { content: " ﬃ"; }
 
-.tag.vegan h1::before, .button:first-child.vegan::after { content: " Ⓥ"; }
+.tag.vegan h1::before, li:first-child .button.vegan::after { content: " Ⓥ"; }
 
-.tag.water h1::before, .button:first-child.water::after { content: " ☂"; }
+.tag.water h1::before, li:first-child .button.water::after { content: " ☂"; }
 
-.tag.web h1::before, .button:first-child.web::after { content: " @"; }
+.tag.web h1::before, li:first-child .button.web::after { content: " @"; }
 
 .tag.quatrecentquatre h1::before { content: " ⁉"; }
 
-.button:first-child::after { font-family: "Spectral", Georgia, serif; }
+li:first-child .button::after { font-family: "Spectral", Georgia, serif; }
 
 .tag h1::before { display: block; margin-top: -1.6rem; color: #5289db; font-family: "Spectral", Georgia, serif; font-size: 96px; font-style: normal; opacity: .75; }
 @media (max-width: 767px) { .tag h1::before { margin-top: 0; } }
 
 /* VIDEO RESPONSIVE */
 .embed-responsive { position: relative; display: block; height: 0; padding: 0; overflow: hidden; }
-.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video, .embed-responsive img { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.embed-responsive img { -webkit-object-fit: cover; object-fit: cover; }
 
 .embed-responsive-16by9 { padding-bottom: 56.25%; }
 
@@ -225,6 +226,21 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 /* HEADER */
 .header a { margin-top: 1.6rem; margin-bottom: 3.2rem; }
 .header a:hover { text-decoration: none; }
+
+/* Cards styling */
+.card .card-title { position: absolute; top: 0; background-color: rgba(82, 137, 219, 0.8); width: 100%; }
+.card .card-title:hover { background-color: rgba(82, 137, 219, 0.9); text-decoration: none; }
+.card .card-title h2 { margin: 0; padding: 1.6rem; color: #fff; }
+.card .card-meta { background-color: rgba(69, 153, 60, 0.8); color: #fff; position: absolute; padding: 1.6rem; bottom: 0; }
+@media (max-width: 549px) { .card .card-meta { width: 100%; } }
+.card .card-meta .buttons { margin-bottom: 0; }
+.card .card-meta a { color: #fff; }
+.card .card-meta a:not(.button) { text-decoration: underline; }
+.card .card-meta a:hover { text-decoration: none; }
+.card .card-meta a.button { border-color: #fff; }
+.card .card-meta a.button:hover { background-color: #fff; color: #45993c; }
+@media (max-width: 549px) { .card .embed-responsive-16by9 { padding-bottom: 177%; } }
+@media (min-width: 550px) and (max-width: 767px) { .card .embed-responsive-16by9 { padding-bottom: 100%; } }
 
 /* Parts styling */
 .part { padding: 3.2rem 0; }

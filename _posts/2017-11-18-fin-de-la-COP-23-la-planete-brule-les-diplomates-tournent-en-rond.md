@@ -1,6 +1,6 @@
 ---
 layout: link
-title: Fin de la COP 23, la planète brûle, les diplomates tournent en rond
+title: Fin de la COP 23, la planète brûle, les diplo&shy;mates tournent en rond
 source: Reporterre
 date: '2017-11-18T14:25:00+02:00'
 tags:

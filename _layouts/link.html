@@ -10,13 +10,13 @@
 		<div class="row">
 			<div class="eight columns lead">
 				<figure>
-					<a class="thumbnail" href="{{ page.link_url }}"><img src="{{ page.img_url }}" alt="{{ page.title }}"></a>
+					<a class="thumbnail" href="{{ page.link_url }}" title="À lire sur {{ page.source }}"><img src="{{ page.img_url }}" alt="{{ page.title }}"></a>
 					<figcaption>
 						{{ page.img_caption }}
 					</figcaption>
 				</figure>
 				<p>
-					Via&nbsp;: <a href="{{ page.link_url }}">{{ page.source }}</a>
+					<a class="button button-primary" href="{{ page.link_url }}">À lire sur {{ page.source }}</a>
 				</p>
 			</div>
 
