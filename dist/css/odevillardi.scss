@@ -570,6 +570,8 @@ li:first-child .button::after { font-family: $serif-family; }
 
 /* Cards styling */
 .card {
+  text-shadow: 0 1px 1px $text-color;
+
   .card-title {
     position: absolute;
     top: 0;
@@ -585,7 +587,6 @@ li:first-child .button::after { font-family: $serif-family; }
       margin: 0;
       padding: $spacing;
       color: $background-color;
-      text-shadow: 0 1px 1px $text-color;
     }
   }
 
@@ -609,9 +610,11 @@ li:first-child .button::after { font-family: $serif-family; }
       &:hover { text-decoration: none; }
       &.button {
         border-color: $background-color;
+        box-shadow: 0 1px 1px $text-color;
         &:hover {
           background-color: $background-color;
           color: $green-color;
+          text-shadow: none;
         }
       }
     }
