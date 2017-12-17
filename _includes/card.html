@@ -4,8 +4,8 @@
   {% else %}
     <img src="{{ post.img_url }}" alt="{{ post.img_caption }}">
   {% endif %}
-  <a class="card-title" href="{{ post.url }}">
-    <h2>{{ post.title }}</h2>
+  <a class="card-title" href="{% if post.layout == "link" %}{{ post.link_url }}{% else %}{{ post.url }}{% endif %}">
+    <h2 class="{{ post.layout }}">{{ post.title }}</h2>
   </a>
   <div class="card-meta">
     <ul class="list-inline">

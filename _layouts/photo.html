@@ -1,0 +1,21 @@
+---
+
+---
+{% include head.html %}
+
+{% include big-title.html title=page.title %}
+
+<div class="posts" id="posts">
+	<div class="part text">
+		<div class="row">
+			<div class="eight columns lead">
+				{{ page.content }}
+			</div>
+
+			{% include sticker.html post=page %}
+
+		</div>
+	</div>
+</div>
+
+{% include foot.html %}
