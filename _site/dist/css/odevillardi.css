@@ -294,7 +294,7 @@ blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; fon
 
 #contact:target { margin-top: 0; transition: all .2s ease-in-out; }
 
-#github:hover ~ #mail-contact, #github:hover ~ #mail-pointfr, #github:hover ~ #mail-arobase, #web:hover ~ #mail-contact, #web:hover ~ #mail-arobase { opacity: .3; transition: opacity .25s ease-in-out; }
+#github:hover ~ #mail-contact, #github:hover ~ #mail-pointfr, #github:hover ~ #mail-arobase, #mastodon:hover ~ #mail-contact, #mastodon:hover ~ #mail-pointfr { opacity: .3; transition: opacity .25s ease-in-out; }
 
 @media (max-width: 767px) { .content { margin-top: 1.6rem; }
   .row { overflow: hidden; }

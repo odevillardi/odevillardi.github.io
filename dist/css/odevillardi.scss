@@ -757,8 +757,8 @@ blockquote.quote {
 #github:hover ~ #mail-contact,
 #github:hover ~ #mail-pointfr,
 #github:hover ~ #mail-arobase,
-#web:hover ~ #mail-contact,
-#web:hover ~ #mail-arobase {
+#mastodon:hover ~ #mail-contact,
+#mastodon:hover ~ #mail-pointfr {
   opacity: .3;
   transition: opacity .25s ease-in-out;
 }
