@@ -176,7 +176,7 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
 .tag.environment h1::before, li:first-child .button.environment::after { content: " ☷"; }
 
-.tag.food h1::before, li:first-child .button.food::after { content: " ☰"; }
+.tag.food h1::before, li:first-child .button.food::after { content: " ♨"; }
 
 .tag.funny h1::before, li:first-child .button.funny::after { content: " ☺"; }
 
@@ -194,15 +194,15 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
 .tag.parisweb h1::before, li:first-child .button.parisweb::after { content: " #"; }
 
-.tag.permaculture h1::before, li:first-child .button.permaculture::after { content: " ☀"; }
+.tag.permaculture h1::before, li:first-child .button.permaculture::after { content: " ⚘"; }
 
 .tag.pixel.art h1::before { content: " ▓"; }
 
 .tag.politics h1::before, li:first-child .button.politics::after { content: " ♗"; }
 
-.tag.recycle h1::before, li:first-child .button.recycle::after { content: " ↺"; }
+.tag.recycle h1::before, li:first-child .button.recycle::after { content: " ♽"; }
 
-.tag.sport h1::before, li:first-child .button.sport::after { content: " ♕"; }
+.tag.sport h1::before, li:first-child .button.sport::after { content: " ⚾"; }
 
 .tag.typography h1::before, li:first-child .button.typography::after { content: " ﬃ"; }
 
