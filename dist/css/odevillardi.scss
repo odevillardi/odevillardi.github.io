@@ -11,6 +11,15 @@ $button-color: #555;
 $spacing: 1.6rem;
 $double-spacing: 3.2rem;
 
+$breakpoint-xs-1: 399px;
+$breakpoint-xs:   400px;
+$breakpoint-s-1:  549px;
+$breakpoint-s:    550px;
+$breakpoint-m-1:  767px;
+$breakpoint-m:    768px;
+$breakpoint-l-1:  1023px;
+$breakpoint-l:    1024px;
+
 $serif-family: 'Spectral', Georgia, serif;
 $sans-serif-family: 'Lato', Helvetica, Arial, sans-serif;
 
@@ -32,7 +41,7 @@ $sans-serif-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: $breakpoint-xs) {
   .container {
     width: 90%;
     padding: 0;
@@ -40,7 +49,7 @@ $sans-serif-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 /* For devices larger than 768px */
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-m) {
   .container {
     width: 85%;
   }
@@ -161,7 +170,7 @@ p, ul, ol {
 .lead {
   font-size: 1.8rem;
 
-  @media (min-width: 550px) { font-size: 2rem; }
+  @media (min-width: $breakpoint-s) { font-size: 2rem; }
 }
 
 .hidden { display: none; }
@@ -181,7 +190,7 @@ ol, ul {
   padding-left: 0;
   margin-left: $double-spacing;
 
-  @media (max-width: 767px) { margin-left: $spacing; }
+  @media (max-width: $breakpoint-m-1) { margin-left: $spacing; }
 }
 
 ul ul,
@@ -255,7 +264,7 @@ h6 {
   line-height: 1.6;
 }
 
-@media (min-width: 550px) {
+@media (min-width: $breakpoint-s) {
   h1 { font-size: 6.0rem; }
   h2 { font-size: 5.2rem; }
   h3 { font-size: 4.4rem; }
@@ -358,7 +367,7 @@ input[type="button"] {
 
 .navigation .button { margin-bottom: $spacing; }
 
-@media (min-width: 550px) {
+@media (min-width: $breakpoint-s) {
   .button.next::before { content: "Suivant : "}
   .button.previous::before { content: "Précédent : "}
 }
@@ -534,7 +543,7 @@ li:first-child .button::after { font-family: $serif-family; }
   font-style: normal;
   opacity: .75;
 
-  @media (max-width: 767px) { margin-top: 0; }
+  @media (max-width: $breakpoint-m-1) { margin-top: 0; }
 }
 
 /* VIDEO RESPONSIVE */
@@ -602,7 +611,7 @@ li:first-child .button::after { font-family: $serif-family; }
     padding: $spacing;
     bottom: 0;
 
-    @media (max-width: 549px) {
+    @media (max-width: $breakpoint-s-1) {
       width: 100%;
     }
 
@@ -631,7 +640,7 @@ li:first-child .button::after { font-family: $serif-family; }
     }
   }
 
-  @media (min-width: 550px) and (max-width: 767px) {
+  @media (min-width: $breakpoint-s) and (max-width: $breakpoint-m-1) {
     .embed-responsive-16by9 {
       padding-bottom: 100%;
     }
@@ -656,7 +665,7 @@ li:first-child .button::after { font-family: $serif-family; }
           top:  $double-spacing;
   padding-top: -$double-spacing;
 
-  @media (max-width: 767px) {
+  @media (max-width: $breakpoint-m-1) {
     text-align: center;
     margin-top: $spacing;
     &::before { content: "—"; }
@@ -667,7 +676,7 @@ li:first-child .button::after { font-family: $serif-family; }
   margin-top: $spacing;
 }
 
-@media (max-width: 399px) {
+@media (max-width: $breakpoint-xs-1) {
   .part.video .row,
   .part.card {
     margin-left: -$spacing;
@@ -680,7 +689,7 @@ li:first-child .button::after { font-family: $serif-family; }
   }
 }
 
-@media (min-width: 400px) and (max-width: 767px) {
+@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-m-1) {
   .part.video .row,
   .part.card  {
     margin-left: -5.55556%;
@@ -693,7 +702,7 @@ li:first-child .button::after { font-family: $serif-family; }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: $breakpoint-m) and (max-width: 1023px) {
   .part.video .row {
                             margin-left: -8.82353%;
                             margin-right:-8.82353%;
@@ -702,7 +711,7 @@ li:first-child .button::after { font-family: $serif-family; }
   .part.video .stickers  { padding-right: 8.82353%; }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-m) {
   .part.video .stickers,
   .part.video .caption {
     margin-top: $double-spacing;
@@ -716,7 +725,7 @@ blockquote {
   font-size: inherit;
   border-left: 4px solid $alternate-color;
 
-  @media (max-width: 549px) {
+  @media (max-width: $breakpoint-s-1) {
     margin-left: 0;
   }
 }
@@ -741,9 +750,9 @@ blockquote.quote {
   border-bottom-left-radius:  2px;
   border-bottom-right-radius: 2px;
 
-  @media (max-width: 549px) { padding-bottom: 1.2rem; margin-top: -8rem; }
+  @media (max-width: $breakpoint-s-1) { padding-bottom: 1.2rem; margin-top: -8rem; }
 
-  @media (min-width: 768px) { max-width: 33%; }
+  @media (min-width: $breakpoint-m) { max-width: 33%; }
 }
 
 .contact a:hover { text-decoration: none; }
@@ -763,7 +772,7 @@ blockquote.quote {
   transition: opacity .25s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-m-1) {
   .content { margin-top: $spacing; }
 
   .row { overflow: hidden; }
