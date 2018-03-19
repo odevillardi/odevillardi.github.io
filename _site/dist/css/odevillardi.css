@@ -272,7 +272,7 @@ li:first-child .button::after { font-family: "Spectral", Georgia, serif; }
   .part.video .stickers { padding-right: 8.82353%; } }
 @media (min-width: 768px) { .part.video .stickers, .part.video .caption { margin-top: 3.2rem; } }
 /* Quotes */
-blockquote { margin-left: 1.6rem; padding-left: 1.6rem; font-size: inherit; border-left: 4px solid #ccc; }
+blockquote { color: #4c918c; margin-left: 1.6rem; padding-left: 1.6rem; font-size: inherit; font-style: italic; border-left: 4px solid #4c918c; }
 @media (max-width: 549px) { blockquote { margin-left: 0; } }
 
 blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; font-style: italic; }

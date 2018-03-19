@@ -720,10 +720,12 @@ li:first-child .button::after { font-family: $serif-family; }
 
 /* Quotes */
 blockquote {
+  color: $mix-color;
   margin-left: $spacing;
   padding-left: $spacing;
   font-size: inherit;
-  border-left: 4px solid $alternate-color;
+  font-style: italic;
+  border-left: 4px solid $mix-color;
 
   @media (max-width: $breakpoint-s-1) {
     margin-left: 0;
