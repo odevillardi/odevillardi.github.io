@@ -71,7 +71,9 @@ Là on est plutôt dans la méconnaissance totale de ce que vit un végan au quo
 
 > […]&nbsp;le mauvais coup que porte le véganisme à notre mode de vie&nbsp;[…]
 
-1 point pour le mammouth&nbsp;!
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Hx2CLjkx89E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 > L’Occident et les riches des pays du Sud consomment trop de viandes&nbsp;[…]
 
