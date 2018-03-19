@@ -121,7 +121,9 @@ Pour preuve, cette vidéo de vaches tellement déçues d’avoir été libérée
 
 > Ils ne demandent pas à retourner à la sauvagerie.
 
-Beh non, tu l’as dit Boufi, je te re-cite : "*Les animaux domestiques ne sont plus […] des animaux «naturels»*". T’as mangé un poisson rouge ou quoi&nbsp;?
+Beh non, tu l’as dit Boufi, je te re-cite : "*Les animaux domestiques ne sont plus […] des animaux «naturels»*".
+
+T’as mangé un poisson rouge ou quoi&nbsp;?
 
 > Ils demandent à vivre avec nous, et nous avec eux, ils demandent à vivre une existence intéressante, intelligente et digne.
 
@@ -165,11 +167,11 @@ Le fumier serait une idée de l’Homme…
 
 Donc t’as jamais compris le principe et l’intérêt, que dis-je, la meilleure idée qu’aient jamais eu les arbres&nbsp;: les fruits&nbsp;!
 
-Tu vois pas le rapport ? Je t’invite à regarder ton caca après avoir mangé une tomate ou un maïs, tu comprendras. Et si t’as toujours pas compris, va faire caca dans ton jardin et reviens dans quelques mois.
+Tu vois pas le rapport ? Je t’invite à regarder ton caca après avoir mangé une tomate ou un maïs, tu comprendras. Et si t’as toujours pas compris, va faire caca dans ton jardin et reviens dans quelques mois, tu comprendras.
 
 > Les animaux sont alors devenus des machines dont la seule utilité est de générer des profits, aux dépens des paysans et de l’environnement.
 
-On est tellement d’accord que t’as oublié de finir ta démonstration pour prouver qu’on n’allait pas sauver l’agriculture.
+On est tellement d’accord que t’as oublié de finir ta démonstration pour prouver que les végans n'allaient pas sauver l’agriculture.
 
 ## Le véganisme va sauver notre alimentation
 
@@ -237,7 +239,7 @@ On est d’accord.
 
 > En comparaison, manger végan, l’absolu des régimes «sans», c’est se condamner à ingurgiter beaucoup de produits transformés&nbsp;[…]
 
-Ah bah merde, je croyais qu’on mangeait que des légumes… c’est pas facile à suivre ton histoire. Et puis, une nouvelle fois Boufi, tu l’as dit toi-même&nbsp;: "*consomment aussi très peu de produits transformés*". On dirait que la consommation de produits animaux te pourrissent complètement la mémoire.
+Ah bah merde, je croyais qu’on mangeait que des légumes… c’est pas facile à suivre ton histoire. Et puis, une nouvelle fois Boufi, tu l’as dit toi-même&nbsp;: "*consomment aussi très peu de produits transformés*". On dirait que la consommation de produits animaux te pourrit complètement la mémoire.
 
 Une si belle contradiction, juste à quatre lignes d’intervalle, c’est beau.
 
@@ -372,6 +374,8 @@ Que… quoi&nbsp;?
 > Oui, véganisme rime avec transhumanisme.
 
 🙃 🤔 😁 🙄 😂 🧐 🤣 🤨 🤪
+
+Et que dire de journalisme.
 
 > Un monde terrifiant.
 
