@@ -8,10 +8,10 @@ tags:
 - environment
 - food
 related:
-- url: 2015/09/14/ma-pédale-cest-html5-sud-web-2015-tu-débutes-à
-  title: "Ma pédale c’est HTML5"
-- url: 2014/10/16/le-web-fait-pousser-mes-tomates
-  title: "Le Web fait pousser mes tomates"
+- url: 2017/09/15/165375924614
+  title: "Nutrion­nistes et conflits d’intérêts"
+- url: 2015/09/19/cowspiracy-may-be-the-most-important-film-made-to
+  title: "Cowspiracy"
 img_url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Lovis_Corinth_Geschlachtetes_Schwein_1906.jpg"
 ---
 Je suis tombé sur cet article sur le site de Libé : [Pourquoi les végans ont tout faux](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109) et il m’a tellement fait rire que je souhaitais le partager avec vous :)
@@ -119,7 +119,7 @@ Pour preuve, cette vidéo de vaches tellement déçues d’avoir été libérée
 
 > Ils ne demandent pas à retourner à la sauvagerie.
 
-Beh non, tu l’as dit Boufi, je te re-cite : "*Les animaux domestiques ne sont plus […] des animaux «naturels»*". T’as une mémoire de poisson rouge ou quoi&nbsp;?
+Beh non, tu l’as dit Boufi, je te re-cite : "*Les animaux domestiques ne sont plus […] des animaux «naturels»*". T’as mangé un poisson rouge ou quoi&nbsp;?
 
 > Ils demandent à vivre avec nous, et nous avec eux, ils demandent à vivre une existence intéressante, intelligente et digne.
 
