@@ -307,7 +307,7 @@ Ahhh, mon passage préféré. L’industrie 4.0.
 
 > Le grand danger de ce début du XXIe siècle est bien l’invention d’une agriculture sans élevage.
 
-D’ailleurs, on est en état d’urgence en France depuis 3&nsbp;ans, à cause de l’agriculture sans élevage. On a établi les accords de Paris à la COP21 parce que certains ont créé des fermes sans animaux. Et les robots tueurs en Corée du Nord, c’est parce qu’il n’y a plus de vaches pour brouter et qu’on a mis des robots à la place.
+D’ailleurs, on est en état d’urgence en France depuis 3&nbsp;ans, à cause de l’agriculture sans élevage. On a établi les accords de Paris à la COP21 parce que certains ont créé des fermes sans animaux. Et les robots tueurs en Corée du Nord, c’est parce qu’il n’y a plus de vaches pour brouter et qu’on a mis des robots à la place.
 
 Tu savais pas&nbsp;? Lis Libé, tu seras bien informé.
 
@@ -401,6 +401,8 @@ Apportez-moi des côtelettes d’agneau.
 
 **Mises à jour**
 
-- *Le 20 mars 2018 à 12h00&nbsp;:* énormément de commentaires très drôles sur [l'article d'origine](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109), je vous conseille leur lecture&nbsp;!
+1. *Le 20 mars 2018 à 12h00&nbsp;:* énormément de commentaires très drôles sur [l'article d'origine](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109), je vous conseille leur lecture&nbsp;!
 
-- *Le 20 mars 2018 à 13h00&nbsp;:* [L214 a pris le temps de répondre](http://www.liberation.fr/debats/2018/03/19/et-si-les-vegans-n-avaient-pas-tort_1637325) — sérieusement, eux — à l'article d'origine.
+2. *Le 20 mars 2018 à 13h00&nbsp;:* [L214 a pris le temps de répondre](http://www.liberation.fr/debats/2018/03/19/et-si-les-vegans-n-avaient-pas-tort_1637325) — sérieusement, eux — à l'article d'origine.
+
+3. *Le 20 mars 2018 à 20h30&nbsp;:* [excellente réponse également de Mr Mondialisation](https://mrmondialisation.org/les-vegans-ont-tout-faux-notre-reponse-a-liberation/).
