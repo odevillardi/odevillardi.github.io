@@ -363,6 +363,7 @@ input[type="button"] {
   &.next::before { content: "Suiv. : "}
   &.previous::before { content: "Préc. : "}
   &::before { font-weight: bold; }
+  &.text-overflow { overflow: hidden; }
 }
 
 .navigation .button { margin-bottom: $spacing; }
@@ -370,6 +371,11 @@ input[type="button"] {
 @media (min-width: $breakpoint-s) {
   .button.next::before { content: "Suivant : "}
   .button.previous::before { content: "Précédent : "}
+}
+
+@media (min-width: $breakpoint-m) {
+  .button.next::before { content: "Billet suivant : "}
+  .button.previous::before { content: "Billet précédent : "}
 }
 
 .button.button-primary,
@@ -754,7 +760,7 @@ blockquote.quote {
 
   @media (max-width: $breakpoint-s-1) { padding-bottom: 1.2rem; margin-top: -8rem; }
 
-  @media (min-width: $breakpoint-m) { max-width: 33%; }
+  @media (min-width: $breakpoint-m) { max-width: 40%; }
 }
 
 .contact a:hover { text-decoration: none; }

@@ -150,11 +150,14 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 .button.next::before, button.next::before, input[type="submit"].next::before, input[type="reset"].next::before, input[type="button"].next::before { content: "Suiv. : "; }
 .button.previous::before, button.previous::before, input[type="submit"].previous::before, input[type="reset"].previous::before, input[type="button"].previous::before { content: "Préc. : "; }
 .button::before, button::before, input[type="submit"]::before, input[type="reset"]::before, input[type="button"]::before { font-weight: bold; }
+.button.text-overflow, button.text-overflow, input[type="submit"].text-overflow, input[type="reset"].text-overflow, input[type="button"].text-overflow { overflow: hidden; }
 
 .navigation .button { margin-bottom: 1.6rem; }
 
 @media (min-width: 550px) { .button.next::before { content: "Suivant : "; }
   .button.previous::before { content: "Précédent : "; } }
+@media (min-width: 768px) { .button.next::before { content: "Billet suivant : "; }
+  .button.previous::before { content: "Billet précédent : "; } }
 .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { background-color: #fff; border: 1px solid #5289db; color: #5289db; }
 .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { color: #fff; background-color: #5289db; border-color: #5289db; }
 
@@ -286,7 +289,7 @@ blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; fon
 /* Contact */
 .contact { height: 6rem; margin: -8.4rem auto 0 auto; padding: 0.8rem 1.6rem 1.6rem 1.6rem; transition: all .2s ease-in-out; background-color: #eee; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; }
 @media (max-width: 549px) { .contact { padding-bottom: 1.2rem; margin-top: -8rem; } }
-@media (min-width: 768px) { .contact { max-width: 33%; } }
+@media (min-width: 768px) { .contact { max-width: 40%; } }
 
 .contact a:hover { text-decoration: none; }
 
