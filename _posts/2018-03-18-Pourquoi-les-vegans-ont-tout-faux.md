@@ -313,7 +313,7 @@ Tu savais pas&nbsp;? Lis Libé, tu seras bien informé.
 
 > On ne compte plus les investissements et brevets déposés pour produire de la «viande» en cultivant en laboratoire des cellules musculaires de poulet, de bœuf ou de porc ou produire du lait et des œufs à partir de levures OGM.
 
-Alors, on va reprendre du début, mais si, à la base, tu prélèves des cellules d’un animal, c’est que t’es pas vegan. Donc ta viande de merde faite en laboratoire, c’est pas des vegans qui la font.
+Alors, on va reprendre du début&nbsp;: si, à la base, tu prélèves les cellules d’un animal, c’est que t’es pas vegan. Donc ta viande de merde faite en laboratoire, c’est pas des vegans qui la font.
 
 > Les promoteurs de cette agriculture cellulaire se recrutent au sein des grandes firmes (Gafa, milliardaires et fonds d’investissements puissants).
 
@@ -406,3 +406,13 @@ Apportez-moi des côtelettes d’agneau.
 2. *Le 20 mars 2018 à 13h00&nbsp;:* [L214 a pris le temps de répondre](http://www.liberation.fr/debats/2018/03/19/et-si-les-vegans-n-avaient-pas-tort_1637325) — sérieusement, eux — à l'article d'origine.
 
 3. *Le 20 mars 2018 à 20h30&nbsp;:* [excellente réponse également de Mr Mondialisation](https://mrmondialisation.org/les-vegans-ont-tout-faux-notre-reponse-a-liberation/).
+
+4. *Le 20 mars 2018 à 23h00&nbsp;:*
+ - Sur la page d'accueil de Libé, dans la colonne "TOP 100", 4 articles sur le véganisme dans le top 6&nbsp;:
+    ![Une de libé du 20 mars 2018](/img/libe.png)
+    C'est beau.
+
+ - La [réponse d'Aymeric Caron](http://www.liberation.fr/france/2018/03/19/veganisme-reunir-tant-de-cliches-en-si-peu-de-lignes-est-un-exploit-par-aymeric-caron_1637396). *"Salutations antispécistes"*
+ - [Pourquoi nous avons besoin du véganisme](http://www.liberation.fr/debats/2018/03/20/pourquoi-nous-avons-besoin-du-veganisme_1637481), toujours dans le même journal.
+
+*(Pour rappel, vous pouvez lire plus de 4 articles sur Libé, en mettant votre navigateur en navigation privée…)*
