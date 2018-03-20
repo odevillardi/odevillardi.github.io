@@ -393,4 +393,14 @@ Ah oui&nbsp;? C’est si con que ça un chasseur&nbsp;?
 
 Qu’ai-je donc fait en arrêtant de manger de la viande&nbsp;!
 
-Vite&nbsp;! Apportez-moi des côtelettes d’agneau.
+Vite&nbsp;!
+
+Apportez-moi des côtelettes d’agneau.
+
+<hr>
+
+**Mises à jour**
+
+- *Le 20 mars 2018 à 12h00&nbsp;:* énormément de commentaires très drôles sur [l'article d'origine](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109), je vous conseille leur lecture&nbsp;!
+
+- *Le 20 mars 2018 à 13h00&nbsp;:* [L214 a pris le temps de répondre](http://www.liberation.fr/debats/2018/03/19/et-si-les-vegans-n-avaient-pas-tort_1637325) — sérieusement, eux — à l'article d'origine.
