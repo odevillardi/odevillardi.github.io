@@ -14,13 +14,13 @@ related:
   title: "Cowspiracy"
 img_url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Lovis_Corinth_Geschlachtetes_Schwein_1906.jpg"
 ---
-Je suis tombé sur cet article sur le site de Libé : [Pourquoi les végans ont tout faux](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109) et il m’a tellement fait rire que je souhaitais le partager avec vous :)
+Je suis tombé sur cet article sur le site de Libé&nbsp;: [Pourquoi les végans ont tout faux](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109) et il m’a tellement fait rire que je souhaitais le partager avec vous&nbsp;!
 
 ![Lovis Corinth Geschlachtetes Schwein 1906](https://upload.wikimedia.org/wikipedia/commons/f/f2/Lovis_Corinth_Geschlachtetes_Schwein_1906.jpg)
 
 Je vais me permettre de "répondre" à quelques arguments en essayant d’être d’aussi mauvaise fois que les auteurs de cette tribune&nbsp;!
 
-## Le titre : "Pourquoi les végans ont tout faux"
+## Le titre&nbsp;: "Pourquoi les végans ont tout faux"
 Un bon [putaclic](https://fr.wiktionary.org/wiki/putaclic) des familles.
 
 Pas de point d’interrogation donc on est dans l’affirmation ; la suite nous le prouvera, aucune question ouverte, aucun argument contre argument&nbsp;: on est dans la dénonciation d’une conduite extrême et mortifère&nbsp;!
@@ -32,13 +32,13 @@ Ah non, outre la généralisation faite dès le premier mot de l’article, tu a
 
 > […]&nbsp;alors que manger de la viande a __toujours__ fait partie de l’histoire humaine&nbsp;[…]
 
-et plus tard :
+et plus tard&nbsp;:
 
 > Depuis douze mille ans, nous travaillons et vivons avec des animaux&nbsp;[…]
 
 J’en conclus donc que l’humanité a 12&nbsp;000 ans.
 
-Juste pour le fun, on peut faire un rapide calcul : disons que l’humanité a environ 3 millions d’années, elle mange donc de la viande depuis toujours depuis 12&nbsp;000&nbsp;/&nbsp;3&nbsp;000&nbsp;000&nbsp;=&nbsp;0,004&nbsp;% de son existance.
+Juste pour le fun, on peut faire un rapide calcul&nbsp;: disons que l’humanité a environ 3 millions d’années, elle mange donc de la viande depuis toujours depuis 12&nbsp;000&nbsp;/&nbsp;3&nbsp;000&nbsp;000&nbsp;=&nbsp;0,004&nbsp;% de son existance.
 
 Drôle de définition de "toujours".
 
@@ -50,7 +50,7 @@ C’est bien connu, les vegans ne partagent pas. On bouffe tout seul mon bon mon
 
 > Ils sont peu nombreux, mais ils ont une audience impressionnante.
 
-Ah, un bout de vérité apparaît : nous sommes peu nombreux.
+Ah, un bout de vérité apparaît&nbsp;: nous sommes peu nombreux.
 
 L’audience impressionnante, difficile à dire, mais vu le nombre d’articles comme celui-ci qui cherchent à faire peur ou dénigrer le véganisme, je pense que ce mouvement dérange.
 
@@ -60,10 +60,10 @@ C’est vrai que le titre "*Pourquoi les végans ont tout faux*" n’est pas du 
 
 > D’où le succès de la propagande végane, version politique et extrémiste de l’abolitionnisme de l’élevage&nbsp;[…]
 
-Alors là, on est dans quelque chose de magnifique, un concentré de connerie… décorticons :
+Alors là, on est dans quelque chose de magnifique, un concentré de connerie… décorticons&nbsp;:
 
-- "*Propagande*" : ah&nbsp;! On rentre dans le dur. L’utilisation d’un vocabulaire de guerre est toujours plus efficace pour convaincre son lectorat que celui dont on dénonce les actions est un ennemi.
-- "*version […] extrémiste de l’abolitionnisme*" : continuons sur les termes réducteurs et effrayants MAIS en ajoutant un magnifique paradoxe.
+- "*Propagande*"&nbsp;: ah&nbsp;! On rentre dans le dur. L’utilisation d’un vocabulaire de guerre est toujours plus efficace pour convaincre son lectorat que celui dont on dénonce les actions est un ennemi.
+- "*version […] extrémiste de l’abolitionnisme*"&nbsp;: continuons sur les termes réducteurs et effrayants MAIS en ajoutant un magnifique paradoxe.
 
 > […]&nbsp;aujourd’hui, les opinions contraires, pourtant majoritaires, doivent se justifier par rapport à elle&nbsp;[…]
 
@@ -99,7 +99,7 @@ Ne revenons pas sur les 12&nbsp;000 ans de l’humanité, mais concentrons-nous 
 
 Déjà, nombre de ces animaux ne voient pas le moindre humain au cours de leur courte existance.
 
-Ensuite, comme le dit si bien le proverbe : "Si c’est gratuit, c’est toi le produit.".
+Ensuite, comme le dit si bien le proverbe&nbsp;: "Si c’est gratuit, c’est toi le produit.".
 
 > Les animaux domestiques ne sont plus, et depuis longtemps, des animaux «naturels».
 
@@ -121,17 +121,17 @@ Pour preuve, cette vidéo de vaches tellement déçues d’avoir été libérée
 
 > Ils ne demandent pas à retourner à la sauvagerie.
 
-Beh non, tu l’as dit Boufi, je te re-cite : "*Les animaux domestiques ne sont plus […] des animaux «naturels»*".
+Beh non, tu l’as dit Boufi, je te re-cite&nbsp;: "*Les animaux domestiques ne sont plus […] des animaux «naturels»*".
 
 T’as mangé un poisson rouge ou quoi&nbsp;?
 
 > Ils demandent à vivre avec nous, et nous avec eux, ils demandent à vivre une existence intéressante, intelligente et digne.
 
-Très bel anthropomorphisme… et encore, à en croire les auteurs de cette tribune, euh… bah leur vie n’a pas l’air très intelligente, ni digne en fait.
+Très bel anthropomorphisme… et encore, apparemment les auteurs de cette tribune, euh… bah leur vie n’a pas l’air très intelligente, ni digne en fait.
 
 ## Le véganisme va nous sauver de la famine
 
-> Jusqu’à il y a peu, rappelons-le, les hommes et les femmes mouraient vite de trois causes possibles : les maladies infectieuses, la guerre et la faim.
+> Jusqu’à il y a peu, rappelons-le, les hommes et les femmes mouraient vite de trois causes possibles&nbsp;: les maladies infectieuses, la guerre et la faim.
 
 Oui, vous oubliez un peu vite la mortalité maternelle et infantile mais on n’est pas à une approximation près hein.
 
@@ -181,7 +181,7 @@ Il serait temps qu’on serve à quelque chose, je m’impatiente.
 
 Correction&nbsp;: de se passer des animaux, pour éviter leur exploitation. Vous êtes un peu comme eux, on pourra pas tous vous sauver.
 
-> Retour à la case départ : l’agriculture sans élevage, c’est l’agriculture famineuse parce qu’elle épuise les sols.
+> Retour à la case départ&nbsp;: l’agriculture sans élevage, c’est l’agriculture famineuse parce qu’elle épuise les sols.
 
 Non, ce qui épuise les sols c’est l’agriculture intensive.
 
@@ -199,7 +199,7 @@ Quelle belle rime.
 
 > […]&nbsp;manger de la viande, c’est destructeur&nbsp;[…]
 
-Ah bah râté, t’as pas compris le principe, il fallait finir la phrase en "ande"&nbsp;: par exemple, "manger de la viande, c’est le weekend".
+Ah bah râté, t’as pas compris le principe, il fallait finir la phrase en "ande"&nbsp;: par exemple, "manger de la viande, seulement le weekend".
 
 > Car les études montrent que la consommation de viandes est corrélée au cancer.
 
@@ -263,7 +263,7 @@ Ah merde, encore râté.
 
 Alors, pour les prairies, je dis pas. Mais le reste&nbsp;: les zones humides vont disparaître&nbsp;? Les montagnes vont s’écrouler&nbsp;?
 
-Sans parler des forêts qui reprendraient leur droit et permettraient de capter plus de CO2 que ce qu’elles remplaceraient. Une vraie catastrophe écologique.
+Sans parler des forêts qui reprendraient leur droit et permettraient de capter plus de CO2 que les prairies ou les champs qu’elles remplaceraient. Une vraie catastrophe écologique…
 
 > Sauf à obliger chômeurs, prisonniers et clochards à faucher et à couper les herbes, ou à produire des robots brouteurs.
 
@@ -307,7 +307,7 @@ Ahhh, mon passage préféré. L’industrie 4.0.
 
 > Le grand danger de ce début du XXIe siècle est bien l’invention d’une agriculture sans élevage.
 
-D’ailleurs, on a l’état d’urgence en France depuis 4 ans, à cause de l’agriculture sans élevage. On a établi les accords de Paris à la COP21 parce que certains ont créé des fermes sans animaux. Et les robots tueurs en Corée du Nord, c’est parce qu’il n’y a plus de vaches pour brouter et qu’on a mis des robots à la place.
+D’ailleurs, on est en état d’urgence en France depuis 3&nsbp;ans, à cause de l’agriculture sans élevage. On a établi les accords de Paris à la COP21 parce que certains ont créé des fermes sans animaux. Et les robots tueurs en Corée du Nord, c’est parce qu’il n’y a plus de vaches pour brouter et qu’on a mis des robots à la place.
 
 Tu savais pas&nbsp;? Lis Libé, tu seras bien informé.
 
