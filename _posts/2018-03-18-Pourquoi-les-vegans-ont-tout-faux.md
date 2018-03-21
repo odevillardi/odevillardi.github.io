@@ -401,18 +401,18 @@ Apportez-moi des côtelettes d’agneau.
 
 **Mises à jour**
 
-1. *Le 20 mars 2018 à 12h00&nbsp;:* énormément de commentaires très drôles sur [l'article d'origine](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109), je vous conseille leur lecture&nbsp;!
+1. *Le 20 mars 2018 à 12h00&nbsp;—* énormément de commentaires très drôles sur [l'article d'origine](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109), je vous conseille leur lecture&nbsp;!
 
-2. *Le 20 mars 2018 à 13h00&nbsp;:* [L214 a pris le temps de répondre](http://www.liberation.fr/debats/2018/03/19/et-si-les-vegans-n-avaient-pas-tort_1637325) — sérieusement, eux — à l'article d'origine.
+2. *Le 20 mars 2018 à 13h00&nbsp;—* [L214 a pris le temps de répondre](http://www.liberation.fr/debats/2018/03/19/et-si-les-vegans-n-avaient-pas-tort_1637325) — sérieusement, eux — à l'article d'origine.
 
-3. *Le 20 mars 2018 à 20h30&nbsp;:* [excellente réponse également de Mr Mondialisation](https://mrmondialisation.org/les-vegans-ont-tout-faux-notre-reponse-a-liberation/).
+3. *Le 20 mars 2018 à 20h30&nbsp;—* [excellente réponse également de Mr Mondialisation](https://mrmondialisation.org/les-vegans-ont-tout-faux-notre-reponse-a-liberation/).
 
-4. *Le 20 mars 2018 à 23h00&nbsp;:*
- - Sur la page d'accueil de Libé, dans la colonne "TOP 100", 4 articles sur le véganisme dans le top 6&nbsp;:
-    ![Une de libé du 20 mars 2018](/img/libe.png)
-    C'est beau.
-
- - La [réponse d'Aymeric Caron](http://www.liberation.fr/france/2018/03/19/veganisme-reunir-tant-de-cliches-en-si-peu-de-lignes-est-un-exploit-par-aymeric-caron_1637396). *"Salutations antispécistes"*
- - [Pourquoi nous avons besoin du véganisme](http://www.liberation.fr/debats/2018/03/20/pourquoi-nous-avons-besoin-du-veganisme_1637481), toujours dans le même journal.
-
+4. *Le 20 mars 2018 à 23h00&nbsp;—*
+- Sur la page d'accueil de Libé, dans la colonne "TOP 100", 4 articles sur le véganisme dans le top 6&nbsp;:
+  ![Une de libé du 20 mars 2018](/img/libe.png)
+  C'est beau.
+- [La réponse d'Aymeric Caron](http://www.liberation.fr/france/2018/03/19/veganisme-reunir-tant-de-cliches-en-si-peu-de-lignes-est-un-exploit-par-aymeric-caron_1637396). *"Salutations antispécistes"*
+- [Pourquoi nous avons besoin du véganisme](http://www.liberation.fr/debats/2018/03/20/pourquoi-nous-avons-besoin-du-veganisme_1637481), toujours dans le même journal.
 *(Pour rappel, vous pouvez lire plus de 4 articles sur Libé, en mettant votre navigateur en navigation privée…)*
+
+5. *Le 21 mars 2018 à 10h00&nbsp;—* [Véganisme : pourquoi Paul Ariès, Frédéric Denhez et Jocelyne Porcher "ont tout faux"](https://blogs.mediapart.fr/florence-dellerie/blog/190318/veganisme-pourquoi-paul-aries-frederic-denhez-et-jocelyne-porcher-ont-tout-faux), certainement la réponse la plus juste et complète&nbsp;: *"Tout cela semble révéler un certain affolement face au mouvement de revendication des droits des animaux ; exigence de justice que notre société tente, avec un succès grandissant, de porter dans le débat public."*
