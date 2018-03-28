@@ -24,6 +24,7 @@ unpublished: false
 whitelist: []
 plugins:
   - jekyll-paginate
+  - jekyll-textile-converter
 
 # Pagination Settings
 paginate: 5

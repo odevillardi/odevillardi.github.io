@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Test de textile"
+date: ’2018-03-21T14:47:00+02:00’
+tags:
+- web
+- css
+related:
+- url: 2017/09/15/165375924614
+  title: "Nutrion­nistes et conflits d’intérêts"
+img_url: "https://www.ul.com/consumer-retail-services/wp-content/uploads/2017/12/crs-ne-news-Textile.jpg"
+---
+h2. Un petit test de textile
+
+Un -premier- paragraphe
+
+["(thumbnail). !https://upload.wikimedia.org/wikipedia/commons/f/f2/Lovis_Corinth_Geschlachtetes_Schwein_1906.jpg!":http://google.fr/]
+
+Une vidéo :

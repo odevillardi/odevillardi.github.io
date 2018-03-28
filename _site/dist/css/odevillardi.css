@@ -102,6 +102,7 @@ li { margin-bottom: .8rem; }
 /* TITLE UTILITIES */
 h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: "Spectral", Georgia, serif; font-style: italic; }
 h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before { font-style: normal; }
 
 h1 { font-size: 4.0rem; line-height: 1.2; margin-top: 1.6rem; }
 
@@ -122,11 +123,10 @@ h6 { color: #555; font-size: 1.6rem; line-height: 1.6; }
   h5 { font-size: 2.8rem; }
   h6 { font-size: 2rem; } }
 h2:first-child, h4:first-child, h6:first-child { margin-top: 0; }
-h2:before, h4:before, h6:before { font-style: normal; }
-h2.link:before, h4.link:before, h6.link:before { content: "⫘ "; }
-h2.video:before, h4.video:before, h6.video:before { content: "▷ "; }
-h2.photo:before, h4.photo:before, h6.photo:before { content: "◑ "; }
-h2.post:before, h4.post:before, h6.post:before { content: "☶ "; }
+h2.link::before, h4.link::before, h6.link::before { content: "⫘ "; }
+h2.video::before, h4.video::before, h6.video::before { content: "▷ "; }
+h2.photo::before, h4.photo::before, h6.photo::before { content: "◑ "; }
+h2.post::before, h4.post::before, h6.post::before { content: "☶ "; }
 
 /* IMG UTILITIES */
 figure, img, .img, iframe { margin: 0; max-width: 100%; }
@@ -219,7 +219,7 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
 li:first-child .button::after { font-family: "Spectral", Georgia, serif; }
 
-.tag h1::before { display: block; margin-top: -1.6rem; color: #5289db; font-family: "Spectral", Georgia, serif; font-size: 104px; font-style: normal; opacity: .75; }
+.tag h1::before { display: block; margin-top: -1.6rem; color: #5289db; font-family: "Spectral", Georgia, serif; font-size: 104px; opacity: .75; }
 @media (max-width: 767px) { .tag h1::before { margin-top: 0; } }
 
 /* VIDEO RESPONSIVE */
@@ -348,4 +348,4 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { margin-bottom: 1.6rem; }
 .u-pull-left { float: left; }
 
 /* Self Clearing Goodness */
-.container:after, .row:after, .u-cf { content: ""; display: table; clear: both; }
+.container::after, .row::after, .u-cf { content: ""; display: table; clear: both; }

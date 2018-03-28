@@ -1,6 +1,6 @@
 <div class="embed-responsive embed-responsive-16by9">
   {% if post.layout == "video" %}
-    {% include video.html video_url=post.video_url %}
+    {% include video.html video_url=post.video_url card=1 %}
   {% else %}
     <img src="{{ post.img_url }}" alt="{{ post.img_caption }}">
   {% endif %}
