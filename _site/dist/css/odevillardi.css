@@ -93,7 +93,7 @@ li { margin-bottom: .8rem; }
 .list-inline.related li:nth-child(2)::before { content: none; }
 
 .list-inline li.list-title { display: block; margin-bottom: 0; }
-.list-inline li.list-title::before { content: "› "; }
+.list-inline li.list-title::before { content: "➠ "; }
 
 .alternate li:nth-child(odd) a { color: #45993c; }
 
@@ -126,7 +126,7 @@ h2:first-child, h4:first-child, h6:first-child { margin-top: 0; }
 h2.link::before, h4.link::before, h6.link::before { content: "⫘ "; }
 h2.video::before, h4.video::before, h6.video::before { content: "▷ "; }
 h2.photo::before, h4.photo::before, h6.photo::before { content: "◑ "; }
-h2.post::before, h4.post::before, h6.post::before { content: "☶ "; }
+h2.post::before, h4.post::before, h6.post::before { content: "¶ "; }
 
 /* IMG UTILITIES */
 figure, img, .img, iframe { margin: 0; max-width: 100%; }

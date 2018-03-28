@@ -12,7 +12,7 @@ related:
   title: "Nutrion­nistes et conflits d’intérêts"
 - url: 2015/09/19/cowspiracy-may-be-the-most-important-film-made-to
   title: "Cowspiracy"
-img_url: "/img/Lovis_Corinth_Geschlachtetes_Schwein_1906.jpg"
+img_url: "img/Lovis_Corinth_Geschlachtetes_Schwein_1906.jpg"
 ---
 Je suis tombé sur cet article sur le site de Libé&nbsp;: [Pourquoi les végans ont tout faux](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109) et il m’a tellement fait rire que je souhaitais le partager avec vous&nbsp;!
 
@@ -409,7 +409,7 @@ Apportez-moi des côtelettes d’agneau.
 
 4. *Le 20 mars 2018 à 23h00&nbsp;—*
 - Sur la page d'accueil de Libé, dans la colonne "TOP 100", 4 articles sur le véganisme dans le top 6&nbsp;:
-  ![Une de libé du 20 mars 2018](/img/libe.jpg)
+  ![Une de libé du 20 mars 2018](/blog/img/libe.jpg)
   C'est beau.
 - [La réponse d'Aymeric Caron](http://www.liberation.fr/france/2018/03/19/veganisme-reunir-tant-de-cliches-en-si-peu-de-lignes-est-un-exploit-par-aymeric-caron_1637396). *"Salutations antispécistes"*
 - [Pourquoi nous avons besoin du véganisme](http://www.liberation.fr/debats/2018/03/20/pourquoi-nous-avons-besoin-du-veganisme_1637481), toujours dans le même journal.

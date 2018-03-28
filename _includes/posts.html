@@ -13,13 +13,13 @@
       <div class="eight columns lead">
         <h2>{{ post.title }}</h2>
         <figure>
-          <a class="thumbnail" href="{{ post.link_url }}"><img src="{{ post.img_url }}" alt="{{ post.title }}"></a>
+          <a class="thumbnail" href="{{ site.baseurl }}{{ post.link_url }}"><img src="{{ post.img_url }}" alt="{{ post.title }}"></a>
           <figcaption>
             {{ post.img_caption }}
           </figcaption>
         </figure>
         <p>
-           via <a href="{{ post.link_url }}">{{ post.source }}</a>
+           via <a href="{{ site.baseurl }}{{ post.link_url }}">{{ post.source }}</a>
         </p>
       </div>
     {% else %}

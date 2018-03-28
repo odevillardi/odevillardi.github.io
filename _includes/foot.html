@@ -2,22 +2,22 @@
 			<div class="navigation part text-center">
 				<p>
 					{% if paginator.previous_page_path %}
-						<a class="button button-default" href="{{ paginator.previous_page_path }}" role="button">&laquo; Billets plus récents</a>
+						<a class="button button-default" href="{{ site.baseurl }}{{ paginator.previous_page_path }}" role="button">&laquo; Billets plus récents</a>
 					{% endif %}
 
 					{% if paginator.next_page_path %}
-						<a class="button button-default" href="{{ paginator.next_page_path }}" role="button">Billets plus anciens &raquo;</a>
+						<a class="button button-default" href="{{ site.baseurl }}{{ paginator.next_page_path }}" role="button">Billets plus anciens &raquo;</a>
 					{% endif %}
 
 					{% if page.next %}
-						<a class="button button-default text-overflow next" href="{{ page.next.url }}" role="button">
+						<a class="button button-default text-overflow next" href="{{ site.baseurl }}{{ page.next.url }}" role="button">
 							<span class="button button-xs">{{ page.next.tags[0] }}</span>
 							{{ page.next.title }}
 						</a>
 					{% endif %}
 
 					{% if page.previous %}
-						<a class="button button-default text-overflow previous" href="{{ page.previous.url }}" role="button">
+						<a class="button button-default text-overflow previous" href="{{ site.baseurl }}{{ page.previous.url }}" role="button">
 							<span class="button button-xs">{{ page.previous.tags[0] }}</span>
 							{{ page.previous.title }}
 						</a>
@@ -30,7 +30,7 @@
 				{% for post in site.posts %}
 					{% if post.selection %}
 						<li>
-							<a href="{{ post.url }}">{{ post.title }}</a>
+							<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 						</li>
 					{% endif %}
 				{% endfor %}

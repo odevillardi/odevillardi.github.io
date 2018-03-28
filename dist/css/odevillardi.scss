@@ -216,7 +216,7 @@ li { margin-bottom: .8rem; }
   display: block;
   margin-bottom: 0;
 
-  &::before { content: "› "; }
+  &::before { content: "➠ "; }
 }
 
 .alternate li:nth-child(odd) a { color: $green-color; }
@@ -279,7 +279,7 @@ h2, h4, h6 {
   &.link::before { content: "⫘ "}
   &.video::before { content: "▷ "}
   &.photo::before { content: "◑ "}
-  &.post::before { content: "☶ "}
+  &.post::before { content: "¶ "}
 }
 
 /* IMG UTILITIES */
