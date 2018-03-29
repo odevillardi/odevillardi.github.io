@@ -232,8 +232,8 @@ li:first-child .button::after { font-family: "Spectral", Georgia, serif; }
 .embed-responsive-4by3 { padding-bottom: 75%; }
 
 /* HEADER */
-.header a { margin-top: 1.6rem; margin-bottom: 3.2rem; }
-.header a:hover { text-decoration: none; }
+.header ul { margin-top: 1.6rem; margin-bottom: 3.2rem; }
+.header ul a:hover { text-decoration: none; }
 
 /* Cards styling */
 .card { text-shadow: 0 1px 1px #1A1A1A; }

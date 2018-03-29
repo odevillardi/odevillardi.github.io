@@ -580,11 +580,11 @@ li:first-child .button::after { font-family: $serif-family; }
 
 
 /* HEADER */
-.header a {
+.header ul {
   margin-top: $spacing;
   margin-bottom: $double-spacing;
 
-  &:hover { text-decoration: none; }
+  a:hover { text-decoration: none; }
 }
 
 /* Cards styling */

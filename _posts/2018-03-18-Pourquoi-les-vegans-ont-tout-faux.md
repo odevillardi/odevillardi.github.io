@@ -416,3 +416,5 @@ Apportez-moi des côtelettes d’agneau.
 *(Pour rappel, vous pouvez lire plus de 4 articles sur Libé, en mettant votre navigateur en navigation privée…)*
 
 5. *Le 21 mars 2018 à 10h00&nbsp;—* [Véganisme : pourquoi Paul Ariès, Frédéric Denhez et Jocelyne Porcher "ont tout faux"](https://blogs.mediapart.fr/florence-dellerie/blog/190318/veganisme-pourquoi-paul-aries-frederic-denhez-et-jocelyne-porcher-ont-tout-faux), certainement la réponse la plus juste et complète&nbsp;: *"Tout cela semble révéler un certain affolement face au mouvement de revendication des droits des animaux ; exigence de justice que notre société tente, avec un succès grandissant, de porter dans le débat public."*
+
+6. *Le 29 mars 2018 à 20h00&nbsp;—* [La croisade spéciste de Libération](https://www.vegactu.com/actualite/la-croisade-speciste-de-liberation-27007/), très bonne réponse de Vegactu à cette polémique orchestrée.
