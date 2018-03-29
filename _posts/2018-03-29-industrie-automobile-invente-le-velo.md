@@ -8,9 +8,9 @@ tags:
 - economy
 - funny
 related:
-- url: 2016/07/02/laughingsquid-drumi-a-foot-powered-washing.html
+- url: 2016/07/02/laughingsquid-drumi-a-foot-powered-washing
   title: "Foot-Powered Washing Machine"
-- url: 2016/03/28/cyberlabe-quest-ce-que-la-low-tech.html
+- url: 2016/03/28/cyberlabe-quest-ce-que-la-low-tech
   title: "Qu’est-ce que la low tech ?"
 img_url: http://carfree.fr/img/2018/03/i-road.jpg
 img_caption: "L’innovation technologique va désormais tellement loin que l’industrie automobile est à deux doigts de découvrir le vélo."
