@@ -4,7 +4,7 @@
 {% include head.html %}
 {% include big-title.html title=page.title %}
 <div class="text-overflow text-center">
-	<ul class="list-inline text-capitalize">
+	<ul class="menu list-inline text-capitalize" id="menu">
 		{% for subtag in page.subtags %}
 			<li><a href="{{ site.baseurl }}/tag/{{ subtag }}.html">{{ subtag }}</a></li>
 		{% endfor %}

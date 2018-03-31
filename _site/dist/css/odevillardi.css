@@ -135,7 +135,7 @@ img:not(.avatar):not(.thumbnail) { width: 100%; }
 
 figcaption { font-style: italic; text-align: center; font-size: 1.6rem; margin-bottom: 1.6rem; }
 
-a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; border: 1px solid #5289db; margin: 0; border-radius: 2px; opacity: .85; }
+a.thumbnail img, img.thumbnail { max-width: calc(100% - 4px); padding: 1px; border: 1px solid #5289db; margin: 0; border-radius: 2px; opacity: .85; transition: all .2s ease-in-out; }
 
 a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
@@ -144,7 +144,7 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 .avatar { background-color: #fff; -webkit-box-shadow: inset 0 0 0 1px #45993c; box-shadow: inset 0 0 0 1px #45993c; border: 1px solid #5289db; padding: 2px; }
 
 /* Boutons */
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] { display: inline-block; height: 38px; padding: 0 1rem; margin-bottom: 0; max-width: 100%; color: #555; text-align: center; line-height: 3.4rem; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 2px; border: 1px solid #ccc; cursor: pointer; box-sizing: border-box; }
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] { display: inline-block; height: 38px; padding: 0 1rem; margin-bottom: 0; max-width: 100%; color: #555; text-align: center; line-height: 3.4rem; text-decoration: none; white-space: nowrap; background-color: transparent; border: 1px solid #ccc; border-radius: 2px; cursor: pointer; box-sizing: border-box; }
 .button:hover, .button:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus { text-decoration: none; color: #333; border-color: #888; outline: 0; }
 .button:hover .button, .button:focus .button, button:hover .button, button:focus .button, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover .button, input[type="button"]:focus .button { color: #333; border-color: #888; outline: 0; }
 .button.next::before, button.next::before, input[type="submit"].next::before, input[type="reset"].next::before, input[type="button"].next::before { content: "Suiv. : "; }
@@ -237,7 +237,8 @@ li:first-child .button::after { font-family: "Spectral", Georgia, serif; }
 
 /* Cards styling */
 .card { text-shadow: 0 1px 1px #1A1A1A; }
-.card .card-title { position: absolute; top: 0; background-color: rgba(82, 137, 219, 0.8); width: 100%; }
+@media (min-width: 768px) { .card .card-item { border-radius: 2px; } }
+.card .card-title { position: absolute; top: 0; background-color: rgba(82, 137, 219, 0.8); width: 100%; transition: all .2s ease-in-out; }
 .card .card-title:hover { background-color: rgba(82, 137, 219, 0.9); text-decoration: none; }
 .card .card-title h2 { margin: 0; padding: 1.6rem; color: #fff; }
 .card .card-meta { background-color: rgba(69, 153, 60, 0.8); color: #fff; position: absolute; padding: 1.6rem; bottom: 0; }
@@ -287,17 +288,16 @@ blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; fon
 .quote-footer::before { content: "— "; }
 
 /* Contact */
-.contact { height: 6rem; margin: -8.4rem auto 0 auto; padding: 0.8rem 1.6rem 1.6rem 1.6rem; transition: all .2s ease-in-out; background-color: #eee; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; }
-@media (max-width: 549px) { .contact { padding-bottom: 1.2rem; margin-top: -8rem; } }
-@media (min-width: 768px) { .contact { max-width: 40%; } }
+.contact { height: 6rem; margin: -9.2rem auto 0 auto; padding: 1.6rem; transition: all .2s ease-in-out; background-color: #eee; opacity: 0; }
+@media (min-width: 550px) { .contact { max-width: 400px; height: 6.4rem; margin: -9.6rem auto 0 auto; } }
 
 .contact a:hover { text-decoration: none; }
 
-.contact * { transition: opacity .25s ease-in-out; }
+.contact * { transition: opacity .2s ease-in-out; }
 
-#contact:target { margin-top: 0; transition: all .2s ease-in-out; }
+#contact:target { margin-top: 0; opacity: 1; }
 
-#github:hover ~ #mail-contact, #github:hover ~ #mail-pointfr, #github:hover ~ #mail-arobase, #mastodon:hover ~ #mail-contact, #mastodon:hover ~ #mail-pointfr { opacity: .3; transition: opacity .25s ease-in-out; }
+#github:hover ~ #mail-contact, #github:hover ~ #mail-pointfr, #github:hover ~ #mail-arobase, #mastodon:hover ~ #mail-contact, #mastodon:hover ~ #mail-pointfr { opacity: .3; transition: opacity .2s ease-in-out; }
 
 @media (max-width: 767px) { .content { margin-top: 1.6rem; }
   .row { overflow: hidden; }
