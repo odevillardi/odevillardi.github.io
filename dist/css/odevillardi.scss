@@ -308,7 +308,6 @@ img.thumbnail {
   margin: 0;
   border-radius: 2px;
   opacity: .85;
-  transition: all .2s ease-in-out;
 }
 
 a.thumbnail:hover img {
@@ -603,7 +602,6 @@ li:first-child .button::after { font-family: $serif-family; }
     top: 0;
     background-color: rgba(82,137,219,.8);
     width: 100%;
-    transition: all .2s ease-in-out;
 
     &:hover {
       background-color: rgba(82,137,219,.9);
@@ -761,24 +759,24 @@ blockquote.quote {
   height: 6rem;
   margin: -9.2rem auto 0 auto;
   padding: $spacing;
-  transition: all .2s ease-in-out;
   background-color: #eee;
   opacity: 0;
+  -webkit-transition: margin .2s ease;
+          transition: margin .2s ease;
 
   @media (min-width: $breakpoint-s) {
     max-width: 400px;
     height: 6.4rem;
     margin: -9.6rem auto 0 auto;
   }
+
+  &#contact:target {
+    margin-top: 0;
+    opacity: 1;
+  }
 }
 
 .contact a:hover { text-decoration: none; }
-.contact * { transition: opacity .2s ease-in-out; }
-
-#contact:target {
-  margin-top: 0;
-  opacity: 1;
-}
 
 #github:hover ~ #mail-contact,
 #github:hover ~ #mail-pointfr,
@@ -786,7 +784,6 @@ blockquote.quote {
 #mastodon:hover ~ #mail-contact,
 #mastodon:hover ~ #mail-pointfr {
   opacity: .3;
-  transition: opacity .2s ease-in-out;
 }
 
 @media (max-width: $breakpoint-m-1) {
