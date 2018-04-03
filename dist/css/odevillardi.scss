@@ -323,6 +323,11 @@ a.thumbnail:hover img {
           box-shadow: inset 0 0 0 1px $green-color;
   border: 1px solid $link-color;
   padding: 2px;
+
+  @supports (filter: blur()) {
+    transition: all .2s ease-in-out;
+    &:hover { filter: blur(9px); }
+  }
 }
 
 /* Boutons */
@@ -603,9 +608,22 @@ li:first-child .button::after { font-family: $serif-family; }
     background-color: rgba(82,137,219,.8);
     width: 100%;
 
+    @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
+      -webkit-backdrop-filter: blur(3px);
+              backdrop-filter: blur(3px);
+              transition: all .2s ease-in-out;
+    }
+
     &:hover {
       background-color: rgba(82,137,219,.9);
       text-decoration: none;
+
+      @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
+        background-color: rgba(82,137,219,.8);
+        -webkit-backdrop-filter: blur(9px);
+                backdrop-filter: blur(9px);
+                text-shadow: 0 1px 3px $text-color;
+      }
     }
 
     h2 {
@@ -617,6 +635,8 @@ li:first-child .button::after { font-family: $serif-family; }
 
   .card-meta {
     background-color: rgba(69,153,60,.8);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
     color: $background-color;
     position: absolute;
     padding: $spacing;
@@ -761,8 +781,8 @@ blockquote.quote {
   padding: $spacing;
   background-color: #eee;
   opacity: 0;
-  -webkit-transition: margin .2s ease;
-          transition: margin .2s ease;
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease;
 
   @media (min-width: $breakpoint-s) {
     max-width: 400px;

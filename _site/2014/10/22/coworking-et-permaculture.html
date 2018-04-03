@@ -55,14 +55,14 @@
 <div class="posts" id="posts">
 	<div class="part text">
 		<div class="row">
-			<div class="eight columns lead">
+			<div class="eight columns">
 				<figure>
 					<a class="thumbnail" href="http://www.mutinerie.org/coworking-et-permaculture/" title="À lire sur Mutinerie"><img src="http://magazine.mutinerie.org/wp-content/uploads/sites/5/2014/08/arrosage_été.jpg" alt="Coworking et permaculture"></a>
 					<figcaption>
 						En mettant les mains dans la terre, nous nous sommes rendus compte que les logiques biologiques de la permaculture ressemblait fortement à celles du coworking.
 					</figcaption>
 				</figure>
-				<p>
+				<p class="lead">
 					<a class="button button-primary" href="http://www.mutinerie.org/coworking-et-permaculture/">À lire sur Mutinerie</a>
 				</p>
 			</div>
@@ -95,6 +95,28 @@
 
 
 		</div>
+	</div>
+	<div class="part text">
+		<h4>Commentaires</h4>
+		<form method="POST" action="https://api.staticman.net/v2/entry/odevillardi/odevillardi.github.io/master/comments">
+  <input name="options[redirect]" type="hidden" value="#comments">
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="coworking-et-permaculture">
+  <div class="row">
+    <div class="six columns">
+      <label for="NameInput">Name</label>
+      <input class="u-full-width" name="fields[name]" type="text" id="NameInput">
+    </div>
+    <div class="six columns">
+      <label for="EmailInput">E-mail</label>
+      <input class="u-full-width" name="fields[email]" type="email" id="EmailInput">
+    </div>
+  </div>
+  <label for="MessageInput">Message</label>
+  <textarea class="u-full-width" name="fields[message]" id="MessageInput"></textarea>
+  <button class="button-primary" type="submit">Envoyer</button>
+</form>
+
 	</div>
 </div>
 

@@ -142,6 +142,8 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 .img-circle { border-radius: 50%; }
 
 .avatar { background-color: #fff; -webkit-box-shadow: inset 0 0 0 1px #45993c; box-shadow: inset 0 0 0 1px #45993c; border: 1px solid #5289db; padding: 2px; }
+@supports (filter: blur()) { .avatar { transition: all .2s ease-in-out; }
+  .avatar:hover { filter: blur(9px); } }
 
 /* Boutons */
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] { display: inline-block; height: 38px; padding: 0 1rem; margin-bottom: 0; max-width: 100%; color: #555; text-align: center; line-height: 3.4rem; text-decoration: none; white-space: nowrap; background-color: transparent; border: 1px solid #ccc; border-radius: 2px; cursor: pointer; box-sizing: border-box; }
@@ -239,9 +241,11 @@ li:first-child .button::after { font-family: "Spectral", Georgia, serif; }
 .card { text-shadow: 0 1px 1px #1A1A1A; }
 @media (min-width: 768px) { .card .card-item { border-radius: 2px; } }
 .card .card-title { position: absolute; top: 0; background-color: rgba(82, 137, 219, 0.8); width: 100%; }
+@supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) { .card .card-title { -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); transition: all .2s ease-in-out; } }
 .card .card-title:hover { background-color: rgba(82, 137, 219, 0.9); text-decoration: none; }
+@supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) { .card .card-title:hover { background-color: rgba(82, 137, 219, 0.8); -webkit-backdrop-filter: blur(9px); backdrop-filter: blur(9px); text-shadow: 0 1px 3px #1A1A1A; } }
 .card .card-title h2 { margin: 0; padding: 1.6rem; color: #fff; }
-.card .card-meta { background-color: rgba(69, 153, 60, 0.8); color: #fff; position: absolute; padding: 1.6rem; bottom: 0; }
+.card .card-meta { background-color: rgba(69, 153, 60, 0.8); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); color: #fff; position: absolute; padding: 1.6rem; bottom: 0; }
 @media (max-width: 549px) { .card .card-meta { width: 100%; } }
 .card .card-meta .buttons { margin-bottom: 0; }
 .card .card-meta a { color: #fff; }
@@ -288,7 +292,7 @@ blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; fon
 .quote-footer::before { content: "— "; }
 
 /* Contact */
-.contact { height: 6rem; margin: -9.2rem auto 0 auto; padding: 1.6rem; background-color: #eee; opacity: 0; -webkit-transition: margin .2s ease; transition: margin .2s ease; }
+.contact { height: 6rem; margin: -9.2rem auto 0 auto; padding: 1.6rem; background-color: #eee; opacity: 0; -webkit-transition: all .2s ease; transition: all .2s ease; }
 @media (min-width: 550px) { .contact { max-width: 400px; height: 6.4rem; margin: -9.6rem auto 0 auto; } }
 .contact#contact:target { margin-top: 0; opacity: 1; }
 

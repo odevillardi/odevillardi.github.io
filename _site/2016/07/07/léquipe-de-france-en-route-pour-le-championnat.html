@@ -55,14 +55,14 @@
 <div class="posts" id="posts">
 	<div class="part text">
 		<div class="row">
-			<div class="eight columns lead">
+			<div class="eight columns">
 				<figure>
 					<a class="thumbnail" href="http://ffroller.fr/lequipe-de-france-en-route-pour-le-championnat-deurope-de-rink-hockey-2016/" title="À lire sur FFRoller"><img src="http://ffroller.fr/wp-content/uploads/logo_championnat_europe_rink_hockey_2016_oliveira_de_azemeis.jpg" alt="L’équipe de France en route pour le Championnat d’Europe de Rink-Hockey 2016"></a>
 					<figcaption>
 						L'équipe de France en route pour le Championnat d'Europe de Rink-Hockey 2016
 					</figcaption>
 				</figure>
-				<p>
+				<p class="lead">
 					<a class="button button-primary" href="http://ffroller.fr/lequipe-de-france-en-route-pour-le-championnat-deurope-de-rink-hockey-2016/">À lire sur FFRoller</a>
 				</p>
 			</div>
@@ -89,6 +89,28 @@
 
 
 		</div>
+	</div>
+	<div class="part text">
+		<h4>Commentaires</h4>
+		<form method="POST" action="https://api.staticman.net/v2/entry/odevillardi/odevillardi.github.io/master/comments">
+  <input name="options[redirect]" type="hidden" value="#comments">
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="léquipe-de-france-en-route-pour-le-championnat">
+  <div class="row">
+    <div class="six columns">
+      <label for="NameInput">Name</label>
+      <input class="u-full-width" name="fields[name]" type="text" id="NameInput">
+    </div>
+    <div class="six columns">
+      <label for="EmailInput">E-mail</label>
+      <input class="u-full-width" name="fields[email]" type="email" id="EmailInput">
+    </div>
+  </div>
+  <label for="MessageInput">Message</label>
+  <textarea class="u-full-width" name="fields[message]" id="MessageInput"></textarea>
+  <button class="button-primary" type="submit">Envoyer</button>
+</form>
+
 	</div>
 </div>
 

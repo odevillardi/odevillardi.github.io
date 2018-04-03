@@ -55,14 +55,14 @@
 <div class="posts" id="posts">
 	<div class="part text">
 		<div class="row">
-			<div class="eight columns lead">
+			<div class="eight columns">
 				<figure>
 					<a class="thumbnail" href="https://www.knacss.com" title="À lire sur KNACSS"><img src="https://www.knacss.com/assets/img/knacss-197.svg" alt="KNACSS : Un framework CSS simple et léger"></a>
 					<figcaption>
 						KNACSS, c’est un peu comme une feuille de style CSS « reset » sur-vitaminée qui permet de commencer un projet à partir de zéro tout en tenant compte de bonnes pratiques générales (accessibilité, performance, responsive webdesign).
 					</figcaption>
 				</figure>
-				<p>
+				<p class="lead">
 					<a class="button button-primary" href="https://www.knacss.com">À lire sur KNACSS</a>
 				</p>
 			</div>
@@ -106,6 +106,28 @@
 
 
 		</div>
+	</div>
+	<div class="part text">
+		<h4>Commentaires</h4>
+		<form method="POST" action="https://api.staticman.net/v2/entry/odevillardi/odevillardi.github.io/master/comments">
+  <input name="options[redirect]" type="hidden" value="#comments">
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="KNACSS">
+  <div class="row">
+    <div class="six columns">
+      <label for="NameInput">Name</label>
+      <input class="u-full-width" name="fields[name]" type="text" id="NameInput">
+    </div>
+    <div class="six columns">
+      <label for="EmailInput">E-mail</label>
+      <input class="u-full-width" name="fields[email]" type="email" id="EmailInput">
+    </div>
+  </div>
+  <label for="MessageInput">Message</label>
+  <textarea class="u-full-width" name="fields[message]" id="MessageInput"></textarea>
+  <button class="button-primary" type="submit">Envoyer</button>
+</form>
+
 	</div>
 </div>
 
