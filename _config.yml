@@ -25,6 +25,7 @@ whitelist: []
 plugins:
   - jekyll-paginate
   - jekyll-textile-converter
+  - jekyll-feed
 
 # Pagination Settings
 paginate: 5
