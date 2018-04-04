@@ -10,7 +10,7 @@ related:
   title: Cover of Smooth Cirminal
 - url: 2015/10/07/laughingsquid-de-staats-music-video-for-witch
   title: De Staat’s Music Video for ‘Witch Doctor’
-video_url: https://www.youtube.com/embed/6ad4MH7fMLs
+video_url: https://www.youtube-nocookie.com/embed/6ad4MH7fMLs
 ---
 > "Unfuck The World" is the first track off the new album 'Prophets Of Rage' available September 15, 2017.
 >
