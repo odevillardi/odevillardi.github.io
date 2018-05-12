@@ -203,21 +203,31 @@ ol ul {
 
 li { margin-bottom: .8rem; }
 
-.list-inline { margin-left: 0; }
-.list-inline li { display: inline; }
-.list-inline li:not(:first-child)::before {
-  content: " • " ;
-  color: $alternate-color;
-}
-.list-inline.buttons li::before { content: none; }
-.list-inline.related li:nth-child(2)::before { content: none; }
+.list-inline {
+  margin-left: 0;
 
-.list-inline li.list-title {
-  display: block;
-  margin-bottom: 0;
+  li { display: inline; }
+  li:not(:first-child)::before {
+    content: " • " ;
+    color: $alternate-color;
+  }
 
-  &::before { content: "➠ "; }
+  li.list-title {
+    display: block;
+    margin-bottom: 0;
+
+    &::before { content: "➠ "; }
+  }
+
+  li.not-inline {
+    display: block;
+    &::before { content: none; }
+  }
+
+  &.buttons li::before { content: none; }
+  &.related li:nth-child(2)::before { content: none; }
 }
+
 
 @media (max-width: $breakpoint-s) {
   .list-inline li.item-break {
@@ -809,11 +819,11 @@ blockquote.quote {
 
 .contact a:hover { text-decoration: none; }
 
-#github:hover ~ #mail-contact,
-#github:hover ~ #mail-pointfr,
-#github:hover ~ #mail-arobase,
-#mastodon:hover ~ #mail-contact,
-#mastodon:hover ~ #mail-pointfr {
+#github:hover ~ li #mail-contact,
+#github:hover ~ li #mail-pointfr,
+#github:hover ~ li #mail-arobase,
+#mastodon:hover ~ li #mail-contact,
+#mastodon:hover ~ li #mail-pointfr {
   opacity: .3;
 }
 

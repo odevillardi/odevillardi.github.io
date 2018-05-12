@@ -83,17 +83,14 @@ ul ul, ul ol, ol ol, ol ul { margin: 1.6rem 0 1.6rem 3.2rem; font-size: 90%; }
 li { margin-bottom: .8rem; }
 
 .list-inline { margin-left: 0; }
-
 .list-inline li { display: inline; }
-
 .list-inline li:not(:first-child)::before { content: " • "; color: #ccc; }
-
-.list-inline.buttons li::before { content: none; }
-
-.list-inline.related li:nth-child(2)::before { content: none; }
-
 .list-inline li.list-title { display: block; margin-bottom: 0; }
 .list-inline li.list-title::before { content: "➠ "; }
+.list-inline li.not-inline { display: block; }
+.list-inline li.not-inline::before { content: none; }
+.list-inline.buttons li::before { content: none; }
+.list-inline.related li:nth-child(2)::before { content: none; }
 
 @media (max-width: 550px) { .list-inline li.item-break::before { content: none; }
   .list-inline li.item-break a::before { display: block; content: "\a"; } }
@@ -301,7 +298,7 @@ blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; fon
 
 .contact a:hover { text-decoration: none; }
 
-#github:hover ~ #mail-contact, #github:hover ~ #mail-pointfr, #github:hover ~ #mail-arobase, #mastodon:hover ~ #mail-contact, #mastodon:hover ~ #mail-pointfr { opacity: .3; }
+#github:hover ~ li #mail-contact, #github:hover ~ li #mail-pointfr, #github:hover ~ li #mail-arobase, #mastodon:hover ~ li #mail-contact, #mastodon:hover ~ li #mail-pointfr { opacity: .3; }
 
 @media (max-width: 767px) { .content { margin-top: 1.6rem; }
   .row { overflow: hidden; }
