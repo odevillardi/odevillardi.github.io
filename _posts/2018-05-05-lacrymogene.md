@@ -1,6 +1,6 @@
 ---
 layout: link
-title: "Les gendarmes ont déversé une quantité record de grenades sur la ZAD de Notre-Dame-des-Landes"
+title: "Les gendarmes ont déversé une quantité record de grenades sur la ZAD"
 source: Reporterre
 date: '2018-05-05T14:47:00+02:00'
 tags:

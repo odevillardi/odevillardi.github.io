@@ -95,6 +95,8 @@ li { margin-bottom: .8rem; }
 .list-inline li.list-title { display: block; margin-bottom: 0; }
 .list-inline li.list-title::before { content: "➠ "; }
 
+@media (max-width: 550px) { .list-inline li.item-break::before { content: none; }
+  .list-inline li.item-break a::before { display: block; content: "\a"; } }
 .alternate li:nth-child(odd) a { color: #45993c; }
 
 .no-style { margin-left: 0; list-style: none; }

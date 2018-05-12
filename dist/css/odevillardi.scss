@@ -219,6 +219,16 @@ li { margin-bottom: .8rem; }
   &::before { content: "➠ "; }
 }
 
+@media (max-width: $breakpoint-s) {
+  .list-inline li.item-break {
+    &::before { content: none; }
+    a::before {
+      display: block;
+      content: "\a";
+    }
+  }
+}
+
 .alternate li:nth-child(odd) a { color: $green-color; }
 
 .no-style {
