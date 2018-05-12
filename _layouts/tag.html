@@ -14,7 +14,7 @@
 	<ul class="part alternate no-style">
 		{% for post in site.tags[page.tag] %}
 			<li>
-				<time datetime="{{ post.date }}">{{ post.date | date: "%d/%m/%Y" }}</time> —
+				<time datetime="{{ include.post.date | date: '%F' }}">{{ post.date | date: "%d/%m/%Y" }}</time> —
 				<a class="lead" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 			</li>
 		{% endfor %}
