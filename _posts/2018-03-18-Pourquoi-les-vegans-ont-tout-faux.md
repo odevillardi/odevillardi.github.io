@@ -72,7 +72,7 @@ Là on est plutôt dans la méconnaissance totale de ce que vit un végan au quo
 > […]&nbsp;le mauvais coup que porte le véganisme à notre mode de vie&nbsp;[…]
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Hx2CLjkx89E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Hx2CLjkx89E?rel=0" allowfullscreen></iframe>
 </div>
 
 > L’Occident et les riches des pays du Sud consomment trop de viandes&nbsp;[…]
@@ -116,7 +116,7 @@ Je vous invite à essayer de réaliser une partie du travail qu’une vache lait
 Pour preuve, cette vidéo de vaches tellement déçues d’avoir été libérées&nbsp;:
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/MHwENKARoBY?rel=0&amp;start=70" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MHwENKARoBY?rel=0&amp;start=70" allowfullscreen></iframe>
 </div>
 
 > Ils ne demandent pas à retourner à la sauvagerie.
