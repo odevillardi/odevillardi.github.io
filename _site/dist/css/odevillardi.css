@@ -294,9 +294,10 @@ blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; fon
 .quote-footer::before { content: "— "; }
 
 /* Contact */
-.contact { height: 6rem; margin: -9.2rem auto 0 auto; padding: 1.6rem; background-color: #eee; opacity: 0; -webkit-transition: all .2s ease; transition: all .2s ease; }
+.contact { height: 6rem; margin: -9.2rem auto 0 auto; padding: 1.6rem; background-color: #eee; opacity: 0; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
 @media (min-width: 550px) { .contact { max-width: 400px; height: 6.4rem; margin: -9.6rem auto 0 auto; } }
 .contact#contact:target { margin-top: 0; opacity: 1; }
+.contact .list-inline { margin-bottom: 0; }
 
 .contact a:hover { text-decoration: none; }
 

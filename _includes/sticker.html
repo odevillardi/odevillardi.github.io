@@ -11,7 +11,7 @@
 	</ul>
 	<ul class="list-inline">
 		<li>
-			Le <time datetime="{{ include.post.date }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
+			Le <time datetime="{{ include.post.date | date: '%F' }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
 		</li>
 		{% if !post %}
 			<li>

@@ -12,7 +12,7 @@
   <div class="card-meta">
     <ul class="list-inline">
       <li>
-        Publié le <time datetime="{{ post.date }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+        Publié le <time datetime="{{ post.date | date: '%F' }}">{{ post.date | date: "%d/%m/%Y" }}</time>
       </li>
       {% if !post %}
         <li>

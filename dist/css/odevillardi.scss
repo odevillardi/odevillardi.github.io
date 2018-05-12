@@ -791,8 +791,8 @@ blockquote.quote {
   padding: $spacing;
   background-color: #eee;
   opacity: 0;
-  -webkit-transition: all .2s ease;
-          transition: all .2s ease;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
 
   @media (min-width: $breakpoint-s) {
     max-width: 400px;
@@ -804,6 +804,7 @@ blockquote.quote {
     margin-top: 0;
     opacity: 1;
   }
+  .list-inline { margin-bottom: 0; }
 }
 
 .contact a:hover { text-decoration: none; }
