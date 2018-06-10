@@ -238,7 +238,7 @@ li:first-child .button::after { font-family: "Spectral", Georgia, serif; }
 
 /* Cards styling */
 .card { text-shadow: 0 1px 1px #1A1A1A; }
-@media (min-width: 768px) { .card .card-item { border-radius: 2px; } }
+.card .card-item { background-color: #ccc; }
 .card .card-title { position: absolute; top: 0; background-color: rgba(82, 137, 219, 0.8); width: 100%; }
 @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) { .card .card-title { -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); transition: all .2s ease-in-out; } }
 .card .card-title:hover { background-color: rgba(82, 137, 219, 0.9); text-decoration: none; }

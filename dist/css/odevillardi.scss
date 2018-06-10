@@ -618,9 +618,7 @@ li:first-child .button::after { font-family: $serif-family; }
 .card {
   text-shadow: 0 1px 1px $text-color;
 
-  @media (min-width: $breakpoint-m) {
-    .card-item { border-radius: 2px; }
-  }
+  .card-item { background-color: $alternate-color; }
 
   .card-title {
     position: absolute;
