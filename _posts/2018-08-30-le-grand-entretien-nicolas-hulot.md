@@ -13,3 +13,6 @@ related:
 video_url: https://www.youtube-nocookie.com/embed/YJZa90g9WSk
 ---
 Nicolas Hulot, ministre d'État, ministre de la Transition écologique et solidaire, est l'invité du grand entretien de Nicolas Demorand et Léa Salamé à 8h20.
+
+> C’est symptomatique de la présence des lobbys dans les cercles du pouvoir. Il faut à un moment ou un autre poser ce sujet sur la table, parce que c’est un problème de démocratie : qui a le pouvoir, qui gouverne ?  
+— s’est insurgé Nicolas Hulot.
