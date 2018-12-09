@@ -166,7 +166,7 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
 .tag.agriculture h1::before, li:first-child .button.agriculture::after { content: " ☼"; }
 
-.tag.antispecism h1::before, li:first-child .button.antispecism::after { content: " ☮"; }
+.tag.antispecism h1::before, li:first-child .button.antispecism::after { content: " Ⓐ"; }
 
 .tag.design h1::before, li:first-child .button.design::after { content: " ✎"; }
 

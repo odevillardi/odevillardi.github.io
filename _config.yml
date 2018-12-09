@@ -26,6 +26,7 @@ plugins:
   - jekyll-paginate
   - jekyll-textile-converter
   - jekyll-feed
+  - jekyll-github-metadata
 
 # Pagination Settings
 paginate: 5
@@ -52,9 +53,13 @@ timezone:      null
 
 quiet:    false
 defaults: []
-title: "Hello blog"
+title:      "Hello blog"
+site.title: "Hello blog"
+description:      "Antispecism, environment, music, permaculture, sport, vegan & web"
+site.description: "Antispecism, environment, music, permaculture, sport, vegan & web"
 author: "Olivier de Villardi"
-url: http://odevillardi.fr
+url:      http://odevillardi.fr
+site.url: http://odevillardi.fr
 
 # Markdown Processors
 maruku:

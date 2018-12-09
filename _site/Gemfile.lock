@@ -213,10 +213,11 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
+  jekyll-github-metadata
   jekyll-paginate
   jekyll-textile-converter
   minima (~> 2.0)
   tzinfo-data
 
 BUNDLED WITH
-   1.16.0.pre.3
+   1.17.0.pre.2
