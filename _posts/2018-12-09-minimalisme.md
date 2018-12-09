@@ -3,7 +3,7 @@ layout: video
 title: "Qu’est-ce que le minimalisme&nbsp;?"
 date: '2018-12-09T09:24:12+02:00'
 tags:
-- minimalisme
+- minimalism
 - vegan
 - environment
 related:
