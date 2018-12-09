@@ -6,6 +6,7 @@ date: '2018-10-16T09:57:00+02:00'
 tags:
 - vegan
 - environment
+- minimalism
 related:
 - url: 2018/03/18/Pourquoi-les-vegans-ont-tout-faux
   title: "Pourquoi les végans ont tout faux"
