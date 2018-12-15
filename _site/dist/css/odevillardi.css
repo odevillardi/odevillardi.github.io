@@ -192,6 +192,8 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
 .tag.maths h1::before, li:first-child .button.maths::after { content: " ÷"; }
 
+.tag.minimalism h1::before, li:first-child .button.minimalism::after { content: " ○"; }
+
 .tag.moon h1::before, li:first-child .button.moon::after { content: " ☾"; }
 
 .tag.music h1::before, li:first-child .button.music::after { content: " ♫"; }

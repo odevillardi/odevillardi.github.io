@@ -500,6 +500,11 @@ li:first-child .button.maths::after {
   content: " ÷";
 }
 
+.tag.minimalism h1::before,
+li:first-child .button.minimalism::after {
+  content: " ○";
+}
+
 .tag.moon h1::before,
 li:first-child .button.moon::after {
   content: " ☾";
