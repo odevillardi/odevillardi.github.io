@@ -170,7 +170,7 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 
 .tag.design h1::before, li:first-child .button.design::after { content: " ✎"; }
 
-.tag.diy h1::before, li:first-child .button.diy::after { content: " ⚠"; }
+.tag.diy h1::before, li:first-child .button.diy::after { content: " ✁"; }
 
 .tag.economy h1::before, li:first-child .button.economy::after { content: " $"; }
 
