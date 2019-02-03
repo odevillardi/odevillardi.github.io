@@ -44,6 +44,7 @@ html { font-size: 62.5%; }
 
 /* TEXT UTILITIES */
 body { background-color: #fff; color: #1A1A1A; font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Lato", Helvetica, Arial, sans-serif; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; }
+@media (prefers-color-scheme: dark) { body { background-color: #1A1A1A; color: #fff; } }
 
 a { color: #5289db; text-decoration: none; }
 a:hover { color: #5289db; text-decoration: underline; }
@@ -69,6 +70,7 @@ p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 .hidden { display: none; }
 
 hr { margin-top: 3rem; margin-bottom: 3.5rem; border-width: 0; border-top: 1px solid #ccc; }
+@media (prefers-color-scheme: dark) { hr { border-color: #333; } }
 
 /* Lists styling */
 ul { list-style: circle inside; }
@@ -85,6 +87,7 @@ li { margin-bottom: .8rem; }
 .list-inline { margin-left: 0; }
 .list-inline li { display: inline; }
 .list-inline li:not(:first-child)::before { content: " • "; color: #ccc; }
+@media (prefers-color-scheme: dark) { .list-inline li:not(:first-child)::before { color: #333; } }
 .list-inline li.list-title { display: block; margin-bottom: 0; }
 .list-inline li.list-title::before { content: "➠ "; }
 .list-inline li.not-inline { display: block; }
@@ -113,7 +116,8 @@ h4 { font-size: 2.4rem; line-height: 1.35; }
 
 h5 { font-size: 1.8rem; line-height: 1.5; }
 
-h6 { color: #555; font-size: 1.6rem; line-height: 1.6; }
+h6 { color: #333; font-size: 1.6rem; line-height: 1.6; }
+@media (prefers-color-scheme: dark) { h6 { color: #ccc; } }
 
 @media (min-width: 550px) { h1 { font-size: 6.0rem; }
   h2 { font-size: 5.2rem; }
@@ -141,13 +145,12 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 .img-circle { border-radius: 50%; }
 
 .avatar { background-color: #fff; -webkit-box-shadow: inset 0 0 0 1px #45993c; box-shadow: inset 0 0 0 1px #45993c; border: 1px solid #5289db; padding: 2px; }
-@supports (filter: blur()) { .avatar { transition: all .2s ease-in-out; }
-  .avatar:hover { filter: blur(9px); } }
+@media (prefers-color-scheme: dark) { .avatar { background-color: #1A1A1A; } }
 
 /* Boutons */
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] { display: inline-block; height: 38px; padding: 0 1rem; margin-bottom: 0; max-width: 100%; color: #555; text-align: center; line-height: 3.4rem; text-decoration: none; white-space: nowrap; background-color: transparent; border: 1px solid #ccc; border-radius: 2px; cursor: pointer; box-sizing: border-box; }
-.button:hover, .button:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus { text-decoration: none; color: #333; border-color: #888; outline: 0; }
-.button:hover .button, .button:focus .button, button:hover .button, button:focus .button, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover .button, input[type="button"]:focus .button { color: #333; border-color: #888; outline: 0; }
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] { display: inline-block; height: 38px; padding: 0 1rem; margin-bottom: 0; max-width: 100%; color: #888; border: 1px solid #888; text-align: center; line-height: 3.4rem; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 2px; cursor: pointer; box-sizing: border-box; }
+.button:hover, .button:focus, .button:hover .button, .button:focus .button, button:hover, button:focus, button:hover .button, button:focus .button, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:hover .button, input[type="button"]:focus .button { text-decoration: none; color: #333; border-color: #333; outline: 0; }
+@media (prefers-color-scheme: dark) { .button:hover, .button:focus, .button:hover .button, .button:focus .button, button:hover, button:focus, button:hover .button, button:focus .button, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:hover .button, input[type="button"]:focus .button { color: #ccc; border-color: #ccc; } }
 .button.next::before, button.next::before, input[type="submit"].next::before, input[type="reset"].next::before, input[type="button"].next::before { content: "Suiv. : "; }
 .button.previous::before, button.previous::before, input[type="submit"].previous::before, input[type="reset"].previous::before, input[type="button"].previous::before { content: "Préc. : "; }
 .button::before, button::before, input[type="submit"]::before, input[type="reset"]::before, input[type="button"]::before { font-weight: bold; }
@@ -160,7 +163,9 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
 @media (min-width: 768px) { .button.next::before { content: "Billet suivant : "; }
   .button.previous::before { content: "Billet précédent : "; } }
 .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { background-color: #fff; border: 1px solid #5289db; color: #5289db; }
+@media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { background-color: #1A1A1A; } }
 .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { color: #fff; background-color: #5289db; border-color: #5289db; }
+@media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { color: #1A1A1A; } }
 
 .button.button-xs { height: 2rem; padding: .2rem .5rem; font-size: 1.4rem; line-height: 1.4rem; font-weight: normal; font-variant: normal; text-transform: capitalize; letter-spacing: 0rem; }
 
@@ -241,6 +246,7 @@ li:first-child .button::after { font-family: "Spectral", Georgia, serif; }
 /* Cards styling */
 .card { text-shadow: 0 1px 1px #1A1A1A; }
 .card .card-item { background-color: #ccc; }
+@media (prefers-color-scheme: dark) { .card .card-item { background-color: #333; } }
 .card .card-title { position: absolute; top: 0; background-color: rgba(82, 137, 219, 0.8); width: 100%; }
 @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) { .card .card-title { -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); transition: all .2s ease-in-out; } }
 .card .card-title:hover { background-color: rgba(82, 137, 219, 0.9); text-decoration: none; }
@@ -294,6 +300,7 @@ blockquote.quote { font-family: "Spectral", Georgia, serif; font-size: 200%; fon
 
 /* Contact */
 .contact { height: 6rem; margin: -9.2rem auto 0 auto; padding: 1.6rem; background-color: #eee; opacity: 0; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+@media (prefers-color-scheme: dark) { .contact { background-color: #111; } }
 @media (min-width: 550px) { .contact { max-width: 400px; height: 6.4rem; margin: -9.6rem auto 0 auto; } }
 .contact#contact:target { margin-top: 0; opacity: 1; }
 .contact .list-inline { margin-bottom: 0; }

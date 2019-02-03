@@ -2,11 +2,12 @@
 ---
 $background-color: #fff;
 $alternate-color: #ccc;
+$alternate-dark-color: #333;
 $text-color: #1A1A1A;
 $link-color: #5289db;
 $green-color: #45993c;
 $mix-color: #4c918c;
-$button-color: #555;
+$button-color: #888;
 
 $spacing: 1.6rem;
 $double-spacing: 3.2rem;
@@ -123,6 +124,10 @@ html { font-size: 62.5%; }
 body {
   background-color: $background-color;
   color: $text-color;
+  @media (prefers-color-scheme: dark) {
+      background-color: $text-color;
+      color: $background-color;
+  }
   font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -179,6 +184,9 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid $alternate-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $alternate-dark-color;
+  }
 }
 
 /* Lists styling */
@@ -209,6 +217,9 @@ li { margin-bottom: .8rem; }
   li:not(:first-child)::before {
     content: " • " ;
     color: $alternate-color;
+    @media (prefers-color-scheme: dark) {
+      color: $alternate-dark-color;
+    }
   }
 
   li.list-title {
@@ -279,7 +290,10 @@ h5 {
   line-height: 1.5;
 }
 h6 {
-  color: $button-color;
+  color: $alternate-dark-color;
+  @media (prefers-color-scheme: dark) {
+    color: $alternate-color;
+  }
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -338,15 +352,13 @@ a.thumbnail:hover img {
 
 .avatar {
   background-color: $background-color;
+  @media (prefers-color-scheme: dark) {
+    background-color: $text-color;
+  }
   -webkit-box-shadow: inset 0 0 0 1px $green-color;
           box-shadow: inset 0 0 0 1px $green-color;
   border: 1px solid $link-color;
   padding: 2px;
-
-  @supports (filter: blur()) {
-    transition: all .2s ease-in-out;
-    &:hover { filter: blur(9px); }
-  }
 }
 
 /* Boutons */
@@ -361,27 +373,25 @@ input[type="button"] {
   margin-bottom: 0;
   max-width: 100%;
   color: $button-color;
+  border: 1px solid $button-color;
   text-align: center;
   line-height: 3.4rem;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border: 1px solid $alternate-color;
   border-radius: 2px;
   cursor: pointer;
   box-sizing: border-box;
 
-  &:hover, &:focus {
+  &:hover, &:focus, &:hover .button, &:focus .button {
     text-decoration: none;
-    color: #333;
-    border-color: #888;
+    color: $alternate-dark-color;
+    border-color: $alternate-dark-color;
+    @media (prefers-color-scheme: dark) {
+      color: $alternate-color;
+      border-color: $alternate-color;
+    }
     outline: 0;
-
-    .button {
-        color: #333;
-        border-color: #888;
-        outline: 0;
-     }
   }
 
   &.next::before { content: "Suiv. : "}
@@ -408,11 +418,17 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   background-color: $background-color;
+  @media (prefers-color-scheme: dark) {
+    background-color: $text-color;
+  }
   border: 1px solid $link-color;
   color: $link-color;
 
   &:hover, &:focus {
     color: $background-color;
+    @media (prefers-color-scheme: dark) {
+      color: $text-color;
+    }
     background-color: $link-color;
         border-color: $link-color;
   }
@@ -622,7 +638,12 @@ li:first-child .button::after { font-family: $serif-family; }
 .card {
   text-shadow: 0 1px 1px $text-color;
 
-  .card-item { background-color: $alternate-color; }
+  .card-item {
+    background-color: $alternate-color;
+    @media (prefers-color-scheme: dark) {
+      background-color: $alternate-dark-color;
+    }
+  }
 
   .card-title {
     position: absolute;
@@ -802,6 +823,9 @@ blockquote.quote {
   margin: -9.2rem auto 0 auto;
   padding: $spacing;
   background-color: #eee;
+  @media (prefers-color-scheme: dark) {
+    background-color: #111;
+  }
   opacity: 0;
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
