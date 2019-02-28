@@ -126,10 +126,10 @@ h6 { color: #333; font-size: 1.6rem; line-height: 1.6; }
   h5 { font-size: 2.8rem; }
   h6 { font-size: 2rem; } }
 h2:first-child, h4:first-child, h6:first-child { margin-top: 0; }
-h2.link::before, h4.link::before, h6.link::before { content: "⫘ "; }
-h2.video::before, h4.video::before, h6.video::before { content: "▷ "; }
-h2.photo::before, h4.photo::before, h6.photo::before { content: "◑ "; }
-h2.post::before, h4.post::before, h6.post::before { content: "¶ "; }
+h2.link::before, h4.link::before, h6.link::before { content: "Lien ⫘ "; }
+h2.video::before, h4.video::before, h6.video::before { content: "Vidéo ▷ "; }
+h2.photo::before, h4.photo::before, h6.photo::before { content: "Photo ◑ "; }
+h2.post::before, h4.post::before, h6.post::before { content: "Billet ¶ "; }
 
 /* IMG UTILITIES */
 figure, img, .img, iframe { margin: 0; max-width: 100%; }

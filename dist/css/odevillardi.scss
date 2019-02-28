@@ -309,10 +309,10 @@ h6 {
 
 h2, h4, h6 {
   &:first-child { margin-top: 0; }
-  &.link::before { content: "⫘ "}
-  &.video::before { content: "▷ "}
-  &.photo::before { content: "◑ "}
-  &.post::before { content: "¶ "}
+  &.link::before { content: "Lien ⫘ "}
+  &.video::before { content: "Vidéo ▷ "}
+  &.photo::before { content: "Photo ◑ "}
+  &.post::before { content: "Billet ¶ "}
 }
 
 /* IMG UTILITIES */
