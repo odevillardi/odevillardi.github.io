@@ -6,7 +6,7 @@
   {% endif %}
   <a class="card-title"
      {% if post.layout == 'link' %}title="À lire sur {{ post.source }}"{% endif %}
-     href="{{ site.baseurl }}{% if post.layout == 'link' %}{{ post.link_url }}{% else %}{{ post.url }}{% endif %}">
+     href="{{ site.baseurl }}{{ post.url }}">
     <h2 class="{{ post.layout }}">{{ post.title }}</h2>
   </a>
   <div class="card-meta">
