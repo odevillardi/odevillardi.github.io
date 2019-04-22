@@ -417,20 +417,16 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  background-color: $background-color;
+  background-color: $link-color;
   @media (prefers-color-scheme: dark) {
     background-color: $text-color;
   }
   border: 1px solid $link-color;
-  color: $link-color;
+  color: $background-color;
 
   &:hover, &:focus {
-    color: $background-color;
-    @media (prefers-color-scheme: dark) {
-      color: $text-color;
-    }
-    background-color: $link-color;
-        border-color: $link-color;
+    background-color: $mix-color;
+        border-color: $mix-color;
   }
 }
 

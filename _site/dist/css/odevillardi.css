@@ -162,10 +162,9 @@ a.thumbnail:hover img { background-color: #45993c; opacity: 1; }
   .button.previous::before { content: "Précédent : "; } }
 @media (min-width: 768px) { .button.next::before { content: "Billet suivant : "; }
   .button.previous::before { content: "Billet précédent : "; } }
-.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { background-color: #fff; border: 1px solid #5289db; color: #5289db; }
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { background-color: #5289db; border: 1px solid #5289db; color: #fff; }
 @media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { background-color: #1A1A1A; } }
-.button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { color: #fff; background-color: #5289db; border-color: #5289db; }
-@media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { color: #1A1A1A; } }
+.button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { background-color: #4c918c; border-color: #4c918c; }
 
 .button.button-xs { height: 2rem; padding: .2rem .5rem; font-size: 1.4rem; line-height: 1.4rem; font-weight: normal; font-variant: normal; text-transform: capitalize; letter-spacing: 0rem; }
 
