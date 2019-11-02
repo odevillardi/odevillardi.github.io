@@ -1,5 +1,5 @@
 ---
-title: "Hello blog"
+title: "Billets de blog"
 ---
 {% include head.html %}
 {% if paginator.page == 1 %}
@@ -11,7 +11,31 @@ title: "Hello blog"
 	       			{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg 1x"
 			src="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-96.jpg">
 		<h1>{{ site.title }}</h1>
-		<ul class="menu list-inline text-capitalize" id="menu">
+	</div>
+	<div class="lead text-center">
+		<p>
+			Salut, je m’appelle Olivier, je suis un artisan du Web.<br>
+			Je crois en un Internet <em>sobre</em>, <em>privé</em> et <em>de qualité</em>&nbsp;—
+			un espace de partage pour le bien commun.<br>
+			Je peux vous accompagner dans&nbsp;:
+		</p>
+		<ul class="list-inline">
+			<li>la <strong>création de prototypes</strong></li>
+			<li class="item-break">la <strong>gestion de vos projets</strong></li>
+			<li class="item-break">la <strong>relation avec vos prestataires</strong></li>
+		</ul>
+		<p>
+			sur une durée pouvant aller de quelques jours à plusieurs mois.<br>
+			Vous pouvez <a class="button" href="#contact">me contacter</a>
+			pour discuter de ce qu’on pourrait faire ensemble.
+		</p>
+		<p>
+			Merci et à très vite.
+		</p>
+	</div>
+	<div class="text-center tag home" id="menu">
+		<h2>{{ page.title }}</h2>
+		<ul class="menu list-inline text-capitalize">
 			<li><a href="{{ site.baseurl }}/tag/antispecism.html">antispecism</a></li>
 			<li><a href="{{ site.baseurl }}/tag/environment.html">environment</a></li>
 			<li><a href="{{ site.baseurl }}/tag/music.html">music</a></li>
@@ -26,12 +50,21 @@ title: "Hello blog"
 		<h1>{{ page.title }}</h1>
 		<p>Page {{ paginator.page }} / {{ paginator.total_pages }}</p>
 	</div>
-	{% endif %}
-<div class="cards" id="posts">
-	{% for post in paginator.posts %}
-		<div class="part card {{ post.layout }}">
-			{% include card.html%}
-		</div>
-	{% endfor %}
+{% endif %}
+<div class="posts">
+	<ul class="part alternate no-style">
+		{% for post in paginator.posts %}
+			<li>
+				<time datetime="{{ post.date | date: '%F' }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+				—
+	      {% for tag in post.tags[1] %}
+          <a class="button button-xs text-capitalize" href="{{ site.baseurl }}/tag/{{ tag }}.html" role="button">
+            {{ tag }}
+          </a>
+	      {% endfor %}
+				<a class="lead" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
 </div>
 {% include foot.html %}

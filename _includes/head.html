@@ -7,7 +7,7 @@
 		<meta name="author" content="Olivier de Villardi">
 		<link rel="shortcut icon" href="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-128.jpg">
 		<link rel="alternate" type="application/rss+xml" title="Hello Blog — RSS" href="{{ site.baseurl }}/feed.xml">
-		<title>{{ page.title }} {% if paginator.page and paginator.page != 1 %}(Page {{ paginator.page }} / {{ paginator.total_pages }}) {% endif %}— {{ site.author }}</title>
+		<title>{% if paginator.page and paginator.page == 1 %}{{ site.title }} {% else %}{{ page.title }} {% endif %}{% if paginator.page and paginator.page != 1 %}(Page {{ paginator.page }} / {{ paginator.total_pages }}) {% endif %}— {{ site.author }}</title>
 		<link href="{{ site.baseurl }}/dist/css/normalize.css" rel="stylesheet" type="text/css">
 		<link href="{{ site.baseurl }}/dist/css/odevillardi.css" rel="stylesheet" type="text/css">
 	</head>
@@ -15,7 +15,7 @@
 		<div class="hidden">
 			<ul>
 				<li><a href="#menu">Aller au menu</a></li>
-				<li><a href="#posts">Aller au contenu</a></li>
+				<li><a href="#content">Aller au contenu</a></li>
 			</ul>
 		</div>
 		<div class="contact lead" id="contact">
@@ -39,7 +39,7 @@
 					</li>
 					<li>
 						<a class="u-pull-right" href="#contact">
-							Contact
+							Contactez-moi
 						</a>
 					</li>
 				</ul>

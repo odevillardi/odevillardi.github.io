@@ -29,7 +29,7 @@ plugins:
   - jekyll-github-metadata
 
 # Pagination Settings
-paginate: 5
+paginate: 10
 paginate_path: "/page:num/"
 
 # Conversion
@@ -48,18 +48,14 @@ relative_permalinks: false
 
 # Outputting
 permalink:     date
-paginate_path: /page:num
 timezone:      null
 
 quiet:    false
 defaults: []
-title:      "Hello blog"
-site.title: "Hello blog"
-description:      "Antispecism, environment, music, permaculture, sport, vegan & web"
-site.description: "Antispecism, environment, music, permaculture, sport, vegan & web"
+title:       "Juste un artisan du&nbsp;Web"
+description: "Antispecism, environment, music, permaculture, sport, vegan & web"
 author: "Olivier de Villardi"
-url:      http://odevillardi.fr
-site.url: http://odevillardi.fr
+url:    http://odevillardi.fr
 
 # Markdown Processors
 maruku:
