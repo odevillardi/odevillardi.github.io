@@ -10,13 +10,10 @@
 		{% endfor %}
 	</ul>
 </div>
-<div class="posts" id="posts">
+<div class="posts">
 	<ul class="part alternate no-style">
 		{% for post in site.tags[page.tag] %}
-			<li>
-				<time datetime="{{ post.date | date: '%F' }}">{{ post.date | date: "%d/%m/%Y" }}</time> —
-				<a class="lead" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-			</li>
+			{% include post-item-list.html post=post %}
 		{% endfor %}
 	</ul>
 </div>

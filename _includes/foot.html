@@ -2,11 +2,11 @@
 			<div class="navigation part text-center">
 				<p>
 					{% if paginator.previous_page_path %}
-						<a class="button button-default" href="{{ site.baseurl }}{{ paginator.previous_page_path }}" role="button">&laquo; Billets plus récents</a>
+						<a class="button button-default newer" href="{{ site.baseurl }}{{ paginator.previous_page_path }}" role="button">Billets plus récents</a>
 					{% endif %}
 
 					{% if paginator.next_page_path %}
-						<a class="button button-default" href="{{ site.baseurl }}{{ paginator.next_page_path }}" role="button">Billets plus anciens &raquo;</a>
+						<a class="button button-default older" href="{{ site.baseurl }}{{ paginator.next_page_path }}" role="button">Billets plus anciens</a>
 					{% endif %}
 
 					{% if page.next %}
