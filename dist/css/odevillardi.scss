@@ -137,8 +137,9 @@ body {
   font-weight: 400;
   font-family: $sans-serif-family;
   text-rendering : optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: antialiased;
+           font-smoothing: antialiased;
   -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual ;
      -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual ;
           font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual ;
@@ -188,15 +189,14 @@ p, ul, ol {
 
 .lead {
   font-size: 1.8rem;
-
   @media (min-width: $breakpoint-s) { font-size: 2rem; }
 }
 
 .hidden { display: none; }
 
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
+  margin-top: $double-spacing;
+  margin-bottom: $double-spacing;
   border-width: 0;
   border-top: 1px solid $alternate-color;
   @media (prefers-color-scheme: dark) {
@@ -288,6 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 
   &.tag { text-transform: capitalize; }
   &::before { font-style: normal; }
+  &.no-top { margin-top: 0; }
 }
 
 h1 {
@@ -381,9 +382,10 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   font-family: $button-family;
+  line-height: 1;
   display: inline-block;
-  padding: calc(.4rem - 1px) $half-spacing;
-  margin-bottom: 0;
+  padding: $half-spacing;
+  margin: 0;
   max-width: 100%;
   color: $alternate-dark-color;
   border: 1px solid $alternate-color;
@@ -416,7 +418,7 @@ input[type="button"] {
   &.text-overflow { overflow: hidden; }
 }
 
-.navigation .button { margin-bottom: $spacing; }
+.navigation .button:not(.button-xs) { margin-bottom: $spacing; }
 
 @media (min-width: $breakpoint-s) {
   .button.next::before { content: "Suivant : "}
@@ -456,18 +458,13 @@ input[type="button"].button-primary {
   font-size: 1.4rem;
   font-variant: normal;
   padding: .2rem .5rem;
-  margin: 0;
-  line-height: 1;
   letter-spacing: 0;
   text-transform: capitalize;
 }
 
 .newer::before { content: "‹ "; }
 .older::after  { content: " ›"; }
-
-.button::after {
-  text-transform: none;
-}
+.button::after { text-transform: none; }
 
 .tag.agriculture h1::before,
 .button.agriculture::after {
@@ -663,11 +660,17 @@ input[type="button"].button-primary {
     margin-top: $spacing;
     margin-bottom: $double-spacing;
 
-    a, a:hover {
+    a {
       color: $alternate-dark-color;
       text-decoration: none;
       @media (prefers-color-scheme: dark) {
         color: $alternate-color;
+      }
+      &:hover {
+        color: $text-color;
+        @media (prefers-color-scheme: dark) {
+          color: $background-color;
+        }
       }
     }
   }
@@ -702,6 +705,8 @@ input[type="button"].button-primary {
     margin-top: $spacing;
     &::before { content: "—"; }
   }
+
+  h6 { margin-top: 0; }
 }
 
 .part.video .stickers {
@@ -790,10 +795,6 @@ blockquote.quote {
   z-index: -100;
   overflow: hidden;
 
-  .container {
-    padding: $double-spacing 0;
-  }
-
   @media (prefers-color-scheme: dark) {
     background-color: $alternate-dark-color;
   }
@@ -810,6 +811,10 @@ blockquote.quote {
     width: 100vw;
   }
 
+  .container {
+    padding: $double-spacing 0;
+  }
+
   .close {
     font-size: 5rem;
     color: $alternate-dark-color;
@@ -817,9 +822,9 @@ blockquote.quote {
       color: $alternate-color;
     }
   }
-}
 
-.contact a:hover { text-decoration: none; }
+  a:hover { text-decoration: none; }
+}
 
 #github:hover ~ li #mail-contact,
 #github:hover ~ li #mail-pointfr,
@@ -830,14 +835,7 @@ blockquote.quote {
 }
 
 @media (max-width: $breakpoint-m-1) {
-  .content { margin-top: $spacing; }
-
   .row { overflow: hidden; }
-
-  footer .list-inline li {
-    display: block;
-    &:not(:first-child)::before { content: none; }
-  }
 }
 
 /* Formulaires */
