@@ -295,15 +295,13 @@ blockquote.quote { font-family: Times, serif; font-size: 200%; font-style: itali
 .quote-footer::before { content: "— "; }
 
 /* Contact */
-.contact { height: 10rem; margin: -13.2rem auto 0 auto; padding: 1.6rem; background-color: #cccccc; opacity: 0; }
+.contact { font-size: 3rem; position: fixed; display: block; top: 0; left: 0; height: 0; width: 0; background-color: #cccccc; opacity: 0; z-index: -100; overflow: hidden; }
+.contact .container { padding: 3.2rem 0; }
 @media (prefers-color-scheme: dark) { .contact { background-color: #333333; } }
-@media screen and (prefers-reduced-motion: no-preference) { .contact { -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; } }
-@media (min-width: 550px) { .contact { max-width: 500px; height: 13.4rem; margin: -16.6rem auto 0 auto; } }
-.contact#contact:target { margin-top: 0; opacity: 1; }
-.contact .list-inline { margin-bottom: 0; }
-.contact h3 { margin: 0; }
-.contact .close { font-size: 3.2rem; line-height: .6; color: #080808; }
-@media (prefers-color-scheme: dark) { .contact .close { color: #f7f7f7; } }
+@media screen and (prefers-reduced-motion: no-preference) { .contact { -webkit-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out; } }
+.contact#contact:target { opacity: 1; z-index: 100; height: 100vh; width: 100vw; }
+.contact .close { font-size: 5rem; color: #333333; }
+@media (prefers-color-scheme: dark) { .contact .close { color: #cccccc; } }
 
 .contact a:hover { text-decoration: none; }
 
