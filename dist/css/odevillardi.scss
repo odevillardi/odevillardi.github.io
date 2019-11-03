@@ -663,8 +663,17 @@ input[type="button"].button-primary {
     margin-top: $spacing;
     margin-bottom: $double-spacing;
 
-    a:hover { text-decoration: none; }
+    a, a:hover {
+      color: $alternate-dark-color;
+      text-decoration: none;
+      @media (prefers-color-scheme: dark) {
+        color: $alternate-color;
+      }
+    }
   }
+
+  .home-link::before { content: "⌂ "; }
+  .contact-link::before { content: "⌕ "; }
 }
 
 /* Parts styling */
