@@ -253,7 +253,7 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 .header ul a, .header ul a:hover { color: #333333; text-decoration: none; }
 @media (prefers-color-scheme: dark) { .header ul a, .header ul a:hover { color: #cccccc; } }
 .header .home-link::before { content: "⌂ "; }
-.header .contact-link::before { content: "⌕ "; }
+.header .contact-link::before { content: "⍩ "; }
 
 /* Parts styling */
 .part { padding: 3.2rem 0; }
