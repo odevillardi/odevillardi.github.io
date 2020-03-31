@@ -4,10 +4,10 @@ $background-color:     hsl(0, 0%, 97%);
 $alternate-color:      hsl(0, 0%, 80%);
 $alternate-dark-color: hsl(0, 0%, 20%);
 $text-color:           hsl(0, 0%, 3%);
-$link-color:           hsl(220, 70%, 50%);
-$light-link-color:     hsl(220, 100%, 65%);
-$green-color:          hsl(120, 50%, 50%);
-$light-green-color:    hsl(120, 70%, 65%);
+$link-color:           hsl(208, 89%, 35%);
+$light-link-color:     hsl(203, 83%, 55%);
+$green-color:          hsl(98, 89%, 35%);
+$light-green-color:    hsl(93, 83%, 55%);
 
 $half-spacing:    .8rem;
 $spacing:        1.6rem;
@@ -25,7 +25,7 @@ $breakpoint-xl-1: 1199px;
 $breakpoint-xl:   1200px;
 
 $serif-family:      Times, serif;
-$sans-serif-family: "Trebuchet MS", sans-serif;
+$sans-serif-family: "Trebuchet MS", Helvetica, sans-serif;
 $button-family:     Verdana, sans-serif;
 
 /* Skeleton V2.0.4 Grid */
@@ -147,14 +147,13 @@ body {
 
 a {
   color: $link-color;
-  text-decoration: none;
   @media (prefers-color-scheme: dark) {
     color: $light-link-color;
   }
 
   &:hover {
     color: $link-color;
-    text-decoration: underline;
+    text-decoration: underline double;
     @media (prefers-color-scheme: dark) {
       color: $light-link-color;
     }

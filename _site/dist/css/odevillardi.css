@@ -43,13 +43,13 @@
 html { font-size: 62.5%; }
 
 /* TEXT UTILITIES */
-body { background-color: #f7f7f7; color: #080808; font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Trebuchet MS", sans-serif; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; }
+body { background-color: #f7f7f7; color: #080808; font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Trebuchet MS", Helvetica, sans-serif; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; }
 @media (prefers-color-scheme: dark) { body { background-color: #080808; color: #f7f7f7; } }
 
-a { color: #2662d9; text-decoration: none; }
-@media (prefers-color-scheme: dark) { a { color: #4d88ff; } }
-a:hover { color: #2662d9; text-decoration: underline; }
-@media (prefers-color-scheme: dark) { a:hover { color: #4d88ff; } }
+a { color: #0a5fa9; }
+@media (prefers-color-scheme: dark) { a { color: #2da2eb; } }
+a:hover { color: #0a5fa9; text-decoration: underline double; }
+@media (prefers-color-scheme: dark) { a:hover { color: #2da2eb; } }
 
 p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 
@@ -61,10 +61,10 @@ p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 
 .text-capitalize { text-transform: capitalize; }
 
-.green-text { color: #40bf40; }
-.green-text:hover { color: #40bf40; }
-@media (prefers-color-scheme: dark) { .green-text { color: #67e467; }
-  .green-text:hover { color: #67e467; } }
+.green-text { color: #44a90a; }
+.green-text:hover { color: #44a90a; }
+@media (prefers-color-scheme: dark) { .green-text { color: #83eb2d; }
+  .green-text:hover { color: #83eb2d; } }
 
 .text-overflow { -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
@@ -102,8 +102,8 @@ li { margin-bottom: 0.8rem; }
 .list-inline.related li:nth-child(2)::before { content: none; }
 
 @media (max-width: 550px) { .list-inline li.item-break::before { display: block; content: "\a"; } }
-.alternate li:nth-child(odd) a:not(.button) { color: #40bf40; }
-@media (prefers-color-scheme: dark) { .alternate li:nth-child(odd) a:not(.button) { color: #67e467; } }
+.alternate li:nth-child(odd) a:not(.button) { color: #44a90a; }
+@media (prefers-color-scheme: dark) { .alternate li:nth-child(odd) a:not(.button) { color: #83eb2d; } }
 
 .no-style { margin-left: 0; list-style: none; }
 
@@ -164,10 +164,10 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
   .button.previous::before { content: "Précédent : "; } }
 @media (min-width: 768px) { .button.next::before { content: "Billet suivant : "; }
   .button.previous::before { content: "Billet précédent : "; } }
-.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #4d88ff; color: #2662d9; }
-@media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #2662d9; color: #4d88ff; } }
-.button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { background-color: #2662d9; border-color: #2662d9; color: #f7f7f7; }
-@media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { background-color: #4d88ff; border-color: #4d88ff; color: #080808; } }
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #2da2eb; color: #0a5fa9; }
+@media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #0a5fa9; color: #2da2eb; } }
+.button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { background-color: #0a5fa9; border-color: #0a5fa9; color: #f7f7f7; }
+@media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { background-color: #2da2eb; border-color: #2da2eb; color: #080808; } }
 
 .button.button-xs { font-size: 1.4rem; font-variant: normal; padding: .2rem .5rem; letter-spacing: 0; text-transform: capitalize; }
 
@@ -282,8 +282,8 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
   .part.video .stickers { padding-right: 8.82353%; } }
 @media (min-width: 768px) { .part.video .stickers, .part.video .caption { margin-top: 3.2rem; } }
 /* Quotes */
-blockquote { color: #40bf40; border-left: 4px solid #40bf40; margin-left: 1.6rem; padding-left: 1.6rem; font-size: inherit; font-style: italic; }
-@media (prefers-color-scheme: dark) { blockquote { color: #67e467; border-color: #67e467; } }
+blockquote { color: #44a90a; border-left: 4px solid #44a90a; margin-left: 1.6rem; padding-left: 1.6rem; font-size: inherit; font-style: italic; }
+@media (prefers-color-scheme: dark) { blockquote { color: #83eb2d; border-color: #83eb2d; } }
 @media (max-width: 549px) { blockquote { margin-left: 0; } }
 
 blockquote.quote { font-family: Times, serif; font-size: 200%; font-style: italic; }
