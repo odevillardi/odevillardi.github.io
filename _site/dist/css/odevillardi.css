@@ -302,7 +302,6 @@ blockquote.quote { font-family: Times, serif; font-size: 200%; font-style: itali
 .contact .container { padding: 3.2rem 0; }
 .contact .close { font-size: 5rem; color: #333333; }
 @media (prefers-color-scheme: dark) { .contact .close { color: #cccccc; } }
-.contact a:hover { text-decoration: none; }
 
 #github:hover ~ li #mail-contact, #github:hover ~ li #mail-pointfr, #github:hover ~ li #mail-arobase, #mastodon:hover ~ li #mail-contact, #mastodon:hover ~ li #mail-pointfr { opacity: .3; }
 
