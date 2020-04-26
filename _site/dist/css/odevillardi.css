@@ -203,7 +203,7 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.lettering h1::before, .button.lettering::after { content: " ℒ"; }
 
-.tag.low.tech h1::before, .button.low.tech::after { content: " ␥"; }
+.tag.low-tech h1::before, .button.low-tech::after { content: " ␥"; }
 
 .tag.maths h1::before, .button.maths::after { content: " ±"; }
 
@@ -217,7 +217,7 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.permaculture h1::before, .button.permaculture::after { content: " ⚘"; }
 
-.tag.pixel.art h1::before, .button.pixel.art::after { content: " ▓"; }
+.tag.pixel-art h1::before, .button.pixel-art::after { content: " ▓"; }
 
 .tag.politics h1::before, .button.politics::after { content: " ♗"; }
 
