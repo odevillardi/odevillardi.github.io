@@ -52,7 +52,7 @@ timezone:      null
 
 quiet:    false
 defaults: []
-title:       "Juste un artisan du&nbsp;Web"
+title:       "Juste un&nbsp;artisan du&nbsp;Web"
 description: "Je suis un artisan du Web, je peux vous accompagner dans la création de prototypes et la gestion de vos projets."
 author: "Olivier de Villardi"
 url:    http://odevillardi.fr
