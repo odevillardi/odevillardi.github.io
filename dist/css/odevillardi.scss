@@ -465,153 +465,36 @@ input[type="button"].button-primary {
 .older::after  { content: " ›"; }
 .button::after { text-transform: none; }
 
-.tag.agriculture h1::before,
-.button.agriculture::after {
-  content: " ☼";
-}
-
-.tag.antispecism h1::before,
-.button.antispecism::after {
-  content: " Ⓐ";
-}
-
-.tag.art h1::before,
-.button.art::after {
-  content: " ɐ";
-}
-
-.tag.design h1::before,
-.button.design::after {
-  content: " ✎";
-}
-
-.tag.diy h1::before,
-.button.diy::after {
-  content: " ✁";
-}
-
-.tag.economy h1::before,
-.button.economy::after {
-  content: " $";
-}
-
-.tag.education h1::before,
-.button.education::after {
-  content: " ℇ";
-}
-
-.tag.energy h1::before,
-.button.energy::after {
-  content: " ↯";
-}
-
-.tag.environment h1::before,
-.button.environment::after {
-  content: " ☷";
-}
-
-.tag.food h1::before,
-.button.food::after {
-  content: " ♨";
-}
-
-.tag.funny h1::before,
-.button.funny::after {
-  content: " ☺";
-}
-
-.tag.guitar h1::before,
-.button.guitar::after {
-  content: " ♬";
-}
-
-.tag.lettering h1::before,
-.button.lettering::after {
-  content: " ℒ";
-}
-
-.tag.low-tech h1::before,
-.button.low-tech::after {
-  content: " ␥";
-}
-
-.tag.maths h1::before,
-.button.maths::after {
-  content: " ±";
-}
-
-.tag.minimalism h1::before,
-.button.minimalism::after {
-  content: " ○";
-}
-
-.tag.moon h1::before,
-.button.moon::after {
-  content: " ☾";
-}
-
-.tag.music h1::before,
-.button.music::after {
-  content: " ♫";
-}
-
-.tag.parisweb h1::before,
-.button.parisweb::after {
-  content: " #";
-}
-
-.tag.permaculture h1::before,
-.button.permaculture::after {
-  content: " ⚘";
-}
-
-.tag.pixel-art h1::before,
-.button.pixel-art::after {
-  content: " ▓";
-}
-
-.tag.politics h1::before,
-.button.politics::after {
-  content: " ♗";
-}
-
-.tag.recycle h1::before,
-.button.recycle::after {
-  content: " ♽";
-}
-
-.tag.sport h1::before,
-.button.sport::after {
-  content: " ✌";
-}
-
-.tag.typography h1::before,
-.button.typography::after  {
-  content: " ﬃ";
-}
-
-.tag.vegan h1::before,
-.button.vegan::after {
-  content: " Ⓥ";
-}
-
-.tag.water h1::before,
-.button.water::after {
-  content: " ☵";
-}
-
-.tag.web h1::before,
-.button.web::after {
-  content: " @";
-}
-
-.tag.quatrecentquatre h1::before {
-  content: " ⁉";
-}
-
-.tag.blog h2::before {
-  content: " §";
-}
+.tag.agriculture h1::before {  content: " ☼"; }
+.tag.antispecism h1::before {  content: " Ⓐ"; }
+.tag.art h1::before         {  content: " ɐ"; }
+.tag.design h1::before      {  content: " ✎"; }
+.tag.diy h1::before         {  content: " ✁"; }
+.tag.economy h1::before     {  content: " $"; }
+.tag.education h1::before   {  content: " ℇ"; }
+.tag.energy h1::before      {  content: " ↯"; }
+.tag.environment h1::before {  content: " ☷"; }
+.tag.food h1::before        {  content: " ♨"; }
+.tag.funny h1::before       {  content: " ☺"; }
+.tag.guitar h1::before      {  content: " ♬"; }
+.tag.lettering h1::before   {  content: " ℒ"; }
+.tag.low-tech h1::before    {  content: " ␥"; }
+.tag.maths h1::before       {  content: " ±"; }
+.tag.minimalism h1::before  {  content: " ○"; }
+.tag.moon h1::before        {  content: " ☾"; }
+.tag.music h1::before       {  content: " ♫"; }
+.tag.parisweb h1::before    {  content: " #"; }
+.tag.permaculture h1::before{  content: " ⚘"; }
+.tag.pixel-art h1::before   {  content: " ▓"; }
+.tag.politics h1::before    {  content: " ♗"; }
+.tag.recycle h1::before     {  content: " ♽"; }
+.tag.sport h1::before       {  content: " ✌"; }
+.tag.typography h1::before  {  content: " ﬃ"; }
+.tag.vegan h1::before       {  content: " Ⓥ"; }
+.tag.water h1::before       {  content: " ☵"; }
+.tag.web h1::before         {  content: " @"; }
+.tag.quatrecentquatre h1::before {  content: " ⁉"; }
+.tag.blog h2::before        {  content: " §"; }
 
 .tag h1::before,
 .tag h2::before {
