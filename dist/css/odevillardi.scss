@@ -565,7 +565,6 @@ input[type="button"].button-primary {
 
 @media (min-width: $breakpoint-m) {
   .introduction {
-    text-align: left;
     em, strong {
       line-height: 2rem;
       font-size: 3rem;
@@ -575,21 +574,36 @@ input[type="button"].button-primary {
         color: $alternate-color;
       }
     }
-    ul { text-align: center; }
     div { margin: $double-spacing inherit; }
 
     div:nth-child(1) {
       text-align: right;
+      border-bottom: $double-spacing dotted $alternate-color;
+      @media(prefers-color-scheme:dark) {
+        border-color: $alternate-dark-color;
+      }
     }
 
     div:nth-child(2) {
+      text-align: left;
+      border-top: $double-spacing dashed $alternate-color;
+      margin-top: 0;
       padding-top: $double-spacing;
       padding-bottom: $double-spacing;
+      ul { text-align: center; }
       p:nth-child(3) { text-align: right; }
+      @media(prefers-color-scheme:dark) {
+        border-color: $alternate-dark-color;
+      }
     }
 
     div:nth-child(3) {
-
+      text-align: right;
+      padding-right: $double-spacing;
+      border-right: $double-spacing solid $alternate-color;
+      @media(prefers-color-scheme:dark) {
+        border-color: $alternate-dark-color;
+      }
     }
   }
 }
