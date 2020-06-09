@@ -1,7 +1,7 @@
 <li>
   <time datetime="{{ post.date | date: '%F' }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
   &emsp;
-  {% for tag in include.post.tags[1] %}
+  {% for tag in include.post.tags[0] %}
     <a class="button button-xs text-capitalize {{ tag }}" href="{{ site.baseurl }}/tag/{{ tag }}.html" role="button">
       {{ tag }}
     </a>
