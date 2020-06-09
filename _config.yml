@@ -3,7 +3,7 @@ source:      .
 destination: ./_site
 plugins_dir:     ./_plugins
 layouts_dir:     ./_layouts
-data_source_dir: ./_data
+data_dir: ./_data
 collections: null
 
 # Handling Reading
@@ -52,8 +52,8 @@ timezone:      null
 
 quiet:    false
 defaults: []
-title:       "Juste un&nbsp;artisan du&nbsp;Web"
-description: "Je suis un artisan du Web, je peux vous accompagner dans la création de prototypes et la gestion de vos projets."
+title:       "Bienvenue"
+description: "Je peux vous accompagner dans la gestion de vos projets, la création de prototypes et la relation avec vos prestataires."
 author: "Olivier de Villardi"
 url:    http://odevillardi.fr
 

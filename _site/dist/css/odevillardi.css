@@ -257,19 +257,8 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 @media (prefers-color-scheme: dark) { .header ul a:hover { color: #f7f7f7; } }
 
 /* Index styling */
-.introduction { text-align: center; }
-
-@media (min-width: 768px) { .introduction em, .introduction strong { line-height: 2rem; font-size: 3rem; vertical-align: text-top; color: #333333; } }
-@media (min-width: 768px) and (prefers-color-scheme: dark) { .introduction em, .introduction strong { color: #cccccc; } }
-@media (min-width: 768px) { .introduction div { margin: 3.2rem inherit; }
-  .introduction div:nth-child(1) { text-align: right; border-bottom: 3.2rem dotted #cccccc; } }
-@media (min-width: 768px) and (prefers-color-scheme: dark) { .introduction div:nth-child(1) { border-color: #333333; } }
-@media (min-width: 768px) { .introduction div:nth-child(2) { text-align: left; border-top: 3.2rem dashed #cccccc; margin-top: 0; padding-top: 3.2rem; padding-bottom: 3.2rem; }
-  .introduction div:nth-child(2) ul { text-align: center; }
-  .introduction div:nth-child(2) p:nth-child(3) { text-align: right; } }
-@media (min-width: 768px) and (prefers-color-scheme: dark) { .introduction div:nth-child(2) { border-color: #333333; } }
-@media (min-width: 768px) { .introduction div:nth-child(3) { text-align: right; padding-right: 3.2rem; border-right: 3.2rem solid #cccccc; } }
-@media (min-width: 768px) and (prefers-color-scheme: dark) { .introduction div:nth-child(3) { border-color: #333333; } }
+@media (min-width: 768px) { .introduction { display: block; -webkit-columns: 3; -moz-columns: 3; columns: 3; -webkit-column-gap: 3.2rem; -moz-column-gap: 3.2rem; column-gap: 3.2rem; -webkit-column-rule: 1px solid #cccccc; -moz-column-rule: 1px solid #cccccc; column-rule: 1px solid #cccccc; } }
+@media (prefers-color-scheme: dark) { .introduction { -webkit-column-rule: 1px solid #333333; -moz-column-rule: 1px solid #333333; column-rule: 1px solid #333333; } }
 
 /* Parts styling */
 .part { padding: 3.2rem 0; }
