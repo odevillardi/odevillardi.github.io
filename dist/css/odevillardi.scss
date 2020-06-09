@@ -740,6 +740,16 @@ blockquote.quote {
   }
 }
 
+#github ~ li #mail-contact,
+#github ~ li #mail-pointfr,
+#github ~ li #mail-arobase,
+#mastodon ~ li #mail-contact,
+#mastodon ~ li #mail-pointfr {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    -webkit-transition: opacity .2s ease-in-out;
+            transition: opacity .2s ease-in-out;
+  }
+}
 #github:hover ~ li #mail-contact,
 #github:hover ~ li #mail-pointfr,
 #github:hover ~ li #mail-arobase,

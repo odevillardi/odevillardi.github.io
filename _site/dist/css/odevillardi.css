@@ -306,6 +306,8 @@ blockquote.quote { font-family: Times, serif; font-size: 200%; font-style: itali
 .contact .close { font-size: 5rem; color: #333333; text-decoration: none; }
 @media (prefers-color-scheme: dark) { .contact .close { color: #cccccc; } }
 
+@media screen and (prefers-reduced-motion: no-preference) { #github ~ li #mail-contact, #github ~ li #mail-pointfr, #github ~ li #mail-arobase, #mastodon ~ li #mail-contact, #mastodon ~ li #mail-pointfr { -webkit-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out; } }
+
 #github:hover ~ li #mail-contact, #github:hover ~ li #mail-pointfr, #github:hover ~ li #mail-arobase, #mastodon:hover ~ li #mail-contact, #mastodon:hover ~ li #mail-pointfr { opacity: .3; }
 
 @media (max-width: 767px) { .row { overflow: hidden; } }
