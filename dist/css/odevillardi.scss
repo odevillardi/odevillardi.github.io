@@ -582,9 +582,12 @@ input[type="button"].button-primary {
 .introduction {
   @media (min-width: $breakpoint-m) {
     display: block;
-    @include columns(3);
+    @include columns(2);
     @include column-gap($double-spacing);
     @include column-rule($alternate-color);
+  }
+  @media (min-width: $breakpoint-l) {
+    @include columns(3);
   }
   @media (prefers-color-scheme: dark) {
     @include column-rule($alternate-dark-color);

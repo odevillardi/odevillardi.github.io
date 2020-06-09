@@ -257,7 +257,8 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 @media (prefers-color-scheme: dark) { .header ul a:hover { color: #f7f7f7; } }
 
 /* Index styling */
-@media (min-width: 768px) { .introduction { display: block; -webkit-columns: 3; -moz-columns: 3; columns: 3; -webkit-column-gap: 3.2rem; -moz-column-gap: 3.2rem; column-gap: 3.2rem; -webkit-column-rule: 1px solid #cccccc; -moz-column-rule: 1px solid #cccccc; column-rule: 1px solid #cccccc; } }
+@media (min-width: 768px) { .introduction { display: block; -webkit-columns: 2; -moz-columns: 2; columns: 2; -webkit-column-gap: 3.2rem; -moz-column-gap: 3.2rem; column-gap: 3.2rem; -webkit-column-rule: 1px solid #cccccc; -moz-column-rule: 1px solid #cccccc; column-rule: 1px solid #cccccc; } }
+@media (min-width: 1024px) { .introduction { -webkit-columns: 3; -moz-columns: 3; columns: 3; } }
 @media (prefers-color-scheme: dark) { .introduction { -webkit-column-rule: 1px solid #333333; -moz-column-rule: 1px solid #333333; column-rule: 1px solid #333333; } }
 
 /* Parts styling */
