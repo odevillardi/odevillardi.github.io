@@ -161,7 +161,7 @@ li { margin-bottom: $half-spacing; }
     &::before { content: none; }
   }
 
-  &.buttons li::before { content: none; }
+  // &.nav li::before { content: none; }
   &.related li:nth-child(2)::before { content: none; }
 }
 
@@ -446,11 +446,10 @@ input[type="button"].button-primary {
 
 
 /* HEADER */
-.header {
+header {
   ul {
     margin-top: $spacing;
     margin-bottom: $double-spacing;
-
     a {
       color: $alternate-dark-color;
       text-decoration: none;
@@ -459,6 +458,7 @@ input[type="button"].button-primary {
       }
       &:hover {
         color: $text-color;
+        text-decoration: none;
         @media (prefers-color-scheme: dark) {
           color: $background-color;
         }
