@@ -359,7 +359,7 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.quatrecentquatre h1::before { content: " ⁉"; }
 
-.tag.a-propos h1::before { content: " ⓞ"; }
+.tag.a-propos h1::before { content: " ∀"; }
 
 .tag.blog h2::before { content: " §"; }
 
