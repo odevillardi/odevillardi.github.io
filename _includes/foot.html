@@ -27,13 +27,11 @@
 			<div class="part">
 				<h4 class="no-top">Menu best of</h4>
 				<ul class="list-inline alternate">
-				{% for post in site.posts %}
-					{% if post.selection %}
-						<li>
-							<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-						</li>
-					{% endif %}
-				{% endfor %}
+				{% for post in site.posts %}{% if post.selection %}
+					<li>
+						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+					</li>
+				{% endif %}{% endfor %}
 				</ul>
 			</div>
 			<div class="contact text-center" id="contact">
