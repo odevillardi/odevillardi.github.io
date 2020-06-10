@@ -487,7 +487,7 @@ input[type="button"].button-primary {
 /* Parts styling */
 .part { padding: $double-spacing 0; }
 
-.part:not(:last-child):not(footer) {
+.part:not(:last-child):not(footer):not(.printy) {
   border-bottom: 1px solid $alternate-color;
   @media (prefers-color-scheme: dark) {
     border-color: $alternate-dark-color;

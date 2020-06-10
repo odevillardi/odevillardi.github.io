@@ -391,8 +391,8 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 /* Parts styling */
 .part { padding: 3.2rem 0; }
 
-.part:not(:last-child):not(footer) { border-bottom: 1px solid #cccccc; }
-@media (prefers-color-scheme: dark) { .part:not(:last-child):not(footer) { border-color: #333333; } }
+.part:not(:last-child):not(footer):not(.printy) { border-bottom: 1px solid #cccccc; }
+@media (prefers-color-scheme: dark) { .part:not(:last-child):not(footer):not(.printy) { border-color: #333333; } }
 
 .caption { overflow: hidden; margin-top: 1.6rem; }
 
