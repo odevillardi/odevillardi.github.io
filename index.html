@@ -1,9 +1,8 @@
 ---
-title: "Billets de blog"
-description: "Antispecism, environment, music, permaculture, sport, vegan & web"
+title: "Bienvenue"
+description: "Je m’appelle Olivier, je suis un travailleur du Web depuis 15 ans et un enseignant en mathématiques."
 ---
 {% include head.html %}
-{% if paginator.page == 1 %}
 	<div class="text-center">
 		<img class="img-circle avatar"
 			alt="Photo de profil"
@@ -40,29 +39,17 @@ description: "Antispecism, environment, music, permaculture, sport, vegan & web"
 			Et à très vite.
 		</p>
 	</div>
-	<div class="text-center tag blog" id="menu">
-		<h2>{{ page.title }}</h2>
-		<ul class="menu list-inline text-capitalize">
-			<li><a href="{{ site.baseurl }}/tag/antispecism.html">antispecism</a></li>
-			<li><a href="{{ site.baseurl }}/tag/environment.html">environment</a></li>
-			<li><a href="{{ site.baseurl }}/tag/music.html">music</a></li>
-			<li class="item-break"><a href="{{ site.baseurl }}/tag/permaculture.html">permaculture</a></li>
-			<li><a href="{{ site.baseurl }}/tag/sport.html">sport</a></li>
-			<li><a href="{{ site.baseurl }}/tag/vegan.html">vegan</a></li>
-			<li><a href="{{ site.baseurl }}/tag/web.html">web</a></li>
+	<div class="text-center tag blog">
+		<h2>Sélection de billets</h2>
+	</div>
+	<div class="part posts">
+		<ul class="alternate no-style">
+			{% for post in site.posts %}{% if post.selection %}
+				{% include post-item-list.html post=post %}
+			{% endif %}{% endfor %}
 		</ul>
+		<p class="text-center">
+			<a class="button" href="{{ site.baseurl }}/blog/">Voir tous les billets de blog</a>
+		</p>
 	</div>
-{% else %}
-	<div class="text-center big-title">
-		<h1>{{ page.title }}</h1>
-		<p>Page {{ paginator.page }} / {{ paginator.total_pages }}</p>
-	</div>
-{% endif %}
-<div class="part posts">
-	<ul class="alternate no-style">
-		{% for post in paginator.posts %}
-			{% include post-item-list.html post=post %}
-		{% endfor %}
-	</ul>
-</div>
 {% include foot.html %}

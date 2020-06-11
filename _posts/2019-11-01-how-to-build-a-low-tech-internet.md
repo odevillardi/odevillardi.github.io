@@ -2,6 +2,7 @@
 layout: link
 title: "How to Build a Low-tech Internet"
 source: lowtechmagazine.com
+selection: oui
 date: '2019-11-01T15:57:00+02:00'
 tags:
 - low tech

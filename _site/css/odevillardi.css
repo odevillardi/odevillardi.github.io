@@ -235,7 +235,6 @@ li { margin-bottom: 0.8rem; }
 h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: Times, serif; font-style: italic; }
 h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
 h1::before, h2::before, h3::before, h4::before, h5::before, h6::before { font-style: normal; }
-h1.no-top, h2.no-top, h3.no-top, h4.no-top, h5.no-top, h6.no-top { margin-top: 0; }
 
 h1 { font-size: 5.4rem; line-height: 1.2; margin-top: 1.6rem; }
 
@@ -361,7 +360,7 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.a-propos h1::before { content: " ∀"; }
 
-.tag.blog h2::before { content: " §"; }
+.tag.blog h1::before, .tag.blog h2::before { content: " §"; }
 
 .tag h1::before, .tag h2::before { display: block; margin-top: -1.6rem; color: #cccccc; font-family: Times, serif; font-size: 104px; }
 @media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #333333; } }
@@ -389,9 +388,6 @@ header ul a:hover { color: #080808; text-decoration: none; }
 
 /* Parts styling */
 .part { padding: 3.2rem 0; }
-
-.part:not(:last-child):not(footer):not(.printy) { border-bottom: 1px solid #cccccc; }
-@media (prefers-color-scheme: dark) { .part:not(:last-child):not(footer):not(.printy) { border-color: #333333; } }
 
 .caption { overflow: hidden; margin-top: 1.6rem; }
 
@@ -437,6 +433,9 @@ blockquote.quote { font-family: Times, serif; font-size: 200%; font-style: itali
 #github:hover ~ li #mail-contact, #github:hover ~ li #mail-pointfr, #github:hover ~ li #mail-arobase, #mastodon:hover ~ li #mail-contact, #mastodon:hover ~ li #mail-pointfr { opacity: .3; }
 
 @media (max-width: 767px) { .row { overflow: hidden; } }
+footer { border-top: 1px solid #cccccc; }
+@media (prefers-color-scheme: dark) { footer { border-color: #333333; } }
+
 /* Formulaires */
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select { height: 38px; padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */ background-color: #fff; border: 1px solid #D1D1D1; border-radius: 4px; -webkit-box-shadow: none; box-shadow: none; box-sizing: border-box; }
 
@@ -482,4 +481,4 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { margin-bottom: 1.6rem; }
 .u-pull-left { float: left; }
 
 /* Self Clearing Goodness */
-.container::after, .row::after, .u-cf { content: ""; display: table; clear: both; }
+header::after, .container::after, .row::after, .u-cf { content: ""; display: table; clear: both; }

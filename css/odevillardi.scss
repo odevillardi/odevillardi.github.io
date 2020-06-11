@@ -195,7 +195,6 @@ h1, h2, h3, h4, h5, h6 {
 
   &.tag { text-transform: capitalize; }
   &::before { font-style: normal; }
-  &.no-top { margin-top: 0; }
 }
 
 h1 {
@@ -403,7 +402,7 @@ input[type="button"].button-primary {
 .tag.web h1::before         {  content: " @"; }
 .tag.quatrecentquatre h1::before {  content: " ⁉"; }
 .tag.a-propos h1::before    {  content: " ∀"; }
-.tag.blog h2::before        {  content: " §"; }
+.tag.blog h1::before, .tag.blog h2::before {  content: " §"; }
 
 .tag h1::before,
 .tag h2::before {
@@ -486,13 +485,6 @@ header {
 
 /* Parts styling */
 .part { padding: $double-spacing 0; }
-
-.part:not(:last-child):not(footer):not(.printy) {
-  border-bottom: 1px solid $alternate-color;
-  @media (prefers-color-scheme: dark) {
-    border-color: $alternate-dark-color;
-  }
-}
 
 .caption {
   overflow: hidden;
@@ -652,6 +644,13 @@ blockquote.quote {
   .row { overflow: hidden; }
 }
 
+footer {
+  border-top: 1px solid $alternate-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $alternate-dark-color;
+  }
+}
+
 /* Formulaires */
 input[type="email"],
 input[type="number"],
@@ -798,6 +797,7 @@ form {
 .u-pull-left  { float: left; }
 
 /* Self Clearing Goodness */
+header::after,
 .container::after,
 .row::after,
 .u-cf {

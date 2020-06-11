@@ -30,7 +30,7 @@ plugins:
 
 # Pagination Settings
 paginate: 10
-paginate_path: "/page:num/"
+paginate_path: "/blog/page:num/"
 
 # Conversion
 markdown:    kramdown

@@ -1,0 +1,28 @@
+---
+title: "Blog"
+description: "Antispecism, environment, music, permaculture, sport, vegan & web"
+---
+{% include head.html %}
+<div class="text-center tag blog">
+	<h1>{{ page.title }}</h1>
+  <ul class="menu list-inline text-capitalize">
+    <li><a href="{{ site.baseurl }}/tag/antispecism.html">antispecism</a></li>
+    <li><a href="{{ site.baseurl }}/tag/environment.html">environment</a></li>
+    <li><a href="{{ site.baseurl }}/tag/music.html">music</a></li>
+    <li class="item-break"><a href="{{ site.baseurl }}/tag/permaculture.html">permaculture</a></li>
+    <li><a href="{{ site.baseurl }}/tag/sport.html">sport</a></li>
+    <li><a href="{{ site.baseurl }}/tag/vegan.html">vegan</a></li>
+    <li><a href="{{ site.baseurl }}/tag/web.html">web</a></li>
+  </ul>
+  {% if paginator.page != 1 %}
+	  <p>Page {{ paginator.page }} / {{ paginator.total_pages }}</p>
+  {% endif %}
+</div>
+<div class="part posts">
+	<ul class="alternate no-style">
+		{% for post in paginator.posts %}
+			{% include post-item-list.html post=post %}
+		{% endfor %}
+	</ul>
+</div>
+{% include foot.html %}
