@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "Billets & Liens"
 description: "Antispecism, environment, music, permaculture, sport, vegan & web"
 ---
 {% include head.html %}
@@ -18,7 +18,7 @@ description: "Antispecism, environment, music, permaculture, sport, vegan & web"
 	  <p>Page {{ paginator.page }} / {{ paginator.total_pages }}</p>
   {% endif %}
 </div>
-<div class="part posts">
+<div class="part">
 	<ul class="alternate no-style">
 		{% for post in paginator.posts %}
 			{% include post-item-list.html post=post %}

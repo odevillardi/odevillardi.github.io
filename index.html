@@ -1,6 +1,6 @@
 ---
 title: "Bienvenue"
-description: "Je m’appelle Olivier, je suis un travailleur du Web depuis 15 ans et un enseignant en mathématiques."
+description: "Je suis un travailleur du Web depuis 15 ans et un enseignant en mathématiques."
 ---
 {% include head.html %}
 	<div class="text-center">
@@ -11,6 +11,7 @@ description: "Je m’appelle Olivier, je suis un travailleur du Web depuis 15 an
 	       			/dist/img/Olivier-de-Villardi-96.jpg 1x"
 			src="/dist/img/Olivier-de-Villardi-96.jpg">
 		<h1>{{ site.title }}</h1>
+		<p>Bienvenue chez moi.</p>
 	</div>
 	<div class="part printy lead">
 		<p>
@@ -40,16 +41,18 @@ description: "Je m’appelle Olivier, je suis un travailleur du Web depuis 15 an
 		</p>
 	</div>
 	<div class="text-center tag blog">
-		<h2>Sélection de billets</h2>
+		<h2>Sélection</h2>
+		<p>De billets et de liens.</p>
 	</div>
-	<div class="part posts">
+	<div class="part">
 		<ul class="alternate no-style">
-			{% for post in site.posts %}{% if post.selection %}
+			{% assign selected_posts = site.posts | where: "selection", "oui" %}
+			{% for post in selected_posts %}
 				{% include post-item-list.html post=post %}
-			{% endif %}{% endfor %}
+			{% endfor %}
 		</ul>
 		<p class="text-center">
-			<a class="button" href="{{ site.baseurl }}/blog/">Voir tous les billets de blog</a>
+			<a class="button" href="{{ site.baseurl }}/blog/">Voir tous les billets et les liens</a>
 		</p>
 	</div>
 {% include foot.html %}

@@ -191,6 +191,11 @@ p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 @media (prefers-color-scheme: dark) { .green-text { color: #83eb2d; }
   .green-text:hover { color: #83eb2d; } }
 
+.gray-text { color: #333333; }
+.gray-text:hover { color: #333333; }
+@media (prefers-color-scheme: dark) { .gray-text { color: #cccccc; }
+  .gray-text:hover { color: #cccccc; } }
+
 .text-overflow { -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
 .lead { font-size: 1.8rem; }
@@ -324,7 +329,11 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.guitar h1::before { content: " ♬"; }
 
+.tag.lectures h1::before { content: " ♾"; }
+
 .tag.lettering h1::before { content: " ℒ"; }
+
+.tag.liens h1::before { content: " ⇶"; }
 
 .tag.low-tech h1::before { content: " ␥"; }
 

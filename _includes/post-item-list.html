@@ -7,5 +7,14 @@
     </a>
     &emsp;
   {% endfor %}
-  <a class="lead" href="{{ site.baseurl }}{{ post.url }}">{{ include.post.title }}</a>
+  <a class="lead"
+    {% if post.layout != 'link' %}
+      href='{{ site.baseurl }}{{ post.url }}'
+    {% else %}
+      href='{{ site.baseurl }}{{ post.link_url }}' title='{{ post.img_caption }}'
+    {% endif %}
+  >{{ include.post.title }}</a>
+  {% if post.layout == 'link' %}
+    <span class="gray-text">→&nbsp;<em>{{ post.source }}</em></span>
+  {% endif %}
 </li>
