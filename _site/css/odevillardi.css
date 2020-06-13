@@ -311,6 +311,8 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.art h1::before { content: " ɐ"; }
 
+.tag.contact h1::before { content: " ⍩"; }
+
 .tag.design h1::before { content: " ✎"; }
 
 .tag.diy h1::before { content: " ✁"; }
@@ -429,14 +431,6 @@ blockquote.quote { font-family: Times, serif; font-size: 200%; font-style: itali
 .quote-footer::before { content: "— "; }
 
 /* Contact */
-.contact { font-size: 3rem; position: fixed; display: block; top: 0; left: 0; height: 0; width: 0; background-color: #cccccc; opacity: 0; z-index: -100; overflow: hidden; }
-@media (prefers-color-scheme: dark) { .contact { background-color: #333333; } }
-@media screen and (prefers-reduced-motion: no-preference) { .contact { -webkit-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out; } }
-.contact#contact:target { opacity: 1; z-index: 100; height: 100vh; width: 100vw; }
-.contact .container { padding: 3.2rem 0; }
-.contact .close { font-size: 5rem; color: #333333; text-decoration: none; }
-@media (prefers-color-scheme: dark) { .contact .close { color: #cccccc; } }
-
 @media screen and (prefers-reduced-motion: no-preference) { #github ~ li #mail-contact, #github ~ li #mail-pointfr, #github ~ li #mail-arobase, #mastodon ~ li #mail-contact, #mastodon ~ li #mail-pointfr { -webkit-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out; } }
 
 #github:hover ~ li #mail-contact, #github:hover ~ li #mail-pointfr, #github:hover ~ li #mail-arobase, #mastodon:hover ~ li #mail-contact, #mastodon:hover ~ li #mail-pointfr { opacity: .3; }

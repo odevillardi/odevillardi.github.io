@@ -383,6 +383,7 @@ input[type="button"].button-primary {
 .tag.agriculture h1::before { content: " ☼"; }
 .tag.antispecism h1::before { content: " Ⓐ"; }
 .tag.art h1::before         { content: " ɐ"; }
+.tag.contact h1::before     { content: " ⍩"; }
 .tag.design h1::before      { content: " ✎"; }
 .tag.diy h1::before         { content: " ✁"; }
 .tag.economy h1::before     { content: " $"; }
@@ -589,49 +590,6 @@ blockquote.quote {
 .quote-footer::before     { content: "— "; }
 
 /* Contact */
-.contact {
-  font-size: 3rem;
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  height: 0;
-  width: 0;
-  background-color: $alternate-color;
-  opacity: 0;
-  z-index: -100;
-  overflow: hidden;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: $alternate-dark-color;
-  }
-
-  @media screen and (prefers-reduced-motion: no-preference) {
-    -webkit-transition: opacity .2s ease-in-out;
-            transition: opacity .2s ease-in-out;
-  }
-
-  &#contact:target {
-    opacity: 1;
-    z-index: 100;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .container {
-    padding: $double-spacing 0;
-  }
-
-  .close {
-    font-size: 5rem;
-    color: $alternate-dark-color;
-    @media (prefers-color-scheme: dark) {
-      color: $alternate-color;
-    }
-    text-decoration: none;
-  }
-}
-
 #github ~ li #mail-contact,
 #github ~ li #mail-pointfr,
 #github ~ li #mail-arobase,
