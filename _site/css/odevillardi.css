@@ -311,7 +311,7 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.art h1::before { content: " ɐ"; }
 
-.tag.contact h1::before { content: " ✉"; }
+.tag.contact h1::before { content: " ▭"; }
 
 .tag.design h1::before { content: " ✎"; }
 
