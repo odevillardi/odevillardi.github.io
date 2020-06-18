@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>{{ page.title }} {% if paginator.page and paginator.page != 1 %}(Page {{ paginator.page }} / {{ paginator.total_pages }}) {% endif %}— {{ site.author }}</title>
-		<meta name="description" content="{% if paginator.page and paginator.page == 1 %}{{ site.description }} {% else %}{{ page.description }}{% endif %}">
+		<meta name="description" content="{{ page.description }}">
 		<link rel="shortcut icon" href="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-128.jpg">
 		<link rel="alternate" type="application/rss+xml" title="Hello Blog — RSS" href="{{ site.baseurl }}/feed.xml">
 		<link href="{{ site.baseurl }}/css/odevillardi.css" rel="stylesheet" type="text/css">
