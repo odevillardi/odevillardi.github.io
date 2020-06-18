@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
 	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="Olivier de Villardi">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>{{ page.title }} {% if paginator.page and paginator.page != 1 %}(Page {{ paginator.page }} / {{ paginator.total_pages }}) {% endif %}— {{ site.author }}</title>
 		<meta name="description" content="{% if paginator.page and paginator.page == 1 %}{{ site.description }} {% else %}{{ page.description }}{% endif %}">
 		<link rel="shortcut icon" href="{{ site.baseurl }}/dist/img/Olivier-de-Villardi-128.jpg">
 		<link rel="alternate" type="application/rss+xml" title="Hello Blog — RSS" href="{{ site.baseurl }}/feed.xml">
-		<title>{{ page.title }} {% if paginator.page and paginator.page != 1 %}(Page {{ paginator.page }} / {{ paginator.total_pages }}) {% endif %}— {{ site.author }}</title>
 		<link href="{{ site.baseurl }}/css/odevillardi.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
@@ -19,7 +17,7 @@
 			</ul>
 		</div>
 		<div class="container">
-			<header>
+			<header id="menu">
 				<ul class="list-inline nav u-pull-left">
 					<li>
 						<a class="home-link" href="{{ site.baseurl }}/">
@@ -37,17 +35,17 @@
 						</a>
 					</li>
 				</ul>
-					<ul class="list-inline u-pull-right text-right">
-						<li>
-							<a class="contact-link" href="{{ site.baseurl }}/a-propos/">
-								À propos
-							</a>
-						</li>
-						<li class="item-break">
-							<a class="contact-link" href="{{ site.baseurl }}/contact/">
-								Contactez-moi
-							</a>
-						</li>
-					</ul>
+				<ul class="list-inline u-pull-right text-right">
+					<li>
+						<a class="contact-link" href="{{ site.baseurl }}/a-propos/">
+							À propos
+						</a>
+					</li>
+					<li class="item-break">
+						<a class="contact-link" href="{{ site.baseurl }}/contact/">
+							Contactez-moi
+						</a>
+					</li>
+				</ul>
 			</header>
 			<div class="content" id="content">
