@@ -236,6 +236,8 @@ li { margin-bottom: 0.8rem; }
 
 .no-style { margin-left: 0; list-style: none; }
 
+.button-list { margin-top: 3.2rem; }
+
 /* TITLE UTILITIES */
 h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: Times, serif; font-style: italic; }
 h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
