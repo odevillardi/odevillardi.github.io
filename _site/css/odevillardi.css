@@ -371,7 +371,7 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.vegan h1::before { content: " Ⓥ"; }
 
-.tag.wam h1::before { content: " ≅"; }
+.tag.wam h1::before { content: " ◯"; }
 
 .tag.water h1::before { content: " ☵"; }
 
