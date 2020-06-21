@@ -307,11 +307,15 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .button::after { text-transform: none; }
 
+.tag.a-propos h1::before { content: " ∀"; }
+
 .tag.agriculture h1::before { content: " ☼"; }
 
 .tag.antispecism h1::before { content: " Ⓐ"; }
 
 .tag.art h1::before { content: " ɐ"; }
+
+.tag.blog h1::before, .tag.blog h2::before { content: " §"; }
 
 .tag.contact h1::before { content: " ⊕"; }
 
@@ -337,8 +341,6 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.lettering h1::before { content: " ℒ"; }
 
-.tag.liens h1::before { content: " ⇶"; }
-
 .tag.low-tech h1::before { content: " ␥"; }
 
 .tag.maths h1::before { content: " ±"; }
@@ -357,7 +359,11 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.politics h1::before { content: " ♗"; }
 
+.tag.quatrecentquatre h1::before { content: " ⁉"; }
+
 .tag.recycle h1::before { content: " ♽"; }
+
+.tag.selection h2::before { content: " ‼"; }
 
 .tag.sport h1::before { content: " ✌"; }
 
@@ -368,12 +374,6 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 .tag.water h1::before { content: " ☵"; }
 
 .tag.web h1::before { content: " @"; }
-
-.tag.quatrecentquatre h1::before { content: " ⁉"; }
-
-.tag.a-propos h1::before { content: " ∀"; }
-
-.tag.blog h1::before, .tag.blog h2::before { content: " §"; }
 
 .tag h1::before, .tag h2::before { display: block; margin-top: -1.6rem; color: #cccccc; font-family: Times, serif; font-size: 104px; }
 @media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #333333; } }
