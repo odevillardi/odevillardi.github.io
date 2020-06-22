@@ -200,7 +200,7 @@ li { margin-bottom: $half-spacing; }
 h1, h2, h3, h4, h5, h6 {
   margin-top: $double-spacing;
   margin-bottom: $spacing;
-  font-family: $serif-family;
+  font-family: $sans-serif-family;
   font-style: italic;
 
   &.tag { text-transform: capitalize; }
@@ -288,6 +288,15 @@ a.thumbnail:hover img {
   @media (prefers-color-scheme: dark) {
     background-color: $text-color;
     border: 2px solid $alternate-color;
+  }
+}
+
+.logo {
+  height: 102px;
+  width: 102px;
+  fill: $alternate-color;
+  @media (prefers-color-scheme: dark) {
+    fill: $alternate-dark-color;
   }
 }
 

@@ -239,7 +239,7 @@ li { margin-bottom: 0.8rem; }
 .button-list { margin-top: 3.2rem; }
 
 /* TITLE UTILITIES */
-h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: Times, serif; font-style: italic; }
+h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: "Trebuchet MS", Helvetica, sans-serif; font-style: italic; }
 h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
 h1::before, h2::before, h3::before, h4::before, h5::before, h6::before { font-style: normal; }
 
@@ -277,6 +277,9 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .avatar { background-color: #f7f7f7; border: 2px solid #333333; padding: 2px; }
 @media (prefers-color-scheme: dark) { .avatar { background-color: #080808; border: 2px solid #cccccc; } }
+
+.logo { height: 102px; width: 102px; fill: #cccccc; }
+@media (prefers-color-scheme: dark) { .logo { fill: #333333; } }
 
 /* Boutons */
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] { font-family: Verdana, sans-serif; line-height: 1; display: inline-block; padding: 0.8rem; margin: 0; max-width: 100%; color: #333333; border: 1px solid #cccccc; text-align: center; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 2px; cursor: pointer; box-sizing: border-box; }
