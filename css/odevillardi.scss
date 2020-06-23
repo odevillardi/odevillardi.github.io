@@ -204,7 +204,12 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 
   &.tag { text-transform: capitalize; }
-  &::before { font-style: normal; font-weight: normal; }
+  &::before {
+    font-family: $serif-family;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+  }
 }
 
 h1 {
