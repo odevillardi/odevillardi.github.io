@@ -224,8 +224,7 @@ li { margin-bottom: 0.8rem; }
 .list-inline li { display: inline; }
 .list-inline li:not(:first-child)::before { content: " · "; color: #333333; }
 @media (prefers-color-scheme: dark) { .list-inline li:not(:first-child)::before { color: #cccccc; } }
-.list-inline li.list-title { display: block; margin-bottom: 0; }
-.list-inline li.list-title::before { content: "➠ "; }
+.list-inline li.list-title ~ li:nth-child(2)::before { content: none; }
 .list-inline li.not-inline { display: block; }
 .list-inline li.not-inline::before { content: none; }
 

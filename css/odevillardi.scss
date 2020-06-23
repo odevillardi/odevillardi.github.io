@@ -158,11 +158,8 @@ li { margin-bottom: $half-spacing; }
     }
   }
 
-  li.list-title {
-    display: block;
-    margin-bottom: 0;
-
-    &::before { content: "➠ "; }
+  li.list-title ~ li:nth-child(2)::before {
+    content: none;
   }
 
   li.not-inline {
