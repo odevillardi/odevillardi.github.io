@@ -1,8 +1,8 @@
 ---
 ---
 $background-color:     hsl(0, 0%, 97%);
-$alternate-color:      hsl(0, 0%, 80%);
-$alternate-dark-color: hsl(0, 0%, 20%);
+$alternate-color:      hsl(0, 0%, 82%);
+$alternate-dark-color: hsl(0, 0%, 18%);
 $text-color:           hsl(0, 0%, 3%);
 $link-color:           hsl(208, 89%, 35%);
 $light-link-color:     hsl(203, 83%, 55%);
@@ -93,6 +93,15 @@ p, ul, ol {
   @media (prefers-color-scheme: dark) {
     color: $alternate-color;
     &:hover { color: $alternate-color; }
+  }
+}
+
+.gray-background {
+  padding: $spacing $double-spacing;
+  background-color: $alternate-color;
+  border-radius: $spacing;
+  @media (prefers-color-scheme: dark) {
+    background-color: $alternate-dark-color;
   }
 }
 
