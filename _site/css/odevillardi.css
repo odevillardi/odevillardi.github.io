@@ -228,7 +228,6 @@ li { margin-bottom: 0.8rem; }
 .list-inline li.list-title::before { content: "➠ "; }
 .list-inline li.not-inline { display: block; }
 .list-inline li.not-inline::before { content: none; }
-.list-inline.related li:nth-child(2)::before { content: none; }
 
 @media (max-width: 550px) { .list-inline li.item-break::before { display: block; content: "\a"; } }
 .alternate li:nth-child(odd) a:not(.button) { color: #44a90a; }
@@ -241,7 +240,6 @@ li { margin-bottom: 0.8rem; }
 /* TITLE UTILITIES */
 h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: "Trebuchet MS", Helvetica, sans-serif; font-style: italic; }
 h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
-h1::before, h2::before, h3::before, h4::before, h5::before, h6::before { font-family: Times, serif; font-style: normal; font-weight: normal; letter-spacing: normal; }
 
 h1 { font-size: 5.4rem; line-height: 1.2; letter-spacing: -.29rem; margin-top: 1.6rem; }
 
@@ -318,7 +316,7 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.art h1::before { content: " ɐ"; }
 
-.tag.blog h1::before, .tag.blog h2::before { content: " §"; }
+.tag.blog h1::before { content: " §"; }
 
 .tag.contact h1::before { content: " ⊕"; }
 
@@ -380,7 +378,7 @@ a.thumbnail:hover img { background-color: #cccccc; opacity: 1; }
 
 .tag.web h1::before { content: " @"; }
 
-.tag h1::before, .tag h2::before { display: block; margin-top: -1.6rem; color: #cccccc; font-family: Times, serif; font-size: 104px; }
+.tag h1::before, .tag h2::before { color: #cccccc; display: block; font-family: Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
 @media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #333333; } }
 
 /* VIDEO RESPONSIVE */

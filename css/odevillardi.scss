@@ -169,8 +169,6 @@ li { margin-bottom: $half-spacing; }
     display: block;
     &::before { content: none; }
   }
-
-  &.related li:nth-child(2)::before { content: none; }
 }
 
 
@@ -204,12 +202,6 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 
   &.tag { text-transform: capitalize; }
-  &::before {
-    font-family: $serif-family;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: normal;
-  }
 }
 
 h1 {
@@ -406,7 +398,7 @@ input[type="button"].button-primary {
 .tag.agriculture h1::before { content: " ☼"; }
 .tag.antispecism h1::before { content: " Ⓐ"; }
 .tag.art h1::before         { content: " ɐ"; }
-.tag.blog h1::before, .tag.blog h2::before { content: " §"; }
+.tag.blog h1::before        { content: " §"; }
 .tag.contact h1::before     { content: " ⊕"; }
 .tag.design h1::before      { content: " ✎"; }
 .tag.diy h1::before         { content: " ✁"; }
@@ -440,14 +432,17 @@ input[type="button"].button-primary {
 
 .tag h1::before,
 .tag h2::before {
-  display: block;
-  margin-top: -$spacing;
   color: $alternate-color;
+  display: block;
+  font-family: $serif-family;
+  font-size: 104px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: -$spacing;
+  letter-spacing: normal;
   @media (prefers-color-scheme: dark) {
     color: $alternate-dark-color;
   }
-  font-family: $serif-family;
-  font-size: 104px;
 }
 
 /* VIDEO RESPONSIVE */
