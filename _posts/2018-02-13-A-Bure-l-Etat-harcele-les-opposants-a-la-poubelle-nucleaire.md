@@ -12,4 +12,5 @@ related:
 img_url: https://reporterre.net/local/cache-vignettes/L720xH389/arton14065-36875.png
 img_caption: "Deux procès d’antinucléaires s’ouvrent aujourd’hui mardi à Bar-le-Duc. Ils sont l’écume de vagues répétées d’inculpation sous les prétextes les plus divers. L’objectif de cette stratégie judiciaire est de faire taire les opposants à la poubelle nucléaire de Bure."
 link_url: https://reporterre.net/A-Bure-l-Etat-harcele-les-opposants-a-la-poubelle-nucleaire
+menu: "blog"
 ---

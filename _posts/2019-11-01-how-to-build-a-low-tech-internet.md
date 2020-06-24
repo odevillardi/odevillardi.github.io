@@ -11,4 +11,5 @@ tags:
 img_url: https://solar.lowtechmagazine.com/dithers/tegola-project-low-tech-internet.png
 img_caption: " If we want the internet to keep working in circumstances where access to energy is more limited, we can learn important lessons from alternative network technologies."
 link_url: https://solar.lowtechmagazine.com/2015/10/how-to-build-a-low-tech-internet.html
+menu: "blog"
 ---

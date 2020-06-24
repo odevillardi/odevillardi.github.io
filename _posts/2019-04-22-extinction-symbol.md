@@ -13,4 +13,5 @@ related:
 img_url: https://cdn.ecohustler.com/media/2019/04/09/Bristol.jpg
 img_caption: "Charlotte Webster interviews the Londoner whose design now powers a global movement."
 link_url: https://ecohustler.com/article/the-origins-and-rise-of-the-extinction-symbol/
+menu: "blog"
 ---

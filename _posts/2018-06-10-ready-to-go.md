@@ -11,4 +11,5 @@ related:
 img_url: https://larlet.fr/static/david/icons/safari-pinned-tab.svg
 img_caption: "No matter what framework or method your management thinks they are applying, learn to work this way…"
 link_url: https://larlet.fr/david/stream/2018/06/07/
+menu: "blog"
 ---

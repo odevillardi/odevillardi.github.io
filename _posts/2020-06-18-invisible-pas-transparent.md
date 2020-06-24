@@ -9,6 +9,7 @@ tags:
 related:
 - url: 2014/09/01/the-internets-own-boy-ce-film-raconte-lhistoire
   title: "The Internet’s own boy"
+menu: "blog"
 ---
 Vous confondez **transparent** et **invisible**. C’est fâcheux.
 

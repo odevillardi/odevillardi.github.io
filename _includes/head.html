@@ -20,31 +20,21 @@
 			<header id="menu">
 				<ul class="list-inline nav u-pull-left">
 					<li>
-						<a class="home-link" href="{{ site.baseurl }}/">
-							Accueil
-						</a>
+						<a{% if page.menu == 'accueil' %} class="active"{% endif %} href="{{ site.baseurl }}/">Accueil</a>
 					</li>
 					<li>
-						<a class="a-propos-link" href="{{ site.baseurl }}/lectures/">
-							Lectures
-						</a>
+						<a{% if page.menu == 'lectures' %} class="active"{% endif %} href="{{ site.baseurl }}/lectures/">Lectures</a>
 					</li>
 					<li class="item-break">
-						<a class="a-propos-link" href="{{ site.baseurl }}/blog/">
-							Billets & Liens
-						</a>
+						<a{% if page.menu == 'blog' %} class="active"{% endif %} href="{{ site.baseurl }}/blog/">Billets & Liens</a>
 					</li>
 				</ul>
 				<ul class="list-inline u-pull-right text-right">
 					<li>
-						<a class="contact-link" href="{{ site.baseurl }}/a-propos/">
-							À propos
-						</a>
+						<a{% if page.menu == 'a-propos' %} class="active"{% endif %} href="{{ site.baseurl }}/a-propos/">À propos</a>
 					</li>
 					<li class="item-break">
-						<a class="contact-link" href="{{ site.baseurl }}/contact/">
-							Contactez-moi
-						</a>
+						<a{% if page.menu == 'contact' %} class="active"{% endif %} href="{{ site.baseurl }}/contact/">Contactez-moi</a>
 					</li>
 				</ul>
 			</header>

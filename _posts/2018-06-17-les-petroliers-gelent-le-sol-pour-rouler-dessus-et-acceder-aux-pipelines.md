@@ -14,4 +14,5 @@ related:
 img_url: https://lareleveetlapeste.fr/wp-content/uploads/2018/06/image-90-1.jpg
 img_caption: "Le pergélisol est fragile et il a déjà commencé à fondre. En Alaska, les groupes pétroliers empruntent ses routes de glace pour déplacer les équipements massifs nécessaires à l’extraction de pétrole…"
 link_url: https://lareleveetlapeste.fr/les-petroliers-gelent-le-sol-pour-rouler-dessus-et-acceder-aux-pipelines/
+menu: "blog"
 ---

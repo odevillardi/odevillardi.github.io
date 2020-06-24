@@ -15,4 +15,5 @@ related:
 img_url: https://lareleveetlapeste.fr/wp-content/uploads/2018/10/image-001.jpg
 img_caption: "L’impact environnemental colossal de l’élevage est de notoriété publique. Des chercheurs de l’université d’Oxford viennent de publier dans la revue Nature des estimations précises de cet impact dans le futur, expliquant qu’il est voué à augmenter. Dans le même temps, l’étude fournit des clés pour «&nbsp;maintenir notre système alimentaire dans les limites environnementales&nbsp;»."
 link_url: https://lareleveetlapeste.fr/pour-preserver-notre-climat-nous-devons-reduire-de-90-notre-consommation-de-viande/
+menu: "blog"
 ---

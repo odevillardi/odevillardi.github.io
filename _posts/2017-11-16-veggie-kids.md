@@ -14,4 +14,5 @@ related:
 img_url: https://www.vegactu.com/wp-content/uploads/2017/11/1963_4244.jpg
 img_caption: Veggie Kids, 156 pages, 14€90
 link_url: https://www.vegactu.com/actualite/veggie-kids-pour-une-nouvelle-generation-100-vege-26243/
+menu: "blog"
 ---

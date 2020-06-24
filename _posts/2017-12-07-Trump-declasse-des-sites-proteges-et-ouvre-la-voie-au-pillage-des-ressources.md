@@ -13,4 +13,5 @@ related:
 img_url: https://lareleveetlapeste.fr/wp-content/uploads/2017/12/Image-couv-site-13.jpg
 img_caption: "Donald Trump réduit considérablement deux zones naturelles protégées dans l’Utah au détriment de la protection environnementale, culturelle et historique."
 link_url: https://lareleveetlapeste.fr/trump-declasse-sites-proteges-ouvre-voie-pillage-ressources/
+menu: "blog"
 ---

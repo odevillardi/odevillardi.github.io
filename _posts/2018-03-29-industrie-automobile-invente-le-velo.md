@@ -15,4 +15,5 @@ related:
 img_url: http://carfree.fr/img/2018/03/i-road.jpg
 img_caption: "L’innovation technologique va désormais tellement loin que l’industrie automobile est à deux doigts de découvrir le vélo."
 link_url: http://carfree.fr/index.php/2018/03/29/encore-un-effort-et-lindustrie-automobile-va-finir-par-inventer-le-velo/
+menu: "blog"
 ---

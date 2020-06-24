@@ -13,4 +13,5 @@ related:
 img_url: https://reporterre.net/IMG/jpg/nddl_2_3_.jpg
 img_caption: "En 10 jours, une pluie de 11&nbsp;000 projectiles s’est abattue sur le bocage nantais de Notre-Dames-des-Landes. Quels sont-ils&nbsp;? Quels risques présentent-ils&nbsp;? Reporterre a cherché des réponses."
 link_url: https://reporterre.net/Les-gendarmes-ont-deverse-une-quantite-record-de-grenades-sur-la-Zad-de-Notre
+menu: "blog"
 ---

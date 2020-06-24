@@ -11,6 +11,7 @@ related:
 - url: 2016/09/12/xkcd-earth-temperature-timeline
   title: Earth Temperature Timeline
 video_url: https://www.youtube-nocookie.com/embed/YJZa90g9WSk
+menu: "blog"
 ---
 Nicolas Hulot, ministre d'État, ministre de la Transition écologique et solidaire, est l'invité du grand entretien de Nicolas Demorand et Léa Salamé à 8h20.
 

@@ -10,6 +10,7 @@ related:
 - url: 2017/11/19/prophets-of-rage
   title: Prophets of Rage - Unfuck The World
 video_url: https://www.youtube-nocookie.com/embed/M5Op-2hE_0U
+menu: "blog"
 ---
 Le minimalisme, ça ne veut pas dire de jeter tous vos biens à la poubelle, ça veut juste dire d'arrêter d'acheter des choses inutiles et de se débarrasser des choses qu'on à déjà et qu'on n’utilise pas.
 

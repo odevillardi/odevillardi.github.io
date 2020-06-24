@@ -13,6 +13,7 @@ related:
 - url: 2015/09/19/cowspiracy-may-be-the-most-important-film-made-to
   title: "Cowspiracy"
 img_url: "/dist/posts-img/Lovis_Corinth_Geschlachtetes_Schwein_1906.jpg"
+menu: "blog"
 ---
 Je suis tombé sur cet article sur le site de Libé&nbsp;: [Pourquoi les végans ont tout faux](http://www.liberation.fr/debats/2018/03/18/pourquoi-les-vegans-ont-tout-faux_1637109) et il m’a tellement fait rire que je souhaitais le partager avec vous&nbsp;!
 

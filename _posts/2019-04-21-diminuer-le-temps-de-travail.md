@@ -13,4 +13,5 @@ related:
 img_url: https://lareleveetlapeste.fr/wp-content/uploads/2018/11/image-couv-site-0213.jpg
 img_caption: "Réduire le temps consacré au travail pourrait être un levier majeur de la transition écologique et sociale. Depuis plus de dix ans, les économistes écolo anglo-saxons étudient le lien entre réduction du temps de travail et empreinte écologique."
 link_url: https://lareleveetlapeste.fr/reduire-le-temps-de-travail-permettrait-de-preserver-lenvironnement/
+menu: "blog"
 ---

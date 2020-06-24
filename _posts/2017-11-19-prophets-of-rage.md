@@ -11,6 +11,7 @@ related:
 - url: 2015/10/07/laughingsquid-de-staats-music-video-for-witch
   title: De Staat’s Music Video for ‘Witch Doctor’
 video_url: https://www.youtube-nocookie.com/embed/6ad4MH7fMLs
+menu: "blog"
 ---
 > "Unfuck The World" is the first track off the new album 'Prophets Of Rage' available September 15, 2017.
 >

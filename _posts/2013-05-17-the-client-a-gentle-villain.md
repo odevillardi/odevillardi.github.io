@@ -12,6 +12,7 @@ related:
 - url: 2014/10/16/le-web-fait-pousser-mes-tomates
   title: "Le Web fait pousser mes tomates"
 video_url: https://player.vimeo.com/video/69881604
+menu: "blog"
 ---
 > ## SudWeb 2013
 >
