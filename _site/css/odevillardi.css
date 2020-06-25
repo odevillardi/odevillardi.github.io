@@ -196,8 +196,8 @@ p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 @media (prefers-color-scheme: dark) { .gray-text { color: #d1d1d1; }
   .gray-text:hover { color: #d1d1d1; } }
 
-.gray-background { display: inline-block; padding: 1.6rem 3.2rem; background-color: #d1d1d1; border-radius: 1.6rem; }
-@media (prefers-color-scheme: dark) { .gray-background { background-color: #2e2e2e; } }
+.gray-background { display: inline-block; padding: 1.6rem 3.2rem; background-color: #d1d1d1; border-radius: 1.6rem; color: black; }
+@media (prefers-color-scheme: dark) { .gray-background { background-color: #2e2e2e; color: white; } }
 
 .text-overflow { -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
@@ -397,8 +397,8 @@ header ul { margin-top: 1.6rem; margin-bottom: 3.2rem; }
 header ul a { text-decoration: none; transition: border-color 0.2s ease-in-out; }
 header ul a.active { color: #2e2e2e; }
 @media (prefers-color-scheme: dark) { header ul a.active { color: #d1d1d1; } }
-header ul a:hover { color: #080808; text-decoration: none; }
-@media (prefers-color-scheme: dark) { header ul a:hover { color: #f7f7f7; } }
+header ul a:hover { color: black; text-decoration: overline; }
+@media (prefers-color-scheme: dark) { header ul a:hover { color: white; } }
 
 /* Index styling */
 @media (min-width: 768px) { .printy { display: block; -webkit-columns: 2; -moz-columns: 2; columns: 2; -webkit-column-gap: 3.2rem; -moz-column-gap: 3.2rem; column-gap: 3.2rem; -webkit-column-rule: 1px solid #d1d1d1; -moz-column-rule: 1px solid #d1d1d1; column-rule: 1px solid #d1d1d1; } }

@@ -101,8 +101,10 @@ p, ul, ol {
   padding: $spacing $double-spacing;
   background-color: $alternate-color;
   border-radius: $spacing;
+  color: black;
   @media (prefers-color-scheme: dark) {
     background-color: $alternate-dark-color;
+    color: white;
   }
 }
 
@@ -495,10 +497,10 @@ header {
         }
       }
       &:hover {
-        color: $text-color;
-        text-decoration: none;
+        color: black;
+        text-decoration: overline;
         @media (prefers-color-scheme: dark) {
-          color: $background-color;
+          color: white;
         }
       }
     }
