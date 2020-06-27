@@ -16,5 +16,7 @@
   >{{ include.post.title }}</a>
   {% if post.layout == 'link' %}
     <span class="gray-text">→&nbsp;<em>{{ post.source }}</em></span>
+  {% elsif post.layout == 'video' %}
+    <span class="gray-text lead">⎚</span>
   {% endif %}
 </li>
