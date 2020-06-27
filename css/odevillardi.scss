@@ -44,6 +44,9 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: $sans-serif-family;
+  -webkit-font-kerning: normal;
+     -moz-font-kerning: normal;
+          font-kerning: normal;
   text-rendering : optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
@@ -312,6 +315,11 @@ a.thumbnail:hover img {
   }
 }
 
+.rotate {
+  display: inline-block;
+  @include rotate(90);
+}
+
 /* Boutons */
 .button,
 button,
@@ -433,6 +441,7 @@ input[type="button"].button-primary {
 .tag.recycle h1::before     { content: " ♽"; }
 .tag.selection h2::before   { content: " ‼"; }
 .tag.sport h1::before       { content: " ✌"; }
+.tag.tags h1::before        { content: " #"; }
 .tag.typography h1::before  { content: " ﬃ"; }
 .tag.vegan h1::before       { content: " Ⓥ"; }
 .tag.wam h1::before         { content: " ◯"; }

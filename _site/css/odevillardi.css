@@ -168,7 +168,7 @@ textarea { overflow: auto; }
 html { font-size: 62.5%; }
 
 /* TEXT UTILITIES */
-body { background-color: #f7f7f7; color: #080808; font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Trebuchet MS", Helvetica, sans-serif; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; }
+body { background-color: #f7f7f7; color: #080808; font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Trebuchet MS", Helvetica, sans-serif; -webkit-font-kerning: normal; -moz-font-kerning: normal; font-kerning: normal; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; }
 @media (prefers-color-scheme: dark) { body { background-color: #080808; color: #f7f7f7; } }
 
 a { color: #0a5fa9; }
@@ -281,6 +281,8 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 .logo { height: 102px; width: 102px; fill: #d1d1d1; }
 @media (prefers-color-scheme: dark) { .logo { fill: #2e2e2e; } }
 
+.rotate { display: inline-block; transform: rotate(90deg); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); }
+
 /* Boutons */
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] { font-family: Verdana, sans-serif; line-height: 1; display: inline-block; padding: 0.8rem; margin: 0; max-width: 100%; color: #2e2e2e; border: 1px solid #d1d1d1; text-align: center; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 2px; cursor: pointer; box-sizing: border-box; }
 @media (prefers-color-scheme: dark) { .button, button, input[type="submit"], input[type="reset"], input[type="button"] { color: #d1d1d1; border-color: #2e2e2e; } }
@@ -369,6 +371,8 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 .tag.selection h2::before { content: " ‼"; }
 
 .tag.sport h1::before { content: " ✌"; }
+
+.tag.tags h1::before { content: " #"; }
 
 .tag.typography h1::before { content: " ﬃ"; }
 

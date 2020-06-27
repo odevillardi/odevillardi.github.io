@@ -4,7 +4,6 @@ title: "Test de textile"
 date: ’2018-03-21T14:47:00+02:00’
 tags:
 - web
-- css
 related:
 - url: 2017/09/15/165375924614
   title: "Nutrion­nistes et conflits d’intérêts"

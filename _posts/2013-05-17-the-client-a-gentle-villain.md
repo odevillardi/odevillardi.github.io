@@ -5,7 +5,6 @@ date: '2013-05-17T14:47:00+02:00'
 selection: oui
 tags:
 - web
-- sudweb
 related:
 - url: 2015/09/14/ma-pédale-cest-html5-sud-web-2015-tu-débutes-à
   title: "Ma pédale c'est HTML5"

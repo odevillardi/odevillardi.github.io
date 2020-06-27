@@ -15,3 +15,11 @@
    -moz-column-rule: 1px solid $rule;
         column-rule: 1px solid $rule;
 }
+
+@mixin rotate($angle) {
+        transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+     -o-transform: rotate(90deg);
+}
