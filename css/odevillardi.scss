@@ -6,6 +6,8 @@ $alternate-dark-color: hsl(0, 0%, 18%);
 $text-color:           hsl(0, 0%, 3%);
 $link-color:           hsl(208, 89%, 35%);
 $light-link-color:     hsl(203, 83%, 55%);
+$link-2-color:         hsl(188, 89%, 35%);
+$light-link-2-color:   hsl(183, 83%, 55%);
 $green-color:          hsl(98, 89%, 35%);
 $light-green-color:    hsl(93, 83%, 55%);
 
@@ -24,9 +26,9 @@ $breakpoint-l:    1024px;
 $breakpoint-xl-1: 1199px;
 $breakpoint-xl:   1200px;
 
-$serif-family:      Times, serif;
+$serif-family:      "Times New Roman", Times, serif;
 $sans-serif-family: "Trebuchet MS", Helvetica, sans-serif;
-$button-family:     Verdana, sans-serif;
+$monospace-family:  Courier, monospace;
 
 @import 'normalize';
 @import 'grid';
@@ -192,9 +194,9 @@ li { margin-bottom: $half-spacing; }
 }
 
 .alternate li:nth-child(odd) a:not(.button) {
-  color: $green-color;
+  color: $link-2-color;
   @media (prefers-color-scheme: dark) {
-    color: $light-green-color;
+    color: $light-link-2-color;
   }
 }
 
@@ -326,7 +328,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  font-family: $button-family;
+  font-family: $sans-serif-family;
   line-height: 1;
   display: inline-block;
   padding: $half-spacing;

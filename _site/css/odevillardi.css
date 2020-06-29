@@ -232,8 +232,8 @@ li { margin-bottom: 0.8rem; }
 .list-inline li.not-inline::before { content: none; }
 
 @media (max-width: 550px) { .list-inline li.item-break::before { display: block; content: "\a"; } }
-.alternate li:nth-child(odd) a:not(.button) { color: #44a90a; }
-@media (prefers-color-scheme: dark) { .alternate li:nth-child(odd) a:not(.button) { color: #83eb2d; } }
+.alternate li:nth-child(odd) a:not(.button) { color: #0a94a9; }
+@media (prefers-color-scheme: dark) { .alternate li:nth-child(odd) a:not(.button) { color: #2de2eb; } }
 
 .no-style { margin-left: 0; list-style: none; }
 
@@ -284,7 +284,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 .rotate { display: inline-block; transform: rotate(90deg); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); }
 
 /* Boutons */
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] { font-family: Verdana, sans-serif; line-height: 1; display: inline-block; padding: 0.8rem; margin: 0; max-width: 100%; color: #2e2e2e; border: 1px solid #d1d1d1; text-align: center; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 2px; cursor: pointer; box-sizing: border-box; }
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] { font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 1; display: inline-block; padding: 0.8rem; margin: 0; max-width: 100%; color: #2e2e2e; border: 1px solid #d1d1d1; text-align: center; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 2px; cursor: pointer; box-sizing: border-box; }
 @media (prefers-color-scheme: dark) { .button, button, input[type="submit"], input[type="reset"], input[type="button"] { color: #d1d1d1; border-color: #2e2e2e; } }
 .button:hover, .button:focus, .button:hover .button, .button:focus .button, button:hover, button:focus, button:hover .button, button:focus .button, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:hover .button, input[type="button"]:focus .button { text-decoration: none; color: #080808; border-color: #2e2e2e; outline: 0; }
 @media (prefers-color-scheme: dark) { .button:hover, .button:focus, .button:hover .button, .button:focus .button, button:hover, button:focus, button:hover .button, button:focus .button, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:hover .button, input[type="button"]:focus .button { color: #f7f7f7; border-color: #d1d1d1; } }
@@ -392,7 +392,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.web h1::before { content: "@"; }
 
-.tag h1::before, .tag h2::before { color: #d1d1d1; display: block; font-family: Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
+.tag h1::before, .tag h2::before { color: #d1d1d1; display: block; font-family: "Times New Roman", Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
 @media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #2e2e2e; } }
 
 /* VIDEO RESPONSIVE */
@@ -442,7 +442,7 @@ blockquote { color: #44a90a; border-left: 4px solid #44a90a; margin-left: 1.6rem
 @media (prefers-color-scheme: dark) { blockquote { color: #83eb2d; border-color: #83eb2d; } }
 @media (max-width: 549px) { blockquote { margin-left: 0; } }
 
-blockquote.quote { font-family: Times, serif; font-size: 200%; font-style: italic; }
+blockquote.quote { font-family: "Times New Roman", Times, serif; font-size: 200%; font-style: italic; }
 
 .quote:not(.part)::before { content: "« "; }
 
