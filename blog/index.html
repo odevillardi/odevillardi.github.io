@@ -21,7 +21,7 @@ menu: "blog"
   {% endif %}
 </div>
 <div class="part">
-	<ul class="alternate no-style">
+	<ul class="no-style">
 		{% for post in paginator.posts %}
 			{% include post-item-list.html post=post %}
 		{% endfor %}

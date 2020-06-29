@@ -2,6 +2,7 @@
 ---
 $background-color:     hsl(0, 0%, 97%);
 $alternate-color:      hsl(0, 0%, 82%);
+$gray-color:           hsl(0, 0%, 50%);
 $alternate-dark-color: hsl(0, 0%, 18%);
 $text-color:           hsl(0, 0%, 3%);
 $link-color:           hsl(208, 89%, 35%);
@@ -46,13 +47,9 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: $sans-serif-family;
-  -webkit-font-kerning: normal;
-     -moz-font-kerning: normal;
-          font-kerning: normal;
   text-rendering : optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-   -webkit-font-smoothing: antialiased;
-           font-smoothing: antialiased;
+  @include font-kerning(normal);
+  @include font-smoothing(antialiased);
   -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual ;
      -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual ;
           font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual ;
@@ -93,12 +90,8 @@ p, ul, ol {
 }
 
 .gray-text {
-  color: $alternate-dark-color;
-  &:hover { color: $alternate-dark-color; }
-  @media (prefers-color-scheme: dark) {
-    color: $alternate-color;
-    &:hover { color: $alternate-color; }
-  }
+  color: $gray-color;
+  &:hover { color: $gray-color; }
 }
 
 .gray-background {
@@ -183,6 +176,8 @@ li { margin-bottom: $half-spacing; }
     display: block;
     &::before { content: none; }
   }
+
+  &.block { display: inline; }
 }
 
 
@@ -203,6 +198,11 @@ li { margin-bottom: $half-spacing; }
 .no-style {
   margin-left: 0;
   list-style: none;
+
+  li {
+    margin-bottom: $spacing;
+    .link::before  { content: "→ "; }
+  }
 }
 
 .button-list { margin-top: $double-spacing; }
@@ -504,7 +504,6 @@ header {
     margin-bottom: $double-spacing;
     a {
       text-decoration: none;
-      transition: border-color 0.2s ease-in-out;
       &.active {
         color: $alternate-dark-color;
         @media (prefers-color-scheme: dark) {
@@ -640,10 +639,7 @@ blockquote.quote {
 #github ~ li #mail-arobase,
 #mastodon ~ li #mail-contact,
 #mastodon ~ li #mail-pointfr {
-  @media screen and (prefers-reduced-motion: no-preference) {
-    -webkit-transition: opacity .2s ease-in-out;
-            transition: opacity .2s ease-in-out;
-  }
+  @include transition(opacity, .2s, ease-in-out);
 }
 #github:hover ~ li #mail-contact,
 #github:hover ~ li #mail-pointfr,

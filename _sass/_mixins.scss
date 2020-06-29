@@ -17,9 +17,28 @@
 }
 
 @mixin rotate($angle) {
-        transform: rotate(90deg);
--webkit-transform: rotate(90deg);
-   -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-     -o-transform: rotate(90deg);
+        transform: rotate($angle);
+-webkit-transform: rotate($angle);
+   -moz-transform: rotate($angle);
+    -ms-transform: rotate($angle);
+     -o-transform: rotate($angle);
+}
+
+@mixin transition($border, $duration, $type) {
+  @media screen and (prefers-reduced-motion: no-preference) {
+    -webkit-transition: $border $duration $type;
+            transition: $border $duration $type;
+  }
+}
+
+@mixin font-kerning($value){
+  -webkit-font-kerning: $value;
+     -moz-font-kerning: $value;
+          font-kerning: $value;
+}
+
+@mixin font-smoothing($value){
+  -moz-osx-font-smoothing: $value;
+   -webkit-font-smoothing: $value;
+           font-smoothing: $value;
 }

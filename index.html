@@ -52,7 +52,7 @@ menu: "accueil"
 			<p>
 				Je suis disponible pour des missions dans le Web,
 				des remplacements en mathématiques
-				ou tout expérience dont je partage les valeurs.
+				ou toute expérience dont je partage les valeurs.
 			</p>
 			<p>
 				Si <a href="/a-propos/">mon profil</a> vous intéresse,
@@ -72,7 +72,7 @@ menu: "accueil"
 		<p>De billets et de liens.</p>
 	</div>
 	<div class="part">
-		<ul class="alternate no-style">
+		<ul class="no-style">
 			{% assign selected_posts = site.posts | where: "selection", "oui" %}
 			{% for post in selected_posts %}
 				{% include post-item-list.html post=post %}

@@ -168,7 +168,7 @@ textarea { overflow: auto; }
 html { font-size: 62.5%; }
 
 /* TEXT UTILITIES */
-body { background-color: #f7f7f7; color: #080808; font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Trebuchet MS", Helvetica, sans-serif; -webkit-font-kerning: normal; -moz-font-kerning: normal; font-kerning: normal; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; }
+body { background-color: #f7f7f7; color: #080808; font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */ line-height: 1.6; font-weight: 400; font-family: "Trebuchet MS", Helvetica, sans-serif; text-rendering: optimizeLegibility; -webkit-font-kerning: normal; -moz-font-kerning: normal; font-kerning: normal; -moz-osx-font-smoothing: antialiased; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual; }
 @media (prefers-color-scheme: dark) { body { background-color: #080808; color: #f7f7f7; } }
 
 a { color: #0a5fa9; }
@@ -191,10 +191,8 @@ p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 @media (prefers-color-scheme: dark) { .green-text { color: #83eb2d; }
   .green-text:hover { color: #83eb2d; } }
 
-.gray-text { color: #2e2e2e; }
-.gray-text:hover { color: #2e2e2e; }
-@media (prefers-color-scheme: dark) { .gray-text { color: #d1d1d1; }
-  .gray-text:hover { color: #d1d1d1; } }
+.gray-text { color: gray; }
+.gray-text:hover { color: gray; }
 
 .gray-background { display: inline-block; padding: 1.6rem 3.2rem; background-color: #d1d1d1; border-radius: 1.6rem; color: black; }
 @media (prefers-color-scheme: dark) { .gray-background { background-color: #2e2e2e; color: white; } }
@@ -230,12 +228,15 @@ li { margin-bottom: 0.8rem; }
 .list-inline li.list-title ~ li:nth-child(2)::before { content: none; }
 .list-inline li.not-inline { display: block; }
 .list-inline li.not-inline::before { content: none; }
+.list-inline.block { display: inline; }
 
 @media (max-width: 550px) { .list-inline li.item-break::before { display: block; content: "\a"; } }
 .alternate li:nth-child(odd) a:not(.button) { color: #0a94a9; }
 @media (prefers-color-scheme: dark) { .alternate li:nth-child(odd) a:not(.button) { color: #2de2eb; } }
 
 .no-style { margin-left: 0; list-style: none; }
+.no-style li { margin-bottom: 1.6rem; }
+.no-style li .link::before { content: "→ "; }
 
 .button-list { margin-top: 3.2rem; }
 
@@ -281,7 +282,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 .logo { height: 102px; width: 102px; fill: #d1d1d1; }
 @media (prefers-color-scheme: dark) { .logo { fill: #2e2e2e; } }
 
-.rotate { display: inline-block; transform: rotate(90deg); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); }
+.rotate { display: inline-block; transform: rotate(90); -webkit-transform: rotate(90); -moz-transform: rotate(90); -ms-transform: rotate(90); -o-transform: rotate(90); }
 
 /* Boutons */
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] { font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 1; display: inline-block; padding: 0.8rem; margin: 0; max-width: 100%; color: #2e2e2e; border: 1px solid #d1d1d1; text-align: center; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 2px; cursor: pointer; box-sizing: border-box; }
@@ -406,7 +407,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 /* HEADER */
 header ul { margin-top: 1.6rem; margin-bottom: 3.2rem; }
-header ul a { text-decoration: none; transition: border-color 0.2s ease-in-out; }
+header ul a { text-decoration: none; }
 header ul a.active { color: #2e2e2e; }
 @media (prefers-color-scheme: dark) { header ul a.active { color: #d1d1d1; } }
 header ul a:hover { color: black; text-decoration: overline; }
@@ -451,7 +452,7 @@ blockquote.quote { font-family: "Times New Roman", Times, serif; font-size: 200%
 .quote-footer::before { content: "— "; }
 
 /* Contact */
-@media screen and (prefers-reduced-motion: no-preference) { #github ~ li #mail-contact, #github ~ li #mail-pointfr, #github ~ li #mail-arobase, #mastodon ~ li #mail-contact, #mastodon ~ li #mail-pointfr { -webkit-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out; } }
+@media screen and (prefers-reduced-motion: no-preference) { #github ~ li #mail-contact, #github ~ li #mail-pointfr, #github ~ li #mail-arobase, #mastodon ~ li #mail-contact, #mastodon ~ li #mail-pointfr { -webkit-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out; } }
 
 #github:hover ~ li #mail-contact, #github:hover ~ li #mail-pointfr, #github:hover ~ li #mail-arobase, #mastodon:hover ~ li #mail-contact, #mastodon:hover ~ li #mail-pointfr { opacity: .3; }
 

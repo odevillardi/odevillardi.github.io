@@ -1,12 +1,16 @@
-<li>
+<li class="{{ include.post.layout }}">
   <time datetime="{{ post.date | date: '%F' }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
   &emsp;
-  {% for tag in include.post.tags[0] %}
-    <a class="button button-xs text-capitalize {{ tag }}" href="{{ site.baseurl }}/blog/tag/{{ tag }}.html" role="button">
-      {{ tag }}
-    </a>
-    &emsp;
-  {% endfor %}
+  <ul class="list-inline block">
+    {% for tag in include.post.tags %}
+      <li>
+        <a class="button button-xs text-capitalize {{ tag }}" href="{{ site.baseurl }}/blog/tag/{{ tag }}.html" role="button">
+          {{ tag }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <br>
   <a class="lead"
     {% if post.layout != 'link' %}
       href='{{ site.baseurl }}{{ post.url }}'
@@ -15,10 +19,6 @@
     {% endif %}
   >{{ include.post.title }}</a>
   {% if post.layout == 'link' %}
-    &emsp;<span class="gray-text">→&nbsp;<em>{{ post.source }}</em></span>
-  {% elsif post.layout == 'video' %}
-    &emsp;<span class="gray-text lead">⎚</span>
-  {% elsif post.layout == 'photo' %}
-    &emsp;<span class="gray-text lead rotate">⌻</span>
+    &emsp;<span class="link gray-text"><em>{{ post.source }}</em></span>
   {% endif %}
 </li>
