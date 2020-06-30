@@ -1,0 +1,61 @@
+Description: "Quelques lectures récentes et marquantes."
+
+Livres:
+- Titre:  "L’âge des Low Tech"
+  Auteur: "Philippe Bihouix"
+  Edition: "Anthropocène Seuil"
+  url: https://www.seuil.com/ouvrage/l-age-des-low-tech-philippe-bihouix/9782021160727
+
+- Titre:  "Achetez votre nationalité préférée"
+  Auteur: "Revue XXI, printemps 2020"
+  Edition: "4 revues"
+  url: https://www.4revues.fr/xxi/244-50printemps-2020.html
+
+- Titre:  "Mémoires vives"
+  Auteur: "Edward Snowden"
+  Edition: "Seuil"
+  url: https://www.seuil.com/ouvrage/memoires-vives-edward-snowden/9782021441048
+  selection: oui
+
+- Titre:  "Réfugiée en Chartreuse"
+  Auteur: "Muriel Zürcher [Scénario] / Nicolas Julo [Dessin]"
+  Edition: "Mosquito"
+  url: http://www.editionsmosquito.com/ouvrage-318.html
+
+- Titre:  "Brésil, le vertige"
+  Auteur: "Revue 6 mois, Printemps / Été 2020"
+  Edition: "4 revues"
+  url: https://www.4revues.fr/6mois/243-19-printemps-ete-2020.html
+
+- Titre:  "Vivant"
+  Auteur: "Livre journal Numéro 4"
+  Edition: "La relève et la peste"
+  url: https://lareleveetlapeste.fr/produit/livre-journal-numero-4/
+
+- Titre:  "Le théorème du parapluie"
+  Auteur: "Mickaël Launey"
+  Edition: "Flammarion"
+  url: https://editions.flammarion.com/Catalogue/hors-collection/documents-temoignages-et-essais-d-actualite/le-theoreme-du-parapluie-ou-lart-dobserver-le-monde-dans-le-bon-sens
+  selection: oui
+
+- Titre:  "Zéro Déchet, L’urgence de la cohérence"
+  Auteur: "Hélène de Vestele"
+  Edition: "La relève et la peste"
+  url: https://lareleveetlapeste.fr/produit/manifeste-numero-3/
+
+- Titre:  "Crépuscule"
+  Auteur: "Juan Branco"
+  Edition: "Points"
+  url: http://www.editionspoints.com/ouvrage/crepuscule-juan-branco/9782757881804
+
+- Titre:  "Le paradoxe de Fermi"
+  Auteur: "Jean-Pierre Boudine"
+  Edition: "Denoël"
+  url: http://www.denoel.fr/Catalogue/DENOEL/Lunes-d-encre/Le-Paradoxe-de-Fermi
+  selection: oui
+
+- Titre:  "Défaite des maîtres et possesseurs"
+  Auteur: "Vincent Message"
+  Edition: "Points"
+  url: http://www.editionspoints.com/ouvrage/defaite-des-maitres-et-possesseurs-vincent-message/9782757864678
+  selection: oui

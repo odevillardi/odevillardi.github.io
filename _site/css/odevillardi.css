@@ -244,7 +244,6 @@ li { margin-bottom: 0.8rem; }
 
 /* TITLE UTILITIES */
 h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: "Trebuchet MS", Helvetica, sans-serif; font-style: italic; }
-h1.tag, h2.tag, h3.tag, h4.tag, h5.tag, h6.tag { text-transform: capitalize; }
 
 h1 { font-size: 5.4rem; line-height: 1.2; letter-spacing: -.29rem; margin-top: 1.6rem; }
 

@@ -69,18 +69,22 @@ menu: "accueil"
 	</div>
 	<div class="text-center tag selection">
 		<h2>Sélection</h2>
-		<p>De billets et de liens.</p>
+		<p>De billets, liens & lectures.</p>
 	</div>
 	<div class="part">
 		<ul class="no-style">
-			{% assign selected_posts = site.posts | where: "selection", "oui" %}
-			{% for post in selected_posts %}
+			{% assign selected_links = site.posts | where: "selection", "oui" %}
+			{% for post in selected_links limit:6 %}
 				{% include post-item-list.html post=post %}
+			{% endfor %}
+			{% assign selected_books = site.data.lectures.Livres | where: "selection", "oui" %}
+			{% for livre in selected_books limit:4 %}
+				{% include books.html book=livre %}
 			{% endfor %}
 		</ul>
 		<ul class="text-center no-style list-inline button-list">
 			<li><a class="button" href="{{ site.baseurl }}/blog/">Billets & liens</a></li>
-			<li><a class="button" href="{{ site.baseurl }}/lectures/">Lectures</a></li>
+				<li><a class="button" href="{{ site.baseurl }}/lectures/">Lectures</a></li>
 		</ul>
 	</div>
 {% include foot.html %}

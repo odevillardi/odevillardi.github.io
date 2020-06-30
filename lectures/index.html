@@ -4,26 +4,17 @@ description: "Quelques-unes de mes dernières lectures : marquantes ou inspirant
 menu: "lectures"
 ---
 {% include head.html %}
-
 <div class="text-center tag lectures">
 	<h1>{{ page.title }}</h1>
 	<p>
-		Quelques lectures récentes et marquantes.
+		{{ site.data.lectures.Description }}
 	</p>
 </div>
-<div class="part lead">
+<div class="part">
 	<ul class="no-style">
-		<li><strong>L’âge des Low Tech</strong> — Philippe Bihouix (Anthropocène Seuil)</li>
-		<li><strong>Achetez votre nationalité préférée</strong> — <a href="https://www.4revues.fr/xxi/244-50printemps-2020.html">Revue XXI, printemps 2020</a> (4 revues)</li>
-		<li><strong>Mémoires vives</strong> — Edward Snowden (Seuil)</li>
-		<li><strong>Réfugiée en Chartreuse</strong> — Muriel Zürcher [Scénario] / Nicolas Julo [Dessin] (Mosquito)</li>
-		<li><strong>Brésil, le vertige</strong> — <a href="https://www.4revues.fr/6mois/243-19-printemps-ete-2020.html">Revue 6&nbsp;mois, Printemps / Été 2020</a> (4 revues)</li>
-		<li><strong>Vivant</strong> — <a href="https://lareleveetlapeste.fr/produit/livre-journal-numero-4/">Livre journal Numéro 4</a> (La relève et la peste)</li>
-		<li><strong>Le théorème du parapluie</strong> — Mickaël Launey (Flammarion)</li>
-		<li><strong>Zéro Déchet, L’urgence de la cohérence</strong> — Hélène de Vestele (La relève et la peste)</li>
-		<li><strong>Crépuscule</strong> — Juan Branco (Points)</li>
-		<li><strong>Le paradoxe de Fermi</strong> — Jean-Pierre Boudine (Denoël)</li>
-		<li><strong>Défaite des maîtres et possesseurs</strong> — Vincent Message (Points)</li>
+		{% for livre in site.data.lectures.Livres %}
+			{% include books.html book=livre %}
+		{% endfor %}
 	</ul>
 </div>
 {% include foot.html %}
