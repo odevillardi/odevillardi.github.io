@@ -37,36 +37,24 @@ $monospace-family:  Courier, monospace;
 
 /* TEXT UTILITIES */
 body {
-  background-color: $background-color;
-  color: $text-color;
-  @media (prefers-color-scheme: dark) {
-      background-color: $text-color;
-      color: $background-color;
-  }
-  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: $sans-serif-family;
-  text-rendering : optimizeLegibility;
+  @include background-color($background-color, $text-color);
+  @include color($text-color, $background-color);
+           font-family: $sans-serif-family;
   @include font-kerning(normal);
+           font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
   @include font-smoothing(antialiased);
-  -webkit-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual ;
-     -moz-font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual ;
-          font-variant-ligatures: normal, discretionary-ligatures, historical-ligatures, contextual ;
+  @include font-variant-ligatures("normal, discretionary-ligatures, historical-ligatures, contextual");
+           font-weight: 400;
+           line-height: 1.6;
+           text-rendering : optimizeLegibility;
 }
 
 a {
-  color: $link-color;
-  @media (prefers-color-scheme: dark) {
-    color: $light-link-color;
-  }
+  @include color ($link-color, $light-link-color);
 
   &:hover {
-    color: $link-color;
+    @include color ($link-color, $light-link-color);
     text-decoration: underline double;
-    @media (prefers-color-scheme: dark) {
-      color: $light-link-color;
-    }
   }
 }
 
@@ -81,12 +69,8 @@ p, ul, ol {
 .text-capitalize  { text-transform: capitalize; }
 
 .green-text {
-  color: $green-color;
-  &:hover { color: $green-color; }
-  @media (prefers-color-scheme: dark) {
-    color: $light-green-color;
-    &:hover { color: $light-green-color; }
-  }
+  @include color ($green-color, $light-green-color);
+  &:hover { @include color ($green-color, $light-green-color); }
 }
 
 .gray-text {
@@ -95,27 +79,24 @@ p, ul, ol {
 }
 
 .gray-background {
+  @include color (black, white);
+  @include background-color($alternate-color, $alternate-dark-color);
   display: inline-block;
   padding: $spacing $double-spacing;
-  background-color: $alternate-color;
   border-radius: $spacing;
-  color: black;
-  @media (prefers-color-scheme: dark) {
-    background-color: $alternate-dark-color;
-    color: white;
-  }
 }
 
 .text-overflow {
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  @include text-overflow(ellipsis);
   white-space: nowrap;
   hyphens: auto;
 }
 
 .lead {
   font-size: 1.8rem;
-  @media (min-width: $breakpoint-s) { font-size: 2rem; }
+  @media (min-width: $breakpoint-s) {
+    font-size: 2rem;
+  }
 }
 
 .hidden { display: none; }
@@ -124,10 +105,8 @@ hr {
   margin-top: $double-spacing;
   margin-bottom: $double-spacing;
   border-width: 0;
-  border-top: 1px solid $alternate-color;
-  @media (prefers-color-scheme: dark) {
-    border-color: $alternate-dark-color;
-  }
+  border-top: 1px solid;
+  @include border-color($alternate-color, $alternate-dark-color);
 }
 
 /* Lists styling */
@@ -162,10 +141,7 @@ li { margin-bottom: $half-spacing; }
   li { display: inline; }
   li:not(:first-child)::before {
     content: " · " ;
-    color: $alternate-dark-color;
-    @media (prefers-color-scheme: dark) {
-      color: $alternate-color;
-    }
+    @include color($alternate-dark-color, $alternate-color);
   }
 
   li.list-title ~ li:nth-child(2)::before {
@@ -189,10 +165,7 @@ li { margin-bottom: $half-spacing; }
 }
 
 .alternate li:nth-child(odd) a:not(.button) {
-  color: $link-2-color;
-  @media (prefers-color-scheme: dark) {
-    color: $light-link-2-color;
-  }
+  @include color($link-2-color, $light-link-2-color);
 }
 
 .no-style {
@@ -245,10 +218,7 @@ h5 {
   letter-spacing: -.15rem;
 }
 h6 {
-  color: $alternate-dark-color;
-  @media (prefers-color-scheme: dark) {
-    color: $alternate-color;
-  }
+  @include color($alternate-dark-color, $alternate-color);
   font-size: 1.6rem;
   line-height: 1.6;
   letter-spacing: -.13rem;
@@ -299,22 +269,16 @@ a.thumbnail:hover img {
 .img-circle { border-radius: 50%; }
 
 .avatar {
-  background-color: $background-color;
-  border: 2px solid $alternate-dark-color;
+  @include background-color($background-color, $text-color);
+  border: 2px solid;
+  @include border-color($alternate-dark-color, $alternate-color);
   padding: 2px;
-  @media (prefers-color-scheme: dark) {
-    background-color: $text-color;
-    border: 2px solid $alternate-color;
-  }
 }
 
 .logo {
   height: 102px;
   width: 102px;
-  fill: $alternate-color;
-  @media (prefers-color-scheme: dark) {
-    fill: $alternate-dark-color;
-  }
+  @include fill($alternate-color, $alternate-dark-color);
 }
 
 .rotate {
@@ -334,8 +298,9 @@ input[type="button"] {
   padding: $half-spacing;
   margin: 0;
   max-width: 100%;
-  color: $alternate-dark-color;
-  border: 1px solid $alternate-color;
+  @include color($alternate-dark-color, $alternate-color);
+  border: 1px solid;
+  @include border-color($alternate-color, $alternate-dark-color);
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -343,19 +308,11 @@ input[type="button"] {
   border-radius: 2px;
   cursor: pointer;
   box-sizing: border-box;
-  @media (prefers-color-scheme: dark) {
-    color: $alternate-color;
-    border-color: $alternate-dark-color;
-  }
 
   &:hover, &:focus, &:hover .button, &:focus .button {
     text-decoration: none;
-    color: $text-color;
-    border-color: $alternate-dark-color;
-    @media (prefers-color-scheme: dark) {
-      color: $background-color;
-      border-color: $alternate-color;
-    }
+    @include color ($text-color, $background-color);
+    @include border-color($alternate-dark-color, $alternate-color);
     outline: 0;
   }
 
@@ -382,22 +339,13 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  border-color: $light-link-color;
-  color: $link-color;
-  @media (prefers-color-scheme: dark) {
-    border-color: $link-color;
-    color: $light-link-color;
-  }
+  @include border-color($light-link-color, $link-color);
+  @include color($link-color, $light-link-color);
 
   &:hover, &:focus {
-    background-color: $link-color;
-    border-color: $link-color;
-    color: $background-color;
-    @media (prefers-color-scheme: dark) {
-      background-color: $light-link-color;
-      border-color: $light-link-color;
-      color: $text-color;
-    }
+    @include background-color($link-color, $light-link-color);
+    @include border-color($link-color, $light-link-color);
+    @include color($background-color, $text-color);
   }
 }
 
@@ -456,7 +404,7 @@ input[type="button"].button-primary {
 
 .tag h1::before,
 .tag h2::before {
-  color: $alternate-color;
+  @include color($alternate-color, $alternate-dark-color);
   display: block;
   font-family: $serif-family;
   font-size: 104px;
@@ -464,9 +412,6 @@ input[type="button"].button-primary {
   font-weight: normal;
   margin-top: -$spacing;
   letter-spacing: normal;
-  @media (prefers-color-scheme: dark) {
-    color: $alternate-dark-color;
-  }
 }
 
 /* VIDEO RESPONSIVE */
@@ -505,24 +450,17 @@ header {
     a {
       text-decoration: none;
       &.active {
-        color: $alternate-dark-color;
-        @media (prefers-color-scheme: dark) {
-          color: $alternate-color;
-        }
+        @include color($alternate-dark-color, $alternate-color);
       }
       &:hover {
-        color: black;
+        @include color(black, white);
         text-decoration: overline;
-        @media (prefers-color-scheme: dark) {
-          color: white;
-        }
       }
     }
   }
 }
 
 /* Index styling */
-
 .printy {
   @media (min-width: $breakpoint-m) {
     display: block;
@@ -607,12 +545,9 @@ header {
 
 /* Quotes */
 blockquote {
-  color: $green-color;
-  border-left: 4px solid $green-color;
-  @media (prefers-color-scheme: dark) {
-    color: $light-green-color;
-    border-color: $light-green-color;
-  }
+  @include color($green-color, $light-green-color);
+  border-left: 4px solid;
+  @include border-color($green-color, $light-green-color);
   margin-left: $spacing;
   padding-left: $spacing;
   font-size: inherit;
@@ -654,10 +589,8 @@ blockquote.quote {
 }
 
 footer {
-  border-top: 1px solid $alternate-color;
-  @media (prefers-color-scheme: dark) {
-    border-color: $alternate-dark-color;
-  }
+  border-top: 1px solid;
+  @include border-color($alternate-color, $alternate-dark-color);
 }
 
 /* Formulaires */

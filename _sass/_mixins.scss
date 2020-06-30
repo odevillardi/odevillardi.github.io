@@ -1,3 +1,54 @@
+@mixin color($light-color, $dark-color) {
+  color: $light-color;
+  @media (prefers-color-scheme: dark) {
+    color: $dark-color;
+  }
+}
+
+@mixin background-color($light-color, $dark-color) {
+  background-color: $light-color;
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark-color;
+  }
+}
+
+@mixin border-color($light-color, $dark-color) {
+  border-color: $light-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $dark-color;
+  }
+}
+
+@mixin fill($light-color, $dark-color) {
+  fill: $light-color;
+  @media (prefers-color-scheme: dark) {
+    fill: $dark-color;
+  }
+}
+
+@mixin font-kerning($value){
+  -webkit-font-kerning: $value;
+     -moz-font-kerning: $value;
+          font-kerning: $value;
+}
+
+@mixin font-smoothing($value){
+  -moz-osx-font-smoothing: $value;
+   -webkit-font-smoothing: $value;
+           font-smoothing: $value;
+}
+
+@mixin font-variant-ligatures($value) {
+  -webkit-font-variant-ligatures: $value;
+     -moz-font-variant-ligatures: $value;
+          font-variant-ligatures: $value;
+}
+
+@mixin text-overflow($value) {
+    -o-text-overflow: $value;
+       text-overflow: $value;
+}
+
 @mixin columns($number) {
   -webkit-columns: $number;
      -moz-columns: $number;
@@ -29,16 +80,4 @@
     -webkit-transition: $border $duration $type;
             transition: $border $duration $type;
   }
-}
-
-@mixin font-kerning($value){
-  -webkit-font-kerning: $value;
-     -moz-font-kerning: $value;
-          font-kerning: $value;
-}
-
-@mixin font-smoothing($value){
-  -moz-osx-font-smoothing: $value;
-   -webkit-font-smoothing: $value;
-           font-smoothing: $value;
 }
