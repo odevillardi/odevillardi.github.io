@@ -15,4 +15,4 @@ The alternative to gridlocked freeways and overflowing subways. Time to ride the
 
 The new electric VanMoof S3 & X3 are the world’s most advanced e-bikes. Redefine your movement to redefine your city.
 
-Learn more https://www.vanmoof.com/en-NL/s3?ref=yt
+En savoir plus&nbsp;: [https://www.vanmoof.com/fr-FR/s3](https://www.vanmoof.com/fr-FR/s3)

@@ -1,7 +1,6 @@
 <li class="{{ include.post.layout }}">
-  <time datetime="{{ post.date | date: '%F' }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
-  &emsp;
   <ul class="list-inline block">
+    <li><time datetime="{{ post.date | date: '%F' }}">{{ include.post.date | date: "%d/%m/%Y" }}</time></li>
     {% for tag in include.post.tags %}
       <li>
         <a class="button button-xs text-capitalize {{ tag }}" href="{{ site.baseurl }}/blog/tag/{{ tag }}.html" role="button">
@@ -9,16 +8,16 @@
         </a>
       </li>
     {% endfor %}
+    <li class="not-inline">
+      <a class="lead"
+      {% if post.layout != 'link' %}
+        href='{{ site.baseurl }}{{ post.url }}'
+      {% else %}
+        href='{{ site.baseurl }}{{ post.link_url }}' title='{{ post.img_caption }}'
+      {% endif %}>{{ include.post.title }}</a>
+      {% if post.layout == 'link' %}
+        <span class="link gray-text"><em>{{ post.source }}</em></span>
+      {% endif %}
+    </li>
   </ul>
-  <br>
-  <a class="lead"
-    {% if post.layout != 'link' %}
-      href='{{ site.baseurl }}{{ post.url }}'
-    {% else %}
-      href='{{ site.baseurl }}{{ post.link_url }}' title='{{ post.img_caption }}'
-    {% endif %}
-  >{{ include.post.title }}</a>
-  {% if post.layout == 'link' %}
-    <span class="link gray-text"><em>{{ post.source }}</em></span>
-  {% endif %}
 </li>

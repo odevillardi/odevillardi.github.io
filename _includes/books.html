@@ -1,8 +1,9 @@
 <li>
-  <ul class="list-inline block gray-text">
-    <li>{{ include.book.Auteur }}</li>
+  <ul class="list-inline block">
+    <li class="gray-text">{{ include.book.Auteur }}</li>
     <li><a href="{{ include.book.url }}">{{ include.book.Edition }}</a></li>
+    <li class="not-inline">
+      <span class="lead">{{ include.book.Titre }}</span>
+    </li>
   </ul>
-  <br>
-  <span class="lead">{{ include.book.Titre }}</span>
 </li>

@@ -2,6 +2,7 @@
 layout: post
 title: "Transparent pour l’utilisateur&nbsp;? Non&nbsp;! Invisible."
 date: ’2020-06-18T15:47:00+02:00’
+selection: oui
 tags:
 - web
 - politics
