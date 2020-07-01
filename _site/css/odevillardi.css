@@ -400,7 +400,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.web h1::before { content: "@"; }
 
-.tag h1::before, .tag h2::before { color: #d1d1d1; display: block; font-family: "Times New Roman", Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
+.tag h1::before, .tag h2::before { color: #d1d1d1; display: block; font-family: Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
 @media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #2e2e2e; } }
 
 /* VIDEO RESPONSIVE */
@@ -451,7 +451,7 @@ blockquote { color: #44a90a; border-left: 4px solid; border-color: #44a90a; marg
 @media (prefers-color-scheme: dark) { blockquote { border-color: #83eb2d; } }
 @media (max-width: 549px) { blockquote { margin-left: 0; } }
 
-blockquote.quote { font-family: "Times New Roman", Times, serif; font-size: 200%; font-style: italic; }
+blockquote.quote { font-family: Times, serif; font-size: 200%; font-style: italic; }
 
 .quote:not(.part)::before { content: "« "; }
 
