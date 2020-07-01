@@ -446,6 +446,13 @@
 
     
     <url>
+        <loc>/blog/2020/07/01/vanmoof-time-to-ride-the-future.html</loc>
+        <lastmod>2020-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>/blog/2020/06/18/invisible-pas-transparent.html</loc>
         <lastmod>2020-07-01</lastmod>
         <changefreq>daily</changefreq>
