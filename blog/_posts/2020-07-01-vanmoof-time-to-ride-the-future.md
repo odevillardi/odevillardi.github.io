@@ -2,7 +2,6 @@
 layout: video
 title: "Time to ride the future"
 date: '2020-07-01T12:00:00+02:00'
-selection: oui
 tags:
 - environment
 - politics
