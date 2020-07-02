@@ -11,13 +11,18 @@
 	</ul>
 	<ul class="list-inline">
 		<li>
-			Le <time datetime="{{ include.post.date | date: '%F' }}" itemprop="datePublished">{{ include.post.date | date: "%d/%m/%Y" }}</time>
+			Le <time datetime="{{ include.post.date | date: '%F' }}" itemprop="datePublished dateModified">{{ include.post.date | date: "%d/%m/%Y" }}</time>
 		</li>
-		{% if !post %}
-			<li>
-				<a href="{{ site.baseurl }}{{ include.post.url }}">Permalien</a>
-			</li>
-		{% endif %}
+		<li>
+			Par
+			<span itemprop="author publisher">
+				{% if include.post.author %}
+					{{ include.post.author }}
+				{% else %}
+					{{ site.author }}
+				{% endif %}
+			</span>
+		</li>
 	</ul>
 	{% if include.post.related %}
 		<ul class="list-inline related">
