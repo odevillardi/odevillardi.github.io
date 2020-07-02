@@ -16,8 +16,8 @@
 		<li>
 			Par
 			<span itemprop="author">
-				{% if include.post.author %}
-					{{ include.post.author }}
+				{% if include.post.layout == "link" %}
+					{{ include.post.source }}
 				{% else %}
 					{{ site.author }}
 				{% endif %}
