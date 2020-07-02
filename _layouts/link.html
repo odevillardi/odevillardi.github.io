@@ -2,28 +2,25 @@
 
 ---
 {% include head.html %}
-
-{% include big-title.html title=page.title %}
-
-<div class="posts" id="posts">
-	<div class="part text">
-		<div class="row">
-			<div class="eight columns">
-				<figure>
-					<a class="thumbnail" href="{{ page.link_url }}" title="À lire sur {{ page.source }}"><img src="{{ page.img_url }}" alt="{{ page.title }}"></a>
-					<figcaption>
-						{{ page.img_caption }}
-					</figcaption>
-				</figure>
-				<p class="lead text-center">
-					<a class="button button-primary" href="{{ page.link_url }}">À lire sur {{ page.source }}</a>
-				</p>
+<article itemscope itemtype="http://schema.org/Article">
+	{% include big-title.html title=page.title %}
+	<div class="posts" id="posts">
+		<div class="part text">
+			<div class="row">
+				<div class="eight columns" itemprop="articleBody">
+					<figure>
+						<a class="thumbnail" href="{{ page.link_url }}" title="À lire sur {{ page.source }}"><img src="{{ page.img_url }}" alt="{{ page.title }}"></a>
+						<figcaption>
+							{{ page.img_caption }}
+						</figcaption>
+					</figure>
+					<p class="lead text-center">
+						<a class="button button-primary" href="{{ page.link_url }}">À lire sur {{ page.source }}</a>
+					</p>
+				</div>
+				{% include sticker.html post=page %}
 			</div>
-
-			{% include sticker.html post=page %}
-
 		</div>
 	</div>
-</div>
-
+</article>
 {% include foot.html %}

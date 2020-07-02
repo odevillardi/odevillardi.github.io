@@ -3,19 +3,18 @@
 ---
 {% include head.html %}
 
-{% include big-title.html title=page.title %}
-
-<div class="posts" id="posts">
-	<div class="part text">
-		<div class="row">
-			<div class="eight columns lead">
-				{{ page.content }}
+<article itemscope itemtype="http://schema.org/Article">
+	{% include big-title.html title=page.title %}
+	<div class="posts" id="posts">
+		<div class="part text">
+			<div class="row">
+				<div class="eight columns lead" itemprop="articleBody">
+					{{ page.content }}
+				</div>
+				{% include sticker.html post=page %}
 			</div>
-
-			{% include sticker.html post=page %}
-
 		</div>
 	</div>
-</div>
+</article>
 
 {% include foot.html %}
