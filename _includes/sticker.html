@@ -13,9 +13,9 @@
 		<li>
 			Le <time datetime="{{ include.post.date | date: '%F' }}" itemprop="datePublished dateModified">{{ include.post.date | date: "%d/%m/%Y" }}</time>
 		</li>
-		<li itemscope itemtype="http://schema.org/Person">
+		<li>
 			Par
-			<span itemprop="author publisher">
+			<span itemprop="author">
 				{% if include.post.author %}
 					{{ include.post.author }}
 				{% else %}
