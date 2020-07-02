@@ -331,14 +331,14 @@ input[type="button"].button-primary {
 .older::after  { content: " ›"; }
 .button::after { text-transform: none; }
 
-.tag.a-propos h1::before    { content: "♢"; }
+.tag.a-propos h1::before    { content: "※"; }
 .tag.agriculture h1::before { content: "☼"; }
 .tag.antispecism h1::before { content: "Ⓐ"; }
 .tag.art h1::before         { content: "ɐ"; }
 .tag.blog h1::before        { content: "§"; }
-.tag.canada h1::before      { content: "©"; }
+.tag.canada h1::before      { content: "␘"; }
 .tag.change h1::before      { content: "⌥"; }
-.tag.contact h1::before     { content: "⊕"; }
+.tag.contact h1::before     { content: "✉"; }
 .tag.design h1::before      { content: "✎"; }
 .tag.diy h1::before         { content: "✄"; }
 .tag.economy h1::before     { content: "$"; }

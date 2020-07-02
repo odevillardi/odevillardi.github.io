@@ -307,7 +307,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .button::after { text-transform: none; }
 
-.tag.a-propos h1::before { content: "♢"; }
+.tag.a-propos h1::before { content: "※"; }
 
 .tag.agriculture h1::before { content: "☼"; }
 
@@ -317,11 +317,11 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.blog h1::before { content: "§"; }
 
-.tag.canada h1::before { content: "©"; }
+.tag.canada h1::before { content: "␘"; }
 
 .tag.change h1::before { content: "⌥"; }
 
-.tag.contact h1::before { content: "⊕"; }
+.tag.contact h1::before { content: "✉"; }
 
 .tag.design h1::before { content: "✎"; }
 
