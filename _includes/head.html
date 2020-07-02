@@ -18,24 +18,24 @@
 		</div>
 		<div class="container">
 			<header>
-				<nav id="menu" aria-label="Navigation générale">
+				<nav id="menu" aria-label="Navigation générale" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
 					<ul class="list-inline nav u-pull-left">
-						<li>
-							<a{% if page.menu == 'accueil' %} class="active"{% endif %} href="{{ site.baseurl }}/">Accueil</a>
+						<li itemprop="name">
+							<a itemprop="url"{% if page.menu == 'accueil' %} class="active"{% endif %} href="{{ site.baseurl }}/">Accueil</a>
 						</li>
-						<li>
-							<a{% if page.menu == 'lectures' %} class="active"{% endif %} href="{{ site.baseurl }}/lectures/">Lectures</a>
+						<li itemprop="name">
+							<a itemprop="url"{% if page.menu == 'lectures' %} class="active"{% endif %} href="{{ site.baseurl }}/lectures/">Lectures</a>
 						</li>
-						<li class="item-break">
-							<a{% if page.menu == 'blog' %} class="active"{% endif %} href="{{ site.baseurl }}/blog/">Billets & Liens</a>
+						<li class="item-break" itemprop="name">
+							<a itemprop="url"{% if page.menu == 'blog' %} class="active"{% endif %} href="{{ site.baseurl }}/blog/">Billets & Liens</a>
 						</li>
 					</ul>
 					<ul class="list-inline u-pull-right text-right">
-						<li>
-							<a{% if page.menu == 'a-propos' %} class="active"{% endif %} href="{{ site.baseurl }}/a-propos/">À propos</a>
+						<li itemprop="name">
+							<a itemprop="url"{% if page.menu == 'a-propos' %} class="active"{% endif %} href="{{ site.baseurl }}/a-propos/">À propos</a>
 						</li>
-						<li class="item-break">
-							<a{% if page.menu == 'contact' %} class="active"{% endif %} href="{{ site.baseurl }}/contact/">Contactez-moi</a>
+						<li class="item-break" itemprop="name">
+							<a itemprop="url"{% if page.menu == 'contact' %} class="active"{% endif %} href="{{ site.baseurl }}/contact/">Contactez-moi</a>
 						</li>
 					</ul>
 				</nav>
