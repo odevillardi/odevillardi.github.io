@@ -5,8 +5,8 @@ $alternate-color:      hsl(0, 0%, 82%);
 $gray-color:           hsl(0, 0%, 50%);
 $alternate-dark-color: hsl(0, 0%, 18%);
 $text-color:           hsl(0, 0%, 3%);
-$link-color:           hsl(208, 89%, 35%);
-$light-link-color:     hsl(203, 83%, 55%);
+$link-color:           hsl(200, 100%, 35%);
+$light-link-color:     hsl(200,  75%, 50%);
 
 $half-spacing:    .8rem;
 $spacing:        1.6rem;
@@ -340,31 +340,31 @@ input[type="button"].button-primary {
 .tag.change h1::before      { content: "⌥"; }
 .tag.contact h1::before     { content: "⊕"; }
 .tag.design h1::before      { content: "✎"; }
-.tag.diy h1::before         { content: "✁"; }
+.tag.diy h1::before         { content: "✄"; }
 .tag.economy h1::before     { content: "$"; }
 .tag.education h1::before   { content: "ℇ"; }
 .tag.energy h1::before      { content: "↯"; }
 .tag.environment h1::before { content: "☷"; }
 .tag.food h1::before        { content: "♨"; }
-.tag.funny h1::before       { content: "☻"; }
+.tag.funny h1::before       { content: "☺"; }
 .tag.guitar h1::before      { content: "♬"; }
 .tag.lectures h1::before    { content: "¶"; }
 .tag.lettering h1::before   { content: "ℒ"; }
 .tag.low-tech h1::before    { content: "␥"; }
-.tag.maths h1::before       { content: "±"; }
+.tag.maths h1::before       { content: "÷"; }
 .tag.minimalism h1::before  { content: "○"; }
-.tag.movie h1::before       { content: "★"; }
 .tag.moon h1::before        { content: "☾"; }
+.tag.movie h1::before       { content: "☆"; }
 .tag.music h1::before       { content: "♫"; }
-.tag.nature h1::before      { content: "♣"; }
+.tag.nature h1::before      { content: "♧"; }
 .tag.parisweb h1::before    { content: "#"; }
 .tag.permaculture h1::before{ content: "⚘"; }
 .tag.pixel-art h1::before   { content: "▦"; }
-.tag.politics h1::before    { content: "♝"; }
+.tag.politics h1::before    { content: "♗"; }
 .tag.quatrecentquatre h1::before { content: "⁉"; }
-.tag.recycle h1::before     { content: "♽"; }
+.tag.recycle h1::before     { content: "♲"; }
 .tag.selection h2::before   { content: "‼"; }
-.tag.sport h1::before       { content: "♛"; }
+.tag.sport h1::before       { content: "♕"; }
 .tag.tags h1::before        { content: "⍞"; }
 .tag.typography h1::before  { content: "ℒ"; }
 .tag.urban-farming h1::before { content: "⌂"; }
@@ -374,7 +374,7 @@ input[type="button"].button-primary {
 
 .tag h1::before,
 .tag h2::before {
-  @include color($alternate-color, $alternate-dark-color);
+  @include color($link-color, $light-link-color);
   display: block;
   font-family: $serif-family;
   font-size: 104px;
@@ -387,7 +387,7 @@ input[type="button"].button-primary {
 .logo {
   height: 102px;
   width: 102px;
-  @include fill($alternate-color, $alternate-dark-color);
+  @include fill($link-color, $light-link-color);
 }
 
 /* VIDEO RESPONSIVE */

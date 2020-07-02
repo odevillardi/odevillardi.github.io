@@ -172,10 +172,10 @@ body { background-color: #f7f7f7; color: #080808; font-family: "Trebuchet MS", H
 @media (prefers-color-scheme: dark) { body { background-color: #080808; } }
 @media (prefers-color-scheme: dark) { body { color: #f7f7f7; } }
 
-a { color: #0a5fa9; }
-@media (prefers-color-scheme: dark) { a { color: #2da2eb; } }
-a:hover { color: #0a5fa9; text-decoration: underline double; }
-@media (prefers-color-scheme: dark) { a:hover { color: #2da2eb; } }
+a { color: #0077b3; }
+@media (prefers-color-scheme: dark) { a { color: #209fdf; } }
+a:hover { color: #0077b3; text-decoration: underline double; }
+@media (prefers-color-scheme: dark) { a:hover { color: #209fdf; } }
 
 p, ul, ol { margin-top: 0; margin-bottom: 1.6rem; }
 
@@ -291,12 +291,12 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
   .button.previous::before { content: "Précédent : "; } }
 @media (min-width: 768px) { .button.next::before { content: "Billet suivant : "; }
   .button.previous::before { content: "Billet précédent : "; } }
-.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #2da2eb; color: #0a5fa9; }
-@media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #0a5fa9; } }
-@media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { color: #2da2eb; } }
-.button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { background-color: #0a5fa9; border-color: #0a5fa9; color: #f7f7f7; }
-@media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { background-color: #2da2eb; } }
-@media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { border-color: #2da2eb; } }
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #209fdf; color: #0077b3; }
+@media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #0077b3; } }
+@media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { color: #209fdf; } }
+.button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { background-color: #0077b3; border-color: #0077b3; color: #f7f7f7; }
+@media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { background-color: #209fdf; } }
+@media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { border-color: #209fdf; } }
 @media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { color: #080808; } }
 
 .button.button-xs { font-size: 1.4rem; font-variant: normal; padding: .2rem .5rem; letter-spacing: 0; text-transform: capitalize; }
@@ -325,7 +325,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.design h1::before { content: "✎"; }
 
-.tag.diy h1::before { content: "✁"; }
+.tag.diy h1::before { content: "✄"; }
 
 .tag.economy h1::before { content: "$"; }
 
@@ -337,7 +337,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.food h1::before { content: "♨"; }
 
-.tag.funny h1::before { content: "☻"; }
+.tag.funny h1::before { content: "☺"; }
 
 .tag.guitar h1::before { content: "♬"; }
 
@@ -347,17 +347,17 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.low-tech h1::before { content: "␥"; }
 
-.tag.maths h1::before { content: "±"; }
+.tag.maths h1::before { content: "÷"; }
 
 .tag.minimalism h1::before { content: "○"; }
 
-.tag.movie h1::before { content: "★"; }
-
 .tag.moon h1::before { content: "☾"; }
+
+.tag.movie h1::before { content: "☆"; }
 
 .tag.music h1::before { content: "♫"; }
 
-.tag.nature h1::before { content: "♣"; }
+.tag.nature h1::before { content: "♧"; }
 
 .tag.parisweb h1::before { content: "#"; }
 
@@ -365,15 +365,15 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.pixel-art h1::before { content: "▦"; }
 
-.tag.politics h1::before { content: "♝"; }
+.tag.politics h1::before { content: "♗"; }
 
 .tag.quatrecentquatre h1::before { content: "⁉"; }
 
-.tag.recycle h1::before { content: "♽"; }
+.tag.recycle h1::before { content: "♲"; }
 
 .tag.selection h2::before { content: "‼"; }
 
-.tag.sport h1::before { content: "♛"; }
+.tag.sport h1::before { content: "♕"; }
 
 .tag.tags h1::before { content: "⍞"; }
 
@@ -387,11 +387,11 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.web h1::before { content: "@"; }
 
-.tag h1::before, .tag h2::before { color: #d1d1d1; display: block; font-family: Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
-@media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #2e2e2e; } }
+.tag h1::before, .tag h2::before { color: #0077b3; display: block; font-family: Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
+@media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #209fdf; } }
 
-.logo { height: 102px; width: 102px; fill: #d1d1d1; }
-@media (prefers-color-scheme: dark) { .logo { fill: #2e2e2e; } }
+.logo { height: 102px; width: 102px; fill: #0077b3; }
+@media (prefers-color-scheme: dark) { .logo { fill: #209fdf; } }
 
 /* VIDEO RESPONSIVE */
 .embed-responsive { position: relative; display: block; height: 0; padding: 0; overflow: hidden; }
