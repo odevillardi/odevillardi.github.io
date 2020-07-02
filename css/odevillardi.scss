@@ -7,10 +7,6 @@ $alternate-dark-color: hsl(0, 0%, 18%);
 $text-color:           hsl(0, 0%, 3%);
 $link-color:           hsl(208, 89%, 35%);
 $light-link-color:     hsl(203, 83%, 55%);
-$link-2-color:         hsl(188, 89%, 35%);
-$light-link-2-color:   hsl(183, 83%, 55%);
-$green-color:          hsl(98, 89%, 35%);
-$light-green-color:    hsl(93, 83%, 55%);
 
 $half-spacing:    .8rem;
 $spacing:        1.6rem;
@@ -41,7 +37,7 @@ body {
   @include color($text-color, $background-color);
            font-family: $sans-serif-family;
   @include font-kerning(normal);
-           font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
+           font-size: 1.6em;
   @include font-smoothing(antialiased);
   @include font-variant-ligatures("normal, discretionary-ligatures, historical-ligatures, contextual");
            font-weight: 400;
@@ -68,11 +64,6 @@ p, ul, ol {
 .text-center      { text-align: center; }
 .text-capitalize  { text-transform: capitalize; }
 
-.green-text {
-  @include color ($green-color, $light-green-color);
-  &:hover { @include color ($green-color, $light-green-color); }
-}
-
 .gray-text {
   color: $gray-color;
   &:hover { color: $gray-color; }
@@ -82,7 +73,7 @@ p, ul, ol {
   @include color (black, white);
   @include background-color($alternate-color, $alternate-dark-color);
   display: inline-block;
-  padding: $spacing $double-spacing;
+  padding: $spacing $double-spacing 0 $double-spacing;
   border-radius: $spacing;
 }
 
@@ -143,18 +134,14 @@ li { margin-bottom: $half-spacing; }
     @include color($alternate-dark-color, $alternate-color);
   }
 
-  li.list-title ~ li:nth-child(2)::before {
-    content: none;
-  }
+  li.list-title ~ li:nth-child(2)::before { content: none; }
 
   li.not-inline {
     display: block;
     &::before { content: none; }
   }
 
-  &.block {
-    display: inline;
-  }
+  &.block { display: inline; }
 }
 
 
@@ -163,10 +150,6 @@ li { margin-bottom: $half-spacing; }
     display: block;
     content: "\a";
   }
-}
-
-.alternate li:nth-child(odd) a:not(.button) {
-  @include color($link-2-color, $light-link-2-color);
 }
 
 .no-style {
@@ -189,7 +172,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $sans-serif-family;
   font-style: italic;
 }
-
 h1 {
   font-size: 5.4rem;
   line-height: 1.2;
@@ -272,17 +254,6 @@ a.thumbnail:hover img {
   border: 2px solid;
   @include border-color($alternate-dark-color, $alternate-color);
   padding: 2px;
-}
-
-.logo {
-  height: 102px;
-  width: 102px;
-  @include fill($alternate-color, $alternate-dark-color);
-}
-
-.rotate {
-  display: inline-block;
-  @include rotate(90);
 }
 
 /* Boutons */
@@ -413,6 +384,12 @@ input[type="button"].button-primary {
   letter-spacing: normal;
 }
 
+.logo {
+  height: 102px;
+  width: 102px;
+  @include fill($alternate-color, $alternate-dark-color);
+}
+
 /* VIDEO RESPONSIVE */
 .embed-responsive {
   position: relative;
@@ -431,18 +408,15 @@ input[type="button"].button-primary {
     border: 0;
   }
 
-  img {
-    -webkit-object-fit: cover;
-            object-fit: cover;
-  }
+  img { @include object-fit(cover); }
 }
 
 .embed-responsive-16by9 { padding-bottom: 56.25%; }
 .embed-responsive-4by3  { padding-bottom: 75%; }
 
 
-/* HEADER */
-header {
+/* NAV */
+nav {
   ul {
     margin-top: $spacing;
     margin-bottom: $double-spacing;
@@ -453,7 +427,7 @@ header {
       }
       &:hover {
         @include color(black, white);
-        text-decoration: overline;
+        text-decoration: underline;
       }
     }
   }
@@ -484,8 +458,7 @@ header {
 }
 
 .stickers {
-  position: -webkit-sticky;
-  position:         sticky;
+  @include position(sticky);
           top:  $double-spacing;
   padding-top: -$double-spacing;
 
@@ -527,8 +500,7 @@ header {
 }
 
 @media (min-width: $breakpoint-m) and (max-width: 1023px) {
-  .part.video .row {
-                            margin-left: -8.82353%;
+  .part.video .row {        margin-left: -8.82353%;
                             margin-right:-8.82353%;
   }
   .part.video .caption    { padding-left: 8.82353%; }
@@ -544,16 +516,18 @@ header {
 
 /* Quotes */
 blockquote {
-  @include color($green-color, $light-green-color);
-  border-left: 4px solid;
-  @include border-color($green-color, $light-green-color);
-  margin-left: $spacing;
-  padding-left: $spacing;
+  @include background-color($alternate-color, $alternate-dark-color);
+  border-left: $half-spacing solid;
+  @include border-color($alternate-dark-color, $alternate-color);
+  border-radius: 0 2px 2px 0;
+  @include color(black, white);
+  margin: $spacing;
+  padding-left: $half-spacing;
   font-size: inherit;
   font-style: italic;
 
   @media (max-width: $breakpoint-s-1) {
-    margin-left: 0;
+    margin: 0;
   }
 }
 
@@ -607,8 +581,7 @@ select {
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
--webkit-box-shadow: none;
-        box-shadow: none;
+  @include box-shadow(none);
   box-sizing: border-box;
 }
 

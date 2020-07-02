@@ -19,6 +19,11 @@
   }
 }
 
+@mixin box-shadow($rule) {
+  -webkit-box-shadow: $rule;
+          box-shadow: $rule;
+}
+
 @mixin fill($light-color, $dark-color) {
   fill: $light-color;
   @media (prefers-color-scheme: dark) {
@@ -67,12 +72,23 @@
         column-rule: 1px solid $rule;
 }
 
+@mixin object-fit($rule) {
+  -webkit-object-fit: $rule;
+       -o-object-fit: $rule;
+          object-fit: $rule;
+}
+
 @mixin rotate($angle) {
         transform: rotate($angle);
 -webkit-transform: rotate($angle);
    -moz-transform: rotate($angle);
     -ms-transform: rotate($angle);
      -o-transform: rotate($angle);
+}
+
+@mixin position($rule) {
+  position: -webkit-$rule;
+  position:         $rule;
 }
 
 @mixin transition($border, $duration, $type) {
