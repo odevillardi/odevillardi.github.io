@@ -4,7 +4,7 @@ description: "Je suis un travailleur du Web depuis 15 ans et un enseignant en ma
 menu: "accueil"
 ---
 {% include head.html %}
-	<div class="text-center">
+	<div class="text-center" itemscope itemtype="http://schema.org/Person">
 		<svg class="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
 		 width="102px" height="102px" viewBox="0 0 500.000000 500.000000"
 		 preserveAspectRatio="xMidYMid meet">
@@ -40,7 +40,7 @@ menu: "accueil"
 			l-35 117 78 0 79 0 -20 -67z"/>
 			</g>
 		</svg>
-		<h1>{{ site.title }}</h1>
+		<h1 itemprop="name">{{ site.title }}</h1>
 		<p>Bienvenue chez moi.</p>
 	</div>
 	<div class="part">

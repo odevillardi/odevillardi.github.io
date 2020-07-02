@@ -4,20 +4,30 @@ description: "Je vous répondrai avec grand plaisir par email, via Mastodon ou G
 menu: "contact"
 ---
 {% include head.html %}
+<div itemscope itemtype="http://schema.org/Person">
+  <div class="tag contact text-center">
+    <h1>Contact</h1>
+    <p>
+      <strong itemprop="name">Olivier de Villardi</strong>,
+      <em itemprop="jobTitle">travailleur du Web</em> et
+      <em itemprop="jobTitle">enseignant</em>
+      <span itemprop="address">
+        à <span itemprop="addressLocality">Chambéry</span>,
+        <span itemprop="addressRegion">Rhône-Alpes</span>
+      </span>
+    </p>
+  </div>
+  <div class="part text-center lead">
+    <ul class="list-inline">
+      <li id="email"><a itemprop="email" href="mailto:%63&#111;%6e%74&#97;c&#116;&#64;%6f&#100;e%76&#105;&#108;&#108;ar&#100;&#105;%2e%66r">Email</a></li>
+      <li id="mastodon"><a rel="me" href="https://mamot.fr/@odevillardi">Mastodon</a></li>
+      <li id="github"><a href="https://github.com/odevillardi">Github</a></li>
+      <li class="not-inline">
+        <span id="mail-contact">c&#111;n&#116;ac&#116;</span><span id="mail-arobase">&#64;</span><span id="mail-odevillardi">o&#100;ev&#105;&#108;&#108;ard&#105;</span><span id="mail-pointfr">.fr</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-<div class="tag contact text-center">
-  <h1>Contactez-moi</h1>
-  <p>Je vous répondrai avec grand plaisir.</p>
-</div>
-<div class="part text-center lead">
-  <ul class="list-inline">
-    <li id="email"><a href="mailto:%63&#111;%6e%74&#97;c&#116;&#64;%6f&#100;e%76&#105;&#108;&#108;ar&#100;&#105;%2e%66r">Email</a></li>
-    <li id="mastodon"><a rel="me" href="https://mamot.fr/@odevillardi">Mastodon</a></li>
-    <li id="github"><a href="https://github.com/odevillardi">Github</a></li>
-    <li class="not-inline">
-      <span id="mail-contact">c&#111;n&#116;ac&#116;</span><span id="mail-arobase">&#64;</span><span id="mail-odevillardi">o&#100;ev&#105;&#108;&#108;ard&#105;</span><span id="mail-pointfr">.fr</span>
-    </li>
-  </ul>
-</div>
 
 {% include foot.html %}
