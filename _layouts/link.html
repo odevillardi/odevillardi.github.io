@@ -9,7 +9,9 @@
 			<div class="row">
 				<div class="eight columns" itemprop="articleBody">
 					<figure>
-						<a class="thumbnail" href="{{ page.link_url }}" title="À lire sur {{ page.source }}"><img src="{{ page.img_url }}" alt="{{ page.title }}"></a>
+						<a class="thumbnail" href="{{ page.link_url }}" title="À lire sur {{ page.source }}">
+							<img src="{{ page.img_url }}" alt="{{ page.title }}" itemprop="image">
+						</a>
 						<figcaption>
 							{{ page.img_caption }}
 						</figcaption>
