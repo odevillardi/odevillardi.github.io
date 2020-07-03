@@ -336,9 +336,9 @@ input[type="button"].button-primary {
 .tag.antispecism h1::before { content: "Ⓐ"; }
 .tag.art h1::before         { content: "ɐ"; }
 .tag.blog h1::before        { content: "§"; }
-.tag.canada h1::before      { content: "␘"; }
+.tag.canada h1::before      { content: "☶"; }
 .tag.change h1::before      { content: "⌥"; }
-.tag.contact h1::before     { content: "✉"; }
+.tag.contact h1::before     { content: "@"; }
 .tag.design h1::before      { content: "✎"; }
 .tag.diy h1::before         { content: "✄"; }
 .tag.economy h1::before     { content: "$"; }
@@ -370,7 +370,7 @@ input[type="button"].button-primary {
 .tag.urban-farming h1::before { content: "⌂"; }
 .tag.vegan h1::before       { content: "Ⓥ"; }
 .tag.water h1::before       { content: "☵"; }
-.tag.web h1::before         { content: "@"; }
+.tag.web h1::before         { content: "↻"; }
 
 .tag h1::before,
 .tag h2::before {

@@ -317,11 +317,11 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.blog h1::before { content: "§"; }
 
-.tag.canada h1::before { content: "␘"; }
+.tag.canada h1::before { content: "☶"; }
 
 .tag.change h1::before { content: "⌥"; }
 
-.tag.contact h1::before { content: "✉"; }
+.tag.contact h1::before { content: "@"; }
 
 .tag.design h1::before { content: "✎"; }
 
@@ -385,7 +385,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.water h1::before { content: "☵"; }
 
-.tag.web h1::before { content: "@"; }
+.tag.web h1::before { content: "↻"; }
 
 .tag h1::before, .tag h2::before { color: #0077b3; display: block; font-family: Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
 @media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #209fdf; } }
