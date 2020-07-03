@@ -307,7 +307,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .button::after { text-transform: none; }
 
-.tag.a-propos h1::before { content: "※"; }
+.tag.a-propos h1::before { content: "∏"; }
 
 .tag.agriculture h1::before { content: "☼"; }
 
@@ -371,7 +371,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.recycle h1::before { content: "♲"; }
 
-.tag.selection h2::before { content: "‼"; }
+.tag.selection h2::before { content: "!"; }
 
 .tag.sport h1::before { content: "♕"; }
 
@@ -387,7 +387,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.web h1::before { content: "↻"; }
 
-.tag h1::before, .tag h2::before { color: #0077b3; display: block; font-family: Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
+.tag h1::before, .tag h2::before { color: #0077b3; display: block; font-family: "Hoefler Text", Times, serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
 @media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #209fdf; } }
 
 .logo { height: 102px; width: 102px; fill: #0077b3; }
@@ -442,7 +442,7 @@ blockquote { background-color: #d1d1d1; border-left: 0.8rem solid; border-color:
 @media (prefers-color-scheme: dark) { blockquote { color: white; } }
 @media (max-width: 549px) { blockquote { margin: 0; } }
 
-blockquote.quote { font-family: Times, serif; font-size: 200%; font-style: italic; }
+blockquote.quote { font-family: "Hoefler Text", Times, serif; font-size: 200%; font-style: italic; }
 
 .quote:not(.part)::before { content: "« "; }
 

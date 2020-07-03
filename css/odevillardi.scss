@@ -23,7 +23,7 @@ $breakpoint-l:    1024px;
 $breakpoint-xl-1: 1199px;
 $breakpoint-xl:   1200px;
 
-$serif-family:      Times, serif;
+$serif-family:      "Hoefler Text", Times, serif;
 $sans-serif-family: "Trebuchet MS", Helvetica, sans-serif;
 $monospace-family:  Courier, monospace;
 
@@ -331,7 +331,7 @@ input[type="button"].button-primary {
 .older::after  { content: " ›"; }
 .button::after { text-transform: none; }
 
-.tag.a-propos h1::before    { content: "※"; }
+.tag.a-propos h1::before    { content: "∏"; }
 .tag.agriculture h1::before { content: "☼"; }
 .tag.antispecism h1::before { content: "Ⓐ"; }
 .tag.art h1::before         { content: "ɐ"; }
@@ -363,7 +363,7 @@ input[type="button"].button-primary {
 .tag.politics h1::before    { content: "♗"; }
 .tag.quatrecentquatre h1::before { content: "⁉"; }
 .tag.recycle h1::before     { content: "♲"; }
-.tag.selection h2::before   { content: "‼"; }
+.tag.selection h2::before   { content: "!"; }
 .tag.sport h1::before       { content: "♕"; }
 .tag.tags h1::before        { content: "⍞"; }
 .tag.typography h1::before  { content: "ℒ"; }
