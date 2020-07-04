@@ -72,7 +72,7 @@ Là on est plutôt dans la méconnaissance totale de ce que vit un végan au quo
 
 > […]&nbsp;le mauvais coup que porte le véganisme à notre mode de vie&nbsp;[…]
 
-<div class="embed-responsive embed-responsive-16by9">
+<div class="video-container embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Hx2CLjkx89E?rel=0" allowfullscreen></iframe>
 </div>
 
@@ -116,7 +116,7 @@ Je vous invite à essayer de réaliser une partie du travail qu’une vache lait
 
 Pour preuve, cette vidéo de vaches tellement déçues d’avoir été libérées&nbsp;:
 
-<div class="embed-responsive embed-responsive-16by9">
+<div class="video-container embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MHwENKARoBY?rel=0&amp;start=70" allowfullscreen></iframe>
 </div>
 

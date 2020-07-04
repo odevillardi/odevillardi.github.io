@@ -54,11 +54,6 @@ a {
   }
 }
 
-p, ul, ol {
-  margin-top: 0;
-  margin-bottom: $spacing;
-}
-
 .text-left        { text-align: left; }
 .text-right       { text-align: right; }
 .text-center      { text-align: center; }
@@ -93,8 +88,6 @@ p, ul, ol {
 .hidden { display: none; }
 
 hr {
-  margin-top: $double-spacing;
-  margin-bottom: $double-spacing;
   border-width: 0;
   border-top: 1px solid;
   @include border-color($alternate-color, $alternate-dark-color);
@@ -104,7 +97,7 @@ hr {
 ul { list-style: circle inside; }
 ol { list-style: decimal inside; }
 
-ol, ul {
+ul, ol {
   padding-left: 0;
   margin-left: $double-spacing;
 
@@ -223,7 +216,7 @@ iframe {
   max-width: 100%;
 }
 
-img:not(.avatar):not(.thumbnail) { width: 100%; }
+img:not(.thumbnail) { width: 100%; }
 
 figcaption {
   font-style: italic;
@@ -248,13 +241,6 @@ a.thumbnail:hover img {
 }
 
 .img-circle { border-radius: 50%; }
-
-.avatar {
-  @include background-color($background-color, $text-color);
-  border: 2px solid;
-  @include border-color($alternate-dark-color, $alternate-color);
-  padding: 2px;
-}
 
 /* Boutons */
 .button,
@@ -680,10 +666,7 @@ td:last-child {
 input,
 textarea,
 select,
-fieldset {
-  margin-bottom: $spacing;
-}
-
+fieldset,
 pre,
 blockquote,
 dl,
@@ -692,8 +675,15 @@ table,
 p,
 ul,
 ol,
-form {
+form,
+.video-container {
+  margin-top: 0;
   margin-bottom: $spacing;
+}
+
+hr {
+  margin-top: $double-spacing;
+  margin-bottom: $double-spacing;
 }
 
 /* Utilities */
