@@ -341,7 +341,7 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .tag.guitar h1::before { content: "♬"; }
 
-.tag.lectures h1::before { content: "¶"; }
+.tag.lectures h1::before { content: "Λ"; }
 
 .tag.lettering h1::before { content: "ℒ"; }
 
