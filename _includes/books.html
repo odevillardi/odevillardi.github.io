@@ -2,8 +2,7 @@
   <ul class="list-inline block">
     <li class="gray-text">{{ include.book.Auteur }}</li>
     <li><a href="{{ include.book.url }}">{{ include.book.Edition }}</a></li>
-    <li class="not-inline">
-      <span class="lead">{{ include.book.Titre }}</span>
-    </li>
+    <li class="lead not-inline"><strong>{{ include.book.Titre }}</strong></li>
+    <li class="not-inline dark-gray-text">{{ include.book.Pitch | truncate: '280' }}</li>
   </ul>
 </li>

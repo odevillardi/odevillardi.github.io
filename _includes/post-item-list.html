@@ -1,6 +1,6 @@
 <li class="{{ include.post.layout }}">
   <ul class="list-inline block">
-    <li><time datetime="{{ post.date | date: '%F' }}">{{ include.post.date | date: "%d/%m/%Y" }}</time></li>
+    <li><time class="gray-text" datetime="{{ post.date | date: '%F' }}">{{ include.post.date | date: "%d/%m/%Y" }}</time></li>
     {% for tag in include.post.tags %}
       <li>
         <a class="button button-xs text-capitalize {{ tag }}" href="{{ site.baseurl }}/blog/tag/{{ tag }}.html" role="button">
@@ -13,10 +13,17 @@
       {% if post.layout != 'link' %}
         href='{{ site.baseurl }}{{ post.url }}'
       {% else %}
-        href='{{ site.baseurl }}{{ post.link_url }}' title='{{ post.img_caption }}'
+        href='{{ site.baseurl }}{{ post.link_url }}'
       {% endif %}>{{ include.post.title }}</a>
       {% if post.layout == 'link' %}
         <span class="link gray-text"><em>{{ post.source }}</em></span>
+      {% endif %}
+    </li>
+    <li class="not-inline dark-gray-text">
+      {% if post.layout == 'link' %}
+        {{ post.img_caption | strip_html | truncate: '280' }}
+      {% else %}
+        {{ post.excerpt | strip_html | truncate: '280' }}
       {% endif %}
     </li>
   </ul>

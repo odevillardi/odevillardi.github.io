@@ -172,9 +172,9 @@ body { background-color: #f7f7f7; color: #080808; font-family: "Trebuchet MS", H
 @media (prefers-color-scheme: dark) { body { background-color: #080808; } }
 @media (prefers-color-scheme: dark) { body { color: #f7f7f7; } }
 
-a { color: #0077b3; }
+a { color: #0077b3; text-decoration: none; }
 @media (prefers-color-scheme: dark) { a { color: #209fdf; } }
-a:hover { color: #0077b3; text-decoration: underline double; }
+a:hover { color: #0077b3; text-decoration: underline; }
 @media (prefers-color-scheme: dark) { a:hover { color: #209fdf; } }
 
 .text-left { text-align: left; }
@@ -187,6 +187,9 @@ a:hover { color: #0077b3; text-decoration: underline double; }
 
 .gray-text { color: gray; }
 .gray-text:hover { color: gray; }
+
+.dark-gray-text { color: #2e2e2e; }
+@media (prefers-color-scheme: dark) { .dark-gray-text { color: #d1d1d1; } }
 
 .gray-background { color: black; background-color: #d1d1d1; display: inline-block; padding: 1.6rem 3.2rem 0 3.2rem; border-radius: 1.6rem; }
 @media (prefers-color-scheme: dark) { .gray-background { color: white; } }
@@ -227,8 +230,9 @@ li { margin-bottom: 0.8rem; }
 
 @media (max-width: 550px) { .list-inline li.item-break::before { display: block; content: "\a"; } }
 .no-style { margin-left: 0; list-style: none; }
-.no-style li { margin-bottom: 1.6rem; }
+.no-style li { margin-bottom: 3.2rem; }
 .no-style li .link::before { content: "→ "; }
+.no-style li li { margin-bottom: 0; }
 
 .button-list { margin-top: 3.2rem; }
 
@@ -398,10 +402,9 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 /* NAV */
 nav ul { margin-top: 1.6rem; margin-bottom: 3.2rem; }
-nav ul a { text-decoration: none; }
 nav ul a.active { color: #2e2e2e; }
 @media (prefers-color-scheme: dark) { nav ul a.active { color: #d1d1d1; } }
-nav ul a:hover { color: black; text-decoration: underline; }
+nav ul a:hover { color: black; }
 @media (prefers-color-scheme: dark) { nav ul a:hover { color: white; } }
 
 /* Index styling */

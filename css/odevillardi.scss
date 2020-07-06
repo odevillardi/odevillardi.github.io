@@ -47,10 +47,11 @@ body {
 
 a {
   @include color ($link-color, $light-link-color);
+  text-decoration: none;
 
   &:hover {
     @include color ($link-color, $light-link-color);
-    text-decoration: underline double;
+    text-decoration: underline;
   }
 }
 
@@ -62,6 +63,10 @@ a {
 .gray-text {
   color: $gray-color;
   &:hover { color: $gray-color; }
+}
+
+.dark-gray-text {
+  @include color($alternate-dark-color, $alternate-color);
 }
 
 .gray-background {
@@ -150,8 +155,10 @@ li { margin-bottom: $half-spacing; }
   list-style: none;
 
   li {
-    margin-bottom: $spacing;
+    margin-bottom: $double-spacing;
     .link::before  { content: "→ "; }
+
+    li { margin-bottom: 0; }
   }
 }
 
@@ -407,14 +414,8 @@ nav {
     margin-top: $spacing;
     margin-bottom: $double-spacing;
     a {
-      text-decoration: none;
-      &.active {
-        @include color($alternate-dark-color, $alternate-color);
-      }
-      &:hover {
-        @include color(black, white);
-        text-decoration: underline;
-      }
+      &.active { @include color($alternate-dark-color, $alternate-color); }
+      &:hover  { @include color(black, white); }
     }
   }
 }
