@@ -55,7 +55,7 @@ defaults: []
 title:       "Olivier de&nbsp;Villardi"
 description: "Je peux vous accompagner dans la gestion de vos projets, la création de prototypes et la relation avec vos prestataires."
 author: "Olivier de Villardi"
-url:    http://odevillardi.fr
+url:    https://odevillardi.fr
 
 # Markdown Processors
 maruku:
