@@ -6,10 +6,10 @@
         href='{{ site.baseurl }}{{ post.url }}'
       {% else %}
         href='{{ site.baseurl }}{{ post.link_url }}'
-      {% endif %}>{{ include.post.title }}</a>
+      {% endif %}><span class="post-title">{{ include.post.title }}</span>
       {% if post.layout == 'link' %}
-        <span class="link gray-text"><em>{{ post.source }}</em></span>
-      {% endif %}
+        <span class="link dark-gray-text"><em>{{ post.source }}</em></span>
+      {% endif %}</a>
     </li>
     <li class="not-inline">
       <ul class="list-inline">
@@ -21,7 +21,7 @@
         {% endfor %}
       </ul>
     </li>
-    <li class="not-inline dark-gray-text">
+    <li class="not-inline dark-gray-text excerpt">
       {% if post.layout == 'link' %}
         {{ post.img_caption | strip_html | truncatewords: '45' }}
       {% else %}

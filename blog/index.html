@@ -16,13 +16,12 @@ menu: "blog"
     <li><a href="{{ site.baseurl }}/blog/tag/web.html">Web</a></li>
     <li class="item-break"><a class="gray-text" href="{{ site.baseurl }}/blog/tag/">Tous les tags</a></li>
   </ul>
-  {% if paginator.page != 1 %}
-	  <p>Page {{ paginator.page }} / {{ paginator.total_pages }}</p>
-  {% endif %}
+	<p class="dark-gray-text">Page {{ paginator.page }}/{{ paginator.total_pages }}</p>
 </div>
 <div class="part post-list">
 	{% for post in paginator.posts %}
 		{% include post-item-list.html post=post %}
 	{% endfor %}
 </div>
+<p class="text-center gray-text">Page {{ paginator.page }}/{{ paginator.total_pages }}</p>
 {% include foot.html %}

@@ -172,10 +172,17 @@ body { background-color: #f7f7f7; color: #080808; font-family: "Trebuchet MS", H
 @media (prefers-color-scheme: dark) { body { background-color: #080808; } }
 @media (prefers-color-scheme: dark) { body { color: #f7f7f7; } }
 
+.hidden { display: none; }
+
 a { color: #0077b3; text-decoration: none; }
 @media (prefers-color-scheme: dark) { a { color: #209fdf; } }
 a:hover { color: #0077b3; text-decoration: underline; }
 @media (prefers-color-scheme: dark) { a:hover { color: #209fdf; } }
+
+.lead { font-size: 1.8rem; }
+@media (min-width: 550px) { .lead { font-size: 2rem; } }
+
+.text-overflow { -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
 .text-left { text-align: left; }
 
@@ -194,13 +201,6 @@ a:hover { color: #0077b3; text-decoration: underline; }
 .gray-background { color: black; background-color: #d1d1d1; display: inline-block; padding: 1.6rem 3.2rem 0 3.2rem; border-radius: 1.6rem; }
 @media (prefers-color-scheme: dark) { .gray-background { color: white; } }
 @media (prefers-color-scheme: dark) { .gray-background { background-color: #2e2e2e; } }
-
-.text-overflow { -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
-
-.lead { font-size: 1.8rem; }
-@media (min-width: 550px) { .lead { font-size: 2rem; } }
-
-.hidden { display: none; }
 
 hr { border-width: 0; border-top: 1px solid; border-color: #d1d1d1; }
 @media (prefers-color-scheme: dark) { hr { border-color: #2e2e2e; } }
@@ -228,7 +228,7 @@ li { margin-bottom: 0.8rem; }
 .list-inline li.not-inline::before { content: none; }
 .list-inline.block { display: inline; }
 
-@media (max-width: 550px) { .list-inline li.item-break::before { display: block; content: "\a"; } }
+@media (max-width: 549px) { .list-inline li.item-break::before { display: block; content: "\a"; } }
 .no-style { margin-left: 0; list-style: none; }
 .no-style li { margin-bottom: 1.6rem; }
 
@@ -236,7 +236,10 @@ li { margin-bottom: 0.8rem; }
 
 .post-list .item { margin-bottom: 3.2rem; }
 .post-list span.link::before { content: "→ "; }
+.post-list a:hover { text-decoration: none; }
+.post-list a:hover .post-title { text-decoration: underline; }
 .post-list .not-inline .list-inline { margin: 0; }
+.post-list .excerpt { max-width: 768px; }
 
 /* TITLE UTILITIES */
 h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: "Trebuchet MS", Helvetica, sans-serif; font-style: italic; }

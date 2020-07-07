@@ -45,6 +45,8 @@ body {
            text-rendering : optimizeLegibility;
 }
 
+.hidden { display: none; }
+
 a {
   @include color ($link-color, $light-link-color);
   text-decoration: none;
@@ -53,6 +55,19 @@ a {
     @include color ($link-color, $light-link-color);
     text-decoration: underline;
   }
+}
+
+.lead {
+  font-size: 1.8rem;
+  @media (min-width: $breakpoint-s) {
+    font-size: 2rem;
+  }
+}
+
+.text-overflow {
+  @include text-overflow(ellipsis);
+  white-space: nowrap;
+  hyphens: auto;
 }
 
 .text-left        { text-align: left; }
@@ -65,9 +80,7 @@ a {
   &:hover { color: $gray-color; }
 }
 
-.dark-gray-text {
-  @include color($alternate-dark-color, $alternate-color);
-}
+.dark-gray-text { @include color($alternate-dark-color, $alternate-color); }
 
 .gray-background {
   @include color (black, white);
@@ -76,21 +89,6 @@ a {
   padding: $spacing $double-spacing 0 $double-spacing;
   border-radius: $spacing;
 }
-
-.text-overflow {
-  @include text-overflow(ellipsis);
-  white-space: nowrap;
-  hyphens: auto;
-}
-
-.lead {
-  font-size: 1.8rem;
-  @media (min-width: $breakpoint-s) {
-    font-size: 2rem;
-  }
-}
-
-.hidden { display: none; }
 
 hr {
   border-width: 0;
@@ -110,16 +108,12 @@ ul, ol {
 }
 
 .text-center ol,
-.text-center ul {
-  margin-left: 0;
-}
+.text-center ul { margin-left: 0; }
 
 ul ul,
 ul ol,
 ol ol,
-ol ul {
-  margin: $spacing 0 $spacing $double-spacing;
-}
+ol ul { margin: $spacing 0 $spacing $double-spacing; }
 
 li { margin-bottom: $half-spacing; }
 
@@ -143,7 +137,7 @@ li { margin-bottom: $half-spacing; }
 }
 
 
-@media (max-width: $breakpoint-s) {
+@media (max-width: $breakpoint-s-1) {
   .list-inline li.item-break::before {
     display: block;
     content: "\a";
@@ -153,7 +147,6 @@ li { margin-bottom: $half-spacing; }
 .no-style {
   margin-left: 0;
   list-style: none;
-
   li { margin-bottom: $spacing; }
 }
 
@@ -162,7 +155,12 @@ li { margin-bottom: $half-spacing; }
 .post-list {
   .item { margin-bottom: $double-spacing; }
   span.link::before  { content: "→ "; }
+  a:hover {
+    text-decoration: none;
+    .post-title { text-decoration: underline; }
+  }
   .not-inline .list-inline { margin: 0; }
+  .excerpt { max-width: $breakpoint-m; }
 }
 
 /* TITLE UTILITIES */
