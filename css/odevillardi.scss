@@ -154,15 +154,15 @@ li { margin-bottom: $half-spacing; }
   margin-left: 0;
   list-style: none;
 
-  li {
-    margin-bottom: $double-spacing;
-    .link::before  { content: "→ "; }
-
-    li { margin-bottom: 0; }
-  }
+  li { margin-bottom: $spacing; }
 }
 
 .button-list { margin-top: $double-spacing; }
+
+.post-list {
+  .item { margin-bottom: $double-spacing; }
+  span.link::before  { content: "→ "; }
+}
 
 /* TITLE UTILITIES */
 
@@ -356,7 +356,6 @@ input[type="button"].button-primary {
 .tag.politics h1::before    { content: "♗"; }
 .tag.quatrecentquatre h1::before { content: "⁉"; }
 .tag.recycle h1::before     { content: "♲"; }
-.tag.selection h2::before   { content: "!"; }
 .tag.sport h1::before       { content: "♕"; }
 .tag.tags h1::before        { content: "⍞"; }
 .tag.typography h1::before  { content: "ℒ"; }

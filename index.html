@@ -43,48 +43,42 @@ menu: "accueil"
 		<h1>{{ site.title }}</h1>
 		<p>Bienvenue chez moi.</p>
 	</div>
-	<div class="part">
-		<div class="printy lead">
-			<p>
-				Vous trouverez beaucoup de liens, quelques billets
-				et ce qui me définit à la fois sur le plan personnel et professionnel.
-			</p>
-			<p>
-				Je suis disponible pour des missions dans le Web,
-				des remplacements en mathématiques
-				ou toute expérience dont je partage les valeurs.
-			</p>
-			<p>
-				Si <a href="/a-propos/">mon profil</a> vous intéresse,
-				vous pouvez <a href="{{ site.baseurl }}/contact/">me contacter</a>
-				pour discuter de comment nous pourrions avancer ensemble.
-			</p>
-		</div>
-		<div>
-			<ul class="text-center no-style list-inline button-list">
-				<li><a class="button" href="{{ site.baseurl }}/a-propos/">À propos</a></li>
-				<li><a class="button button-primary" href="{{ site.baseurl }}/contact/">Contactez-moi</a></li>
-			</ul>
-		</div>
+	<div class="part printy lead">
+		<p>
+			Vous trouverez beaucoup de liens, quelques billets
+			et ce qui me définit à la fois sur le plan personnel et professionnel.
+		</p>
+		<p>
+			Je suis disponible pour des missions dans le Web,
+			des remplacements en mathématiques
+			ou toute expérience dont je partage les valeurs.
+		</p>
+		<p>
+			Si <a href="/a-propos/">mon profil</a> vous intéresse,
+			vous pouvez <a href="{{ site.baseurl }}/contact/">me contacter</a>
+			pour discuter de comment nous pourrions avancer ensemble.
+		</p>
 	</div>
-	<div class="text-center tag selection">
-		<h2>Sélection</h2>
-		<p>De billets, liens & lectures.</p>
-	</div>
-	<div class="part">
-		<ul class="no-style">
-			{% assign selected_links = site.posts | where: "selection", "oui" %}
-			{% for post in selected_links limit:6 %}
+	<ul class="text-center no-style list-inline">
+		<li><a class="button" href="{{ site.baseurl }}/a-propos/">À propos</a></li>
+		<li><a class="button button-primary older" href="{{ site.baseurl }}/contact/">Contactez-moi</a></li>
+	</ul>
+	<div class="part post-list">
+		{% assign selection = site.posts | where: "selection", "oui" %}
+		<section>
+			<h2>Sélection du blog</h2>
+			{% for post in selection limit:6 %}
 				{% include post-item-list.html post=post %}
 			{% endfor %}
+			<p class="text-center"><a class="button older" href="{{ site.baseurl }}/blog/">Voir le blog</a></p>
+		</section>
+		<section>
+			<h2>Quelques lectures</h2>
 			{% assign selected_books = site.data.lectures.Livres | where: "selection", "oui" %}
 			{% for livre in selected_books limit:4 %}
 				{% include books.html book=livre %}
 			{% endfor %}
-		</ul>
-		<ul class="text-center no-style list-inline button-list">
-			<li><a class="button" href="{{ site.baseurl }}/blog/">Billets & liens</a></li>
-				<li><a class="button" href="{{ site.baseurl }}/lectures/">Lectures</a></li>
-		</ul>
+			<p class="text-center"><a class="button older" href="{{ site.baseurl }}/lectures/">Toutes les lectures</a></p>
+		</section>
 	</div>
 {% include foot.html %}

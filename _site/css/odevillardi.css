@@ -230,11 +230,12 @@ li { margin-bottom: 0.8rem; }
 
 @media (max-width: 550px) { .list-inline li.item-break::before { display: block; content: "\a"; } }
 .no-style { margin-left: 0; list-style: none; }
-.no-style li { margin-bottom: 3.2rem; }
-.no-style li .link::before { content: "→ "; }
-.no-style li li { margin-bottom: 0; }
+.no-style li { margin-bottom: 1.6rem; }
 
 .button-list { margin-top: 3.2rem; }
+
+.post-list .item { margin-bottom: 3.2rem; }
+.post-list span.link::before { content: "→ "; }
 
 /* TITLE UTILITIES */
 h1, h2, h3, h4, h5, h6 { margin-top: 3.2rem; margin-bottom: 1.6rem; font-family: "Trebuchet MS", Helvetica, sans-serif; font-style: italic; }
@@ -368,8 +369,6 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 .tag.quatrecentquatre h1::before { content: "⁉"; }
 
 .tag.recycle h1::before { content: "♲"; }
-
-.tag.selection h2::before { content: "!"; }
 
 .tag.sport h1::before { content: "♕"; }
 

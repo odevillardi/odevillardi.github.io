@@ -10,11 +10,9 @@ menu: "lectures"
 		{{ site.data.lectures.Description }}
 	</p>
 </div>
-<div class="part">
-	<ul class="no-style">
-		{% for livre in site.data.lectures.Livres %}
-			{% include books.html book=livre %}
-		{% endfor %}
-	</ul>
+<div class="part post-list">
+	{% for livre in site.data.lectures.Livres %}
+		{% include books.html book=livre %}
+	{% endfor %}
 </div>
 {% include foot.html %}
