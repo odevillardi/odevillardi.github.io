@@ -1,14 +1,6 @@
 <div class="item {{ include.post.layout }}">
   <ul class="list-inline block">
-    <li><time class="gray-text" datetime="{{ post.date | date: '%F' }}">{{ include.post.date | date: "%d/%m/%Y" }}</time></li>
-    {% for tag in include.post.tags %}
-      <li>
-        <a class="button button-xs text-capitalize {{ tag }}" href="{{ site.baseurl }}/blog/tag/{{ tag }}.html" role="button">
-          {{ tag }}
-        </a>
-      </li>
-    {% endfor %}
-    <li class="not-inline">
+    <li>
       <a class="lead"
       {% if post.layout != 'link' %}
         href='{{ site.baseurl }}{{ post.url }}'
@@ -18,6 +10,16 @@
       {% if post.layout == 'link' %}
         <span class="link gray-text"><em>{{ post.source }}</em></span>
       {% endif %}
+    </li>
+    <li class="not-inline">
+      <ul class="list-inline">
+        <li>
+          <time class="gray-text" datetime="{{ post.date | date: '%F' }}">{{ include.post.date | date: "%d/%m/%Y" }}</time>
+        </li>
+        {% for tag in include.post.tags %}
+          <li><a class="button button-xs text-capitalize {{ tag }}" href="{{ site.baseurl }}/blog/tag/{{ tag }}.html" role="button">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
     </li>
     <li class="not-inline dark-gray-text">
       {% if post.layout == 'link' %}

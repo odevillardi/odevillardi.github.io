@@ -162,6 +162,7 @@ li { margin-bottom: $half-spacing; }
 .post-list {
   .item { margin-bottom: $double-spacing; }
   span.link::before  { content: "→ "; }
+  .not-inline .list-inline { margin: 0; }
 }
 
 /* TITLE UTILITIES */
