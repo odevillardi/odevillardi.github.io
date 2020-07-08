@@ -325,7 +325,7 @@ a.thumbnail:hover img { background-color: #d9d9d9; opacity: 1; }
 
 .tag.art h1::before { content: "ɐ"; }
 
-.tag.blog h1::before { content: "§"; }
+.tag.blog h1::before { content: "Θ"; }
 
 .tag.canada h1::before { content: "☶"; }
 
