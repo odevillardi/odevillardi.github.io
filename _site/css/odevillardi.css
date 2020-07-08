@@ -304,9 +304,9 @@ a.thumbnail:hover img { background-color: #d1d1d1; opacity: 1; }
 
 .button.button-xs { font-size: 1.4rem; font-variant: normal; padding: .2rem .5rem; letter-spacing: 0; text-transform: capitalize; }
 
-.newer::before { content: "‹ "; }
+.newer::before { content: "‹ "; font-weight: bold; }
 
-.older::after { content: " ›"; }
+.older::after { content: " ›"; font-weight: bold; }
 
 .button::after { text-transform: none; }
 

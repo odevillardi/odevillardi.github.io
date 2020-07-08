@@ -319,8 +319,8 @@ input[type="button"].button-primary {
   text-transform: capitalize;
 }
 
-.newer::before { content: "‹ "; }
-.older::after  { content: " ›"; }
+.newer::before { content: "‹ "; font-weight: bold; }
+.older::after  { content: " ›"; font-weight: bold; }
 .button::after { text-transform: none; }
 
 .tag.a-propos h1::before    { content: "∏"; }
