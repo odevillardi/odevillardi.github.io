@@ -23,7 +23,7 @@ $breakpoint-l:    1024px;
 $breakpoint-xl-1: 1199px;
 $breakpoint-xl:   1200px;
 
-$serif-family:      "Hoefler Text", Times, serif;
+$serif-family:      Times, "Times New Roman", serif;
 $sans-serif-family: "Trebuchet MS", Helvetica, sans-serif;
 $monospace-family:  Courier, monospace;
 
@@ -334,7 +334,7 @@ input[type="button"].button-primary {
 .tag.agriculture h1::before { content: "☼"; }
 .tag.antispecism h1::before { content: "Ⓐ"; }
 .tag.art h1::before         { content: "ɐ"; }
-.tag.blog h1::before        { content: "Θ"; }
+.tag.blog h1::before        { content: "§"; }
 .tag.canada h1::before      { content: "☶"; }
 .tag.change h1::before      { content: "⌥"; }
 .tag.contact h1::before     { content: "@"; }
@@ -347,7 +347,7 @@ input[type="button"].button-primary {
 .tag.food h1::before        { content: "♨"; }
 .tag.funny h1::before       { content: "☺"; }
 .tag.guitar h1::before      { content: "♬"; }
-.tag.lectures h1::before    { content: "Λ"; }
+.tag.lectures h1::before    { content: "¶"; }
 .tag.lettering h1::before   { content: "ℒ"; }
 .tag.low-tech h1::before    { content: "␥"; }
 .tag.maths h1::before       { content: "÷"; }
