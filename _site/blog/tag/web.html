@@ -18,8 +18,8 @@
 		</div>
 		<div class="container">
 			<header>
-				<nav id="menu" aria-label="Navigation générale" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-					<ul class="list-inline nav u-pull-left">
+				<nav class="main-nav" id="menu" aria-label="Navigation générale" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+					<ul class="menu list-inline u-pull-left">
 						<li itemprop="name">
 							<a itemprop="url" href="/">Accueil</a>
 						</li>
@@ -30,7 +30,7 @@
 							<a itemprop="url" href="/lectures/">Lectures</a>
 						</li>
 					</ul>
-					<ul class="list-inline u-pull-right text-right">
+					<ul class="menu list-inline u-pull-right text-right">
 						<li itemprop="name">
 							<a itemprop="url" href="/a-propos/">À propos</a>
 						</li>
@@ -57,13 +57,12 @@
 		
 	</ul>
 </div>
-<div class="part posts">
-	<ul class="no-style">
-		
-			<div class="item post">
+<div class="part post-list">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2020/06/18/invisible-pas-transparent.html'
       ><span class="post-title">Transparent pour l’utilisateur&nbsp;? Non&nbsp;! Invisible.</span>
@@ -81,7 +80,7 @@
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Vous confondez transparent et invisible. C’est fâcheux. Quand vous dites : « C’est transparent pour l’utilisateur » vous voulez dire que l’utilisateur ne se rend pas compte de ce qui se passe. C’est donc invisible pour lui. Ou encore caché. Caché car l’enrobage, le contenant, la méthode… est...
       
@@ -89,11 +88,11 @@
   </ul>
 </div>
 
-		
-			<div class="item link">
+	
+		<div class="item link">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='https://solar.lowtechmagazine.com/2015/10/how-to-build-a-low-tech-internet.html'
       ><span class="post-title">How to Build a Low-tech Internet</span>
@@ -115,7 +114,7 @@
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
          If we want the internet to keep working in circumstances where access to energy is more limited, we can learn important lessons from alternative network technologies.
       
@@ -123,11 +122,11 @@
   </ul>
 </div>
 
-		
-			<div class="item link">
+	
+		<div class="item link">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='https://larlet.fr/david/stream/2018/06/07/'
       ><span class="post-title">Ready to go</span>
@@ -145,7 +144,7 @@
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         No matter what framework or method your management thinks they are applying, learn to work this way…
       
@@ -153,11 +152,11 @@
   </ul>
 </div>
 
-		
-			<div class="item link">
+	
+		<div class="item link">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='https://knacss.com'
       ><span class="post-title">KNACSS : Un framework CSS simple et léger</span>
@@ -175,7 +174,7 @@
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         KNACSS, c’est un peu comme une feuille de style CSS « reset » sur-vitaminée qui permet de commencer un projet à partir de zéro tout en tenant compte de bonnes pratiques générales (accessibilité, performance, responsive webdesign).
       
@@ -183,11 +182,11 @@
   </ul>
 </div>
 
-		
-			<div class="item link">
+	
+		<div class="item link">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='http://placeman.canalblog.com/archives/2016/01/18/33228068.html'
       ><span class="post-title">Silence !</span>
@@ -207,7 +206,7 @@
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Silence ! - Quarantenaire, marié, 2 enfants
       
@@ -215,11 +214,11 @@
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2015/12/04/argumentation-en-berne.html'
       ><span class="post-title">Argumentation en berne</span>
@@ -235,7 +234,7 @@
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Argumentation en berneMerci Stéphane.
 
@@ -244,11 +243,11 @@
   </ul>
 </div>
 
-		
-			<div class="item video">
+	
+		<div class="item video">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2015/10/07/break-the-internet-nicolas-hulot-en-d%C3%A9cembre.html'
       ><span class="post-title">Break The Internet - Nicolas Hulot</span>
@@ -266,7 +265,7 @@
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Break The Internet - Nicolas HulotEn décembre, la Cop21 réunira tous les chefs d’états du monde pour enfin
  prendre des décisions sur le climat. Pour l’occasion, Nicolas Hulot a
@@ -277,11 +276,11 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2015/10/02/conf%C3%A9rence-design-de-soi-par-marie-guillaumet.html'
       ><span class="post-title">Conférence « Design de soi » par Marie Guillaumet</span>
@@ -301,7 +300,7 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Conférence « Design de soi » par Marie Guillaumet
 
@@ -310,11 +309,11 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
   </ul>
 </div>
 
-		
-			<div class="item video">
+	
+		<div class="item video">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2015/09/14/ma-p%C3%A9dale-cest-html5-sud-web-2015-tu-d%C3%A9butes-%C3%A0.html'
       ><span class="post-title">Ma pédale c’est HTML5</span>
@@ -332,7 +331,7 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Tu débutes à la guitare électrique, tu veux t'acheter des pédales d'effets mais les prix te donnent envie de repasser à la flute à bec ? Laisse béton : avec HTML5, tu peux avoir toutes les pédales que tu veux ! Petite démo de Web...
       
@@ -340,11 +339,11 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2015/02/27/staff-holy-cow-you-did-it-net-neutrality-is.html'
       ><span class="post-title">staff holy cow you did it net neutrality is</span>
@@ -360,7 +359,7 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         staff:
 
@@ -370,11 +369,11 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2015/02/20/hipster-business-name-generator.html'
       ><span class="post-title">Hipster Business Name Generator</span>
@@ -392,7 +391,7 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Hipster Business Name Generator
 
@@ -401,11 +400,11 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/12/14/le-nouveau-par-cl%C3%A9ment-herreman.html'
       ><span class="post-title">Le nouveau, par Clément Herreman</span>
@@ -421,7 +420,7 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Le nouveau, par Clément Herreman24 jours de web : Le calendrier de l'avent des gens qui font le web d'après.
 
@@ -430,11 +429,11 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/12/10/a-brief-history-of-web-design-for-designers.html'
       ><span class="post-title">A brief history of web design for designers</span>
@@ -452,7 +451,7 @@ fait appel à Internet. Audacieux. Signez la pétition ici : http://www.goldenmo
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         A brief history of web design for designers
 How the web design evolved from tables and flash into responsive web design. A glimpse into the history on why design and code live separate lives…
@@ -463,11 +462,11 @@ How the web design evolved from tables and flash into responsive web design. A g
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/12/10/la-premi%C3%A8re-variable-css-currentcolor.html'
       ><span class="post-title">La première variable CSS : currentColor</span>
@@ -483,7 +482,7 @@ How the web design evolved from tables and flash into responsive web design. A g
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         La première variable CSS : currentColor
 En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques applications pratiques de currentColor qui peuvent nous aider coder DRY&hellip;
@@ -494,11 +493,11 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/10/16/le-web-fait-pousser-mes-tomates.html'
       ><span class="post-title">Le Web fait pousser mes tomates</span>
@@ -520,7 +519,7 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Quels points communs entre la permaculture et la qualité Web&nbsp;? Cet article est la transcription de la conférence que j’ai eu l’occasion de présenter à Paris Web 2014. J’ai pu parler des liens entre les bonnes pratiques de la permaculture et du Web devant un...
       
@@ -528,11 +527,11 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
   </ul>
 </div>
 
-		
-			<div class="item video">
+	
+		<div class="item video">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/09/01/the-internets-own-boy-ce-film-raconte-lhistoire.html'
       ><span class="post-title">The Internet’s own boy</span>
@@ -548,7 +547,7 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         The Internet’s own boyCe film raconte l'histoire de Aaron Swartz, programmeur de génie et activiste de l'information. Depuis l'aide qu'il a apportée au développement de RSS, l'un des protocoles à la base d'Internet, à la co-fondation de Reddit, son empreinte est partout sur Internet.  Mais...
       
@@ -556,11 +555,11 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/08/29/xavier-mouton-dubosc-le-d%C3%A9veloppeur-aux-mille.html'
       ><span class="post-title">Xavier Mouton-Dubosc, le développeur aux mille vies</span>
@@ -576,7 +575,7 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Xavier Mouton-Dubosc, le développeur aux mille viestechmeupnews: On souhaitait raccourcir l’interview mais on n’a pas réussi. Du code à Wikileaks en passant par Londres, Epitech, l’opensource et l’élite technologique: Xavier a un avis – bien tranché – sur de nombreux sujets. Questions-réponses du tac au...
       
@@ -584,11 +583,11 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/08/22/paris-web.html'
       ><span class="post-title">Paris Web</span>
@@ -606,7 +605,7 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Paris Web Paris Web, la conférence francophone des gens qui font le web, explore les thèmes de l’accessibilité Web, du design numérique et des standards ouverts. L’édition 2014 aura lieu à Paris du 16 au 18 Octobre… Et j’en serai le jeudi 16 Octobre à...
       
@@ -614,11 +613,11 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/04/09/laughingsquid-comic-neue-a-redesigned-version.html'
       ><span class="post-title">Comic neue, a redesigned version of the Comic Sans font</span>
@@ -636,7 +635,7 @@ En attendant l'arrivée des variables CSS, Dudley Storey nous montre quelques ap
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         laughingsquid:
 
@@ -648,11 +647,11 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/03/06/laughingsquid-getty-images-now-allows-the.html'
       ><span class="post-title">Getty images now allows the embedding of photos for free</span>
@@ -670,7 +669,7 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         laughingsquid:
 
@@ -680,11 +679,11 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/03/03/classic-rwd-a-simple-classic-responsive-theme.html'
       ><span class="post-title">Classic RWD - A simple, classic & responsive theme for your tumblr</span>
@@ -702,7 +701,7 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Classic RWD - A simple, classic & responsive theme for your tumblrEnjoy a simple responsive (RWD) theme for your tumblr. Customize colors, fonts and the adaptive image on top of your blog and don&rsquo;t worry about browser compatibility: based on Bootstrap, your blog will look...
       
@@ -710,11 +709,11 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/03/03/forgotify.html'
       ><span class="post-title">Forgotify</span>
@@ -732,7 +731,7 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Forgotify
 4 million songs on Spotify have never been played. Not even once. We’re changing that.
@@ -743,11 +742,11 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/03/02/code-guide-by-mdo.html'
       ><span class="post-title">Code Guide by @mdo</span>
@@ -763,7 +762,7 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         Code Guide by @mdoStandards for developing flexible, durable, and sustainable HTML and CSS.
 
@@ -772,11 +771,11 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
   </ul>
 </div>
 
-		
-			<div class="item post">
+	
+		<div class="item post">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2014/02/27/laughingsquid-a-stunning-google-maps-street.html'
       ><span class="post-title">laughingsquid a stunning google maps street</span>
@@ -792,7 +791,7 @@ Comic Neue, A Redesigned Version of the Comic Sans Font
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         laughingsquid:
 
@@ -804,11 +803,11 @@ A Stunning Google Maps Street View Project That Captures Imagery of Polar Bears 
   </ul>
 </div>
 
-		
-			<div class="item video">
+	
+		<div class="item video">
   <ul class="list-inline block">
     <li>
-      <a class="lead"
+      <a class="lead post-link"
       
         href='/blog/2013/05/17/the-client-a-gentle-villain.html'
       ><span class="post-title">Le client, ce gentil méchant</span>
@@ -824,7 +823,7 @@ A Stunning Google Maps Street View Project That Captures Imagery of Polar Bears 
         
       </ul>
     </li>
-    <li class="not-inline dark-gray-text excerpt">
+    <li class="not-inline excerpt">
       
         
   SudWeb 2013
@@ -840,8 +839,7 @@ A Stunning Google Maps Street View Project That Captures Imagery of Polar Bears 
   </ul>
 </div>
 
-		
-	</ul>
+	
 </div>
 			</div> <!-- .content-->
 			

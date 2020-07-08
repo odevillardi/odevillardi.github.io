@@ -18,8 +18,8 @@
 		</div>
 		<div class="container">
 			<header>
-				<nav id="menu" aria-label="Navigation générale" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-					<ul class="list-inline nav u-pull-left">
+				<nav class="main-nav" id="menu" aria-label="Navigation générale" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+					<ul class="menu list-inline u-pull-left">
 						<li itemprop="name">
 							<a itemprop="url"{% if page.menu == 'accueil' %} class="active"{% endif %} href="{{ site.baseurl }}/">Accueil</a>
 						</li>
@@ -30,7 +30,7 @@
 							<a itemprop="url"{% if page.menu == 'lectures' %} class="active"{% endif %} href="{{ site.baseurl }}/lectures/">Lectures</a>
 						</li>
 					</ul>
-					<ul class="list-inline u-pull-right text-right">
+					<ul class="menu list-inline u-pull-right text-right">
 						<li itemprop="name">
 							<a itemprop="url"{% if page.menu == 'a-propos' %} class="active"{% endif %} href="{{ site.baseurl }}/a-propos/">À propos</a>
 						</li>

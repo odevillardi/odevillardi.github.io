@@ -49,11 +49,11 @@ body {
 
 a {
   @include color ($link-color, $light-link-color);
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     @include color ($link-color, $light-link-color);
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
@@ -155,9 +155,10 @@ li { margin-bottom: $half-spacing; }
 .post-list {
   .item { margin-bottom: $double-spacing; }
   span.link::before  { content: "→ "; }
-  a:hover {
+  .post-link {
     text-decoration: none;
     .post-title { text-decoration: underline; }
+    &:hover .post-title { text-decoration: none; }
   }
   .not-inline .list-inline { margin: 0; }
   .excerpt { max-width: $breakpoint-m; }
@@ -318,8 +319,11 @@ input[type="button"].button-primary {
   padding: .2rem .5rem;
   letter-spacing: 0;
   text-transform: capitalize;
-  background-color: transparent;
-  &:hover { background-color: transparent; }
+  @include border-color(white, black);
+  &:hover {
+    @include border-color($alternate-color, $alternate-dark-color);
+    @include color(black, white);
+  }
 }
 
 .newer::before { content: "‹ "; font-weight: bold; }
@@ -410,15 +414,15 @@ input[type="button"].button-primary {
 
 
 /* NAV */
-nav {
-  ul {
-    margin-top: $spacing;
-    margin-bottom: $double-spacing;
-    a {
-      &.active { @include color($alternate-dark-color, $alternate-color); }
-      &:hover  { @include color(black, white); }
-    }
-  }
+.main-nav ul {
+  margin-top: $spacing;
+  margin-bottom: $double-spacing;
+}
+
+.menu a {
+  text-decoration: none;
+  &.active { @include color($alternate-dark-color, $alternate-color); }
+  &:hover  { @include color(black, white); }
 }
 
 /* Index styling */

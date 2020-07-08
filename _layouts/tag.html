@@ -10,11 +10,9 @@
 		{% endfor %}
 	</ul>
 </div>
-<div class="part posts">
-	<ul class="no-style">
-		{% for post in site.tags[page.tag] %}
-			{% include post-item-list.html post=post %}
-		{% endfor %}
-	</ul>
+<div class="part post-list">
+	{% for post in site.tags[page.tag] %}
+		{% include post-item-list.html post=post %}
+	{% endfor %}
 </div>
 {% include foot.html %}
