@@ -304,7 +304,8 @@ a.thumbnail:hover img { background-color: #d9d9d9; opacity: 1; }
 @media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { border-color: #209fdf; } }
 @media (prefers-color-scheme: dark) { .button.button-primary:hover, .button.button-primary:focus, button.button-primary:hover, button.button-primary:focus, input[type="submit"].button-primary:hover, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:hover, input[type="reset"].button-primary:focus, input[type="button"].button-primary:hover, input[type="button"].button-primary:focus { color: black; } }
 
-.button.button-xs { font-size: 1.4rem; font-variant: normal; padding: .2rem .5rem; letter-spacing: 0; text-transform: capitalize; }
+.button.button-xs { font-size: 1.4rem; font-variant: normal; padding: .2rem .5rem; letter-spacing: 0; text-transform: capitalize; background-color: transparent; }
+.button.button-xs:hover { background-color: transparent; }
 
 .newer::before { content: "‹ "; font-weight: bold; }
 

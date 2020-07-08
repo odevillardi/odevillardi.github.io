@@ -318,6 +318,8 @@ input[type="button"].button-primary {
   padding: .2rem .5rem;
   letter-spacing: 0;
   text-transform: capitalize;
+  background-color: transparent;
+  &:hover { background-color: transparent; }
 }
 
 .newer::before { content: "‹ "; font-weight: bold; }
