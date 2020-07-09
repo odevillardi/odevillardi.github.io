@@ -4,10 +4,11 @@
 {% include head.html %}
 {% include big-title.html title=page.title %}
 <div class="text-overflow text-center">
-	<ul class="menu list-inline text-capitalize" id="menu">
+	<ul class="menu list-inline tag-list" id="menu">
 		{% for subtag in page.subtags %}
-			<li><a href="{{ site.baseurl }}/blog/tag/{{ subtag }}.html">{{ subtag }}</a></li>
+			<li class="text-capitalize"><a href="{{ site.baseurl }}/blog/tag/{{ subtag }}.html">{{ subtag }}</a></li>
 		{% endfor %}
+			<li><a class="gray-text" href="{{ site.baseurl }}/blog/tag/">Tous les tags</a></li>
 	</ul>
 </div>
 <div class="part post-list">
