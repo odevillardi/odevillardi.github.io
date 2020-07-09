@@ -232,9 +232,6 @@ li { margin-bottom: 0.8rem; }
 @media (min-width: 768px) and (max-width: 1023px) { .list-inline.tag-list li:nth-child(9n+1)::before { display: block; content: "\a"; } }
 @media (min-width: 1024px) { .list-inline.tag-list li:nth-child(12n+1)::before { display: block; content: "\a"; } }
 
-.no-style { margin-left: 0; list-style: none; }
-.no-style li { margin-bottom: 1.6rem; }
-
 .button-list { margin-top: 3.2rem; }
 
 .post-list .item { margin-bottom: 3.2rem; }
