@@ -282,21 +282,21 @@ a.thumbnail:hover img { background-color: #d9d9d9; opacity: 1; }
 @media (prefers-color-scheme: dark) { .button, button, input[type="submit"], input[type="reset"], input[type="button"] { background-color: black; } }
 @media (prefers-color-scheme: dark) { .button, button, input[type="submit"], input[type="reset"], input[type="button"] { color: #d9d9d9; } }
 @media (prefers-color-scheme: dark) { .button, button, input[type="submit"], input[type="reset"], input[type="button"] { border-color: gray; } }
-.button:hover, .button:focus, .button:hover .button, .button:focus .button, button:hover, button:focus, button:hover .button, button:focus .button, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:hover .button, input[type="button"]:focus .button { text-decoration: none; color: black; border-color: #262626; background-color: #d9d9d9; outline: 0; }
-@media (prefers-color-scheme: dark) { .button:hover, .button:focus, .button:hover .button, .button:focus .button, button:hover, button:focus, button:hover .button, button:focus .button, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:hover .button, input[type="button"]:focus .button { color: white; } }
-@media (prefers-color-scheme: dark) { .button:hover, .button:focus, .button:hover .button, .button:focus .button, button:hover, button:focus, button:hover .button, button:focus .button, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:hover .button, input[type="button"]:focus .button { border-color: #d9d9d9; } }
-@media (prefers-color-scheme: dark) { .button:hover, .button:focus, .button:hover .button, .button:focus .button, button:hover, button:focus, button:hover .button, button:focus .button, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:hover .button, input[type="submit"]:focus .button, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:hover .button, input[type="reset"]:focus .button, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:hover .button, input[type="button"]:focus .button { background-color: #262626; } }
-.button.next::before, button.next::before, input[type="submit"].next::before, input[type="reset"].next::before, input[type="button"].next::before { content: "Suiv. : "; }
+.button:hover, .button:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus { text-decoration: none; color: black; border-color: #262626; background-color: #d9d9d9; outline: 0; }
+@media (prefers-color-scheme: dark) { .button:hover, .button:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus { color: white; } }
+@media (prefers-color-scheme: dark) { .button:hover, .button:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus { border-color: #d9d9d9; } }
+@media (prefers-color-scheme: dark) { .button:hover, .button:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus { background-color: #262626; } }
+.button.next::before, button.next::before, input[type="submit"].next::before, input[type="reset"].next::before, input[type="button"].next::before { content: "‹ Suiv. : "; }
+@media (min-width: 550px) { .button.next::before, button.next::before, input[type="submit"].next::before, input[type="reset"].next::before, input[type="button"].next::before { content: "‹ Suivant : "; } }
+@media (min-width: 768px) { .button.next::before, button.next::before, input[type="submit"].next::before, input[type="reset"].next::before, input[type="button"].next::before { content: "‹ Billet suivant : "; } }
 .button.previous::before, button.previous::before, input[type="submit"].previous::before, input[type="reset"].previous::before, input[type="button"].previous::before { content: "Préc. : "; }
+@media (min-width: 550px) { .button.previous::before, button.previous::before, input[type="submit"].previous::before, input[type="reset"].previous::before, input[type="button"].previous::before { content: "Précédent : "; } }
+@media (min-width: 768px) { .button.previous::before, button.previous::before, input[type="submit"].previous::before, input[type="reset"].previous::before, input[type="button"].previous::before { content: "Billet précédent : "; } }
 .button.next::before, .button.previous::before, button.next::before, button.previous::before, input[type="submit"].next::before, input[type="submit"].previous::before, input[type="reset"].next::before, input[type="reset"].previous::before, input[type="button"].next::before, input[type="button"].previous::before { font-weight: bold; }
 .button.text-overflow, button.text-overflow, input[type="submit"].text-overflow, input[type="reset"].text-overflow, input[type="button"].text-overflow { overflow: hidden; }
 
 .navigation .button:not(.button-xs) { margin-bottom: 1.6rem; }
 
-@media (min-width: 550px) { .button.next::before { content: "Suivant : "; }
-  .button.previous::before { content: "Précédent : "; } }
-@media (min-width: 768px) { .button.next::before { content: "Billet suivant : "; }
-  .button.previous::before { content: "Billet précédent : "; } }
 .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #209fdf; color: #0077b3; }
 @media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { border-color: #0077b3; } }
 @media (prefers-color-scheme: dark) { .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary { color: #209fdf; } }
@@ -314,8 +314,6 @@ a.thumbnail:hover img { background-color: #d9d9d9; opacity: 1; }
 .newer::before { content: "‹ "; font-weight: bold; }
 
 .older::after { content: " ›"; font-weight: bold; }
-
-.button::after { text-transform: none; }
 
 .tag.a-propos h1::before { content: "∏"; }
 

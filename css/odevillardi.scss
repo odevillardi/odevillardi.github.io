@@ -284,7 +284,7 @@ input[type="button"] {
   cursor: pointer;
   box-sizing: border-box;
 
-  &:hover, &:focus, &:hover .button, &:focus .button {
+  &:hover, &:focus {
     text-decoration: none;
     @include color (black, white);
     @include border-color($alternate-dark-color, $alternate-color);
@@ -292,23 +292,29 @@ input[type="button"] {
     outline: 0;
   }
 
-  &.next::before { content: "Suiv. : "}
-  &.previous::before { content: "Préc. : "}
+  &.next::before {
+    content: "‹ Suiv. : ";
+    @media (min-width: $breakpoint-s) {
+      content: "‹ Suivant : ";
+    }
+    @media (min-width: $breakpoint-m) {
+      content: "‹ Billet suivant : ";
+    }
+  }
+  &.previous::before {
+    content: "Préc. : ";
+    @media (min-width: $breakpoint-s) {
+      content: "Précédent : ";
+    }
+    @media (min-width: $breakpoint-m) {
+      content: "Billet précédent : ";
+    }
+  }
   &.next::before, &.previous::before { font-weight: bold; }
   &.text-overflow { overflow: hidden; }
 }
 
 .navigation .button:not(.button-xs) { margin-bottom: $spacing; }
-
-@media (min-width: $breakpoint-s) {
-  .button.next::before { content: "Suivant : "}
-  .button.previous::before { content: "Précédent : "}
-}
-
-@media (min-width: $breakpoint-m) {
-  .button.next::before { content: "Billet suivant : "}
-  .button.previous::before { content: "Billet précédent : "}
-}
 
 .button.button-primary,
 button.button-primary,
@@ -340,7 +346,6 @@ input[type="button"].button-primary {
 
 .newer::before { content: "‹ "; font-weight: bold; }
 .older::after  { content: " ›"; font-weight: bold; }
-.button::after { text-transform: none; }
 
 .tag.a-propos h1::before    { content: "∏"; }
 .tag.agriculture h1::before { content: "☼"; }
