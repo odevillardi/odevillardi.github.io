@@ -372,7 +372,7 @@ input[type="button"].button-primary {
 
 .tag h1::before,
 .tag h2::before {
-  @include color($link-color, $light-link-color);
+  @include color($alternate-color, $alternate-dark-color);
   display: block;
   font-family: $serif-family;
   font-size: 104px;
@@ -385,7 +385,7 @@ input[type="button"].button-primary {
 .logo {
   height: 102px;
   width: 102px;
-  @include fill($link-color, $light-link-color);
+  @include fill($alternate-color, $alternate-dark-color);
 }
 
 /* VIDEO RESPONSIVE */

@@ -395,11 +395,11 @@ a.thumbnail:hover img { background-color: #d9d9d9; opacity: 1; }
 
 .tag.web h1::before { content: "↻"; }
 
-.tag h1::before, .tag h2::before { color: #0077b3; display: block; font-family: Times, "Times New Roman", serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
-@media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #209fdf; } }
+.tag h1::before, .tag h2::before { color: #d9d9d9; display: block; font-family: Times, "Times New Roman", serif; font-size: 104px; font-style: normal; font-weight: normal; margin-top: -1.6rem; letter-spacing: normal; }
+@media (prefers-color-scheme: dark) { .tag h1::before, .tag h2::before { color: #262626; } }
 
-.logo { height: 102px; width: 102px; fill: #0077b3; }
-@media (prefers-color-scheme: dark) { .logo { fill: #209fdf; } }
+.logo { height: 102px; width: 102px; fill: #d9d9d9; }
+@media (prefers-color-scheme: dark) { .logo { fill: #262626; } }
 
 /* VIDEO RESPONSIVE */
 .embed-responsive { position: relative; display: block; height: 0; padding: 0; overflow: hidden; }
