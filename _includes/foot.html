@@ -22,9 +22,11 @@
 				</div> <!-- .part -->
 			{% endif %}
 			<footer class="part text-center">
-				<ul class="list-inline">
-					<li><a class="button button-primary" href="{{ site.baseurl }}/contact/">Contactez-moi</a></li>
-				</ul>
+				{% if page.menu != "contact" %}
+					<ul class="list-inline">
+						<li><a class="button button-primary" href="{{ site.baseurl }}/contact/">Contactez-moi</a></li>
+					</ul>
+				{% endif %}
 				<ul class="list-inline">
 					<li class="item-break">Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC&nbsp;by-sa&nbsp;4.0</a></li>
 					<li>Suivable par <a href="{{ site.baseurl }}/feed.xml">RSS</a></li>

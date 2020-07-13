@@ -91,9 +91,9 @@
   position:         $rule;
 }
 
-@mixin transition($border, $duration, $type) {
+@mixin transition($transition, $duration, $type) {
   @media screen and (prefers-reduced-motion: no-preference) {
-    -webkit-transition: $border $duration $type;
-            transition: $border $duration $type;
+    -webkit-transition: $transition $duration $type;
+            transition: $transition $duration $type;
   }
 }

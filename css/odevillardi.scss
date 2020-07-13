@@ -321,12 +321,13 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  @include border-color($light-link-color, $link-color);
-  @include color($link-color, $light-link-color);
+  @include background-color($alternate-dark-color, $alternate-color);
+  @include border-color($alternate-dark-color, $alternate-color);
+  @include color($background-color, $text-color);
 
   &:hover, &:focus {
     @include background-color($link-color, $light-link-color);
-    @include border-color($link-color, $light-link-color);
+    @include border-color($alternate-dark-color, $alternate-color);
     @include color(white, black);
   }
 }
