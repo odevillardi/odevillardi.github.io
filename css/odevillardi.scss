@@ -1,12 +1,12 @@
 ---
 ---
-$background-color:     hsl(0, 0%, 95%);
-$alternate-color:      hsl(0, 0%, 85%);
-$gray-color:           hsl(0, 0%, 50%);
-$alternate-dark-color: hsl(0, 0%, 15%);
-$text-color:           hsl(0, 0%,  5%);
-$link-color:           hsl(200, 100%, 35%);
-$light-link-color:     hsl(200,  75%, 50%);
+$background-color:     hsl(  0,   0%,  95%);
+$alternate-color:      hsl(  0,   0%,  85%);
+$gray-color:           hsl(  0,   0%,  50%);
+$alternate-dark-color: hsl(  0,   0%,  15%);
+$text-color:           hsl(  0,   0%,   5%);
+$link-color:           hsl(200, 100%,  35%);
+$light-link-color:     hsl(200,  75%,  50%);
 
 $half-spacing:    .8rem;
 $spacing:        1.6rem;
@@ -322,13 +322,16 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   @include background-color($alternate-dark-color, $alternate-color);
-  @include border-color($alternate-dark-color, $alternate-color);
+  @include border-color($text-color, $alternate-color);
   @include color($background-color, $text-color);
 
   &:hover, &:focus {
     @include background-color($link-color, $light-link-color);
-    @include border-color($alternate-dark-color, $alternate-color);
+    @include border-color($text-color, $alternate-color);
     @include color(white, black);
+    @media (prefers-color-scheme: light) {
+      text-shadow: 0 1px 0px $alternate-dark-color;
+    }
   }
 }
 
