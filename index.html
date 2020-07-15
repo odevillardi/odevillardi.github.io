@@ -73,7 +73,7 @@ menu: "accueil"
 			<p class="text-center"><a class="button older" href="{{ site.baseurl }}/blog/">Voir le blog</a></p>
 		</section>
 		<section>
-			<h3>Quelques lectures</h3>
+			<h2>Quelques lectures</h2>
 			{% assign selected_books = site.data.lectures.Livres | where: "selection", "oui" %}
 			{% for livre in selected_books limit:4 %}
 				{% include books.html book=livre %}
