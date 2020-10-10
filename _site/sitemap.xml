@@ -586,7 +586,14 @@
     </url>
     
     <url>
-        <loc>https://odevillardi.fr/blog/2018/03/29/alors.html</loc>
+        <loc>https://odevillardi.fr/blog/2018/04/11/alors.html</loc>
+        <lastmod>2020-10-10</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://odevillardi.fr/blog/2018/04/07/site-montlaur.html</loc>
         <lastmod>2020-10-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
