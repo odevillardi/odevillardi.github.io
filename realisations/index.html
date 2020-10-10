@@ -1,0 +1,19 @@
+---
+title: "Réalisations"
+description: "Quelques billets de blog où je parle de choses que j'ai faites."
+menu: "realisations"
+---
+{% include head.html %}
+<div class="text-center tag realisations">
+	<h1>{{ page.title }}</h1>
+	<p>
+		{{ page.description }}
+	</p>
+</div>
+<div class="part post-list">
+	{% assign realisations = site.posts | where: "realisation", "oui" %}
+	{% for post in realisations %}
+		{% include post-item-list.html post=post %}
+	{% endfor %}
+</div>
+{% include foot.html %}

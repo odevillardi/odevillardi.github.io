@@ -1,0 +1,14 @@
+<div class="item">
+  <ul class="list-inline block">
+    <li class="lead"><a href="{{ include.real.url }}">{{ include.real.titre }}</a></li>
+    <li class="not-inline">
+      <ul class="list-inline">
+        <li class="gray-text">{{ include.real.date }}</li>
+        {% for tag in include.real.tags limit:2 %}
+          <li><a class="button button-xs text-capitalize {{ tag }}" href="{{ site.baseurl }}/blog/tag/{{ tag }}.html" role="button">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+    <li class="excerpt not-inline dark-gray-text">{{ include.real.pitch | truncatewords: '50' }}</li>
+  </ul>
+</div>

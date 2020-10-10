@@ -397,6 +397,8 @@ a.thumbnail:hover img { background-color: #d9d9d9; opacity: 1; }
 
 .tag.quatrecentquatre h1::before { content: "⁉"; }
 
+.tag.realisations h1::before { content: "♖"; }
+
 .tag.recycle h1::before { content: "♲"; }
 
 .tag.sport h1::before { content: "♕"; }

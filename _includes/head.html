@@ -32,9 +32,12 @@
 					</ul>
 					<ul class="menu list-inline u-pull-right text-right">
 						<li itemprop="name">
-							<a itemprop="url"{% if page.menu == 'a-propos' %} class="active"{% endif %} href="{{ site.baseurl }}/a-propos/">À propos</a>
+							<a itemprop="url"{% if page.menu == 'realisations' %} class="active"{% endif %} href="{{ site.baseurl }}/realisations/">Réalisations</a>
 						</li>
 						<li class="item-break" itemprop="name">
+							<a itemprop="url"{% if page.menu == 'a-propos' %} class="active"{% endif %} href="{{ site.baseurl }}/a-propos/">À propos</a>
+						</li>
+						<li itemprop="name">
 							<a itemprop="url"{% if page.menu == 'contact' %} class="active"{% endif %} href="{{ site.baseurl }}/contact/">Contact</a>
 						</li>
 					</ul>
