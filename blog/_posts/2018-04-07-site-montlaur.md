@@ -29,6 +29,6 @@ Pour le reste, du classique et quelques originalités. J’ai aimé utilisé le 
 
 Le multilingue a été implémenté pour faire suite aux expositions aux États-Unis et en Russie.
 
-<p class="text-center navigation">
+<p class="text-center not-lead navigation">
   <a class="button button-primary" href="https://montlaur.net">Voir le site de Guy de Montlaur</a>
 </p>

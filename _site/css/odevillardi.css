@@ -183,6 +183,9 @@ a:hover { color: #0077b3; text-decoration: none; }
 .lead { font-size: 1.8rem; }
 @media (min-width: 550px) { .lead { font-size: 2rem; } }
 
+.lead .not-lead { font-size: 1.6rem; }
+@media (min-width: 550px) { .lead .not-lead { font-size: 1.6rem; } }
+
 .text-overflow { -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; hyphens: auto; }
 
 .text-left { text-align: left; }

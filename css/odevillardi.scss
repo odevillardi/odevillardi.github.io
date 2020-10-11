@@ -68,6 +68,13 @@ a {
   }
 }
 
+.lead .not-lead {
+  font-size: 1.6rem;
+  @media (min-width: $breakpoint-s) {
+    font-size: 1.6rem;
+  }
+}
+
 .text-overflow {
   @include text-overflow(ellipsis);
   white-space: nowrap;

@@ -25,8 +25,8 @@ Afin d'être efficace et de sortir la chose au plus vite, le monopage me semblai
 
 Une des expérimentations que je souhaitais mettre en place est l’utilisation de l’unité vw pour les polices de l’affiche en haut de page. Ceci me permet d'obtenir un résultat optimal sur tous les écrans et de gérer un positionnement pseudo-aléatoire original.
 
-<p class="text-center navigation">
-  <a class="button older" href="https://hcchambery.fr">Voir le site du HC Chambéry</a>
+<p class="text-center navigation not-lead">
+  <a class="button button-primary" href="https://hcchambery.fr">Voir le site du HC Chambéry</a>
 </p>
 ## Maillots
 <img src="/dist/posts-img/hcc-maillots.png" alt="Nouveaux maillots du HCC">
