@@ -47,6 +47,10 @@ body {
 
 .hidden { display: none; }
 
+@media (max-width: $breakpoint-xs-1) {
+  .hidden-xs { display: none; }
+}
+
 a {
   @include color ($link-color, $light-link-color);
   text-decoration: underline;
