@@ -21,11 +21,11 @@ L’objectif premier de ce redesign était de mettre au maximum en valeur les œ
 
 <img src="/dist/posts-img/montlaur-peintures.png" alt="Capture d'écran du site Web montlaur.net">
 
-Le petit challenge sur ce site a été de faire cette "lightbox" en CSS uniquement. J’ai découvert pour l'occasion les unités vw et vh, et je me suis un peu amusé avec les filtres.
+Le petit challenge sur ce site a été de faire cette "lightbox" en CSS uniquement. J’ai utilisé pour l'occasion les unités vw et vh, et je me suis un peu amusé avec les filtres.
 
 <img src="/dist/posts-img/montlaur-peinture.png" alt="Capture d'écran du site Web montlaur.net">
 
-Pour le reste, du classique et quelques originalités. J’ai aimé utilisé le principe des colonnes pour la biographie et j’ai passé pas mal de temps à optimiser le menu pour chaque point de rupture avec un résultat fort plaisant.
+Pour le reste, du classique et quelques originalités. J’ai aimé utiliser le principe des colonnes pour la biographie et j’ai passé pas mal de temps à optimiser le menu pour chaque point de rupture avec un résultat fort plaisant.
 
 Le multilingue a été implémenté pour faire suite aux expositions aux États-Unis et en Russie.
 
