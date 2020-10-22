@@ -511,7 +511,8 @@ input[type="checkbox"], input[type="radio"] { display: inline; }
 label > .label-body { display: inline-block; margin-left: .5rem; font-weight: normal; }
 
 /* Code */
-code { padding: .2rem .5rem; margin: 0 .2rem; font-size: 90%; white-space: nowrap; background: #F1F1F1; border: 1px solid #E1E1E1; border-radius: 4px; }
+code { padding: .2rem .5rem; margin: 0 .2rem; font-size: 90%; white-space: nowrap; background-color: #d9d9d9; border: 1px solid gray; border-radius: 4px; }
+@media (prefers-color-scheme: dark) { code { background-color: #262626; } }
 
 pre > code { display: block; padding: 1rem 1.5rem; white-space: pre; }
 
