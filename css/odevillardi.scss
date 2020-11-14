@@ -275,6 +275,10 @@ a.thumbnail:hover img {
 
 .img-circle { border-radius: 50%; }
 
+img.illustration {
+  border-radius: $spacing;
+}
+
 /* Boutons */
 .button,
 button,
