@@ -276,6 +276,7 @@ a.thumbnail:hover img {
 .img-circle { border-radius: 50%; }
 
 img.illustration {
+  margin: $spacing 0;
   border-radius: $spacing;
 }
 
