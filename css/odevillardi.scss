@@ -600,6 +600,18 @@ footer {
 }
 
 /* Formulaires */
+.facultatif::after,
+.required::after {
+  content: " (facultatif)";
+  font-weight: normal;
+  font-size: .8em;
+  color: $gray-color;
+}
+
+.required::after {
+  content: " (obligatoire)";
+}
+
 input[type="email"],
 input[type="number"],
 input[type="search"],

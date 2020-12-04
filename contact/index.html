@@ -17,10 +17,10 @@ menu: "contact"
       <h4>Formulaire</h4>
       <form action="https://formspree.io/f/mleowyae" method="POST">
         <input type="hidden" name="_subject" value="[odevillardi.fr] Contact">
-        <label for="your-email">Votre email</label>
-        <input id="your-email" class="label-body" type="text" name="_replyto">
-        <label for="your-message">Votre message</label>
-        <textarea id="your-message" class="label-body u-full-width" name="message"></textarea>
+        <label class="required" for="your-email">Votre email</label>
+        <input id="your-email" class="label-body" type="text" name="_replyto" required>
+        <label class="required" for="your-message">Votre message</label>
+        <textarea id="your-message" class="label-body u-full-width" name="message" required></textarea>
         <input class="button-primary u-half-width" type="submit" value="Envoyer">
       </form>
     </div>

@@ -1464,6 +1464,16 @@ footer {
       border-color: #262626; } }
 
 /* Formulaires */
+.facultatif::after,
+.required::after {
+  content: " (facultatif)";
+  font-weight: normal;
+  font-size: .8em;
+  color: gray; }
+
+.required::after {
+  content: " (obligatoire)"; }
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
