@@ -45,29 +45,38 @@
 			</header>
 			<div class="content" id="content">
 
-<div itemscope itemtype="http://schema.org/Person">
+<div>
   <div class="tag contact text-center">
     <h1>Contact</h1>
-    <p>
-      <strong itemprop="name">Olivier de Villardi</strong>,
-      <span itemprop="jobTitle">chef de projets Web indépendant</span> et
-      <span itemprop="jobTitle">enseignant en Mathématiques</span>
-      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        à <span itemprop="addressLocality">Chambéry</span>
-          (<span itemprop="addressRegion">Rhône-Alpes</span>,
-          <span itemprop="addressCountry">France</span>)
-      </span>
-    </p>
-  </div>
-  <div class="part text-center lead">
-    <ul class="list-inline">
-      <li id="email"><a href="mailto:%63&#111;%6e%74&#97;c&#116;&#64;%6f&#100;e%76&#105;&#108;&#108;ar&#100;&#105;.%66r">Email</a></li>
-      <li id="mastodon"><a rel="me" href="https://mamot.fr/@odevillardi">Mastodon</a></li>
-      <li id="github"><a href="https://github.com/odevillardi">Github</a></li>
-      <li class="not-inline" itemprop="email">
-        <span id="mail-contact">c&#111;n&#116;ac&#116;</span><span id="mail-arobase">&#64;</span><span id="mail-odevillardi">o&#100;ev&#105;&#108;&#108;ard&#105;</span><span id="mail-pointfr">.fr</span>
-      </li>
+    <ul class="menu list-inline related">
+      <li><a href="#formulaire">Formulaire</a></li>
+  		<li><a href="#email-reseaux">Email et réseaux</a></li>
     </ul>
+  </div>
+  <div class="part lead text-center row">
+    <div id="formulaire" class="six columns">
+      <h4>Formulaire</h4>
+      <form action="https://formspree.io/f/mleowyae" method="POST">
+        <input type="hidden" name="_subject" value="[odevillardi.fr] Contact">
+        <label for="your-email">Votre email</label>
+        <input id="your-email" class="label-body" type="text" name="_replyto">
+        <label for="your-message">Votre message</label>
+        <textarea id="your-message" class="label-body u-full-width" name="message"></textarea>
+        <input class="button-primary u-half-width" type="submit" value="Envoyer">
+      </form>
+    </div>
+    <div id="email-reseaux" class="six columns lead">
+      <h4>Email et réseaux</h4>
+      <ul class="list-inline">
+        <li id="email"><a href="mailto:%63&#111;%6e%74&#97;c&#116;&#64;%6f&#100;e%76&#105;&#108;&#108;ar&#100;&#105;.%66r">Email</a></li>
+        <li id="mastodon"><a rel="me" href="https://mamot.fr/@odevillardi">Mastodon</a></li>
+        <li id="github"><a href="https://github.com/odevillardi">Github</a></li>
+        <li class="not-inline" itemprop="email">
+          <span id="mail-contact">c&#111;n&#116;ac&#116;</span><span id="mail-arobase">&#64;</span><span id="mail-odevillardi">o&#100;ev&#105;&#108;&#108;ard&#105;</span><span id="mail-pointfr">.fr</span>
+        </li>
+      </ul>
+      <img class="thumbnail u-half-width" src="/dist/img/Olivier-de-Villardi-2-288.jpg" alt="Une photo de Olivier de Villardi">
+    </div>
   </div>
 </div>
 
@@ -83,6 +92,15 @@
 					<li>Hébergé sur <a href="https://pages.github.com/">GitHub&nbsp;Pages</a></li>
 					<li class="item-break"><strong>Zéro donnée collectée</strong></li>
 				</ul>
+				
+					<ul class="list-inline gray-text" itemscope itemtype="http://schema.org/Person">
+						<li itemprop="name">Olivier de&nbsp;Villardi</li>
+						<li class="item-break" itemprop="jobTitle">Chef de projets Web indépendant</li>
+						<li class="item-break" itemprop="jobTitle">Enseignant en Mathématiques</li>
+						<li class="item-break" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<span itemprop="addressLocality">Chambéry</span> (<span itemprop="addressRegion">Rhône-Alpes</span>, <span itemprop="addressCountry">France</span>)
+						</li>
+					</ul>
 				
 			</footer>
 		</div> <!-- .container -->
