@@ -61,7 +61,7 @@ Pour le logo, le point de départ est la police ``PT Mono`` modifiée pour rendr
 
 Ce nom peut aussi être décliné en fonction des services proposés et potentiellement d’autres à venir.
 
-<img src="/dist/posts-img/half.png" alt="Logo HALF Revolution">
+<img src="/dist/posts-img/half.jpg" alt="Logo HALF Revolution">
 
 Visuellement, le L et son symétrique représentent chacun un demi-tour et forment l’étendard de **HALF&nbsp;Revolution**. On peut également y voir un labyrinthe très facile à résoudre, symbole de la promesse d’une grande simplicité.
 
@@ -70,7 +70,7 @@ Visuellement, le L et son symétrique représentent chacun un demi-tour et forme
 ## Présence Web
 Évidemment, pour ce qui est de la présence en ligne, un **site statique**.
 
-<img src="/dist/posts-img/half-site.jpg" alt="Capture d’écran du site Web de HALF Revolution">
+<img src="/dist/posts-img/half-site.png" alt="Capture d’écran du site Web de HALF Revolution">
 
 Créé avec [Jekyll](http://jekyllrb.com), hébergé sur [Github Pages](https://pages.github.com).
 

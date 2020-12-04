@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="https://odevillardi.fr/feed.xml" rel="self" type="application/atom+xml" /><link href="https://odevillardi.fr/" rel="alternate" type="text/html" /><updated>2020-12-04T11:26:32+01:00</updated><id>https://odevillardi.fr/feed.xml</id><title type="html">Olivier de Villardi</title><subtitle>Je peux vous accompagner dans la gestion de vos projets, la création de prototypes et la relation avec vos prestataires.</subtitle><author><name>Olivier de Villardi</name></author><entry><title type="html">Création de HALF Revolution</title><link href="https://odevillardi.fr/blog/2020/10/22/half-revolution.html" rel="alternate" type="text/html" title="Création de HALF&amp;nbsp;Revolution" /><published>2020-10-22T15:00:00+02:00</published><updated>2020-10-22T15:00:00+02:00</updated><id>https://odevillardi.fr/blog/2020/10/22/half-revolution</id><content type="html" xml:base="https://odevillardi.fr/blog/2020/10/22/half-revolution.html">&lt;p&gt;Treize ans après avoir créé &lt;strong&gt;Xtrib&lt;/strong&gt;, &lt;em&gt;le premier site de téléchargement de musique en son HD&lt;/em&gt;, avec mon acolyte Nicolas, c’est avec un très grand plaisir que je m’aventure &lt;strong&gt;à nouveau&lt;/strong&gt; dans l’entreprenariat en lançant &lt;strong&gt;&lt;a href=&quot;https://half.re/&quot;&gt;HALF Revolution&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="https://odevillardi.fr/feed.xml" rel="self" type="application/atom+xml" /><link href="https://odevillardi.fr/" rel="alternate" type="text/html" /><updated>2020-12-04T14:05:02+01:00</updated><id>https://odevillardi.fr/feed.xml</id><title type="html">Olivier de Villardi</title><subtitle>Je peux vous accompagner dans la gestion de vos projets, la création de prototypes et la relation avec vos prestataires.</subtitle><author><name>Olivier de Villardi</name></author><entry><title type="html">Création de HALF Revolution</title><link href="https://odevillardi.fr/blog/2020/10/22/half-revolution.html" rel="alternate" type="text/html" title="Création de HALF&amp;nbsp;Revolution" /><published>2020-10-22T15:00:00+02:00</published><updated>2020-10-22T15:00:00+02:00</updated><id>https://odevillardi.fr/blog/2020/10/22/half-revolution</id><content type="html" xml:base="https://odevillardi.fr/blog/2020/10/22/half-revolution.html">&lt;p&gt;Treize ans après avoir créé &lt;strong&gt;Xtrib&lt;/strong&gt;, &lt;em&gt;le premier site de téléchargement de musique en son HD&lt;/em&gt;, avec mon acolyte Nicolas, c’est avec un très grand plaisir que je m’aventure &lt;strong&gt;à nouveau&lt;/strong&gt; dans l’entreprenariat en lançant &lt;strong&gt;&lt;a href=&quot;https://half.re/&quot;&gt;HALF Revolution&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;propositions&quot;&gt;Propositions&lt;/h2&gt;
 &lt;p&gt;Avec treize ans d’expérience et de recul en plus ainsi que treize années d’innovations techniques et technologiques à disposition, je souhaite proposer deux principaux services à mes clients.&lt;/p&gt;
@@ -44,7 +44,7 @@
 
 &lt;p&gt;Ce nom peut aussi être décliné en fonction des services proposés et potentiellement d’autres à venir.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/dist/posts-img/half.png&quot; alt=&quot;Logo HALF Revolution&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/dist/posts-img/half.jpg&quot; alt=&quot;Logo HALF Revolution&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Visuellement, le L et son symétrique représentent chacun un demi-tour et forment l’étendard de &lt;strong&gt;HALF Revolution&lt;/strong&gt;. On peut également y voir un labyrinthe très facile à résoudre, symbole de la promesse d’une grande simplicité.&lt;/p&gt;
 
@@ -53,7 +53,7 @@
 &lt;h2 id=&quot;présence-web&quot;&gt;Présence Web&lt;/h2&gt;
 &lt;p&gt;Évidemment, pour ce qui est de la présence en ligne, un &lt;strong&gt;site statique&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/dist/posts-img/half-site.jpg&quot; alt=&quot;Capture d’écran du site Web de HALF Revolution&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/dist/posts-img/half-site.png&quot; alt=&quot;Capture d’écran du site Web de HALF Revolution&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Créé avec &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, hébergé sur &lt;a href=&quot;https://pages.github.com&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
 
