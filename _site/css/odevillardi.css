@@ -611,6 +611,11 @@ hr {
     hr {
       border-color: #262626; } }
 
+.mention {
+  font-size: .8em;
+  font-style: italic;
+  opacity: .6; }
+
 /* Lists styling */
 ul {
   list-style: circle inside; }

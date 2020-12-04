@@ -108,6 +108,12 @@ hr {
   @include border-color($alternate-color, $alternate-dark-color);
 }
 
+.mention {
+  font-size: .8em;
+  font-style: italic;
+  opacity: .6;
+}
+
 /* Lists styling */
 ul { list-style: circle inside; }
 ol { list-style: decimal inside; }
