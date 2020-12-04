@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Création de HALF&nbsp;Revolution"
+title: "Création de HALF&nbsp;revolution"
 date: '2020-10-22T15:00:00+02:00'
 tags:
 - web
@@ -17,7 +17,7 @@ realisation: "oui"
 selection: "oui"
 menu: blog
 ---
-Treize ans après avoir créé **Xtrib**, *le premier site de téléchargement de musique en son HD*, avec mon acolyte Nicolas, c’est avec un très grand plaisir que je m'aventure **à nouveau** dans l’entreprenariat en lançant **[HALF&nbsp;Revolution](https://half.re/)**.
+Treize ans après avoir créé **Xtrib**, *le premier site de téléchargement de musique en son HD*, avec mon acolyte Nicolas, c’est avec un très grand plaisir que je m'aventure **à nouveau** dans l’entreprenariat en lançant **[HALF&nbsp;revolution](https://half.re/)**.
 
 ## Propositions
 Avec treize ans d’expérience et de recul en plus ainsi que treize années d’innovations techniques et technologiques à disposition, je souhaite proposer deux principaux services à mes clients.
@@ -53,24 +53,24 @@ Quelques principes vont guider cette aventure&nbsp;:
 </div>
 
 ## Identité visuelle
-Le nom **HALF&nbsp;Revolution** m’est venu en pensant, en tant que matheux, qu’*une révolution est un tour complet* et renvoie donc exactement à la position de départ.
+Le nom **HALF&nbsp;revolution** m’est venu en pensant, en tant que matheux, qu’*une révolution est un tour complet* et renvoie donc exactement à la position de départ.
 
 Alors qu’une demi révolution emmène dans une direction différente, opposée même.
 
-Pour le logo, le point de départ est la police ``PT Mono`` modifiée pour rendre **HALF** parfaitement rectiligne. La police est utilisée telle quelle pour **REVOLUTION**.
+Pour le logo, le point de départ est la police ``PT Mono`` modifiée pour rendre **HALF** parfaitement rectiligne. La police est utilisée telle quelle pour **revolution**.
 
 Ce nom peut aussi être décliné en fonction des services proposés et potentiellement d’autres à venir.
 
-<img src="/dist/posts-img/half.jpg" alt="Logo HALF Revolution">
+<img src="/dist/posts-img/half.jpg" alt="Logo HALF revolution">
 
-Visuellement, le L et son symétrique représentent chacun un demi-tour et forment l’étendard de **HALF&nbsp;Revolution**. On peut également y voir un labyrinthe très facile à résoudre, symbole de la promesse d’une grande simplicité.
+Visuellement, le L et son symétrique représentent chacun un demi-tour et forment l’étendard de **HALF&nbsp;revolution**. On peut également y voir un labyrinthe très facile à résoudre, symbole de la promesse d’une grande simplicité.
 
-<img src="/dist/posts-img/half-fav.svg" alt="Favicon HALF Revolution">
+<img src="/dist/posts-img/half-fav.svg" alt="Favicon HALF revolution">
 
 ## Présence Web
 Évidemment, pour ce qui est de la présence en ligne, un **site statique**.
 
-<img src="/dist/posts-img/half-site.png" alt="Capture d’écran du site Web de HALF Revolution">
+<img src="/dist/posts-img/half-site.png" alt="Capture d’écran du site Web de HALF revolution">
 
 Créé avec [Jekyll](http://jekyllrb.com), hébergé sur [Github Pages](https://pages.github.com).
 
@@ -84,7 +84,7 @@ J’ai particulièrement travaillé&nbsp;:
 
  <div class="gray-background">
    <p>
-    Je vous laisse vous faire votre propre avis en visitant <a href="https://half.re/"><strong>HALF&nbsp;Revolution</strong></a>.
+    Je vous laisse vous faire votre propre avis en visitant <a href="https://half.re/"><strong>HALF&nbsp;revolution</strong></a>.
   </p>
   <p>
     N’hésitez pas à <strong>faire suivre</strong> si vous pensez que certain·e·s pourraient être intéressé·e·s par mes services.
@@ -93,4 +93,4 @@ J’ai particulièrement travaillé&nbsp;:
 
 À très vite.
 
-<img src="/dist/posts-img/half-responsive.jpg" alt="Capture d’écran du site Web de HALF Revolution">
+<img src="/dist/posts-img/half-responsive.jpg" alt="Capture d’écran du site Web de HALF revolution">
