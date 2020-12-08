@@ -7,12 +7,8 @@ tags:
 - design
 - change
 related:
-- url: 2017/10/16/design-shcf
-  title: "Redesign du SHCF"
-- url: 2020/10/09/site-web-maillots-communication-hcc
-  title: "Redesign du HC Chambéry"
-- url: 2018/04/07/site-montlaur
-  title: "Création du site Montlaur.net"
+- url: 2015/09/14/ma-pédale-cest-html5-sud-web-2015-tu-débutes-à
+  title: "Ma pédale c’est HTML5"
 realisation: "oui"
 selection: "oui"
 menu: blog
