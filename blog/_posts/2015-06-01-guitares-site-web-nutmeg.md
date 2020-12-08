@@ -2,7 +2,6 @@
 layout: post
 title: "Nutmeg, guitares et effets artisanaux"
 date: '2015-06-01T14:47:00+02:00'
-selection: oui
 tags:
 - web
 - design
