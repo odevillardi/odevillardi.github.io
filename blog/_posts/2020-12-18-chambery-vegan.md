@@ -8,7 +8,7 @@ tags:
 - vegan
 - minimalism
 img_url: /dist/posts-img/chambery-vegan.png
-img_caption: "La toute dernière création de Half revolution, Chambéry végan, un petit site qui recense les “spots” proposants des produits, des menus 100% végans."
+img_caption: "La toute dernière création de Half revolution, Chambéry végan, un petit site qui recense les “spots” proposant des produits, des menus 100% végans."
 link_url: https://chambery-vegan.fr
 menu: blog
 related:
