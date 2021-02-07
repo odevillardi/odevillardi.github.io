@@ -1,6 +1,13 @@
 Description: "Quelques lectures récentes et marquantes."
 
 Livres:
+- Titre:  "Dernière sommation"
+  Auteur: "David Dufresne"
+  Edition: "Points"
+  Pitch: "2018, la France se soulève. Vicky, jeune réalisatrice, s’effondre au pied de l’Assemblée nationale dans un nuage de gaz. Au même moment, Frédéric Dhomme, numéro 2 de la Préfecture de police, déploie ses troupes et bientôt ses doutes, tandis que l’enquêteur Étienne Dardel compile d’effroyables images des réseaux sociaux."
+  url: https://www.editionspoints.com/ouvrage/derniere-sommation-david-dufresne/9782757886694
+  selection: oui
+
 - Titre:  "Hunger Games - La ballade du serpent et de l'oiseau chanteur"
   Auteur: "Suzanne Collins"
   Edition: "Pocket Jeunesse"
@@ -69,7 +76,6 @@ Livres:
   Edition: "Denoël"
   Pitch: "Dans son repaire situé quelque part à l’est de l’arc alpin, Robert Poinsot écrit. Il raconte la crise systémique dont il a été témoin : d’abord le salaire qui n’arrive pas, les gens qui retirent leurs économies, qui s’organisent pour trouver de quoi manger, puis qui doivent fuir la violence des grandes villes et éviter les pilleurs sur les principaux axes routiers."
   url: http://www.denoel.fr/Catalogue/DENOEL/Lunes-d-encre/Le-Paradoxe-de-Fermi
-  selection: oui
 
 - Titre:  "Défaite des maîtres et possesseurs"
   Auteur: "Vincent Message"
