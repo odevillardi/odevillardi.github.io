@@ -1446,6 +1446,9 @@ blockquote.quote {
   #github ~ li #mail-contact,
   #github ~ li #mail-pointfr,
   #github ~ li #mail-arobase,
+  #gitlab ~ li #mail-contact,
+  #gitlab ~ li #mail-pointfr,
+  #gitlab ~ li #mail-arobase,
   #mastodon ~ li #mail-contact,
   #mastodon ~ li #mail-pointfr {
     -webkit-transition: opacity 0.2s ease-in-out;
@@ -1454,6 +1457,9 @@ blockquote.quote {
 #github:hover ~ li #mail-contact,
 #github:hover ~ li #mail-pointfr,
 #github:hover ~ li #mail-arobase,
+#gitlab:hover ~ li #mail-contact,
+#gitlab:hover ~ li #mail-pointfr,
+#gitlab:hover ~ li #mail-arobase,
 #mastodon:hover ~ li #mail-contact,
 #mastodon:hover ~ li #mail-pointfr {
   opacity: .3; }
