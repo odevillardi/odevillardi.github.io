@@ -1,6 +1,6 @@
 ---
 layout: link
-source: destination-live.net
+source: destinationlive.net
 title: "Destination→live"
 date: '2021-04-30T11:00:00+02:00'
 tags:
@@ -9,7 +9,7 @@ tags:
 - art
 img_url: /dist/posts-img/destinationlive.jpg
 img_caption: "La toute dernière création de Half revolution, Destination→live, un petit site pour proposer des live et voir des vidéos."
-link_url: https://destination-live.net
+link_url: https://destinationlive.net
 menu: blog
 related:
 - url: 2020/10/22/half-revolution
