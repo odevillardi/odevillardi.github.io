@@ -288,6 +288,7 @@ img.illustration {
 
 /* Boutons */
 .button,
+.cusdis-field button.submit-btn,
 button,
 input[type="submit"],
 input[type="reset"],
@@ -342,6 +343,7 @@ input[type="button"] {
 .navigation .button:not(.button-xs) { margin-bottom: $spacing; }
 
 .button.button-primary,
+.cusdis-field button.submit-btn,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
@@ -623,7 +625,8 @@ footer {
 .required::after {
   content: " (obligatoire)";
 }
-
+.cusdis-field input[type="text"],
+.cusdis-comment-main .cusdis-field textarea,
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -642,6 +645,13 @@ select {
   border-radius: 4px;
   @include box-shadow(none);
   box-sizing: border-box;
+}
+
+
+.cusdis-field input[type="text"],
+.cusdis-comment-main .cusdis-field textarea {
+  width: 100%;
+  @include background-color(#fff, #000);
 }
 
 /* Removes awkward default styles on some inputs for iOS */
@@ -664,6 +674,8 @@ textarea {
   padding-bottom: 6px;
 }
 
+.cusdis-field input[type="text"]:focus,
+.cusdis-comment-main .cusdis-field textarea:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
