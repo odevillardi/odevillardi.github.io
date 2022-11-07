@@ -1,12 +1,12 @@
 ---
 ---
-$background-color:     hsl(  0,   0%,  95%);
-$alternate-color:      hsl(  0,   0%,  85%);
-$gray-color:           hsl(  0,   0%,  50%);
-$alternate-dark-color: hsl(  0,   0%,  15%);
-$text-color:           hsl(  0,   0%,   5%);
+$background-color:     hsl(200,  10%,  95%);
+$alternate-color:      hsl(200,  10%,  85%);
+$gray-color:           hsl(200,  10%,  50%);
+$alternate-dark-color: hsl(200,  10%,  15%);
+$text-color:           hsl(200,  10%,   5%);
 $link-color:           hsl(200, 100%,  35%);
-$light-link-color:     hsl(200,  75%,  50%);
+$light-link-color:     hsl(200, 100%,  50%);
 
 $half-spacing:    .8rem;
 $spacing:        1.6rem;
@@ -184,12 +184,13 @@ li { margin-bottom: $half-spacing; }
 
 .post-list {
   .item { margin-bottom: $double-spacing; }
-  span.link::before  { content: "→ "; }
   .post-link {
     text-decoration: none;
-    .post-title { text-decoration: underline; }
-    &:hover .post-title { text-decoration: none; }
+    &::before  {
+      content: "→ ";
+    }
   }
+
   .not-inline .list-inline { margin: 0; }
   .excerpt { max-width: $breakpoint-m; }
 }
@@ -354,7 +355,7 @@ input[type="button"].button-primary {
 
   &:hover, &:focus {
     @include background-color($link-color, $light-link-color);
-    @include border-color($text-color, $alternate-color);
+    @include border-color($text-color, $light-link-color);
     @include color(white, black);
     @media (prefers-color-scheme: light) {
       text-shadow: 0 1px 0px $alternate-dark-color;

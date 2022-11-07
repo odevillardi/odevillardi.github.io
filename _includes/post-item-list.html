@@ -1,15 +1,10 @@
 <div class="item {{ include.post.layout }}">
   <ul class="list-inline block">
     <li>
-      <a class="lead post-link"
-      {% if post.layout != 'link' %}
-        href='{{ site.baseurl }}{{ post.url }}'
-      {% else %}
-        href='{{ site.baseurl }}{{ post.link_url }}'
-      {% endif %}><span class="post-title">{{ include.post.title }}</span>
+      <a class="lead" href='{{ site.baseurl }}{{ post.url }}'>{{ include.post.title }}</a>
       {% if post.layout == 'link' %}
-        <span class="link dark-gray-text"><em>{{ post.source }}</em></span>
-      {% endif %}</a>
+        <a class="post-link dark-gray-text" href='{{ site.baseurl }}{{ post.url }}'><em>{{ post.source }}</em></a>
+      {% endif %}
     </li>
     <li class="not-inline">
       <ul class="list-inline">

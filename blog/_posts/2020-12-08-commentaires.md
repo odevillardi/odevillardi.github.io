@@ -15,4 +15,4 @@ Il y a trois ans, je migrais ce site depuis Tumblr vers un site statique (Jekyll
 
 _EDIT du 10/05/2021:_
 
-Je change pour [Cusdis](https://cusdis.com/) qui propose une solution de commentaires ultra simple et respectueurse de la vie privée.
+Je change pour [Cusdis](https://cusdis.com/) qui propose une solution de commentaires ultra simple et respectueuse de la vie privée.

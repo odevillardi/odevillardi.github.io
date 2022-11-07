@@ -53,25 +53,24 @@ menu: "accueil"
 	</div>
 	<p class="text-center navigation">
 		<a class="button" href="{{ site.baseurl }}/a-propos/">À propos</a>
-		<a class="button" href="{{ site.baseurl }}/realisations/">Réalisations</a>
 		<a class="button button-primary older" href="{{ site.baseurl }}/contact/">Contact<span class="hidden-xs">ez-moi</span></a>
 	</p>
 	<div class="part post-list">
 		{% assign selection = site.posts | where: "selection", "oui" %}
 		<section>
-			<h2>Sélection du blog</h2>
-			{% for post in selection limit:6 %}
+			<h2>Billets de blog</h2>
+			{% for post in site.posts limit:10 %}
 				{% include post-item-list.html post=post %}
 			{% endfor %}
 			<p class="text-center"><a class="button older" href="{{ site.baseurl }}/blog/">Voir le blog</a></p>
 		</section>
-		<section>
+		<!-- <section>
 			<h2>Quelques lectures</h2>
 			{% assign selected_books = site.data.lectures.Livres | where: "selection", "oui" %}
 			{% for livre in selected_books limit:4 %}
 				{% include books.html book=livre %}
 			{% endfor %}
 			<p class="text-center"><a class="button older" href="{{ site.baseurl }}/lectures/">Voir les lectures</a></p>
-		</section>
+		</section> -->
 	</div>
 {% include foot.html %}
