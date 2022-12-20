@@ -8,7 +8,7 @@ tags:
 - music
 - art
 img_url: /dist/posts-img/destinationlive.jpg
-img_caption: "La toute dernière création de Half revolution, Destination→live, un petit site pour proposer des live et voir des vidéos."
+img_caption: "J’ai créé Destination→live, un petit site pour proposer des live et voir des vidéos."
 link_url: https://destinationlive.net
 menu: blog
 related:

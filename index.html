@@ -41,16 +41,16 @@ menu: "accueil"
 			</g>
 		</svg>
 		<h1>{{ site.title }}</h1>
-		<p>
-			Bienvenue chez moi.
-			<br>Vous trouverez beaucoup de liens et quelques billets.
-		</p>
+	  <ul class="menu list-inline tag-list">
+	    <li><a href="{{ site.baseurl }}/blog/"><span class="hidden-xs">Voir le </span>Blog</a></li>
+	    <li><a class="gray-text" href="{{ site.baseurl }}/contact/">Contact<span class="hidden-xs">ez-moi</span></a></li>
+	  </ul>
 	</div>
 	<section class="part post-list">
-		<h2>Billets & Liens</h2>
-		{% for post in site.posts limit:10 %}
+		<h2>Derniers billets<span class="hidden-xs"> de blog</span></h2>
+		{% for post in site.posts limit:5 %}
 			{% include post-item-list.html post=post %}
 		{% endfor %}
-		<p class="text-center"><a class="button older" href="{{ site.baseurl }}/blog/page2/">Billets plus anciens</a></p>
+		<p class="text-center"><a class="button older" href="{{ site.baseurl }}/blog/">Voir le blog</a></p>
 	</section>
 {% include foot.html %}
