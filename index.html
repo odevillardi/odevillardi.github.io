@@ -1,6 +1,6 @@
 ---
 title: "Bienvenue chez moi"
-description: "Je suis un travailleur du Web depuis 15 ans. Vous trouverez beaucoup de liens, quelques billets et ce qui me définit à la fois sur le plan personnel et professionnel."
+description: "Je suis un travailleur du Web depuis 15 ans. Vous trouverez beaucoup de liens et quelques billets."
 menu: "accueil"
 ---
 {% include head.html %}
@@ -41,36 +41,16 @@ menu: "accueil"
 			</g>
 		</svg>
 		<h1>{{ site.title }}</h1>
-		<p>Bienvenue chez moi.</p>
+		<p>
+			Bienvenue chez moi.
+			<br>Vous trouverez beaucoup de liens et quelques billets.
+		</p>
 	</div>
-	<div class="part lead row">
-		<div class="six columns offset-by-three">
-			<p>
-				Vous trouverez beaucoup de liens, quelques billets
-				et ce qui me définit à la fois sur le plan personnel et professionnel.
-			</p>
-		</div>
-	</div>
-	<p class="text-center navigation">
-		<a class="button" href="{{ site.baseurl }}/a-propos/">À propos</a>
-		<a class="button button-primary older" href="{{ site.baseurl }}/contact/">Contact<span class="hidden-xs">ez-moi</span></a>
-	</p>
-	<div class="part post-list">
-		{% assign selection = site.posts | where: "selection", "oui" %}
-		<section>
-			<h2>Billets de blog</h2>
-			{% for post in site.posts limit:10 %}
-				{% include post-item-list.html post=post %}
-			{% endfor %}
-			<p class="text-center"><a class="button older" href="{{ site.baseurl }}/blog/">Voir le blog</a></p>
-		</section>
-		<!-- <section>
-			<h2>Quelques lectures</h2>
-			{% assign selected_books = site.data.lectures.Livres | where: "selection", "oui" %}
-			{% for livre in selected_books limit:4 %}
-				{% include books.html book=livre %}
-			{% endfor %}
-			<p class="text-center"><a class="button older" href="{{ site.baseurl }}/lectures/">Voir les lectures</a></p>
-		</section> -->
-	</div>
+	<section class="part post-list">
+		<h2>Billets & Liens</h2>
+		{% for post in site.posts limit:10 %}
+			{% include post-item-list.html post=post %}
+		{% endfor %}
+		<p class="text-center"><a class="button older" href="{{ site.baseurl }}/blog/page2/">Billets plus anciens</a></p>
+	</section>
 {% include foot.html %}
