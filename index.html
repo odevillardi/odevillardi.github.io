@@ -46,6 +46,13 @@ menu: "accueil"
 	    <li><a class="gray-text" href="{{ site.baseurl }}/contact/">Contact<span class="hidden-xs">ez-moi</span></a></li>
 	  </ul>
 	</div>
+	<section class="part">
+		<h2>Bienvenue<span class="hidden-xs"> chez moi</span></h2>
+		<p>
+			Vous trouverez ici <a href="{{ site.baseurl }}/blog/">beaucoup de liens et quelques billets</a>.<br>
+			Vous pouvez aussi me retrouver sur <a rel="me" href="https://mamot.fr/@odevillardi">Mastodon</a> où je suis à peu près aussi (in)actif :)
+		</p>
+	</section>
 	<section class="part post-list">
 		<h2>Derniers billets<span class="hidden-xs"> de blog</span></h2>
 		{% for post in site.posts limit:5 %}
