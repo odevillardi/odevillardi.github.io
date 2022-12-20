@@ -3,10 +3,10 @@
 				<div class="navigation part text-center">
 					<p>
 						{% if paginator.previous_page_path %}
-							<a class="button newer" href="{{ site.baseurl }}{{ paginator.previous_page_path }}" role="button">Billets plus récents</a>
+							<a class="button newer" href="{{ site.baseurl }}{{ paginator.previous_page_path }}" role="button">Plus récents</a>
 						{% endif %}
 						{% if paginator.next_page_path %}
-							<a class="button older" href="{{ site.baseurl }}{{ paginator.next_page_path }}" role="button">Billets plus anciens</a>
+							<a class="button older" href="{{ site.baseurl }}{{ paginator.next_page_path }}" role="button">Plus anciens</a>
 						{% endif %}
 						{% if page.next %}
 							<a class="button text-overflow next" href="{{ site.baseurl }}{{ page.next.url }}" role="button">
@@ -22,7 +22,7 @@
 				</div> <!-- .part -->
 			{% endif %}
 			<footer class="part text-center">
-				{% if page.menu != "contact" %}
+				{% if page.menu == "accueil" %}
 					<ul class="list-inline">
 						<li><a class="button button-primary" href="{{ site.baseurl }}/contact/">Contactez-moi</a></li>
 						<li><a class="button" rel="me" href="https://mamot.fr/@odevillardi">Mastodon</a></li>
