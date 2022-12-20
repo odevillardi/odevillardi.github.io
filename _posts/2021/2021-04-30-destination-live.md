@@ -12,7 +12,7 @@ img_caption: "J’ai créé Destination→live, un petit site pour proposer des 
 link_url: https://destinationlive.net
 menu: blog
 related:
-- url: 2020/10/22/half-revolution
+- url: /2020/10/22/half-revolution
   title: "Création de Half revolution"
 - url: /2020/12/18/chambery-vegan
   title: "Chambéry végan"
