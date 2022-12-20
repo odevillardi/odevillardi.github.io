@@ -3,7 +3,7 @@
     <li>
       <a class="lead" href='{{ site.baseurl }}{{ post.url }}'>{{ include.post.title }}</a>
       {% if post.layout == 'link' %}
-        <a class="post-link dark-gray-text" href='{{ site.baseurl }}{{ post.url }}'><em>{{ post.source }}</em></a>
+        <a class="post-link dark-gray-text" href='{{ post.link_url }}'><em>{{ post.source }}</em></a>
       {% endif %}
     </li>
     <li class="not-inline">
