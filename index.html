@@ -4,8 +4,8 @@ description: "Je suis un travailleur du Web depuis 15 ans. Vous trouverez beauco
 menu: "accueil"
 ---
 {% include head.html %}
-	{% if paginator.page == 1 %}
-		<div class="text-center">
+	<div class="text-center">
+		{% if paginator.page == 1 %}
 			<svg class="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
 			 width="102px" height="102px" viewBox="0 0 500.000000 500.000000"
 			 preserveAspectRatio="xMidYMid meet">
@@ -42,43 +42,23 @@ menu: "accueil"
 				</g>
 			</svg>
 			<h1>{{ site.title }}</h1>
-			<p>Bienvenue chez moi</p>
-			<p class="lead">
-				Vous trouverez ici beaucoup de liens et quelques publications.<br>
-				Vous pouvez aussi me retrouver sur <a rel="me" href="https://mamot.fr/@odevillardi">Mastodon</a> où je suis à peu près aussi (in)actif :)
-			</p>
-		</div>
-	{% endif %}
-	<section>
-		<div class="part post-list text-center">
-			{% if paginator.page != 1 %}
-			<svg class="logo" xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 16 16">
-				<path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-				<path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-			</svg>
-			<h1>Publications &&nbsp;Liens</h1>
-			<p class="text-center gray-text">Page {{ paginator.page }}/{{ paginator.total_pages }}</p>
-			{% else %}
-			<h2>Publications &&nbsp;Liens</h2>
-			{% endif %}
-		  <ul class="menu list-inline tag-list text-center">
-		    <li><a href="{{ site.baseurl }}/tag/antispecism.html">Antispecism</a></li>
-		    <li><a href="{{ site.baseurl }}/tag/environment.html">Environment</a></li>
-		    <li><a href="{{ site.baseurl }}/tag/music.html">Music</a></li>
-		    <li><a href="{{ site.baseurl }}/tag/sport.html">Sport</a></li>
-		    <li><a href="{{ site.baseurl }}/tag/vegan.html">Vegan</a></li>
-		    <li><a href="{{ site.baseurl }}/tag/web.html">Web</a></li>
-		    <li><a class="gray-text" href="{{ site.baseurl }}/tag/">Tous les thèmes</a></li>
-		  </ul>
-		</div>
-		<div class="post-list">
-			{% for post in paginator.posts %}
-				{% include post-item-list.html post=post %}
-			{% endfor %}
-		</div>
+		{% else %}
+			<h1>Page {{ paginator.page }}/{{ paginator.total_pages }}</h1>
+		{% endif %}
+	  <ul class="menu list-inline tag-list">
+	    <li><a href="{{ site.baseurl }}/tag/antispecism.html">Antispecism</a></li>
+	    <li><a href="{{ site.baseurl }}/tag/environment.html">Environment</a></li>
+	    <li><a href="{{ site.baseurl }}/tag/music.html">Music</a></li>
+	    <li><a href="{{ site.baseurl }}/tag/sport.html">Sport</a></li>
+	    <li><a href="{{ site.baseurl }}/tag/vegan.html">Vegan</a></li>
+	    <li><a href="{{ site.baseurl }}/tag/web.html">Web</a></li>
+	    <li><a class="gray-text" href="{{ site.baseurl }}/tag/">Tous les thèmes</a></li>
+	  </ul>
+	</div>
+	<section class="part post-list">
+		{% for post in paginator.posts %}
+			{% include post-item-list.html post=post %}
+		{% endfor %}
 	</section>
-
-	{% if paginator.page != 1 %}
-		<p class="text-center gray-text">Page {{ paginator.page }}/{{ paginator.total_pages }}</p>
-	{% endif %}
+	<p class="text-center gray-text">Page {{ paginator.page }}/{{ paginator.total_pages }}</p>
 {% include foot.html %}
