@@ -1,0 +1,22 @@
+---
+
+---
+{% include head.html %}
+<article itemscope itemtype="http://schema.org/Article">
+	{% include big-title.html title=page.title %}
+	<div class="posts" id="posts">
+		<div class="part text">
+			<div class="row">
+				<div class="eight columns" itemprop="articleBody">
+					<iframe class="toot-embed" src="{{ page.toot_url }}/embed"></iframe>
+					<p class="lead text-center">
+						<a class="button button-primary" href="{{ page.toot_url }}">Voir le toot sur Mastodon</a>
+					</p>
+					{% include commentaires.html %}
+				</div>
+				{% include sticker.html post=page %}
+			</div>
+		</div>
+	</div>
+</article>
+{% include foot.html %}
