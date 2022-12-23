@@ -19,6 +19,13 @@
   }
 }
 
+@mixin outline-color($light-color, $dark-color) {
+  outline-color: $light-color;
+  @media (prefers-color-scheme: dark) {
+    outline-color: $dark-color;
+  }
+}
+
 @mixin box-shadow($rule) {
   -webkit-box-shadow: $rule;
           box-shadow: $rule;

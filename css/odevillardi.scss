@@ -341,7 +341,7 @@ input[type="button"] {
   white-space: nowrap;
   border-radius: 2px;
   cursor: pointer;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 
   &:hover, &:focus {
     text-decoration: none;
@@ -707,6 +707,12 @@ textarea {
   padding-bottom: 6px;
 }
 
+a:focus,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -716,7 +722,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  outline: thick solid #33C3F0;
+  outline: 3px solid;
+  @include outline-color($light-link-color, $link-color);
 }
 
 label,
