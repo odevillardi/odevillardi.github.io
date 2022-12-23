@@ -649,17 +649,23 @@ footer {
   @include border-color($alternate-color, $alternate-dark-color);
 }
 
+#contact-form-sent {
+  display: none;
+  @include background-color(lightgreen, darkgreen);
+  @include color($text-color, $background-color);
+  padding: $half-spacing $spacing;
+}
+
+#contact-form-sent:target {
+  display: block;
+}
+
 /* Formulaires */
-.facultatif::after,
 .required::after {
-  content: " (facultatif)";
+  content: " (obligatoire)";
   font-weight: normal;
   font-size: .8em;
   color: $gray-color;
-}
-
-.required::after {
-  content: " (obligatoire)";
 }
 
 input[type="email"],
