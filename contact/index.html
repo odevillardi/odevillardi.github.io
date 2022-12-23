@@ -17,13 +17,9 @@ menu: "contact"
   </div>
   <section id="formulaire" class="part lead row">
     <div class="eight columns offset-by-two">
-      <p id="contact-form-sent">
-        Merci pour votre message.<br>
-        J’y répondrai dans les plus brefs délais.
-      </p>
       <form aria-label="Formulaire de contact"
             name="contact"
-            action="#contact-form-sent"
+            action="{{ site.baseurl }}#contact-form-sent"
             method="POST"
             netlify>
         <p class="hidden">
