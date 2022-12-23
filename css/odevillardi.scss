@@ -348,7 +348,6 @@ input[type="button"] {
     @include color (black, white);
     @include border-color($alternate-dark-color, $alternate-color);
     @include background-color($alternate-color, $alternate-dark-color);
-    outline: 0;
   }
 
   &.next::before {
@@ -717,8 +716,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
-  outline: 0;
+  outline: thick solid #33C3F0;
 }
 
 label,
@@ -742,6 +740,10 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
 }
 
 /* Code */

@@ -23,7 +23,7 @@ menu: "contact"
       </p>
       <form aria-label="Formulaire de contact"
             name="contact"
-            action="{{ site.baseurl }}/contact/#contact-form-sent"
+            action="#contact-form-sent"
             method="POST"
             netlify>
         <p class="hidden">
@@ -39,6 +39,7 @@ menu: "contact"
                 id="your-email"
                 class="label-body"
                 type="email"
+                placeholder="hello@domaine.fr"
                 required>
         <p class="mention">
           Votre email servira uniquement à vous répondre, il sera conservé au maximum 36 mois après la fin de nos échanges.
@@ -47,7 +48,9 @@ menu: "contact"
         <textarea aria-label="Votre message"
                   id="your-message"
                   class="label-body u-full-width"
-                  name="message" required></textarea>
+                  name="message"
+                  placeholder="Bonjour…"
+                  required></textarea>
         <input  aria-label="Bouton de validation"
                 class="button-primary u-half-width"
                 type="submit"
