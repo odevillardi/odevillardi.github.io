@@ -753,10 +753,6 @@ input:not(:focus):not(:placeholder-shown):invalid {
   border-color: red;
 }
 
-input:not(:focus):not(:placeholder-shown):valid {
-  @include border-color(darkgreen, lightgreen);
-}
-
 /* Code */
 code {
   padding: .2rem .5rem;
