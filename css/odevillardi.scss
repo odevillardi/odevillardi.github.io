@@ -5,8 +5,8 @@ $alternate-color:      hsl(200,  10%,  85%);
 $gray-color:           hsl(200,  10%,  50%);
 $alternate-dark-color: hsl(200,  10%,  15%);
 $text-color:           hsl(200,  10%,   5%);
-$link-color:           hsl(200, 100%,  35%);
-$light-link-color:     hsl(200, 100%,  50%);
+$link-color:           hsl(200, 100%,  45%);
+$light-link-color:     hsl(200, 100%,  55%);
 
 $half-spacing:    .8rem;
 $spacing:        1.6rem;
@@ -345,9 +345,8 @@ input[type="button"] {
 
   &:hover, &:focus {
     text-decoration: none;
-    @include color (black, white);
-    @include border-color($alternate-dark-color, $alternate-color);
-    @include background-color($alternate-color, $alternate-dark-color);
+    @include color ($link-color, $light-link-color);
+    @include border-color($light-link-color, $link-color);
   }
 
   &.next::before {
@@ -355,17 +354,11 @@ input[type="button"] {
     @media (min-width: $breakpoint-s) {
       content: "‹ Suivant : ";
     }
-    @media (min-width: $breakpoint-m) {
-      content: "‹ Billet suivant : ";
-    }
   }
   &.previous::before {
     content: "Préc. : ";
     @media (min-width: $breakpoint-s) {
       content: "Précédent : ";
-    }
-    @media (min-width: $breakpoint-m) {
-      content: "Billet précédent : ";
     }
   }
   &.next::before, &.previous::before { font-weight: bold; }
@@ -501,7 +494,10 @@ input[type="button"].button-primary {
 }
 
 .menu a {
-  &.active { @include color($alternate-dark-color, $alternate-color); }
+  &.active { 
+    @include color($alternate-dark-color, $alternate-color);
+    text-decoration: none;
+  }
   &:hover  { @include color(black, white); }
 }
 
@@ -680,8 +676,10 @@ select {
   width: 50%;
   min-width: 280px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
+  @include background-color(white, black);
+  @include color($text-color, $background-color);
+  border: 1px solid;
+  @include border-color($alternate-dark-color, $alternate-color);
   border-radius: 4px;
   @include box-shadow(none);
   box-sizing: border-box;
