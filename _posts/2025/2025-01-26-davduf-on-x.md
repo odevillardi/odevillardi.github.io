@@ -1,6 +1,6 @@
 ---
 layout: link
-source: mamot.fr
+source: mamot.fr/@davduf
 title: "Petite expérience dominicale et renversante. Ou: comment X favorise l'ED."
 date: '2025-01-26T07:00:00+02:00'
 tags:
